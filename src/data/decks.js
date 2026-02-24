@@ -1,6 +1,6 @@
 // Dữ liệu Flashcard Decks - IELTS Speaking S1
 // Nguồn: ZIM IELTS Speaking S1
-// Cấu trúc: skill, volume, topic, part, và mảng cards
+// Cấu trúc: skill, volume, topic, part, và mảng cards (có đầy đủ meaning + note)
 
 export const flashcardDecks = [
   // ==========================================
@@ -18,6 +18,7 @@ export const flashcardDecks = [
         word: "Hub",
         pronunciation: "/hʌb/",
         meaning: "trung tâm hoạt động",
+        note: "Thường được sử dụng để chỉ trung tâm hoặc nơi nổi bật của một lĩnh vực hoặc hoạt động nào đó.",
         example:
           "Currently, I'm living in an apartment in the city center, and it's like having my own little hub.",
         exampleTranslation:
@@ -28,6 +29,7 @@ export const flashcardDecks = [
         word: "Bustling",
         pronunciation: "/ˈbʌs.lɪŋ/",
         meaning: "nhộn nhịp",
+        note: "Thường dùng để mô tả một nơi có nhiều người và hoạt động, không yên tĩnh.",
         example: "It's a bustling, lively place to be.",
         exampleTranslation: "Đó là một nơi nhộn nhịp và sôi động.",
       },
@@ -36,6 +38,7 @@ export const flashcardDecks = [
         word: "Cozy",
         pronunciation: "/ˈkəʊ.zi/",
         meaning: "ấm cúng",
+        note: "Mô tả một không gian thoải mái, thường là nhỏ và ấm áp, tạo cảm giác thân thuộc và dễ chịu.",
         example:
           "I've got a house in the suburbs, and it's a cozy and private space.",
         exampleTranslation:
@@ -46,6 +49,7 @@ export const flashcardDecks = [
         word: "Retreat",
         pronunciation: "/rɪˈtriːt/",
         meaning: "nơi nghỉ ngơi, nơi ẩn dật yên tĩnh",
+        note: "Thường được sử dụng để chỉ một không gian yên tĩnh nơi mọi người có thể thư giãn và tách biệt khỏi môi trường xô bồ.",
         example: "It's a quiet retreat away from city noise.",
         exampleTranslation:
           "Đó là một nơi nghỉ ngơi yên tĩnh tránh xa tiếng ồn đô thị.",
@@ -55,6 +59,7 @@ export const flashcardDecks = [
         word: "Go-to spot",
         pronunciation: "/ˈɡəʊ.tuː spɒt/",
         meaning: "địa điểm ưa thích",
+        note: '"Go-to spot" thường dùng để chỉ một nơi cụ thể mà một người thường xuyên quay lại vì sự thoải mái, tiện ích hoặc niềm vui mà nó mang lại.',
         example: "My go-to spot is definitely the living room.",
         exampleTranslation:
           "Địa điểm ưa thích của tôi chắc chắn là phòng khách.",
@@ -64,6 +69,7 @@ export const flashcardDecks = [
         word: "Kick back",
         pronunciation: "/kɪk bæk/",
         meaning: "thư giãn hoàn toàn",
+        note: "Thường được dùng trong ngữ cảnh nghỉ ngơi hoặc thư giãn một cách thoải mái.",
         example:
           "It's the perfect spot to kick back and relax or have friends over for a movie night.",
         exampleTranslation:
@@ -74,6 +80,7 @@ export const flashcardDecks = [
         word: "Whip up",
         pronunciation: "/ˈwɪp.ɪŋ ʌp/",
         meaning: "nấu nhanh",
+        note: "Được sử dụng khi mô tả việc chuẩn bị thức ăn một cách nhanh chóng và dễ dàng.",
         example: "I love whipping up new dishes in the kitchen.",
         exampleTranslation: "Tôi thích nấu nhanh các món ăn mới trong bếp.",
       },
@@ -81,7 +88,8 @@ export const flashcardDecks = [
         id: 8,
         word: "Heart of the home",
         pronunciation: "/hɑːrt əv ðə həʊm/",
-        meaning: "trái tim của ngôi nhà (nơi gia đình sum vầy)",
+        meaning: "trái tim của ngôi nhà",
+        note: "Cụm từ này thường được dùng để chỉ phòng bếp hoặc phòng khách, nơi mọi người trong gia đình tụ họp và dành thời gian cho nhau, coi đó như là nơi gắn kết và quan trọng nhất trong ngôi nhà.",
         example: "The kitchen is really the heart of the home for me.",
         exampleTranslation:
           "Nhà bếp thực sự là trái tim của ngôi nhà đối với tôi.",
@@ -91,6 +99,7 @@ export const flashcardDecks = [
         word: "Keepsakes",
         pronunciation: "/ˈkiːp.seɪks/",
         meaning: "vật kỷ niệm",
+        note: "Được giữ lại như một cách để nhớ về một sự kiện, người, hoặc nơi nào đó.",
         example:
           "I've got all sorts of photos and keepsakes everywhere that bring back good memories.",
         exampleTranslation:
@@ -101,6 +110,7 @@ export const flashcardDecks = [
         word: "Homey",
         pronunciation: "/ˈhəʊ.mi/",
         meaning: "ấm cúng, tạo cảm giác như ở nhà",
+        note: "Thường dùng để mô tả một không gian ấm cúng và thoải mái, tạo cảm giác thân thuộc như khi ở nhà.",
         example:
           "Comfy cushions, candles, and a stash of good books make it super homey.",
         exampleTranslation:
@@ -111,6 +121,7 @@ export const flashcardDecks = [
         word: "Airy",
         pronunciation: "/ˈeə.ri/",
         meaning: "thông thoáng, thoáng đãng",
+        note: "Mô tả không gian rộng rãi, thoáng đãng, thường có nhiều không khí và ánh sáng tự nhiên.",
         example:
           "What makes my place great is the light – it's bright and airy.",
         exampleTranslation:
@@ -121,6 +132,7 @@ export const flashcardDecks = [
         word: "Cramped",
         pronunciation: "/kræmpt/",
         meaning: "chật chội, bí bách",
+        note: "Được dùng khi không gian sống hoặc làm việc bị hạn chế, gây cảm giác bức bối.",
         example:
           "The layout is really open, so it never feels cramped or cluttered.",
         exampleTranslation:
@@ -144,6 +156,7 @@ export const flashcardDecks = [
         word: "Eye-catching",
         pronunciation: "/ˈaɪˌkætʃ.ɪŋ/",
         meaning: "thu hút ánh nhìn, nổi bật",
+        note: "Thường được dùng để mô tả thiết kế hay một đối tượng nào đó rất nổi bật và dễ thu hút sự chú ý ngay lập tức.",
         example: "I love turning ideas into an eye-catching design.",
         exampleTranslation:
           "Tôi thích biến ý tưởng thành những thiết kế thu hút ánh nhìn.",
@@ -153,6 +166,7 @@ export const flashcardDecks = [
         word: "Branding",
         pronunciation: "/ˈbræn.dɪŋ/",
         meaning: "xây dựng thương hiệu",
+        note: "Là một phần quan trọng trong marketing, liên quan đến việc tạo ra một hình ảnh đặc biệt và dễ nhận diện cho sản phẩm hoặc công ty.",
         example:
           "I work in graphic design – think logos, websites, and branding.",
         exampleTranslation:
@@ -163,6 +177,7 @@ export const flashcardDecks = [
         word: "Pediatric care",
         pronunciation: "/ˌpiː.diˈæt.rɪk keər/",
         meaning: "chăm sóc nhi khoa",
+        note: "Đây là lĩnh vực chuyên môn trong ngành y tập trung vào việc chăm sóc sức khỏe của trẻ em.",
         example: "I'm a nurse, working mostly in pediatric care.",
         exampleTranslation:
           "Tôi là y tá, chủ yếu làm việc trong lĩnh vực chăm sóc nhi khoa.",
@@ -172,6 +187,7 @@ export const flashcardDecks = [
         word: "Rewarding",
         pronunciation: "/rɪˈwɔː.dɪŋ/",
         meaning: "đáng giá, mang lại sự thỏa mãn",
+        note: "Thường được dùng để mô tả công việc hoặc hoạt động mang lại cảm giác thành tựu và hài lòng.",
         example:
           "It's challenging but incredibly rewarding, especially when I see my patients getting better.",
         exampleTranslation:
@@ -182,6 +198,7 @@ export const flashcardDecks = [
         word: "Fascinated by",
         pronunciation: "/ˈfæs.ɪˌneɪ.tɪd ˈbaɪ/",
         meaning: "bị cuốn hút bởi",
+        note: "Thường dùng để chỉ một sự hứng thú mạnh mẽ với một điều gì đó, đặc biệt là khi sự thích thú đó bắt đầu từ khi còn nhỏ.",
         example:
           "Ever since I was a kid, I've been fascinated by drawing and design.",
         exampleTranslation:
@@ -192,6 +209,7 @@ export const flashcardDecks = [
         word: "No-brainer",
         pronunciation: "/ˈnoʊˌbreɪ.nər/",
         meaning: "quyết định hiển nhiên, không cần suy nghĩ",
+        note: "Cụm từ này thường được dùng khi một quyết định là quá rõ ràng hoặc dễ dàng, không cần suy nghĩ nhiều.",
         example: "Pursuing a career in graphic design was a no-brainer for me.",
         exampleTranslation:
           "Theo đuổi sự nghiệp thiết kế đồ họa là quyết định hiển nhiên với tôi.",
@@ -201,6 +219,7 @@ export const flashcardDecks = [
         word: "Stumble into",
         pronunciation: "/ˈstʌm.bəld ˈɪn.tuː/",
         meaning: "tình cờ bắt đầu, vô tình bước vào",
+        note: "Cụm từ này thường dùng để mô tả việc tình cờ phát hiện hoặc bắt đầu làm một điều gì đó mà không có kế hoạch từ trước.",
         example: "I stumbled into nursing later in life.",
         exampleTranslation:
           "Tôi tình cờ bước vào nghề điều dưỡng khi đã lớn tuổi hơn.",
@@ -210,6 +229,7 @@ export const flashcardDecks = [
         word: "Soul-searching",
         pronunciation: "/ˈsoʊlˌsɝː.tʃɪŋ/",
         meaning: "tự kiểm điểm, suy ngẫm sâu sắc về bản thân",
+        note: "Dùng để chỉ quá trình tự suy ngẫm nghiêm túc về bản thân hoặc cuộc sống của mình.",
         example:
           "After doing some soul-searching, I realized I wanted to make a real difference.",
         exampleTranslation:
@@ -220,6 +240,7 @@ export const flashcardDecks = [
         word: "Hit my stride",
         pronunciation: "/hɪt maɪ straɪd/",
         meaning: "bắt đầu làm việc hiệu quả, tìm được nhịp độ tốt",
+        note: "Cụm từ này thường dùng khi ai đó tìm được nhịp độ làm việc tốt của mình, sau khi đã qua một khoảng thời gian khởi động.",
         example: "I tend to hit my stride in the afternoon.",
         exampleTranslation:
           "Tôi thường tìm được nhịp độ làm việc hiệu quả vào buổi chiều.",
@@ -229,6 +250,7 @@ export const flashcardDecks = [
         word: "All systems go",
         pronunciation: "/ɔːl ˈsɪs.təmz ɡoʊ/",
         meaning: "sẵn sàng tổng lực",
+        note: "Cụm từ này thường được sử dụng để biểu thị sự sẵn sàng hoàn toàn để bắt đầu hoặc tiếp tục một hoạt động.",
         example: "After lunch, I'm all systems go.",
         exampleTranslation:
           "Sau bữa trưa, tôi hoàn toàn sẵn sàng và làm việc hết công suất.",
@@ -238,6 +260,7 @@ export const flashcardDecks = [
         word: "Hit the ground running",
         pronunciation: "/hɪt ðə ɡraʊnd ˈrʌn.ɪŋ/",
         meaning: "bắt đầu nhanh chóng và hăng hái ngay từ đầu",
+        note: "Cụm từ này thường được sử dụng khi ai đó bắt đầu một công việc hoặc hoạt động mới một cách nhanh chóng và hiệu quả ngay từ đầu.",
         example: "I hit the ground running as soon as I wake up.",
         exampleTranslation: "Tôi bắt đầu hăng hái ngay khi vừa thức dậy.",
       },
@@ -246,6 +269,7 @@ export const flashcardDecks = [
         word: "Peak",
         pronunciation: "/piːk/",
         meaning: "đỉnh cao (về năng lượng hoặc hiệu suất)",
+        note: "Đỉnh cao ở đây có thể hiểu là thời điểm mà một người cảm thấy mình có nhiều năng lượng và sáng tạo nhất.",
         example: "My energy and creativity are at their peak in the morning.",
         exampleTranslation:
           "Năng lượng và sự sáng tạo của tôi đạt đỉnh cao vào buổi sáng.",
@@ -268,6 +292,7 @@ export const flashcardDecks = [
         word: "Marine life",
         pronunciation: "/məˈriːn laɪf/",
         meaning: "sinh vật biển, đời sống dưới biển",
+        note: "Thuật ngữ này thường được sử dụng để mô tả tất cả các loài sinh vật sống trong môi trường biển.",
         example: "I'm studying biology, specifically focusing on marine life.",
         exampleTranslation:
           "Tôi đang học sinh học, tập trung cụ thể vào sinh vật biển.",
@@ -277,6 +302,7 @@ export const flashcardDecks = [
         word: "Dive deep",
         pronunciation: "/daɪv diːp/",
         meaning: "nghiên cứu sâu, tìm hiểu kỹ lưỡng",
+        note: "Cụm từ này được dùng để chỉ việc tìm hiểu kỹ lưỡng và sâu sắc về một chủ đề nào đó.",
         example: "It's amazing to dive deep into this subject.",
         exampleTranslation:
           "Thật tuyệt khi được nghiên cứu sâu vào môn học này.",
@@ -286,6 +312,7 @@ export const flashcardDecks = [
         word: "Ancient civilizations",
         pronunciation: "/ˈeɪn.ʃənt ˌsɪv.ə.laɪˈzeɪ.ʃənz/",
         meaning: "các nền văn minh cổ đại",
+        note: "Cụm từ này thường được sử dụng để mô tả các xã hội hoặc văn minh đã tồn tại từ rất lâu trước đây.",
         example:
           "I'm majoring in history, with a keen interest in ancient civilizations.",
         exampleTranslation:
@@ -296,6 +323,7 @@ export const flashcardDecks = [
         word: "Piecing together",
         pronunciation: "/ˈpiː.sɪŋ təˈɡeð.ər/",
         meaning: "ghép các mảnh lại để hiểu rõ vấn đề",
+        note: "Cụm từ này được dùng khi mô tả quá trình lắp ghép các thông tin hoặc dữ liệu để hiểu rõ một vấn đề hoặc tình huống.",
         example:
           "It's like being a detective, piecing together stories from the past.",
         exampleTranslation:
@@ -306,6 +334,7 @@ export const flashcardDecks = [
         word: "Hooked on",
         pronunciation: "/hʊkt ɒn/",
         meaning: "mê mẩn, say mê không dứt ra được",
+        note: "Dùng để chỉ tình trạng say mê hoặc không thể ngừng quan tâm đến một sự việc hoặc chủ đề nào đó.",
         example: "For as long as I can remember, I've been hooked on biology.",
         exampleTranslation: "Từ lâu tôi đã mê mẩn môn sinh học.",
       },
@@ -314,6 +343,7 @@ export const flashcardDecks = [
         word: "Natural choice",
         pronunciation: "/ˈnætʃ.ər.əl tʃɔɪs/",
         meaning: "lựa chọn tự nhiên, hiển nhiên",
+        note: "Dùng để chỉ một quyết định hoặc lựa chọn dễ dàng và rõ ràng, thường dựa trên sở thích cá nhân hoặc hoàn cảnh.",
         example:
           "Studying marine biology was a natural choice – it's been my dream field since I was young.",
         exampleTranslation:
@@ -324,6 +354,7 @@ export const flashcardDecks = [
         word: "Grew over time",
         pronunciation: "/ɡruː ˈəʊ.və taɪm/",
         meaning: "phát triển dần theo thời gian",
+        note: "Dùng để chỉ quá trình tăng trưởng, phát triển hoặc thay đổi dần dần theo thời gian.",
         example: "My love for history grew over time.",
         exampleTranslation:
           "Tình yêu của tôi với lịch sử phát triển dần theo thời gian.",
@@ -333,6 +364,7 @@ export const flashcardDecks = [
         word: "It clicked",
         pronunciation: "/klɪkt/",
         meaning: "chợt hiểu ra, cảm thấy phù hợp đột ngột",
+        note: "Thường dùng để chỉ khoảnh khắc một ý tưởng hoặc khái niệm trở nên rõ ràng hoặc dễ hiểu một cách đột ngột.",
         example:
           "The stories, the mysteries, the way history shapes our world – it all just clicked for me.",
         exampleTranslation:
@@ -343,6 +375,7 @@ export const flashcardDecks = [
         word: "Absorb information",
         pronunciation: "/əbˈzɔːrb ˌɪn.fəˈmeɪ.ʃən/",
         meaning: "tiếp thu thông tin",
+        note: "Thường dùng để chỉ việc hiểu và lĩnh hội thông tin một cách triệt để.",
         example:
           "I find it easier to absorb information and concentrate on my studies in the morning.",
         exampleTranslation:
@@ -353,6 +386,7 @@ export const flashcardDecks = [
         word: "In the zone",
         pronunciation: "/ɪn ðə zəʊn/",
         meaning: "trong trạng thái tập trung cao độ",
+        note: "Cụm từ này được dùng để mô tả một trạng thái tập trung tối đa, thường khi làm việc hoặc hoạt động nghệ thuật.",
         example: "Post-lunch, I'm fully in the zone.",
         exampleTranslation:
           "Sau bữa trưa, tôi hoàn toàn trong trạng thái tập trung cao độ.",
@@ -375,6 +409,7 @@ export const flashcardDecks = [
         word: "Fresh start",
         pronunciation: "/freʃ stɑːt/",
         meaning: "khởi đầu mới",
+        note: "Thường được sử dụng khi mô tả sự bắt đầu lại từ đầu hoặc thay đổi đáng kể trong cuộc sống.",
         example: "It's a fresh start in a new neighborhood.",
         exampleTranslation: "Đó là một khởi đầu mới ở một khu phố mới.",
       },
@@ -383,6 +418,7 @@ export const flashcardDecks = [
         word: "Lay of the land",
         pronunciation: "/leɪ əv ðə lænd/",
         meaning: "hiểu biết về khu vực hoặc tình hình tổng thể",
+        note: "Thường dùng để chỉ việc làm quen cách một nơi hoặc tình hình cụ thể được tổ chức hoặc hoạt động.",
         example: "I'm still figuring out the lay of the land.",
         exampleTranslation:
           "Tôi vẫn đang tìm hiểu địa hình và cách mọi thứ hoạt động ở đây.",
@@ -392,6 +428,7 @@ export const flashcardDecks = [
         word: "Part of who I am",
         pronunciation: "/pɑːt əv huː aɪ æm/",
         meaning: "một phần của bản thân, gắn liền với bản sắc cá nhân",
+        note: "Dùng để diễn đạt ý niệm rằng một điều gì đó, như một nơi cư trú, đã trở nên quan trọng và gắn liền với bản sắc cá nhân.",
         example:
           "It's become more than just a place to live; it's a part of who I am.",
         exampleTranslation:
@@ -402,6 +439,7 @@ export const flashcardDecks = [
         word: "Grown along with",
         pronunciation: "/ɡrəʊn əˈlɒŋ wɪð/",
         meaning: "phát triển cùng với",
+        note: "Được dùng khi mô tả sự phát triển hoặc thay đổi cùng lúc với một thứ khác, chẳng hạn như một địa điểm hay một quá trình.",
         example:
           "I've seen the area change and grow, and it feels like I've grown along with it.",
         exampleTranslation:
@@ -412,6 +450,7 @@ export const flashcardDecks = [
         word: "Green space",
         pronunciation: "/ɡriːn speɪs/",
         meaning: "không gian xanh (công viên, vườn cây)",
+        note: "Thường được dùng để chỉ các khu vực có cảnh quan thiên nhiên như công viên hoặc khu vườn, đặc biệt quan trọng trong môi trường đô thị.",
         example: "A bit more green space or a park would be great.",
         exampleTranslation:
           "Sẽ tuyệt vời nếu có thêm không gian xanh hoặc công viên.",
@@ -421,6 +460,7 @@ export const flashcardDecks = [
         word: "Modern amenities",
         pronunciation: "/ˈmɒd.ən əˈmiː.nɪ.tiz/",
         meaning: "tiện nghi hiện đại",
+        note: "Dùng để mô tả các tiện ích hay đặc điểm của một nơi ở hoặc tòa nhà, phản ánh tiêu chuẩn hoặc lối sống hiện đại.",
         example: "Some more modern amenities would make life here even better.",
         exampleTranslation:
           "Thêm các tiện nghi hiện đại sẽ làm cuộc sống ở đây tốt hơn nữa.",
@@ -430,6 +470,7 @@ export const flashcardDecks = [
         word: "Cozy vibe",
         pronunciation: "/ˈkəʊ.zi vaɪb/",
         meaning: "không khí ấm cúng, dễ chịu",
+        note: "Thường dùng để mô tả cảm giác thoải mái và dễ chịu của một không gian sống, tạo cảm giác như ở nhà.",
         example:
           "It's got everything I need – a cozy vibe, friendly neighbors, and it's peaceful.",
         exampleTranslation:
@@ -440,6 +481,7 @@ export const flashcardDecks = [
         word: "Spoil the balance",
         pronunciation: "/spɔɪl ðə ˈbæl.əns/",
         meaning: "phá vỡ sự cân bằng hoàn hảo",
+        note: "Dùng để diễn đạt việc làm hỏng hay làm mất đi sự cân đối hoặc hài hòa của một tình huống hoặc môi trường nào đó.",
         example:
           "Changing anything might just spoil the perfect balance I've found here.",
         exampleTranslation:
@@ -450,6 +492,7 @@ export const flashcardDecks = [
         word: "Mix of ages",
         pronunciation: "/mɪks əv eɪdʒɪz/",
         meaning: "sự đa dạng về độ tuổi",
+        note: "Thường dùng để chỉ sự phong phú về độ tuổi của người dân trong một khu vực, từ trẻ em đến người già.",
         example:
           "It's a real mix of ages around here – young families, professionals, and retirees.",
         exampleTranslation:
@@ -460,6 +503,7 @@ export const flashcardDecks = [
         word: "Character",
         pronunciation: "/ˈkær.ək.tər/",
         meaning: "đặc trưng, bản sắc riêng (của nơi chốn)",
+        note: "Thường dùng để mô tả tính cách đặc biệt hoặc độc đáo của một người, địa điểm hoặc môi trường.",
         example:
           "The age diversity adds a lot of character to the neighborhood.",
         exampleTranslation:
@@ -470,6 +514,7 @@ export const flashcardDecks = [
         word: "Lively",
         pronunciation: "/ˈlaɪ.vli/",
         meaning: "sôi động, đầy sức sống",
+        note: "Dùng để chỉ một không khí hoặc môi trường đầy năng lượng và hoạt bát.",
         example:
           "It's mostly young professionals which makes for a pretty lively vibe.",
         exampleTranslation:
@@ -480,6 +525,7 @@ export const flashcardDecks = [
         word: "Age diversity",
         pronunciation: "/eɪdʒ daɪˈvɜː.sɪ.ti/",
         meaning: "sự đa dạng về độ tuổi trong cộng đồng",
+        note: "Thường dùng để chỉ sự phong phú và đa dạng về lứa tuổi trong một nhóm người hoặc cộng đồng.",
         example:
           "Sometimes I wish there was a bit more age diversity in my neighborhood.",
         exampleTranslation:
@@ -490,6 +536,7 @@ export const flashcardDecks = [
         word: "Boutiques",
         pronunciation: "/buːˈtiːks/",
         meaning: "cửa hàng thời trang nhỏ, độc đáo",
+        note: "Được dùng để chỉ các cửa hàng nhỏ chuyên bán hàng thời trang hoặc hàng độc đáo, thường có tính chất cao cấp hoặc độc quyền.",
         example:
           "We've got loads of shops around, from big supermarkets to cute little boutiques.",
         exampleTranslation:
@@ -500,6 +547,7 @@ export const flashcardDecks = [
         word: "Essentials",
         pronunciation: "/ɪˈsen.ʃəlz/",
         meaning: "hàng hóa thiết yếu",
+        note: "Dùng để chỉ những vật dụng hoặc hàng hóa cần thiết cho cuộc sống hàng ngày.",
         example:
           "There are a few essentials, but for anything special, I have to travel a bit.",
         exampleTranslation:
@@ -510,6 +558,7 @@ export const flashcardDecks = [
         word: "Trade-off",
         pronunciation: "/ˈtreɪd ɒf/",
         meaning: "sự đánh đổi, chấp nhận điểm bất lợi để có lợi ích khác",
+        note: "Thường được sử dụng khi mô tả việc phải lựa chọn giữa hai yếu tố đều có giá trị nhưng không tương thích, cần phải có sự thỏa hiệp.",
         example: "It's a trade-off for living in a quieter area.",
         exampleTranslation:
           "Đó là sự đánh đổi khi chọn sống ở khu vực yên tĩnh hơn.",

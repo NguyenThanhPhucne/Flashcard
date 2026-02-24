@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { RotateCcw, Languages, Heart } from "lucide-react";
+import { RotateCcw, Languages, Heart, Lightbulb } from "lucide-react";
 
 export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0 });
@@ -217,6 +217,36 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
             <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-bold mb-3 xs:mb-3.5 sm:mb-4 md:mb-5 lg:mb-6 leading-tight text-slate-900">
               {card.meaning}
             </h3>
+
+            {card.note && (
+              <div className="bg-gradient-to-r from-green-50/90 via-emerald-50/90 to-green-50/90 backdrop-blur-md p-3 xs:p-3.5 sm:p-4 rounded-lg xs:rounded-xl sm:rounded-xl border-2 border-green-300/60 shadow-lg mb-3 xs:mb-3.5 sm:mb-4 text-left relative overflow-hidden group/note">
+                {/* Subtle shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-green-200/30 via-transparent to-emerald-200/20 opacity-0 group-hover/note:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+
+                <div className="flex items-start gap-2 xs:gap-2.5 sm:gap-3 relative z-10">
+                  <div className="flex-shrink-0 mt-0.5">
+                    <div className="bg-gradient-to-br from-green-400 to-emerald-500 p-1.5 xs:p-2 rounded-lg shadow-md">
+                      <Lightbulb
+                        size={16}
+                        className="xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 text-white"
+                        strokeWidth={2.5}
+                        fill="currentColor"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-1.5 mb-1.5 xs:mb-2">
+                      <span className="text-[10px] xs:text-xs font-bold text-green-700 uppercase tracking-wide">
+                        💡 Lưu ý sử dụng
+                      </span>
+                    </div>
+                    <p className="text-[11px] xs:text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
+                      {card.note}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {card.example && (
               <div className="bg-white/40 backdrop-blur-md p-3 xs:p-3.5 sm:p-4 md:p-5 rounded-lg xs:rounded-xl sm:rounded-xl md:rounded-2xl mt-2 text-left border-2 border-white/60 shadow-xl">
