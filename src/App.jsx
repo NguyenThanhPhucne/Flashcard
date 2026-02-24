@@ -304,7 +304,7 @@ export default function App() {
     if (!activeDeck || !currentCard) return null;
 
     return (
-      <div className="w-full max-w-3xl mx-auto flex flex-col px-3 xs:px-4 sm:px-6">
+      <div className="w-full max-w-4xl mx-auto flex flex-col px-3 xs:px-4 sm:px-6">
         {/* Top Navigation Bar */}
         <div className="w-full flex justify-between items-center mb-4 xs:mb-6 sm:mb-8 gap-2 xs:gap-3 sm:gap-4">
           <button

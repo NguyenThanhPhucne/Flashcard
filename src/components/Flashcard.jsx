@@ -80,7 +80,7 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
   return (
     <div
       ref={cardRef}
-      className="w-full h-[420px] xs:h-[460px] sm:h-[500px] md:h-[540px] lg:h-[580px] xl:h-[620px] cursor-pointer group perspective touch-manipulation"
+      className="w-full h-[340px] xs:h-[360px] sm:h-[400px] md:h-[440px] cursor-pointer group perspective touch-manipulation"
       onClick={handleClick}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -101,7 +101,7 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
       >
         {/* MẶT TRƯỚC */}
         <div
-          className={`absolute inset-0 w-full h-full rounded-xl xs:rounded-2xl sm:rounded-2xl md:rounded-3xl border-2 xs:border-[2.5px] sm:border-[3px] flex flex-col items-center justify-center p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 text-center overflow-hidden transition-all duration-300 ${
+          className={`absolute inset-0 w-full h-full rounded-xl xs:rounded-2xl sm:rounded-2xl md:rounded-3xl border-2 xs:border-[2.5px] sm:border-[3px] flex flex-col items-center justify-center p-5 xs:p-6 sm:p-7 text-center overflow-hidden transition-all duration-300 ${
             isDarkMode
               ? "bg-gradient-to-br from-slate-800/95 via-slate-700/90 to-slate-800/95 border-sky-400/30 shadow-2xl shadow-sky-400/20 ring-1 ring-sky-300/10"
               : "bg-gradient-to-br from-white via-blue-50/25 via-pink-50/30 to-sky-50/20 border-blue-300/40 shadow-2xl shadow-blue-300/30 ring-1 ring-pink-200/20"
@@ -145,7 +145,7 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
             />
           </div>
           <h2
-            className={`text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight px-2 xs:px-3 sm:px-4 transition-colors z-10 relative ${
+            className={`text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight px-2 xs:px-3 sm:px-4 transition-colors z-10 relative break-words ${
               isDarkMode ? "text-white drop-shadow-lg" : "text-slate-900"
             }`}
           >
@@ -153,7 +153,7 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
           </h2>
           {card.pronunciation && (
             <p
-              className={`text-sm xs:text-base sm:text-lg md:text-xl mt-2 xs:mt-2.5 sm:mt-3 md:mt-4 font-light transition-colors z-10 relative ${
+              className={`text-base xs:text-lg sm:text-xl md:text-2xl mt-2 xs:mt-3 sm:mt-4 font-light transition-colors z-10 relative break-words ${
                 isDarkMode ? "text-sky-200" : "text-slate-600"
               }`}
             >
@@ -184,7 +184,7 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
 
         {/* MẶT SAU */}
         <div
-          className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-200/70 via-pink-200/65 to-sky-200/70 rounded-xl xs:rounded-2xl sm:rounded-2xl md:rounded-3xl shadow-2xl shadow-pink-300/40 border-2 xs:border-[2.5px] sm:border-[3px] border-pink-300/50 ring-1 ring-blue-200/30 flex flex-col items-center justify-center p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 text-center text-slate-800 overflow-hidden"
+          className="absolute inset-0 w-full h-full bg-gradient-to-br from-blue-200/70 via-pink-200/65 to-sky-200/70 rounded-xl xs:rounded-2xl sm:rounded-2xl md:rounded-3xl shadow-2xl shadow-pink-300/40 border-2 xs:border-[2.5px] sm:border-[3px] border-pink-300/50 ring-1 ring-blue-200/30 flex flex-col items-center justify-center p-5 xs:p-6 sm:p-7 text-center text-slate-800 overflow-hidden"
           style={{
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
@@ -213,34 +213,34 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
             </span>
           </div>
 
-          <div className="w-full max-w-md mx-auto flex flex-col justify-center h-full pt-10 xs:pt-11 sm:pt-12 md:pt-10 lg:pt-8 pb-3 xs:pb-3.5 sm:pb-4 px-2 xs:px-2.5 sm:px-3 z-10 relative overflow-y-auto">
-            <h3 className="text-lg xs:text-xl sm:text-2xl md:text-3xl font-bold mb-3 xs:mb-3.5 sm:mb-4 md:mb-5 lg:mb-6 leading-tight text-slate-900">
+          <div className="w-full max-w-2xl mx-auto flex flex-col justify-center h-full pt-10 xs:pt-11 sm:pt-12 pb-3 xs:pb-3.5 sm:pb-4 px-3 xs:px-4 sm:px-5 z-10 relative overflow-y-auto">
+            <h3 className="text-xl xs:text-2xl sm:text-3xl font-bold mb-3 xs:mb-4 sm:mb-5 leading-tight text-slate-900 break-words">
               {card.meaning}
             </h3>
 
             {card.note && (
-              <div className="bg-gradient-to-r from-green-50/90 via-emerald-50/90 to-green-50/90 backdrop-blur-md p-3 xs:p-3.5 sm:p-4 rounded-lg xs:rounded-xl sm:rounded-xl border-2 border-green-300/60 shadow-lg mb-3 xs:mb-3.5 sm:mb-4 text-left relative overflow-hidden group/note">
+              <div className="bg-gradient-to-r from-green-50/90 via-emerald-50/90 to-green-50/90 backdrop-blur-md p-2.5 xs:p-3 sm:p-3.5 rounded-lg xs:rounded-xl border-2 border-green-300/60 shadow-lg mb-3 xs:mb-3.5 sm:mb-4 text-left relative overflow-hidden group/note">
                 {/* Subtle shine effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-green-200/30 via-transparent to-emerald-200/20 opacity-0 group-hover/note:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
 
                 <div className="flex items-start gap-2 xs:gap-2.5 sm:gap-3 relative z-10">
-                  <div className="flex-shrink-0 mt-0.5">
+                  <div className="shrink-0 mt-px">
                     <div className="bg-gradient-to-br from-green-400 to-emerald-500 p-1.5 xs:p-2 rounded-lg shadow-md">
                       <Lightbulb
                         size={16}
-                        className="xs:w-4.5 xs:h-4.5 sm:w-5 sm:h-5 text-white"
+                        className="xs:w-[18px] xs:h-[18px] sm:w-5 sm:h-5 text-white"
                         strokeWidth={2.5}
                         fill="currentColor"
                       />
                     </div>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center gap-1.5 mb-1.5 xs:mb-2">
-                      <span className="text-[10px] xs:text-xs font-bold text-green-700 uppercase tracking-wide">
+                    <div className="flex items-center gap-1 xs:gap-1.5 mb-1 xs:mb-1.5 sm:mb-2">
+                      <span className="text-[11px] xs:text-xs sm:text-sm font-bold text-green-700 uppercase tracking-wide">
                         💡 Lưu ý sử dụng
                       </span>
                     </div>
-                    <p className="text-[11px] xs:text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
+                    <p className="text-xs xs:text-sm sm:text-base text-slate-800 leading-relaxed font-medium break-words">
                       {card.note}
                     </p>
                   </div>
@@ -249,12 +249,12 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
             )}
 
             {card.example && (
-              <div className="bg-white/40 backdrop-blur-md p-3 xs:p-3.5 sm:p-4 md:p-5 rounded-lg xs:rounded-xl sm:rounded-xl md:rounded-2xl mt-2 text-left border-2 border-white/60 shadow-xl">
-                <p className="text-slate-800 font-semibold italic mb-1.5 xs:mb-2 text-xs xs:text-sm sm:text-base leading-relaxed">
+              <div className="bg-white/40 backdrop-blur-md p-2.5 xs:p-3 sm:p-3.5 rounded-lg xs:rounded-xl mt-2 text-left border-2 border-white/60 shadow-xl">
+                <p className="text-slate-800 font-semibold italic mb-1.5 xs:mb-2 text-xs xs:text-sm sm:text-base leading-relaxed break-words">
                   "{card.example}"
                 </p>
                 {card.exampleTranslation && (
-                  <p className="text-[10px] xs:text-xs sm:text-sm text-slate-700 mt-1.5 xs:mt-2 font-medium">
+                  <p className="text-[11px] xs:text-xs sm:text-sm text-slate-700 mt-1.5 xs:mt-2 font-medium break-words">
                     ({card.exampleTranslation})
                   </p>
                 )}
