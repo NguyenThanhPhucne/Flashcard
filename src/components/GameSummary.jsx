@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Trophy,
   Flame,
@@ -25,59 +26,68 @@ export default function GameSummary({
 
   // Determine performance level
   let performance = {
-    title: "Cần cố gắng hơn!",
-    emoji: "😅",
-    color: "from-gray-400 to-gray-600",
+    title: "Cần cố gắng thêm",
+    icon: Target,
+    color: "from-slate-400 to-slate-600",
     bgGradient: isDarkMode
-      ? "from-gray-700/30 to-gray-800/30"
-      : "from-gray-100 to-gray-200",
-    message: "Đừng bỏ cuộc! Thử lại lần nữa nhé!",
+      ? "from-slate-700/30 to-slate-800/30"
+      : "from-slate-100 to-slate-200",
+    message: "Đừng nản lòng! Mỗi lần thử là một bước tiến.",
     rank: "Novice",
   };
 
   if (accuracy >= 90) {
     performance = {
-      title: "XUẤT SẮC!",
-      emoji: "🏆",
-      color: "from-yellow-400 via-orange-400 to-red-500",
+      title: "XUẤT SẮC",
+      icon: Trophy,
+      color: "from-amber-500 via-amber-600 to-orange-600",
       bgGradient: isDarkMode
-        ? "from-yellow-600/30 to-orange-600/30"
-        : "from-yellow-100 to-orange-100",
-      message: "Bạn đã làm chủ chủ đề này! Thật tuyệt vời!",
+        ? "from-amber-600/30 to-orange-600/30"
+        : "from-amber-100 to-orange-100",
+      message: "Kỹ năng của bạn thực sự ấn tượng!",
       rank: "Master",
     };
   } else if (accuracy >= 70) {
     performance = {
-      title: "Rất tốt!",
-      emoji: "🌟",
+      title: "Rất tốt",
+      icon: Star,
       color: "from-blue-400 via-cyan-400 to-teal-500",
       bgGradient: isDarkMode
         ? "from-blue-600/30 to-cyan-600/30"
         : "from-blue-100 to-cyan-100",
-      message: "Bạn đang tiến bộ đấy! Tiếp tục phấn đấu!",
+      message: "Bạn đang tiến bộ rõ rệt. Tiếp tục phát huy!",
       rank: "Expert",
     };
   } else if (accuracy >= 50) {
     performance = {
-      title: "Tốt lắm!",
-      emoji: "👍",
-      color: "from-green-400 via-emerald-400 to-teal-500",
+      title: "Khá tốt",
+      icon: Zap,
+      color: "from-emerald-400 via-emerald-500 to-teal-500",
       bgGradient: isDarkMode
-        ? "from-green-600/30 to-emerald-600/30"
-        : "from-green-100 to-emerald-100",
-      message: "Bạn đang trên đúng hướng! Cố lên!",
+        ? "from-emerald-600/30 to-teal-600/30"
+        : "from-emerald-100 to-teal-100",
+      message: "Bạn đang đi đúng hướng. Cố gắng thêm nhé!",
       rank: "Advanced",
     };
   }
 
   // Fun facts based on performance
   const getMotivationalMessage = () => {
-    if (maxCombo >= 10) return "🔥 Combo Master! Bạn thật tập trung!";
-    if (maxCombo >= 5) return "⚡ Streaking! Bạn đang làm rất tốt!";
-    if (accuracy === 100) return "💯 Perfect! Không có gì cản được bạn!";
+    if (maxCombo >= 10)
+      return {
+        icon: Flame,
+        text: "Combo Master! Khả năng tập trung xuất sắc.",
+      };
+    if (maxCombo >= 5)
+      return { icon: Zap, text: "Streak nhất quán! Bạn đang làm rất tốt." };
+    if (accuracy === 100)
+      return { icon: Trophy, text: "Hoàn hảo! Thành tích đáng ngưỡng mộ." };
     if (correctAnswers >= 8)
-      return "🎯 Sharpshooter! Độ chính xác đáng kinh ngạc!";
-    return "💪 Keep going! Bạn sẽ làm được!";
+      return { icon: Target, text: "Độ chính xác cao! Kỹ năng vững vàng." };
+    return {
+      icon: Award,
+      text: "Tiếp tục phát huy! Bạn đang trên đà tiến bộ.",
+    };
   };
 
   return (
@@ -129,20 +139,20 @@ export default function GameSummary({
           <div className="relative inline-block animate-float">
             {/* Glow effect */}
             <div
-              className={`absolute inset-0 blur-2xl opacity-60 bg-gradient-to-r ${performance.color}`}
+              className={`absolute inset-0 blur-2xl opacity-40 bg-gradient-to-r ${performance.color}`}
             />
 
             {/* Trophy */}
-            <div className="relative">
-              <Trophy
-                className={`w-24 h-24 mx-auto drop-shadow-2xl animate-tada bg-gradient-to-br ${performance.color} bg-clip-text text-transparent`}
-                style={{ filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.3))" }}
-              />
+            <div className="relative minecraft-shadow-lg p-5 bg-white/5 border-4 border-white/10">
+              {React.createElement(performance.icon, {
+                className: `w-20 h-20 mx-auto drop-shadow-2xl bg-gradient-to-br ${performance.color} bg-clip-text text-transparent`,
+                style: { filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.3))" },
+              })}
             </div>
 
             {/* Sparkles */}
             <Star
-              className="absolute -top-3 -right-3 w-6 h-6 text-yellow-400 animate-spin3d"
+              className="absolute -top-3 -right-3 w-6 h-6 text-amber-400 animate-spin3d"
               style={{ animationDuration: "3s" }}
             />
             <Zap
@@ -156,7 +166,7 @@ export default function GameSummary({
         <h1
           className={`text-4xl font-black mb-2 bg-gradient-to-r ${performance.color} bg-clip-text text-transparent animate-popIn`}
         >
-          {performance.emoji} {performance.title}
+          {performance.title}
         </h1>
         <p
           className={`text-lg mb-8 font-medium ${isDarkMode ? "text-slate-300" : "text-gray-600"}`}
@@ -170,20 +180,18 @@ export default function GameSummary({
           <div
             className={`minecraft-shadow-lg group p-5 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer border-4 ${
               isDarkMode
-                ? "bg-yellow-600 border-yellow-700"
-                : "bg-yellow-400 border-yellow-500"
+                ? "bg-gradient-to-br from-amber-600 to-amber-700 border-amber-800"
+                : "bg-gradient-to-br from-amber-400 to-amber-500 border-amber-600"
             }`}
           >
             <div>
-              <Star className="w-8 h-8 mx-auto mb-2 text-yellow-200 drop-shadow-lg group-hover:animate-spin3d" />
+              <Star className="w-8 h-8 mx-auto mb-2 text-amber-100 drop-shadow-lg group-hover:animate-spin3d" />
               <p
-                className={`text-3xl font-black mb-1 animate-countUp ${
-                  isDarkMode ? "text-yellow-200" : "text-yellow-50"
-                }`}
+                className={`text-3xl font-black mb-1 animate-countUp text-white`}
               >
                 {score}
               </p>
-              <p className="text-sm font-bold text-white/80">Tổng điểm</p>
+              <p className="text-sm font-bold text-white/90">Tổng điểm</p>
             </div>
           </div>
 
@@ -191,20 +199,18 @@ export default function GameSummary({
           <div
             className={`minecraft-shadow-lg group p-5 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer border-4 ${
               isDarkMode
-                ? "bg-blue-600 border-blue-700"
-                : "bg-blue-500 border-blue-600"
+                ? "bg-gradient-to-br from-blue-600 to-blue-700 border-blue-800"
+                : "bg-gradient-to-br from-blue-500 to-blue-600 border-blue-700"
             }`}
           >
             <div>
-              <Target className="w-8 h-8 mx-auto mb-2 text-blue-200 drop-shadow-lg group-hover:animate-spin3d" />
+              <Target className="w-8 h-8 mx-auto mb-2 text-blue-100 drop-shadow-lg group-hover:animate-spin3d" />
               <p
-                className={`text-3xl font-black mb-1 animate-countUp ${
-                  isDarkMode ? "text-blue-200" : "text-blue-50"
-                }`}
+                className={`text-3xl font-black mb-1 animate-countUp text-white`}
               >
                 {accuracy}%
               </p>
-              <p className="text-sm font-bold text-white/80">Độ chính xác</p>
+              <p className="text-sm font-bold text-white/90">Độ chính xác</p>
             </div>
           </div>
 
@@ -212,20 +218,18 @@ export default function GameSummary({
           <div
             className={`minecraft-shadow-lg group p-5 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer border-4 ${
               isDarkMode
-                ? "bg-emerald-600 border-emerald-700"
-                : "bg-emerald-500 border-emerald-600"
+                ? "bg-gradient-to-br from-emerald-600 to-emerald-700 border-emerald-800"
+                : "bg-gradient-to-br from-emerald-500 to-emerald-600 border-emerald-700"
             }`}
           >
             <div>
-              <Trophy className="w-8 h-8 mx-auto mb-2 text-emerald-200 drop-shadow-lg group-hover:animate-tada" />
+              <Trophy className="w-8 h-8 mx-auto mb-2 text-emerald-100 drop-shadow-lg group-hover:animate-tada" />
               <p
-                className={`text-2xl font-black mb-1 animate-countUp ${
-                  isDarkMode ? "text-emerald-200" : "text-emerald-50"
-                }`}
+                className={`text-2xl font-black mb-1 animate-countUp text-white`}
               >
                 {correctAnswers}/{totalQuestions}
               </p>
-              <p className="text-sm font-bold text-white/80">Đúng/Tổng</p>
+              <p className="text-sm font-bold text-white/90">Đúng/Tổng</p>
             </div>
           </div>
 
@@ -234,32 +238,30 @@ export default function GameSummary({
             className={`minecraft-shadow-lg group p-5 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer border-4 relative overflow-hidden ${
               maxCombo >= 5
                 ? isDarkMode
-                  ? "bg-orange-600 border-orange-700 animate-glow"
-                  : "bg-orange-500 border-orange-600 animate-glow"
+                  ? "bg-gradient-to-br from-rose-600 to-rose-700 border-rose-800"
+                  : "bg-gradient-to-br from-rose-500 to-rose-600 border-rose-700"
                 : isDarkMode
-                  ? "bg-orange-600 border-orange-700"
-                  : "bg-orange-500 border-orange-600"
+                  ? "bg-gradient-to-br from-rose-600 to-rose-700 border-rose-800"
+                  : "bg-gradient-to-br from-rose-500 to-rose-600 border-rose-700"
             }`}
           >
             <div>
               <Flame
                 className={`w-8 h-8 mx-auto mb-2 drop-shadow-lg ${
                   maxCombo >= 5
-                    ? "text-yellow-300 animate-wiggle"
-                    : "text-orange-200 group-hover:animate-wiggle"
+                    ? "text-amber-200 animate-wiggle"
+                    : "text-rose-100 group-hover:animate-wiggle"
                 }`}
               />
               <p
-                className={`text-5xl font-black mb-2 animate-countUp ${
-                  isDarkMode ? "text-yellow-200" : "text-yellow-50"
-                }`}
+                className={`text-5xl font-black mb-2 animate-countUp text-white`}
               >
                 {maxCombo}x
               </p>
-              <p className="text-sm font-bold text-white/80">Combo cao nhất</p>
+              <p className="text-sm font-bold text-white/90">Combo cao nhất</p>
             </div>
             {maxCombo >= 5 && (
-              <Zap className="absolute top-2 right-2 w-5 h-5 text-yellow-300 animate-pulse" />
+              <Zap className="absolute top-2 right-2 w-5 h-5 text-amber-200 animate-pulse" />
             )}
           </div>
         </div>
@@ -268,15 +270,17 @@ export default function GameSummary({
         <div
           className={`minecraft-shadow p-5 mb-8 border-4 animate-slideUp ${
             isDarkMode
-              ? `bg-gradient-to-r ${performance.bgGradient} border-purple-700`
-              : `bg-gradient-to-r ${performance.bgGradient} border-purple-400`
+              ? `bg-gradient-to-r ${performance.bgGradient} border-indigo-700`
+              : `bg-gradient-to-r ${performance.bgGradient} border-indigo-400`
           }`}
         >
           <div className="flex items-center justify-center gap-3">
-            <Award
-              className={`w-6 h-6 bg-gradient-to-r ${performance.color} bg-clip-text text-transparent`}
-            />
-            <p className="text-lg font-black">{getMotivationalMessage()}</p>
+            {React.createElement(getMotivationalMessage().icon, {
+              className: `w-6 h-6 bg-gradient-to-r ${performance.color} bg-clip-text text-transparent`,
+            })}
+            <p className="text-lg font-black">
+              {getMotivationalMessage().text}
+            </p>
           </div>
         </div>
 
@@ -313,12 +317,24 @@ export default function GameSummary({
             isDarkMode ? "border-slate-700/50" : "border-gray-200/50"
           }`}
         >
-          <p
-            className={`text-base font-medium ${isDarkMode ? "text-slate-400" : "text-gray-600"}`}
-          >
-            💡 <span className="font-bold">Pro Tip:</span> Chơi mỗi ngày 10-15
-            phút để ghi nhớ từ vựng hiệu quả gấp 3 lần!
-          </p>
+          <div className="flex items-start gap-3">
+            <div className="minecraft-shadow p-2 bg-blue-500/20 border-2 border-blue-500/40">
+              <Zap className="w-5 h-5 text-blue-400" />
+            </div>
+            <div>
+              <p
+                className={`text-sm font-bold mb-1 ${isDarkMode ? "text-slate-300" : "text-gray-700"}`}
+              >
+                Mẹo học tập
+              </p>
+              <p
+                className={`text-base font-medium ${isDarkMode ? "text-slate-400" : "text-gray-600"}`}
+              >
+                Luyện tập 10-15 phút mỗi ngày giúp ghi nhớ từ vựng hiệu quả và
+                bền vững hơn.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -326,31 +342,35 @@ export default function GameSummary({
       {accuracy === 100 && (
         <div className="mt-6 relative">
           <div
-            className={`p-8 rounded-3xl backdrop-blur-xl text-center border-2 animate-bounceIn ${
+            className={`minecraft-shadow-lg p-8 text-center border-4 animate-bounceIn ${
               isDarkMode
-                ? "bg-gradient-to-r from-yellow-600/30 to-orange-600/30 border-yellow-400/60 shadow-2xl shadow-yellow-500/50"
-                : "bg-gradient-to-r from-yellow-100 to-orange-100 border-yellow-400/60 shadow-2xl shadow-yellow-400/50"
+                ? "bg-gradient-to-r from-amber-600/30 to-orange-600/30 border-amber-700"
+                : "bg-gradient-to-r from-amber-100 to-orange-100 border-amber-500"
             }`}
           >
             <div className="flex items-center justify-center gap-4 mb-4">
-              <Trophy className="w-12 h-12 text-yellow-500 animate-spin3d" />
-              <p className="text-3xl font-black bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
-                🎉 Thành tích mở khóa! 🎉
+              <div className="minecraft-shadow p-3 bg-amber-500/30 border-3 border-amber-600">
+                <Trophy className="w-10 h-10 text-amber-400 animate-spin3d" />
+              </div>
+              <p className="text-3xl font-black bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
+                Thành tích đặc biệt!
               </p>
-              <Trophy
-                className="w-12 h-12 text-yellow-500 animate-spin3d"
-                style={{ animationDelay: "0.5s" }}
-              />
+              <div className="minecraft-shadow p-3 bg-amber-500/30 border-3 border-amber-600">
+                <Trophy
+                  className="w-10 h-10 text-amber-400 animate-spin3d"
+                  style={{ animationDelay: "0.5s" }}
+                />
+              </div>
             </div>
             <p
-              className={`text-xl font-bold ${isDarkMode ? "text-yellow-300" : "text-yellow-700"}`}
+              className={`text-xl font-bold mb-2 ${isDarkMode ? "text-amber-300" : "text-amber-700"}`}
             >
               Perfect Score Master
             </p>
             <p
-              className={`text-base mt-2 ${isDarkMode ? "text-slate-300" : "text-gray-700"}`}
+              className={`text-base ${isDarkMode ? "text-slate-300" : "text-gray-700"}`}
             >
-              Hoàn thành quiz với 100% chính xác! Bạn là thiên tài!
+              Hoàn thành với 100% độ chính xác. Xuất sắc!
             </p>
           </div>
         </div>

@@ -4192,4 +4192,1879 @@ export const flashcardDecks = [
       },
     ],
   },
+  // ==========================================
+  // W1 - Task 1: Temporary Migrant Workers (Table)
+  // ==========================================
+  {
+    id: "wr_w1_task1_migrant_workers",
+    skill: "Writing",
+    volume: "9",
+    topic: "Migration / Society",
+    part: "Task 1 - Temporary Migrant Workers Table",
+    cards: [
+      {
+        id: 31,
+        word: "The largest counts",
+        pronunciation: "/ðə ˈlɑːdʒɪst kaʊnts/",
+        meaning: "Số lượng lớn nhất trong một nhóm đã được xác định rõ",
+        note: "Cụm danh từ dùng 'counts' (số đếm) thay cho 'numbers' hoặc 'figures' để tránh lặp từ trong Task 1 dạng Table. 'By far' thường đi kèm để nhấn mạnh sự chênh lệch lớn: 'the largest counts by far'.",
+        example:
+          "Among the different species, sparrows had the largest counts in the bird survey.",
+        exampleTranslation:
+          "Trong số các loài khác nhau, chim sẻ có số lượng lớn nhất trong cuộc khảo sát về chim.",
+      },
+      {
+        id: 32,
+        word: "Relative to",
+        pronunciation: "/ˈrɛlətɪv tuː/",
+        meaning: "So với, tương quan đến cái gì đó",
+        note: "Cụm giới từ trang trọng dùng thay cho 'compared to' hoặc 'in comparison with'. Thường xuất hiện trong Task 1 khi so sánh số liệu tương đối (per capita, per 1,000 people) với số liệu tuyệt đối. Ví dụ: 'low relative to the population'.",
+        example:
+          "The cost of living in the city is high relative to rural areas.",
+        exampleTranslation:
+          "Chi phí sinh hoạt trong thành phố cao so với khu vực nông thôn.",
+      },
+      {
+        id: 33,
+        word: "Similar rises",
+        pronunciation: "/ˈsɪmɪlə raɪzɪz/",
+        meaning: "Sự tăng trưởng tương tự nhau",
+        note: "Cụm danh từ dùng để mô tả xu hướng tăng giống nhau ở nhiều đối tượng. Đây là cách diễn đạt học thuật hơn 'the same increase'. Thường đi với cấu trúc 'similar rises could be seen in...' trong Task 1 dạng Table hoặc Bar chart.",
+        example:
+          "The two companies experienced similar rises in their stock prices after the announcement.",
+        exampleTranslation:
+          "Hai công ty đã trải qua sự tăng giá cổ phiếu tương tự sau thông báo.",
+      },
+      {
+        id: 34,
+        word: "Significant proportional dependence",
+        pronunciation: "/sɪɡˈnɪfɪkənt prəˈpɔːʃənl dɪˈpɛndəns/",
+        meaning: "Sự phụ thuộc tỷ lệ đáng kể",
+        note: "Cụm danh từ chuyên ngành, rất ấn tượng trong Task 1 khi phân tích số liệu per capita hoặc tỷ lệ phần trăm. 'Proportional' nhấn mạnh sự so sánh theo tỷ lệ chứ không theo số tuyệt đối — thể hiện tư duy phân tích số liệu sâu.",
+        example:
+          "There is a significant proportional dependence of energy consumption on population size.",
+        exampleTranslation:
+          "Có một sự phụ thuộc tỷ lệ đáng kể giữa việc tiêu thụ năng lượng vào kích thước dân số.",
+      },
+      {
+        id: 35,
+        word: "A close similarity",
+        pronunciation: "/ə kləʊs sɪˈmɪlærɪti/",
+        meaning: "Sự tương đồng chặt chẽ, mức độ giống nhau cao",
+        note: "Cụm danh từ dùng để chỉ ra sự giống nhau đáng kể giữa hai số liệu. Thường đi với cấu trúc bị động: 'a close similarity was observed in...'. Đây là cách diễn đạt trang trọng hơn 'the figures were similar'.",
+        example:
+          "There is a close similarity between the twins' interests and hobbies.",
+        exampleTranslation:
+          "Có một sự tương đồng chặt chẽ giữa sở thích và thú vui của hai anh em sinh đôi.",
+      },
+      {
+        id: 36,
+        word: "Had climbed to",
+        pronunciation: "/hæd klaɪmd tuː/",
+        meaning: "Đã tăng lên đến (mức cụ thể)",
+        note: "Cụm động từ ở thì quá khứ hoàn thành, dùng 'climb' theo nghĩa bóng để chỉ sự tăng lên. Thể hiện văn phong học thuật hơn 'increased to' hay 'rose to'. Các động từ tương tự: surged to, jumped to, soared to.",
+        example:
+          "By 2006, the number of workers in the United States had climbed to 678,000.",
+        exampleTranslation:
+          "Đến năm 2006, số lượng công nhân ở Hoa Kỳ đã tăng lên đến 678.000.",
+      },
+      {
+        id: 37,
+        word: "Nearly double that of",
+        pronunciation: "/ˈnɪəli ˈdʌbl ðæt əv/",
+        meaning: "Gần gấp đôi so với",
+        note: "Cụm so sánh quan trọng trong Task 1, dùng để thể hiện tương quan bội số giữa hai số liệu. Tương tự: 'roughly twice as high as', 'approximately double'. Đây là cách diễn đạt tự nhiên và học thuật khi chênh lệch xấp xỉ 2 lần.",
+        example:
+          "New Zealand's ratio was nearly double that of Australia, standing at 21.1 per 1,000 people.",
+        exampleTranslation:
+          "Tỷ lệ của New Zealand gần gấp đôi so với Úc, ở mức 21,1 trên 1.000 người.",
+      },
+      {
+        id: 38,
+        word: "In that order",
+        pronunciation: "/ɪn ðæt ˈɔːdə/",
+        meaning: "Theo thứ tự đó, theo thứ tự đã nêu",
+        note: "Cụm từ dùng thay thế cho 'respectively' để chỉ các số liệu tương ứng theo thứ tự đã liệt kê. Thường đặt cuối câu sau khi đã nêu nhiều số liệu cho nhiều đối tượng. Ví dụ: 'at 2.3 and 4.4, in that order'.",
+        example:
+          "The figures for the US and UK were 2.3 and 4.4, in that order.",
+        exampleTranslation:
+          "Các số liệu của Hoa Kỳ và Vương quốc Anh lần lượt là 2,3 và 4,4, theo thứ tự đó.",
+      },
+      {
+        id: 39,
+        word: "The lowest among all nations listed",
+        pronunciation: "/ðə ˈləʊɪst əˈmʌŋ ɔːl ˈneɪʃənz ˈlɪstɪd/",
+        meaning: "Thấp nhất trong tất cả các quốc gia được liệt kê",
+        note: "Cụm so sánh nhất dùng trong Task 1 để xác định vị trí đặc biệt của một số liệu. Từ 'listed' (được liệt kê) thể hiện sự gắn kết với biểu đồ, phù hợp hơn với văn phong Task 1 so với 'the lowest of all'.",
+        example:
+          "There were only 65,000 temporary migrant workers in New Zealand, the lowest among all nations listed.",
+        exampleTranslation:
+          "Chỉ có 65.000 lao động nhập cư tạm thời ở New Zealand, thấp nhất trong tất cả các quốc gia được liệt kê.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W1 - Task 2: Animal Extinction (Sample 1 - Disagree)
+  // ==========================================
+  {
+    id: "wr_w1_task2_extinction_disagree",
+    skill: "Writing",
+    volume: "9",
+    topic: "Environment / Animal",
+    part: "Task 2 - Animal Extinction (Disagree)",
+    cards: [
+      {
+        id: 40,
+        word: "Inevitable process",
+        pronunciation: "/ɪnˈɛvɪtəbl ˈprəʊsɛs/",
+        meaning: "Quá trình không thể tránh khỏi",
+        note: "Cụm danh từ dùng 'inevitable' (tất yếu, không thể tránh khỏi) để mô tả những sự kiện hoặc quy trình xảy ra chắc chắn. Thường xuất hiện trong mở bài để thừa nhận quan điểm đối lập trước khi phản bác. Đồng nghĩa: unavoidable process, inescapable occurrence.",
+        example: "Aging is an inevitable process for all living organisms.",
+        exampleTranslation:
+          "Lão hóa là quá trình không thể tránh khỏi đối với mọi sinh vật.",
+      },
+      {
+        id: 41,
+        word: "Ecological health",
+        pronunciation: "/ˌiːkəˈlɒdʒɪkəl hɛlθ/",
+        meaning: "Sức khỏe sinh thái, trạng thái cân bằng của hệ sinh thái",
+        note: "Cụm danh từ chỉ trạng thái khỏe mạnh và cân bằng của một hệ sinh thái. Phổ biến trong các bài Task 2 về môi trường, động vật, hoặc bảo tồn. Cấu trúc hay: 'sustaining ecological health' (duy trì sức khỏe sinh thái).",
+        example:
+          "Protecting the ecological health of the ocean is essential for marine life.",
+        exampleTranslation:
+          "Bảo vệ sức khỏe sinh thái của đại dương là điều cần thiết cho sinh vật biển.",
+      },
+      {
+        id: 42,
+        word: "A ripple effect",
+        pronunciation: "/ə ˈrɪpl ɪˈfɛkt/",
+        meaning: "Hiệu ứng lan tỏa, hiệu ứng dây chuyền",
+        note: "Cụm danh từ ẩn dụ quan trọng, mô tả tình huống một sự kiện tạo ra các hệ quả lan rộng như sóng gợn trên mặt nước. Cấu trúc hay: 'trigger a ripple effect' (kích hoạt hiệu ứng lan tỏa). Dùng trong nhiều chủ đề: kinh tế, môi trường, xã hội.",
+        example:
+          "The financial crisis in one country had a ripple effect on the global economy.",
+        exampleTranslation:
+          "Cuộc khủng hoảng tài chính ở một quốc gia đã tạo ra hiệu ứng lan tỏa đối với nền kinh tế toàn cầu.",
+      },
+      {
+        id: 43,
+        word: "Interconnectedness",
+        pronunciation: "/ˌɪntəkəˈnɛktɪdnəs/",
+        meaning: "Sự liên kết, trạng thái được kết nối với nhau",
+        note: "Danh từ trừu tượng (abstract noun) chỉ bản chất kết nối qua lại giữa các yếu tố trong một hệ thống. Rất ấn tượng trong bài về hệ sinh thái, toàn cầu hóa, hoặc kinh tế. Từ dẫn vào hay: 'This interconnectedness underscores...' (Sự liên kết này nhấn mạnh...).",
+        example:
+          "The pandemic highlighted the interconnectedness of global economies.",
+        exampleTranslation:
+          "Đại dịch làm nổi bật sự liên kết giữa các nền kinh tế toàn cầu.",
+      },
+      {
+        id: 44,
+        word: "Ecological balance and stability",
+        pronunciation: "/ˌiːkəˈlɒdʒɪkəl ˈbæləns ænd stəˈbɪlɪti/",
+        meaning: "Sự cân bằng và ổn định sinh thái",
+        note: "Cụm danh từ kép dùng để chỉ trạng thái lý tưởng của một hệ sinh thái. Hai từ 'balance' và 'stability' bổ sung ý nghĩa cho nhau: cân bằng (tỷ lệ các loài hài hòa) và ổn định (bền vững theo thời gian). Thường xuất hiện ở cuối đoạn thân bài như một 'link sentence'.",
+        example:
+          "Conservation programs aim to maintain ecological balance and stability in the forest.",
+        exampleTranslation:
+          "Các chương trình bảo tồn hướng tới duy trì sự cân bằng và ổn định sinh thái trong rừng.",
+      },
+      {
+        id: 45,
+        word: "Largely attributable to",
+        pronunciation: "/ˈlɑːdʒli əˈtrɪbjʊtəbl tuː/",
+        meaning: "Phần lớn là do, chủ yếu được quy cho",
+        note: "Cụm từ trang trọng và học thuật dùng để chỉ nguyên nhân chính của một sự kiện. Quan trọng trong bài viết vì giúp thể hiện lập luận nhân-quả một cách tinh tế. Cấu trúc: 'S + is/are largely attributable to + N/V-ing'. Đồng nghĩa: mainly due to, primarily caused by.",
+        example:
+          "The success of the project is largely attributable to the team's hard work.",
+        exampleTranslation:
+          "Thành công của dự án phần lớn do sự làm việc chăm chỉ của nhóm.",
+      },
+      {
+        id: 46,
+        word: "Dwindling numbers",
+        pronunciation: "/ˈdwɪndlɪŋ ˈnʌmbəz/",
+        meaning: "Số lượng ngày càng giảm sút",
+        note: "'Dwindling' là tính từ/phân từ hiện tại của 'dwindle' (giảm dần, teo nhỏ dần), mạnh hơn 'decreasing' và mang sắc thái lo ngại hơn. Thường dùng khi nói về quần thể sinh vật đang suy giảm. Cặp từ quan trọng: dwindling population, dwindling resources.",
+        example:
+          "The dwindling numbers of the tiger population in the wild are a cause for concern.",
+        exampleTranslation:
+          "Số lượng giảm sút của cá thể hổ trong tự nhiên là một nguyên nhân đáng lo ngại.",
+      },
+      {
+        id: 47,
+        word: "Human encroachment",
+        pronunciation: "/ˈhjuːmən ɪnˈkrəʊtʃmənt/",
+        meaning: "Sự xâm lấn của con người (vào khu vực tự nhiên)",
+        note: "'Encroachment' (danh từ của 'encroach') nghĩa là xâm phạm từ từ vào không gian của người/vật khác. Từ này mang hàm ý tiêu cực và mô tả chính xác việc con người dần lấn chiếm môi trường tự nhiên. Thường đi với: human encroachment into/on forests/rainforests/habitats.",
+        example:
+          "Human encroachment into rainforests has threatened numerous species with extinction.",
+        exampleTranslation:
+          "Sự xâm lấn của con người vào rừng mưa nhiệt đới đã đe dọa nhiều loài động vật.",
+      },
+      {
+        id: 48,
+        word: "Human responsibility and intervention",
+        pronunciation: "/ˈhjuːmən rɪˌspɒnsɪˈbɪlɪti ænd ˌɪntəˈvɛnʃən/",
+        meaning: "Trách nhiệm và sự can thiệp của con người",
+        note: "Cụm danh từ kép thường xuất hiện cùng nhau để nhấn mạnh cả nghĩa vụ đạo đức ('responsibility') lẫn hành động thực tế ('intervention'). Đây là cách diễn đạt mạnh mẽ trong bài về môi trường, động vật, hoặc biến đổi khí hậu.",
+        example:
+          "Human responsibility and intervention are crucial in combating climate change.",
+        exampleTranslation:
+          "Trách nhiệm và sự can thiệp của con người là rất quan trọng trong việc chống lại biến đổi khí hậu.",
+      },
+      {
+        id: 49,
+        word: "Conservation efforts",
+        pronunciation: "/ˌkɒnsəˈveɪʃən ˈɛfəts/",
+        meaning: "Nỗ lực bảo tồn",
+        note: "Cụm danh từ cực kỳ phổ biến trong các bài Task 2 về môi trường. Dùng trong nhiều ngữ cảnh: 'engage in conservation efforts', 'global conservation efforts', 'aligning conservation efforts with sustainable development goals'. Đồng nghĩa: preservation initiatives, wildlife protection measures.",
+        example:
+          "Global conservation efforts are increasing to save endangered species from extinction.",
+        exampleTranslation:
+          "Nỗ lực bảo tồn toàn cầu đang gia tăng để cứu các loài có nguy cơ tuyệt chủng.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W1 - Task 2: Animal Extinction (Sample 2 - Partly Agree)
+  // ==========================================
+  {
+    id: "wr_w1_task2_extinction_partly",
+    skill: "Writing",
+    volume: "9",
+    topic: "Environment / Animal",
+    part: "Task 2 - Animal Extinction (Partly Agree)",
+    cards: [
+      {
+        id: 50,
+        word: "A natural phenomenon",
+        pronunciation: "/ə ˈnætʃərəl fɪˈnɒmɪnən/",
+        meaning: "Hiện tượng tự nhiên",
+        note: "Cụm danh từ trang trọng, 'phenomenon' (số ít) / 'phenomena' (số nhiều) là từ gốc Hy Lạp chỉ sự kiện hoặc sự vật có thể quan sát được. Dùng trong mở bài để xác nhận một sự thật trước khi đưa ra lập luận phức tạp hơn. Đồng nghĩa: a natural occurrence, a natural event.",
+        example:
+          "Eclipses are considered a natural phenomenon that have fascinated humans for centuries.",
+        exampleTranslation:
+          "Nhật thực và nguyệt thực được coi là hiện tượng tự nhiên đã làm say mê con người hàng thế kỷ.",
+      },
+      {
+        id: 51,
+        word: "Evolutionary processes",
+        pronunciation: "/ˌiːvəˈluːʃənəri ˈprəʊsɛsɪz/",
+        meaning: "Quá trình tiến hóa",
+        note: "Cụm danh từ số nhiều chỉ các chuỗi thay đổi tự nhiên dẫn đến sự xuất hiện của các loài mới. Từ 'evolutionary' (thuộc về tiến hóa) là tính từ quan trọng trong các bài về động vật, khoa học, hoặc lịch sử tự nhiên. Đi kèm với: natural selection (chọn lọc tự nhiên).",
+        example:
+          "The evolutionary processes have led to the rich diversity of species we see on Earth today.",
+        exampleTranslation:
+          "Quá trình tiến hóa đã dẫn đến sự đa dạng và phong phú về các loài mà chúng ta thấy trên Trái Đất ngày nay.",
+      },
+      {
+        id: 52,
+        word: "Natural cycle of life and extinction",
+        pronunciation: "/ˈnætʃərəl ˈsaɪkl əv laɪf ænd ɪkˈstɪŋkʃən/",
+        meaning: "Chu kỳ tự nhiên của sự sống và tuyệt chủng",
+        note: "Cụm danh từ dài nhưng giàu ý nghĩa, thể hiện quan điểm rằng tuyệt chủng là một phần bình thường trong vòng đời của Trái Đất. Dùng trong bài 'partly agree' để thừa nhận sự tuyệt chủng tự nhiên là hợp lý trước khi lập luận về tuyệt chủng do con người.",
+        example:
+          "The natural cycle of life and extinction has been a constant part of Earth's history.",
+        exampleTranslation:
+          "Chu kỳ tự nhiên của sự sống và tuyệt chủng đã là một phần không thể thiếu trong lịch sử Trái Đất.",
+      },
+      {
+        id: 53,
+        word: "Prehistoric predators",
+        pronunciation: "/ˌpriːhɪˈstɒrɪk ˈprɛdətəz/",
+        meaning: "Động vật săn mồi tiền sử",
+        note: "'Prehistoric' (tiền sử) chỉ thời kỳ trước khi có lịch sử được ghi chép. 'Predator' (động vật săn mồi) là từ quan trọng trong bài về hệ sinh thái và chuỗi thức ăn. Cụm từ này thường dùng như dẫn chứng lịch sử khi lập luận về tuyệt chủng tự nhiên.",
+        example:
+          "The extinction of certain prehistoric predators allowed for the flourishing of other species.",
+        exampleTranslation:
+          "Sự tuyệt chủng của một số động vật săn mồi tiền sử đã tạo điều kiện cho các loài khác phát triển phong phú.",
+      },
+      {
+        id: 54,
+        word: "Human-induced factors",
+        pronunciation: "/ˈhjuːmən ɪnˈdjuːst ˈfæktəz/",
+        meaning: "Các yếu tố do con người gây ra",
+        note: "'Human-induced' là tính từ ghép (dấu gạch nối) nghĩa là 'được gây ra bởi con người'. Đây là cụm từ học thuật quan trọng, trang trọng hơn 'caused by humans'. Thường đi kèm: human-induced climate change, human-induced habitat loss.",
+        example:
+          "Climate change is largely driven by human-induced factors such as fossil fuel combustion and deforestation.",
+        exampleTranslation:
+          "Biến đổi khí hậu phần lớn được thúc đẩy bởi các yếu tố do con người gây ra như đốt cháy nhiên liệu hóa thạch và phá rừng.",
+      },
+      {
+        id: 55,
+        word: "Habitat destruction",
+        pronunciation: "/ˈhæbɪtæt dɪˈstrʌkʃən/",
+        meaning: "Sự phá hủy môi trường sống",
+        note: "Cụm danh từ cực kỳ phổ biến trong bài về môi trường và động vật. 'Habitat' là môi trường sống tự nhiên của một loài. Đây là một trong những nguyên nhân hàng đầu gây tuyệt chủng. Các cụm liên quan: habitat loss (mất môi trường sống), habitat degradation (suy thoái môi trường sống).",
+        example:
+          "Habitat destruction due to urban expansion is a major threat to wildlife conservation.",
+        exampleTranslation:
+          "Sự phá hủy môi trường sống do sự mở rộng đô thị là một mối đe dọa lớn đối với bảo tồn động vật hoang dã.",
+      },
+      {
+        id: 56,
+        word: "On the brink of extinction",
+        pronunciation: "/ɒn ðə brɪŋk əv ɪkˈstɪŋkʃən/",
+        meaning: "Trên bờ vực của sự tuyệt chủng",
+        note: "'Brink' nghĩa là bờ vực, cạnh của một vực thẳm hoặc điểm nguy hiểm. 'On the brink of' là thành ngữ quen dùng để diễn tả trạng thái sắp xảy ra điều gì đó nguy hiểm. Tương đương: 'on the verge of extinction', 'critically endangered'.",
+        example:
+          "Many species, such as the Amur leopard, are on the brink of extinction due to human activities.",
+        exampleTranslation:
+          "Nhiều loài, như báo Amur, đang trên bờ vực tuyệt chủng do hoạt động của con người.",
+      },
+      {
+        id: 57,
+        word: "Sustainable development goals",
+        pronunciation: "/səˈsteɪnəbl dɪˈvɛləpmənt ɡəʊlz/",
+        meaning: "Các mục tiêu phát triển bền vững",
+        note: "Cụm danh từ chỉ 17 mục tiêu của Liên Hợp Quốc (SDGs) nhằm đạt được tương lai bền vững và công bằng cho toàn thế giới. Viết tắt là SDGs, thường được viết hoa. Dùng trong nhiều chủ đề Task 2: môi trường, giáo dục, y tế, kinh tế.",
+        example:
+          "The Sustainable Development Goals include targets for environmental protection, poverty reduction, and education improvement.",
+        exampleTranslation:
+          "Các Mục tiêu Phát triển Bền vững bao gồm các mục tiêu về bảo vệ môi trường, giảm nghèo và cải thiện giáo dục.",
+      },
+      {
+        id: 58,
+        word: "Species loss",
+        pronunciation: "/ˈspiːʃiːz lɒs/",
+        meaning: "Sự biến mất của các loài, sự mất đi đa dạng sinh học",
+        note: "Cụm danh từ ngắn gọn và học thuật dùng thay cho 'extinction of species'. 'Species' vừa là danh từ số ít vừa số nhiều (không thêm 's'). Thường xuất hiện trong kết luận để tóm tắt vấn đề chính. Cụm hay: 'prevent species loss', 'accelerating species loss'.",
+        example:
+          "Species loss in tropical rainforests is a critical issue, as these ecosystems are home to a large number of unique organisms.",
+        exampleTranslation:
+          "Sự biến mất của các loài trong các khu rừng mưa nhiệt đới là một vấn đề quan trọng, vì những hệ sinh thái này là nơi sinh sống của một số lượng lớn các sinh vật độc đáo.",
+      },
+      {
+        id: 59,
+        word: "An ethical imperative",
+        pronunciation: "/ən ˈɛθɪkəl ɪmˈpɛrətɪv/",
+        meaning: "Mệnh lệnh đạo đức, nghĩa vụ đạo đức bắt buộc",
+        note: "'Imperative' (danh từ/tính từ) nghĩa là điều bắt buộc phải làm, không thể bỏ qua. Kết hợp với 'ethical' tạo thành cụm mạnh mẽ về nghĩa vụ đạo đức. Dùng trong bài khi lập luận về trách nhiệm của con người: 'it becomes an ethical imperative for humans to...'.",
+        example:
+          "It becomes an ethical imperative for humans to take responsibility and action to prevent species extinctions caused by our own activities.",
+        exampleTranslation:
+          "Việc con người chịu trách nhiệm và hành động để ngăn chặn sự tuyệt chủng của các loài do chính hoạt động của chúng ta gây ra đã trở thành một mệnh lệnh đạo đức.",
+      },
+      {
+        id: 60,
+        word: "Discernment in conservation",
+        pronunciation: "/dɪˈsɜːnmənt ɪn ˌkɒnsəˈveɪʃən/",
+        meaning:
+          "Sự sáng suốt trong bảo tồn, khả năng phân biệt và lựa chọn đúng đắn trong bảo tồn",
+        note: "'Discernment' là danh từ trừu tượng chỉ khả năng phán đoán và phân biệt điều đúng sai một cách tinh tế. Đây là từ nâng cao (Band 7.5+), thể hiện tư duy phản biện. Cụm 'the need for discernment in conservation efforts' xuất hiện trong kết luận bài partly agree.",
+        example:
+          "This balanced approach underlines the need for discernment in conservation efforts.",
+        exampleTranslation:
+          "Cách tiếp cận cân bằng này nhấn mạnh sự cần thiết của sự sáng suốt trong các nỗ lực bảo tồn.",
+      },
+    ],
+  },
+  // ==========================================
+  // W3 - Task 1: Employment Rates Bar Chart
+  // ==========================================
+  {
+    id: "wr_w3_task1_employment_rates",
+    skill: "Writing",
+    volume: "9",
+    topic: "Work / Society",
+    part: "Task 1 - Employment Rates Bar Chart",
+    cards: [
+      {
+        id: 61,
+        word: "Employment rates",
+        pronunciation: "/ɪmˈplɔɪmənt reɪts/",
+        meaning: "Tỷ lệ người có việc làm so với tổng số lực lượng lao động",
+        note: "Cụm danh từ cơ bản nhưng quan trọng trong Task 1 về lao động, kinh tế hoặc nhân khẩu học. Phân biệt: 'employment rate' (tỷ lệ có việc làm) ≠ 'unemployment rate' (tỷ lệ thất nghiệp). Dùng kèm động từ: rise, fall, remain stable, fluctuate.",
+        example:
+          "The employment rates have increased significantly over the past year.",
+        exampleTranslation:
+          "Tỷ lệ người có việc làm đã tăng đáng kể trong năm qua.",
+      },
+      {
+        id: 62,
+        word: "Demographics",
+        pronunciation: "/ˌdɛməˈɡræfɪks/",
+        meaning: "Nhân khẩu học, dữ liệu thống kê về các nhóm dân số",
+        note: "Danh từ số nhiều chỉ các đặc điểm dân số như tuổi, giới tính, thu nhập. Trong Task 1 dạng biểu đồ so sánh hai nhóm (nam/nữ, độ tuổi...), 'both demographics' là cách diễn đạt học thuật và tự nhiên hơn 'both groups'. Cấu trúc hay: 'leading in both demographics'.",
+        example:
+          "The marketing campaign was tailored according to the demographics of the region.",
+        exampleTranslation:
+          "Chiến dịch tiếp thị được điều chỉnh theo nhân khẩu học của khu vực.",
+      },
+      {
+        id: 63,
+        word: "Age cohort",
+        pronunciation: "/eɪdʒ ˈkəʊhɔːt/",
+        meaning:
+          "Nhóm tuổi, một nhóm người được xếp vào cùng nhóm dựa trên độ tuổi",
+        note: "'Cohort' là từ học thuật dùng thay cho 'group' hoặc 'bracket'. Trang trọng và chính xác hơn 'age group'. Dùng trong Task 1 khi đề cập đến một nhóm tuổi cụ thể: 'this age cohort', 'the 60-64 age cohort'. Từ đồng nghĩa: age group, age bracket.",
+        example: "The study focused on the age cohort of 18-25 year olds.",
+        exampleTranslation:
+          "Nghiên cứu này tập trung vào nhóm tuổi từ 18-25 tuổi.",
+      },
+      {
+        id: 64,
+        word: "Prominent",
+        pronunciation: "/ˈprɒmɪnənt/",
+        meaning: "Nổi bật, đáng chú ý, dễ nhận biết",
+        note: "Tính từ dùng thay cho 'significant', 'notable' hoặc 'noticeable' khi mô tả sự thay đổi hoặc xu hướng đặc biệt đáng chú ý. Cụm hay trong Task 1: 'the most prominent decrease/increase' (sự giảm/tăng đáng chú ý nhất). Thể hiện vốn từ vựng phong phú hơn 'the biggest'.",
+        example:
+          "She is a prominent figure in the field of environmental conservation.",
+        exampleTranslation:
+          "Cô ấy là một nhân vật nổi bật trong lĩnh vực bảo vệ môi trường.",
+      },
+      {
+        id: 65,
+        word: "Stark contrast",
+        pronunciation: "/stɑːk ˈkɒntrɑːst/",
+        meaning: "Sự tương phản lớn và rõ rệt",
+        note: "'Stark' nhấn mạnh mức độ tương phản rất rõ ràng và mạnh mẽ, mạnh hơn 'sharp contrast' hay 'clear difference'. Cấu trúc chuẩn: 'This was in stark contrast to...' — cách mở đầu câu rất ấn tượng trong Task 1 khi so sánh hai xu hướng trái ngược nhau.",
+        example:
+          "The stark contrast between the rich and the poor in the city is alarming.",
+        exampleTranslation:
+          "Sự tương phản rõ rệt giữa giàu và nghèo ở thành phố đang ở mức đáng báo động.",
+      },
+      {
+        id: 66,
+        word: "Upward trends",
+        pronunciation: "/ˈʌpwəd trɛndz/",
+        meaning: "Xu hướng tăng",
+        note: "Cụm danh từ mô tả chiều hướng tăng của dữ liệu. Đối nghĩa: 'downward trends' (xu hướng giảm). Cấu trúc hay: 'showed upward trends' (cho thấy xu hướng tăng). Tương đương: 'an upward trajectory', 'a rising trend'. Phổ biến trong Task 1 dạng bar chart, line graph.",
+        example:
+          "The company has been experiencing upward trends in sales for the last three quarters.",
+        exampleTranslation:
+          "Doanh thu của công ty đã có xu hướng tăng trong ba quý vừa qua.",
+      },
+      {
+        id: 67,
+        word: "Closely followed by",
+        pronunciation: "/ˈkləʊsli ˈfɒləʊd baɪ/",
+        meaning: "Theo sát sau đó là, đứng ngay phía sau là",
+        note: "Cụm từ quan trọng trong Task 1 khi liệt kê số liệu theo thứ tự xếp hạng. Dùng sau khi nêu số liệu cao nhất/thấp nhất, rồi dùng 'closely followed by' để giới thiệu số liệu đứng ngay sau. Ví dụ: '85% in Japan, closely followed by 79% in Belgium'.",
+        example:
+          "Japan had the highest employment rate, closely followed by Belgium at 79%.",
+        exampleTranslation:
+          "Nhật Bản có tỷ lệ việc làm cao nhất, theo sát là Bỉ với 79%.",
+      },
+      {
+        id: 68,
+        word: "Falling negligibly",
+        pronunciation: "/ˈfɔːlɪŋ ˈnɛɡlɪdʒɪbli/",
+        meaning: "Giảm không đáng kể",
+        note: "'Negligibly' (trạng từ) = một cách không đáng kể, gần như không thay đổi. Đây là từ nâng cao, thể hiện trình độ cao hơn 'slightly' hay 'a little'. Dùng khi số liệu thay đổi rất ít. Tương đương: marginally, minimally, insignificantly.",
+        example:
+          "Belgium's employment rate remained the lowest despite also falling negligibly from 8% to 7%.",
+        exampleTranslation:
+          "Tỷ lệ việc làm của Bỉ vẫn là thấp nhất mặc dù cũng giảm không đáng kể từ 8% xuống 7%.",
+      },
+      {
+        id: 69,
+        word: "The former / the latter",
+        pronunciation: "/ðə ˈfɔːmə/ /ðə ˈlætə/",
+        meaning:
+          "Cái/người đầu tiên (được nhắc đến) / Cái/người thứ hai (được nhắc đến)",
+        note: "Cặp đại từ thay thế cực kỳ hữu dụng trong Task 1 để tránh lặp từ khi nhắc lại hai đối tượng vừa đề cập. 'The former' = đối tượng được nhắc đầu tiên; 'the latter' = đối tượng được nhắc sau. Ví dụ: 'the US and Australia... the former rising from 36% to 39% and the latter from 16% to 18%'.",
+        example:
+          "The US and Australia showed upward trends, with the former rising from 36% to 39% and the latter from 16% to 18%.",
+        exampleTranslation:
+          "Hoa Kỳ và Úc cho thấy xu hướng tăng, với nước đầu tiên tăng từ 36% lên 39% và nước thứ hai từ 16% lên 18%.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W3 - Task 2: Extraterrestrial Life (Sample 1 - Agree with view 2)
+  // ==========================================
+  {
+    id: "wr_w3_task2_space_disagree",
+    skill: "Writing",
+    volume: "9",
+    topic: "Science / Space / Government",
+    part: "Task 2 - Extraterrestrial Life (Prioritize Earth)",
+    cards: [
+      {
+        id: 70,
+        word: "Extraterrestrial life",
+        pronunciation: "/ˌɛkstrətəˈrɛstriəl laɪf/",
+        meaning: "Sự sống ngoài Trái Đất",
+        note: "'Extraterrestrial' (tính từ) = ngoài Trái Đất, từ gốc Latin 'extra' (bên ngoài) + 'terra' (đất). Đây là từ chủ đề quan trọng trong bài về khoa học không gian. Viết tắt: ET. Cụm liên quan: the search for extraterrestrial life (tìm kiếm sự sống ngoài Trái Đất).",
+        example:
+          "Scientists continue to search for signs of extraterrestrial life in the universe.",
+        exampleTranslation:
+          "Các nhà khoa học tiếp tục tìm kiếm dấu hiệu của sự sống ngoài Trái Đất trong vũ trụ.",
+      },
+      {
+        id: 71,
+        word: "Imprudent",
+        pronunciation: "/ɪmˈpruːdənt/",
+        meaning: "Không thận trọng, hấp tấp, thiếu suy xét",
+        note: "Tính từ trang trọng chỉ hành động thiếu cân nhắc về hậu quả. Mạnh hơn và học thuật hơn 'unwise' hay 'foolish'. Đối nghĩa: prudent (thận trọng, khôn ngoan). Dùng trong bài để đánh giá một quyết định chi tiêu hoặc chính sách là không hợp lý.",
+        example:
+          "It was imprudent of him to invest all his savings in one company.",
+        exampleTranslation:
+          "Anh ấy thật hấp tấp khi đầu tư toàn bộ tiết kiệm vào một công ty.",
+      },
+      {
+        id: 72,
+        word: "Scientific advancement",
+        pronunciation: "/ˌsaɪənˈtɪfɪk ədˈvɑːnsmənt/",
+        meaning: "Tiến bộ trong lĩnh vực khoa học",
+        note: "Cụm danh từ thể hiện sự phát triển và đột phá trong khoa học. 'Advancement' trang trọng hơn 'progress' hay 'development'. Cấu trúc hay: 'unparalleled opportunities for scientific advancement' (cơ hội tiến bộ khoa học vô song). Đồng nghĩa: scientific progress, breakthroughs in science.",
+        example:
+          "The discovery of the Higgs boson was a major scientific advancement.",
+        exampleTranslation:
+          "Việc phát hiện ra hạt Higgs là một bước tiến lớn trong khoa học.",
+      },
+      {
+        id: 73,
+        word: "Invaluable insight into",
+        pronunciation: "/ɪnˈvæljuəbl ˈɪnsaɪt ˈɪntə/",
+        meaning: "Hiểu biết vô cùng quý giá và sâu sắc về",
+        note: "'Invaluable' = cực kỳ có giá trị (không thể định giá được) — lưu ý: KHÔNG có nghĩa là 'không có giá trị'. Đây là từ dễ nhầm. Cụm 'provide invaluable insight into' là cấu trúc học thuật rất hay. Đồng nghĩa: profound understanding of, deep knowledge about.",
+        example:
+          "Her research provides invaluable insight into the effects of climate change.",
+        exampleTranslation:
+          "Nghiên cứu của cô ấy cung cấp hiểu biết quý giá về ảnh hưởng của biến đổi khí hậu.",
+      },
+      {
+        id: 74,
+        word: "The long-term survival of humanity",
+        pronunciation: "/ðə ˈlɒŋtɜːm səˈvaɪvəl əv hjuːˈmænɪti/",
+        meaning: "Sự tồn tại lâu dài của loài người",
+        note: "Cụm danh từ mạnh, thường xuất hiện khi lập luận về tầm quan trọng của nghiên cứu không gian, công nghệ, hoặc phát triển bền vững. 'Humanity' (nhân loại) trang trọng hơn 'humans' hay 'people'. Dùng như lý do cuối cùng, có tính chiến lược dài hạn.",
+        example:
+          "Climate change poses a threat to the long-term survival of humanity.",
+        exampleTranslation:
+          "Biến đổi khí hậu đặt ra mối đe dọa cho sự tồn tại lâu dài của loài người.",
+      },
+      {
+        id: 75,
+        word: "Justifiable",
+        pronunciation: "/ˈdʒʌstɪfaɪəbl/",
+        meaning: "Có thể biện hộ, có thể chứng minh là đúng hoặc hợp lý",
+        note: "Tính từ phái sinh từ 'justify' (biện minh, chứng minh tính hợp lý). Thường xuất hiện trong dạng phủ định 'not justifiable' hoặc 'unjustifiable' khi phản bác một lập luận. Cấu trúc hay: 'allocating funds to X is not justifiable given...'.",
+        example:
+          "The company's decision to expand was justifiable given the increase in demand.",
+        exampleTranslation:
+          "Quyết định mở rộng của công ty là hợp lý do nhu cầu ngày càng tăng.",
+      },
+      {
+        id: 76,
+        word: "Substantial investment",
+        pronunciation: "/səbˈstænʃəl ɪnˈvɛstmənt/",
+        meaning: "Khoản đầu tư lớn, đầu tư đáng kể",
+        note: "'Substantial' (đáng kể, lớn) là tính từ học thuật quan trọng, trang trọng hơn 'large' hay 'big'. Thường đi với: substantial investment, substantial improvement, substantial amount. Cặp đôi hay: 'require substantial investment' (đòi hỏi đầu tư lớn).",
+        example:
+          "The government made a substantial investment in renewable energy projects.",
+        exampleTranslation:
+          "Chính phủ đã đầu tư lớn vào các dự án năng lượng tái tạo.",
+      },
+      {
+        id: 77,
+        word: "Ethical and practical implications",
+        pronunciation: "/ˈɛθɪkəl ænd ˈpræktɪkəl ˌɪmplɪˈkeɪʃənz/",
+        meaning: "Hệ lụy về mặt đạo đức và thực tiễn",
+        note: "'Implications' (hệ lụy, tác động tiềm ẩn) là danh từ học thuật quan trọng. 'Ethical implications' liên quan đến đạo đức; 'practical implications' liên quan đến tính khả thi thực tế. Cụm hay: 'pose ethical and practical implications for...' (đặt ra các hệ lụy về đạo đức và thực tiễn cho...).",
+        example:
+          "The new technology poses ethical and practical implications for privacy.",
+        exampleTranslation:
+          "Công nghệ mới đặt ra hệ lụy về mặt đạo đức và thực tiễn cho quyền riêng tư.",
+      },
+      {
+        id: 78,
+        word: "Earthly challenges",
+        pronunciation: "/ˈɜːθli ˈtʃælɪndʒɪz/",
+        meaning:
+          "Những thách thức trên Trái Đất, các vấn đề hiện hữu của thế giới",
+        note: "'Earthly' (thuộc về Trái Đất) tạo sự tương phản rõ ràng với 'space' hay 'extraterrestrial'. Từ này mang tính thơ văn nhẹ, phù hợp khi muốn nhấn mạnh sự đối lập giữa các vấn đề trên mặt đất vs. không gian vũ trụ. Tương đương: terrestrial issues, problems on Earth.",
+        example:
+          "Tackling climate change is one of the biggest earthly challenges we face.",
+        exampleTranslation:
+          "Giải quyết biến đổi khí hậu là một trong những thách thức lớn nhất mà chúng ta đang đối mặt trên Trái Đất.",
+      },
+      {
+        id: 79,
+        word: "Fascinating endeavor",
+        pronunciation: "/ˈfæsɪneɪtɪŋ ɪnˈdɛvə/",
+        meaning: "Nỗ lực vô cùng thú vị và cuốn hút",
+        note: "'Endeavor' (danh từ/động từ) là từ trang trọng chỉ nỗ lực, công việc đòi hỏi nhiều cố gắng. Trang trọng hơn 'effort' hay 'attempt'. 'Fascinating' nhấn mạnh tính hấp dẫn, kỳ diệu. Cụm này thường dùng trong kết luận khi thừa nhận điểm tích cực của quan điểm đối lập.",
+        example: "Exploring the depths of the ocean is a fascinating endeavor.",
+        exampleTranslation: "Khám phá đáy đại dương là một việc rất hấp dẫn.",
+      },
+      {
+        id: 80,
+        word: "Resource allocation",
+        pronunciation: "/rɪˈsɔːs ˌæləˈkeɪʃən/",
+        meaning: "Sự phân bổ nguồn lực (tài chính, nhân lực...)",
+        note: "Cụm danh từ chuyên ngành quan trọng trong các bài về chính phủ, kinh tế, giáo dục. 'Allocation' = sự phân bổ, phân phối có chủ đích. Cấu trúc hay: 'the balance of resource allocation must favor...' (sự cân bằng trong phân bổ nguồn lực phải ưu tiên...). Đồng nghĩa: distribution of funds, budget allocation.",
+        example:
+          "Effective resource allocation is crucial for the success of any organization.",
+        exampleTranslation:
+          "Việc phân bổ nguồn lực hiệu quả là điều quan trọng cho sự thành công của bất kỳ tổ chức nào.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W3 - Task 2: Extraterrestrial Life (Sample 2 - Balanced view)
+  // ==========================================
+  {
+    id: "wr_w3_task2_space_balanced",
+    skill: "Writing",
+    volume: "9",
+    topic: "Science / Space / Government",
+    part: "Task 2 - Extraterrestrial Life (Balanced View)",
+    cards: [
+      {
+        id: 81,
+        word: "The allocation of state funding",
+        pronunciation: "/ðə ˌæləˈkeɪʃən əv steɪt ˈfʌndɪŋ/",
+        meaning: "Việc phân bổ ngân sách nhà nước",
+        note: "Cụm danh từ trang trọng dùng trong các bài về chính sách công, chi tiêu chính phủ. 'State funding' = nguồn tài chính từ nhà nước. Cụm hay hơn 'government money'. Thường xuất hiện trong bài Discussion/Opinion về ngân sách: 'the allocation of state funding towards X'.",
+        example:
+          "The allocation of state funding towards healthcare has been increased this year.",
+        exampleTranslation:
+          "Việc phân bổ quỹ nhà nước cho ngành y tế đã được tăng trong năm nay.",
+      },
+      {
+        id: 82,
+        word: "Critical issues",
+        pronunciation: "/ˈkrɪtɪkəl ˈɪʃuːz/",
+        meaning: "Các vấn đề quan trọng cần được chú ý ngay",
+        note: "Cụm danh từ phổ biến trong Task 2, thể hiện tầm quan trọng và tính cấp bách của vấn đề. 'Critical' mạnh hơn 'important' hay 'serious'. Thường đi kèm: 'address critical issues', 'face critical issues', 'the critical issues facing our planet'.",
+        example:
+          "Climate change and pollution are among the critical issues facing our planet.",
+        exampleTranslation:
+          "Biến đổi khí hậu và ô nhiễm là những vấn đề quan trọng mà hành tinh của chúng ta đang đối mặt.",
+      },
+      {
+        id: 83,
+        word: "Practical applications",
+        pronunciation: "/ˈpræktɪkəl ˌæplɪˈkeɪʃənz/",
+        meaning: "Các ứng dụng thực tiễn",
+        note: "Cụm danh từ quan trọng khi lập luận về lợi ích thực tế của nghiên cứu khoa học. Phân biệt: 'theoretical' (lý thuyết) vs. 'practical' (thực tiễn). Cấu trúc hay: 'innovations with practical applications on Earth' (những đổi mới với ứng dụng thực tiễn trên Trái Đất).",
+        example:
+          "The practical applications of quantum physics are still being explored.",
+        exampleTranslation:
+          "Các ứng dụng thực tiễn của vật lý lượng tử vẫn đang được khám phá.",
+      },
+      {
+        id: 84,
+        word: "Global communication networks",
+        pronunciation: "/ˈɡləʊbəl kəˌmjuːnɪˈkeɪʃən ˈnɛtwɜːks/",
+        meaning: "Mạng lưới truyền thông toàn cầu",
+        note: "Cụm danh từ ghép ba từ, dùng như dẫn chứng cụ thể về ứng dụng thực tiễn của nghiên cứu không gian (satellite technology → GPS → internet). Thể hiện khả năng dùng ví dụ cụ thể và học thuật trong bài viết.",
+        example:
+          "The internet is a prime example of global communication networks connecting people worldwide.",
+        exampleTranslation:
+          "Internet là một ví dụ điển hình của mạng lưới truyền thông toàn cầu kết nối mọi người trên khắp thế giới.",
+      },
+      {
+        id: 85,
+        word: "Immediate global challenges",
+        pronunciation: "/ɪˈmiːdiət ˈɡləʊbəl ˈtʃælɪndʒɪz/",
+        meaning: "Những thách thức toàn cầu cấp bách",
+        note: "Cụm danh từ ba từ kết hợp tính cấp thiết ('immediate') và phạm vi toàn cầu ('global'). Dùng khi muốn nhấn mạnh các vấn đề đòi hỏi giải quyết ngay bây giờ, không thể trì hoãn. Thường đi với: 'address', 'tackle', 'confront', 'face'.",
+        example:
+          "Dealing with the COVID-19 pandemic is one of the immediate global challenges.",
+        exampleTranslation:
+          "Việc xử lý đại dịch COVID-19 là một trong những thách thức toàn cầu cấp bách.",
+      },
+      {
+        id: 86,
+        word: "Immediate and tangible benefits",
+        pronunciation: "/ɪˈmiːdiət ænd ˈtændʒɪbl ˈbɛnɪfɪts/",
+        meaning: "Lợi ích trực tiếp và hữu hình, thấy được ngay",
+        note: "'Tangible' (hữu hình, có thể cảm nhận được) là tính từ quan trọng, đối lập với 'intangible' (vô hình). Cụm 'immediate and tangible benefits' nhấn mạnh lợi ích có thể nhìn thấy và cảm nhận được ngay, không phải lý thuyết xa vời. Rất hiệu quả trong lập luận ủng hộ chi tiêu cho vấn đề Trái Đất.",
+        example:
+          "Investing in public transportation offers immediate and tangible benefits to urban residents.",
+        exampleTranslation:
+          "Đầu tư vào giao thông công cộng mang lại lợi ích trực tiếp và rõ ràng cho cư dân đô thị.",
+      },
+      {
+        id: 87,
+        word: "Aspirations",
+        pronunciation: "/ˌæspɪˈreɪʃənz/",
+        meaning: "Khao khát, hoài bão, mục tiêu cao cả",
+        note: "Danh từ số nhiều chỉ những mong muốn và tham vọng mạnh mẽ để đạt được điều gì đó lớn lao. Mạnh hơn 'desires' hay 'wishes'. Cấu trúc hay: 'supports the aspirations of space exploration' (ủng hộ những khát vọng của việc khám phá không gian).",
+        example:
+          "Her aspirations to become a doctor were inspired by her desire to help others.",
+        exampleTranslation:
+          "Khao khát trở thành bác sĩ của cô ấy được truyền cảm hứng từ mong muốn giúp đỡ người khác.",
+      },
+      {
+        id: 88,
+        word: "Venture into new frontiers",
+        pronunciation: "/ˈvɛntʃər ˈɪntə njuː ˈfrʌntɪəz/",
+        meaning:
+          "Dấn thân khám phá các lĩnh vực/vùng đất mới chưa được khám phá",
+        note: "'Frontier' (vùng biên giới, ranh giới của sự hiểu biết) thường dùng theo nghĩa ẩn dụ để chỉ lĩnh vực chưa được khám phá. 'Venture into' = dấn thân vào (có phần mạo hiểm). Cụm này có tính văn học cao, phù hợp trong kết luận bài về khoa học hoặc tiến bộ.",
+        example:
+          "The company's venture into new frontiers of technology is both exciting and challenging.",
+        exampleTranslation:
+          "Việc công ty dấn thân vào những lĩnh vực công nghệ mới vừa thú vị vừa đầy thách thức.",
+      },
+      {
+        id: 89,
+        word: "Space research",
+        pronunciation: "/speɪs rɪˈsɜːtʃ/",
+        meaning: "Nghiên cứu không gian",
+        note: "Cụm danh từ đơn giản nhưng quan trọng như từ chủ đề xuyên suốt bài. Dùng thay thế cho 'space exploration' để tránh lặp. Cấu trúc hay: 'investing in space research is an investment in humanity's future' (đầu tư vào nghiên cứu không gian là đầu tư vào tương lai của nhân loại).",
+        example:
+          "Space research has led to many discoveries about our solar system.",
+        exampleTranslation:
+          "Nghiên cứu không gian đã dẫn đến nhiều phát hiện về hệ mặt trời của chúng ta.",
+      },
+    ],
+  },
+  // ==========================================
+  // W4 - Task 1: UK Fuel Production Line Graph
+  // ==========================================
+  {
+    id: "wr_w4_task1_fuel_production",
+    skill: "Writing",
+    volume: "9",
+    topic: "Energy / Environment",
+    part: "Task 1 - UK Fuel Production Line Graph",
+    cards: [
+      {
+        id: 90,
+        word: "Remain relatively stable",
+        pronunciation: "/rɪˈmeɪn ˈrɛlətɪvli ˈsteɪbl/",
+        meaning: "Tiếp tục duy trì sự ổn định và không có nhiều thay đổi",
+        note: "Cụm động từ phổ biến và quan trọng trong Task 1 khi mô tả giai đoạn số liệu không tăng không giảm. 'Relatively' nhấn mạnh rằng sự ổn định có thể không hoàn toàn tuyệt đối. Các biến thể: 'remained fairly stable', 'stayed relatively constant', 'levelled off'.",
+        example:
+          "Despite economic fluctuations, the currency rates remain relatively stable.",
+        exampleTranslation:
+          "Mặc dù có những biến động kinh tế, tỷ giá hối đoái vẫn duy trì tương đối ổn định.",
+      },
+      {
+        id: 91,
+        word: "A substantial rise",
+        pronunciation: "/ə səbˈstænʃəl raɪz/",
+        meaning: "Sự tăng lên đáng kể",
+        note: "Cụm danh từ dùng 'substantial' (đáng kể) thay cho 'big' hoặc 'large'. Trong Task 1, thường đi với cấu trúc 'followed by a substantial rise' để mô tả sự tăng sau một giai đoạn giảm. Tương đương: a significant increase, a considerable surge, a marked jump.",
+        example: "The report showed a substantial rise in annual profits.",
+        exampleTranslation:
+          "Báo cáo cho thấy sự tăng trưởng đáng kể trong lợi nhuận hàng năm.",
+      },
+      {
+        id: 92,
+        word: "Follow a much steadier upward trend",
+        pronunciation: "/ˈfɒləʊ ə mʌtʃ ˈstɛdiə ˈʌpwəd trɛnd/",
+        meaning: "Theo xu hướng tăng ổn định hơn nhiều",
+        note: "Cụm động từ mô tả đường xu hướng tăng đều đặn, không bị gián đoạn. 'Steadier' (ổn định hơn) là dạng so sánh hơn của 'steady' — dùng khi so sánh hai đường trên cùng biểu đồ. Cụm hay trong Task 1 dạng line graph khi so sánh độ ổn định của hai xu hướng.",
+        example:
+          "The stock market began to follow a much steadier upward trend after the initial volatility.",
+        exampleTranslation:
+          "Thị trường chứng khoán bắt đầu có xu hướng tăng ổn định hơn sau sự biến động ban đầu.",
+      },
+      {
+        id: 93,
+        word: "Bounce back",
+        pronunciation: "/baʊns bæk/",
+        meaning: "Phục hồi sau sự suy giảm hoặc thất bại",
+        note: "Cụm động từ ẩn dụ mạnh (phrasal verb), mô tả sự hồi phục nhanh chóng sau khi giảm. Tương đương với 'recover', 'rebound', 'pick up again'. Cấu trúc hay trong Task 1: 'prior to bouncing back to...' (trước khi phục hồi lên mức...). Sinh động hơn nhiều so với 'increased again'.",
+        example:
+          "After a severe illness, she was able to bounce back to her normal health quickly.",
+        exampleTranslation:
+          "Sau một cơn bệnh nặng, cô ấy đã nhanh chóng phục hồi sức khỏe bình thường.",
+      },
+      {
+        id: 94,
+        word: "Taper off",
+        pronunciation: "/ˈteɪpə ɒf/",
+        meaning: "Dần dần giảm bớt về số lượng hoặc tốc độ",
+        note: "Cụm động từ ẩn dụ từ hình ảnh cái nêm (taper = thon dần). Mô tả xu hướng giảm chậm và từ từ, không đột ngột. Khác với 'drop dramatically' (giảm mạnh). Rất phù hợp trong Task 1 dạng line graph khi đường số liệu giảm dần về cuối giai đoạn. Tương đương: gradually decline, slowly decrease.",
+        example: "The rain began to taper off by the afternoon.",
+        exampleTranslation: "Mưa bắt đầu giảm dần vào buổi chiều.",
+      },
+      {
+        id: 95,
+        word: "Surpass",
+        pronunciation: "/səˈpɑːs/",
+        meaning: "Vượt qua, vượt trội hơn",
+        note: "Động từ trang trọng dùng thay cho 'overtake' hoặc 'go beyond'. Trong Task 1 dạng line graph, 'surpassed' thường dùng khi một đường vượt qua đường khác tại một điểm cụ thể. Cấu trúc hay: 'it surpassed the production level of X in [year]'. Thì quá khứ đơn: surpassed.",
+        example: "Natural gas surpassed the production level of coal in 1991.",
+        exampleTranslation:
+          "Khí đốt tự nhiên đã vượt qua mức sản xuất than vào năm 1991.",
+      },
+      {
+        id: 96,
+        word: "Drop dramatically",
+        pronunciation: "/drɒp drəˈmætɪkli/",
+        meaning: "Giảm mạnh và đột ngột",
+        note: "'Dramatically' (một cách ấn tượng, mạnh mẽ) nhấn mạnh mức độ giảm lớn và nhanh. Đây là cặp từ quen thuộc trong Task 1. Các biến thể tương tự: 'fell sharply', 'plummeted', 'plunged'. Phân biệt: 'drop dramatically' (đột ngột, mạnh) vs. 'taper off' (dần dần, chậm).",
+        example:
+          "The production levels of coal dropped dramatically to just below 40 MT between 1983 and 1984.",
+        exampleTranslation:
+          "Mức sản xuất than đã giảm mạnh xuống chỉ dưới 40 triệu tấn trong khoảng thời gian 1983 đến 1984.",
+      },
+      {
+        id: 97,
+        word: "The opposite was true in the case of",
+        pronunciation: "/ðə ˈɒpəzɪt wɒz truː ɪn ðə keɪs əv/",
+        meaning: "Điều ngược lại đã xảy ra với, trường hợp ngược lại là",
+        note: "Cụm cấu trúc quan trọng trong Task 1 Overview, dùng để diễn đạt xu hướng trái ngược mà không lặp từ. Trang trọng và ngắn gọn hơn 'but for X, the trend was different'. Cấu trúc đầy đủ: 'while A increased, the opposite was true in the case of B'.",
+        example:
+          "While production levels of petroleum and natural gas increased over the period, the opposite was true in the case of coal.",
+        exampleTranslation:
+          "Trong khi mức sản xuất dầu mỏ và khí đốt tự nhiên tăng lên trong giai đoạn này, thì điều ngược lại xảy ra với than.",
+      },
+      {
+        id: 98,
+        word: "Prior to",
+        pronunciation: "/ˈpraɪər tuː/",
+        meaning: "Trước khi, trước đó",
+        note: "Giới từ trang trọng thay cho 'before'. Rất phổ biến trong Task 1 khi mô tả chuỗi sự kiện theo thời gian. Luôn đi với danh từ hoặc V-ing: 'prior to bouncing back', 'prior to declining'. Trang trọng hơn 'before' và thể hiện vốn ngữ pháp phong phú.",
+        example:
+          "Coal production dropped to just below 40 MT prior to bouncing back to around 60 MT in 1986.",
+        exampleTranslation:
+          "Sản xuất than giảm xuống chỉ dưới 40 triệu tấn trước khi phục hồi lên khoảng 60 triệu tấn vào năm 1986.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W4 - Task 2: Living Away from Home (Sample 1 - Benefits outweigh)
+  // ==========================================
+  {
+    id: "wr_w4_task2_university_benefits",
+    skill: "Writing",
+    volume: "9",
+    topic: "Education / Society",
+    part: "Task 2 - University Life Away from Home (Benefits > Drawbacks)",
+    cards: [
+      {
+        id: 99,
+        word: "Embark on their academic journey",
+        pronunciation: "/ɪmˈbɑːk ɒn ðeər ækəˈdɛmɪk ˈdʒɜːni/",
+        meaning: "Bắt đầu hành trình học vấn, khởi đầu con đường học thuật",
+        note: "'Embark on' = bắt đầu một hành trình hoặc giai đoạn mới (thường quan trọng và đáng kể). 'Academic journey' là ẩn dụ đẹp cho quá trình học tập. Cụm này rất ấn tượng trong mở bài Task 2 về giáo dục, thay cho 'start studying at university'. Đồng nghĩa: commence their studies, begin their university education.",
+        example:
+          "Many students embark on their academic journey with excitement and a bit of nervousness.",
+        exampleTranslation:
+          "Nhiều sinh viên bắt đầu hành trình học vấn của mình với sự hứng thú và một chút lo lắng.",
+      },
+      {
+        id: 100,
+        word: "Eclipse",
+        pronunciation: "/ɪˈklɪps/",
+        meaning: "Làm lu mờ, vượt trội hơn về tầm quan trọng hoặc chất lượng",
+        note: "Động từ dùng theo nghĩa ẩn dụ từ thiên văn học (nhật thực/nguyệt thực). 'Eclipse' gợi lên hình ảnh một thứ hoàn toàn che khuất thứ khác — mạnh hơn 'outweigh' hay 'surpass'. Cấu trúc hay: 'the advantages significantly eclipse the disadvantages'. Thể hiện vốn từ Band 7.5+.",
+        example:
+          "Her recent achievements in science eclipse those of her colleagues.",
+        exampleTranslation:
+          "Những thành tựu gần đây của cô ấy trong lĩnh vực khoa học đã làm lu mờ những đồng nghiệp của mình.",
+      },
+      {
+        id: 101,
+        word: "Financial burden",
+        pronunciation: "/faɪˈnænʃəl ˈbɜːdn/",
+        meaning: "Gánh nặng tài chính, áp lực kinh tế",
+        note: "'Burden' (gánh nặng) mạnh hơn 'problem' hay 'issue', hàm ý sức nặng khó chịu phải gánh chịu. Cụm này xuất hiện trong cả hai bài mẫu — đây là luận điểm phổ biến nhất khi nói về bất lợi của sống xa nhà. Cấu trúc hay: 'imposes a financial burden on students'.",
+        example:
+          "The financial burden of university fees can be overwhelming for many families.",
+        exampleTranslation:
+          "Gánh nặng tài chính của học phí đại học có thể là quá sức cho nhiều gia đình.",
+      },
+      {
+        id: 102,
+        word: "Living expenses",
+        pronunciation: "/ˈlɪvɪŋ ɪkˈspɛnsɪz/",
+        meaning: "Chi phí sinh hoạt hàng ngày",
+        note: "Cụm danh từ chỉ tổng các chi phí để duy trì cuộc sống: nhà ở, ăn uống, đi lại, giải trí. Phổ biến trong các bài Task 2 về tài chính, sinh viên, hoặc chi tiêu. Thường đi với: 'cover/manage/navigate living expenses'. Đồng nghĩa: cost of living, daily expenses.",
+        example:
+          "Managing living expenses is a major part of a student's budget.",
+        exampleTranslation:
+          "Quản lý chi phí sinh hoạt là một phần quan trọng trong ngân sách của sinh viên.",
+      },
+      {
+        id: 103,
+        word: "Emotional toll",
+        pronunciation: "/ɪˈməʊʃənl təʊl/",
+        meaning:
+          "Cái giá phải trả về mặt tâm lý, ảnh hưởng tiêu cực lên cảm xúc",
+        note: "'Toll' (danh từ) theo nghĩa ẩn dụ là cái giá/hậu quả phải chịu. 'Emotional toll' chỉ tác động tâm lý nặng nề của một tình huống căng thẳng. Cấu trúc hay: 'the emotional toll of being separated from loved ones cannot be understated'. Mạnh hơn 'emotional impact' hay 'emotional effect'.",
+        example:
+          "The emotional toll of studying abroad can be significant for some students.",
+        exampleTranslation:
+          "Ảnh hưởng tâm lý của việc học ở nước ngoài có thể rất lớn đối với một số sinh viên.",
+      },
+      {
+        id: 104,
+        word: "Homesickness",
+        pronunciation: "/ˈhəʊmsɪknəs/",
+        meaning: "Nỗi nhớ nhà, sự buồn bã khi xa gia đình",
+        note: "Danh từ không đếm được, chỉ trạng thái buồn bã và khao khát trở về nhà khi phải sống xa gia đình trong thời gian dài. Từ này rất cụ thể và gợi cảm xúc, phù hợp trong bài về sống xa nhà hoặc du học. Cấu trún hay: 'triggers/experience homesickness'.",
+        example:
+          "Many international students experience homesickness during their first semester.",
+        exampleTranslation:
+          "Nhiều sinh viên quốc tế trải qua nỗi nhớ nhà trong học kỳ đầu tiên của họ.",
+      },
+      {
+        id: 105,
+        word: "A sense of autonomy",
+        pronunciation: "/ə sɛns əv ɔːˈtɒnəmi/",
+        meaning: "Cảm giác tự chủ, khả năng tự quyết định và hành động",
+        note: "'Autonomy' (tự chủ) là từ học thuật chỉ khả năng tự điều hành, tự quyết định mà không cần sự kiểm soát từ bên ngoài. Trang trọng hơn 'independence'. Cấu trúc hay: 'fosters a sense of autonomy' (nuôi dưỡng tinh thần tự chủ). Đồng nghĩa: self-governance, independence, self-sufficiency.",
+        example: "Living on her own gave her a strong sense of autonomy.",
+        exampleTranslation:
+          "Việc sống một mình đã mang lại cho cô ấy một cảm giác tự chủ mạnh mẽ.",
+      },
+      {
+        id: 106,
+        word: "Day-to-day responsibilities",
+        pronunciation: "/ˌdeɪtəˈdeɪ rɪˌspɒnsɪˈbɪlɪtɪz/",
+        meaning: "Các trách nhiệm và công việc hàng ngày",
+        note: "'Day-to-day' (tính từ ghép có gạch nối) nghĩa là hàng ngày, liên quan đến cuộc sống thường nhật. Trang trọng hơn 'daily tasks'. Thường đi với: 'manage/handle/juggle day-to-day responsibilities'. Đây là kỹ năng quan trọng mà sinh viên sống xa nhà phải học.",
+        example:
+          "Managing day-to-day responsibilities is a key part of adult life.",
+        exampleTranslation:
+          "Quản lý trách nhiệm hàng ngày là một phần quan trọng của cuộc sống người lớn.",
+      },
+      {
+        id: 107,
+        word: "Social circles",
+        pronunciation: "/ˈsəʊʃəl ˈsɜːklz/",
+        meaning: "Vòng tròn xã hội, các nhóm bạn bè và mối quan hệ",
+        note: "Cụm danh từ hình ảnh (ẩn dụ hình tròn) chỉ mạng lưới các mối quan hệ xã hội của một người. Thường đi với: 'expand/broaden one's social circles' (mở rộng vòng kết bạn). Phong phú hơn 'make new friends' hay 'meet new people'. Đồng nghĩa: social networks, peer groups.",
+        example:
+          "Expanding one's social circles can lead to new opportunities and experiences.",
+        exampleTranslation:
+          "Mở rộng vòng tròn xã hội có thể dẫn đến cơ hội và trải nghiệm mới.",
+      },
+      {
+        id: 108,
+        word: "Holistic educational experience",
+        pronunciation: "/həˈlɪstɪk ˌɛdjʊˈkeɪʃənl ɪkˈspɪəriəns/",
+        meaning:
+          "Trải nghiệm giáo dục toàn diện (cả học thuật, cảm xúc, xã hội)",
+        note: "'Holistic' (toàn diện) là tính từ học thuật chỉ cách tiếp cận xem xét tổng thể chứ không chỉ một khía cạnh. Phổ biến trong triết học giáo dục hiện đại. Cụm 'a richer, more holistic educational experience' nhấn mạnh giá trị vượt ra ngoài học thuật thuần túy.",
+        example:
+          "A holistic educational experience is essential for nurturing well-rounded individuals.",
+        exampleTranslation:
+          "Trải nghiệm giáo dục toàn diện là cần thiết để nuôi dưỡng những cá nhân toàn diện.",
+      },
+      {
+        id: 109,
+        word: "Invaluable life skills",
+        pronunciation: "/ɪnˈvæljuəbl laɪf skɪlz/",
+        meaning: "Các kỹ năng sống vô cùng quý giá và không thể thiếu",
+        note: "'Invaluable' = cực kỳ có giá trị (không định giá được) — KHÔNG phải 'không có giá trị'. Đây là từ dễ nhầm nghĩa quan trọng. 'Life skills' chỉ các kỹ năng cần thiết để sống độc lập. Cụm này thường xuất hiện trong kết luận như điểm nhấn mạnh nhất của lập luận.",
+        example:
+          "Learning to manage finances is an invaluable life skill for all students.",
+        exampleTranslation:
+          "Học cách quản lý tài chính là một kỹ năng sống vô giá đối với tất cả sinh viên.",
+      },
+      {
+        id: 110,
+        word: "An integral component",
+        pronunciation: "/ən ˈɪntɪɡrəl kəmˈpəʊnənt/",
+        meaning: "Một phần không thể thiếu, yếu tố cốt lõi",
+        note: "'Integral' (cốt lõi, thiết yếu) mạnh hơn 'important' hay 'essential'. 'Component' (thành phần) trang trọng hơn 'part'. Cụm 'an integral component of X' thường xuất hiện trong kết luận để khẳng định tầm quan trọng không thể tách rời. Đồng nghĩa: a fundamental element, an indispensable part.",
+        example:
+          "Practical experience is an integral component of the education system.",
+        exampleTranslation:
+          "Kinh nghiệm thực tế là một phần không thể thiếu của hệ thống giáo dục.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W4 - Task 2: Living Away from Home (Sample 2 - Drawbacks outweigh)
+  // ==========================================
+  {
+    id: "wr_w4_task2_university_drawbacks",
+    skill: "Writing",
+    volume: "9",
+    topic: "Education / Society",
+    part: "Task 2 - University Life Away from Home (Drawbacks > Benefits)",
+    cards: [
+      {
+        id: 111,
+        word: "Venture to",
+        pronunciation: "/ˈvɛntʃə tuː/",
+        meaning: "Dám đến, dấn thân đến (nơi mới hoặc có thách thức)",
+        note: "'Venture' hàm ý sự dũng cảm và chút mạo hiểm khi đi đến nơi mới. Trang trọng và giàu hình ảnh hơn 'go to' hay 'move to'. Cụm 'venture to a different city' = dấn thân đến một thành phố khác (với hàm ý đây là một quyết định can đảm). Thường dùng trong mở bài như cách paraphrase đề bài.",
+        example: "She ventured to a new city to pursue her university studies.",
+        exampleTranslation:
+          "Cô ấy đã dám đến một thành phố mới để theo đuổi việc học đại học.",
+      },
+      {
+        id: 112,
+        word: "Considerably overshadow",
+        pronunciation: "/kənˈsɪdərəbli ˌəʊvəˈʃædəʊ/",
+        meaning: "Làm lu mờ đáng kể, che khuất hoàn toàn về tầm quan trọng",
+        note: "'Overshadow' = che khuất, làm lu mờ (ẩn dụ bóng tối). Kết hợp với 'considerably' tạo thành cụm mạnh thể hiện sự áp đảo rõ ràng. Tương đương với 'outweigh' hay 'eclipse' nhưng mang sắc thái ẩn dụ ánh sáng/bóng tối. Cấu trúc: 'the disadvantages considerably overshadow the advantages'.",
+        example:
+          "The disadvantages considerably overshadow the benefits in this case.",
+        exampleTranslation:
+          "Những nhược điểm làm lu mờ đáng kể những lợi ích trong trường hợp này.",
+      },
+      {
+        id: 113,
+        word: "A strong sense of independence",
+        pronunciation: "/ə strɒŋ sɛns əv ˌɪndɪˈpɛndəns/",
+        meaning: "Cảm giác tự lập mạnh mẽ",
+        note: "Cụm danh từ quan trọng trong bài về giáo dục và phát triển cá nhân. Phân biệt với 'a sense of autonomy' (tự chủ về quyết định) — 'independence' nghiêng về tự lập về hành động và cuộc sống. Thường đi với: 'develop/foster/build a strong sense of independence'.",
+        example:
+          "Living on her own developed a strong sense of independence in her.",
+        exampleTranslation:
+          "Việc sống một mình đã phát triển một cảm giác tự lập mạnh mẽ trong cô ấy.",
+      },
+      {
+        id: 114,
+        word: "Financial management and self-discipline",
+        pronunciation: "/faɪˈnænʃəl ˈmænɪdʒmənt ænd ˌsɛlfˈdɪsɪplɪn/",
+        meaning: "Quản lý tài chính và kỷ luật bản thân",
+        note: "Cặp danh từ ghép thường đi cùng nhau khi liệt kê kỹ năng sống. 'Self-discipline' (kỷ luật tự giác) là kỹ năng kiểm soát cảm xúc, hành vi để đạt mục tiêu dài hạn. Cả hai đều là 'vital life skills' quan trọng mà sinh viên sống xa nhà buộc phải học.",
+        example:
+          "University life teaches students important skills like financial management and self-discipline.",
+        exampleTranslation:
+          "Cuộc sống đại học dạy cho sinh viên những kỹ năng quan trọng như quản lý tài chính và kỷ luật cá nhân.",
+      },
+      {
+        id: 115,
+        word: "Problem-solving skills",
+        pronunciation: "/ˈprɒbləm ˈsɒlvɪŋ skɪlz/",
+        meaning: "Kỹ năng giải quyết vấn đề",
+        note: "'Problem-solving' là tính từ ghép (luôn có gạch nối khi đứng trước danh từ). Đây là một trong những kỹ năng được coi trọng nhất trong cả học thuật lẫn nghề nghiệp. Thường xuất hiện trong các bài về giáo dục, kỹ năng mềm, hoặc phát triển cá nhân. Đồng nghĩa: critical thinking skills, analytical abilities.",
+        example:
+          "Developing problem-solving skills is essential for academic and professional success.",
+        exampleTranslation:
+          "Phát triển kỹ năng giải quyết vấn đề là cần thiết cho thành công trong học tập và nghề nghiệp.",
+      },
+      {
+        id: 116,
+        word: "Independent living",
+        pronunciation: "/ˌɪndɪˈpɛndənt ˈlɪvɪŋ/",
+        meaning:
+          "Cuộc sống tự lập, tình trạng sống độc lập không phụ thuộc người khác",
+        note: "Cụm danh từ chỉ lối sống tự chủ hoàn toàn trong mọi quyết định và chăm sóc bản thân. Thường đi với: 'the costs associated with independent living' (chi phí liên quan đến sống tự lập). Trang trọng hơn 'living alone' hay 'living by yourself'.",
+        example:
+          "Independent living is an important step in a young adult's life.",
+        exampleTranslation:
+          "Sống độc lập là một bước quan trọng trong cuộc đời của một người trẻ.",
+      },
+      {
+        id: 117,
+        word: "Overwhelming",
+        pronunciation: "/ˌəʊvəˈwɛlmɪŋ/",
+        meaning: "Quá sức, áp đảo, vượt quá khả năng chịu đựng",
+        note: "Tính từ mạnh chỉ cảm giác bị nhấn chìm hoặc vượt quá khả năng xử lý. Thường đi với: 'can be overwhelming', 'feel overwhelming'. Phân biệt: 'overwhelming' (quá sức để xử lý) vs. 'substantial' (đáng kể nhưng quản lý được). Thường dùng để mô tả tác động của chi phí hoặc trách nhiệm lên sinh viên.",
+        example:
+          "The number of assignments can be overwhelming for first-year university students.",
+        exampleTranslation:
+          "Số lượng bài tập về nhà có thể quá sức đối với sinh viên năm nhất.",
+      },
+      {
+        id: 118,
+        word: "Family support and comfort",
+        pronunciation: "/ˈfæmɪli səˈpɔːt ænd ˈkʌmfət/",
+        meaning: "Sự hỗ trợ và cảm giác an ủi từ gia đình",
+        note: "Cụm danh từ kép thể hiện hai vai trò của gia đình: hỗ trợ thực tế ('support') và sự ấm áp cảm xúc ('comfort'). Thường dùng trong bài về lợi ích của việc sống cùng gia đình hoặc bất lợi của sống xa nhà. Cấu trúc hay: 'the emotional impact of being away from family support and comfort'.",
+        example:
+          "Family support and comfort are crucial during challenging times in one's life.",
+        exampleTranslation:
+          "Sự hỗ trợ và cảm giác thoải mái đến từ gia đình là rất quan trọng trong những thời điểm khó khăn trong cuộc sống.",
+      },
+      {
+        id: 119,
+        word: "Rigorous academic schedule",
+        pronunciation: "/ˈrɪɡərəs ˌækəˈdɛmɪk ˈʃɛdjuːl/",
+        meaning: "Lịch trình học tập đòi hỏi khắt khe và căng thẳng",
+        note: "'Rigorous' (khắt khe, nghiêm ngặt) là tính từ học thuật quan trọng hàm ý đòi hỏi nhiều nỗ lực và kỷ luật. Trang trọng hơn 'busy' hay 'demanding'. Thường đi với: 'alongside a rigorous academic schedule' (song song với lịch trình học tập khắt khe). Liên quan: burnout (kiệt sức).",
+        example:
+          "Students often struggle to balance a rigorous academic schedule with other life responsibilities.",
+        exampleTranslation:
+          "Sinh viên thường gặp khó khăn trong việc cân bằng lịch trình học tập khắt khe với các trách nhiệm khác trong cuộc sống.",
+      },
+      {
+        id: 120,
+        word: "A less favorable option",
+        pronunciation: "/ə lɛs ˈfeɪvərəbl ˈɒpʃən/",
+        meaning:
+          "Một lựa chọn kém thuận lợi hơn, phương án ít được ưa thích hơn",
+        note: "Cụm so sánh hơn dùng 'less favorable' (kém thuận lợi hơn) thay vì 'worse' — lịch sự và học thuật hơn. Thường xuất hiện trong kết luận khi tóm tắt quan điểm rằng một phương án kém hơn phương án khác. Đồng nghĩa: a less desirable choice, a suboptimal option.",
+        example:
+          "For some, commuting long distances to university is a less favorable option than living on campus.",
+        exampleTranslation:
+          "Đối với một số người, việc đi lại quãng đường dài đến trường đại học là một lựa chọn kém thuận lợi hơn so với việc sống trong khuôn viên trường.",
+      },
+      {
+        id: 121,
+        word: "Familial home environment",
+        pronunciation: "/fəˈmɪliəl həʊm ɪnˈvaɪrənmənt/",
+        meaning:
+          "Môi trường gia đình, không khí và không gian sống cùng gia đình",
+        note: "'Familial' (thuộc về gia đình) là tính từ trang trọng hơn 'family'. Ít phổ biến hơn nhưng rất ấn tượng trong bài viết học thuật. Cụm 'the familial home environment' gợi lên sự ấm cúng, an toàn và ổn định của môi trường gia đình — đối lập với cuộc sống sinh viên xa nhà.",
+        example:
+          "The familial home environment can provide a sense of security and stability for students.",
+        exampleTranslation:
+          "Môi trường gia đình có thể mang lại cảm giác an toàn và ổn định cho sinh viên.",
+      },
+    ],
+  },
+  // ==========================================
+  // W5 - Task 1: Australian Exports Line Graph
+  // ==========================================
+  {
+    id: "wr_w5_task1_australian_exports",
+    skill: "Writing",
+    volume: "9",
+    topic: "Trade / Economy",
+    part: "Task 1 - Australian Exports Line Graph",
+    cards: [
+      {
+        id: 122,
+        word: "The dominant destination for Australian goods",
+        pronunciation: "/ðə ˈdɒmɪnənt ˌdɛstɪˈneɪʃən fər ɒˈstreɪliən ɡʊdz/",
+        meaning: "Thị trường trọng điểm, điểm đến chính của hàng xuất khẩu Úc",
+        note: "'Dominant' (chiếm ưu thế, vượt trội) mạnh hơn 'main' hay 'primary'. Đây là cụm dùng trong Task 1 Overview hoặc kết thúc đoạn thân bài để nhận xét về quốc gia nhập khẩu nhiều nhất. Tương đương: 'the primary export destination', 'the leading market'. Cấu trúc hay: 'became the dominant destination for'.",
+        example:
+          "China is the dominant destination for Australian goods, with minerals, beef, and wine being exported to meet Chinese market demands.",
+        exampleTranslation:
+          "Trung Quốc là điểm đến trọng điểm của hàng hóa Úc, với các sản phẩm như khoáng sản, thịt bò và rượu được xuất khẩu để đáp ứng nhu cầu thị trường Trung Quốc.",
+      },
+      {
+        id: 123,
+        word: "Import",
+        pronunciation: "/ɪmˈpɔːt/",
+        meaning: "Nhập khẩu (mua hoặc đưa hàng hóa từ nước khác vào)",
+        note: "Lưu ý quan trọng trong Task 1: khi mô tả xuất khẩu của Úc sang Nhật, ta có thể dùng góc nhìn ngược lại 'Japan imported from Australia' thay vì 'Australia exported to Japan' — giúp bài viết đa dạng hơn. Phân biệt: export (xuất khẩu) ↔ import (nhập khẩu). Động từ: import; Danh từ: imports.",
+        example:
+          "The country imports most of its food from neighboring countries.",
+        exampleTranslation:
+          "Quốc gia này nhập khẩu phần lớn thực phẩm của mình từ các nước láng giềng.",
+      },
+      {
+        id: 124,
+        word: "A similar downward trend",
+        pronunciation: "/ə ˈsɪmɪlə ˈdaʊnwəd trɛnd/",
+        meaning: "Xu hướng giảm tương tự",
+        note: "Cụm danh từ quan trọng trong Task 1 khi mô tả hai đường có cùng chiều hướng giảm. Đối nghĩa: 'a similar upward trend' (xu hướng tăng tương tự). Cấu trúc hay: 'A similar downward trend was observed in...' (Xu hướng giảm tương tự cũng được quan sát thấy ở...). Thể hiện khả năng so sánh các xu hướng một cách ngắn gọn.",
+        example:
+          "The industry has seen a similar downward trend in sales this quarter.",
+        exampleTranslation:
+          "Ngành công nghiệp đã chứng kiến một xu hướng giảm tương tự trong doanh số bán hàng của quý này.",
+      },
+      {
+        id: 125,
+        word: "Largest goods export market",
+        pronunciation: "/ˈlɑːdʒɪst ɡʊdz ˈɛkspɔːt ˈmɑːkɪt/",
+        meaning: "Thị trường xuất khẩu hàng hóa lớn nhất",
+        note: "Cụm danh từ ghép chuyên ngành thương mại quốc tế. 'Goods' (hàng hóa vật chất) phân biệt với 'services' (dịch vụ). Cụm này thường xuất hiện ở cuối đoạn khi kết luận về vị trí dẫn đầu của một quốc gia. Cấu trúc hay: 'overtaking X to become Australia's largest goods export market'.",
+        example:
+          "China is the largest goods export market for many countries around the world.",
+        exampleTranslation:
+          "Trung Quốc là thị trường xuất khẩu hàng hóa lớn nhất cho nhiều quốc gia trên thế giới.",
+      },
+      {
+        id: 126,
+        word: "Declined gradually to a low of",
+        pronunciation: "/dɪˈklaɪnd ˈɡrædʒuəli tə ə ləʊ əv/",
+        meaning: "Giảm dần xuống mức thấp nhất là",
+        note: "Cụm động từ + trạng từ + cụm giới từ đặc trưng khi mô tả đáy (lowest point) trong line graph. 'To a low of' (xuống mức thấp là) — đối xứng với 'to a high of' (lên mức cao là). Đây là cách diễn đạt chính xác và học thuật thay cho 'fell to its lowest point of'.",
+        example:
+          "Japan's share of Australian exports declined gradually to a low of around 18% in 2002.",
+        exampleTranslation:
+          "Tỷ lệ xuất khẩu của Úc sang Nhật Bản giảm dần xuống mức thấp nhất là khoảng 18% vào năm 2002.",
+      },
+      {
+        id: 127,
+        word: "Albeit at a lower rate",
+        pronunciation: "/ɔːlˈbiːɪt æt ə ˈləʊə reɪt/",
+        meaning: "Mặc dù với tốc độ/mức độ thấp hơn",
+        note: "'Albeit' là liên từ trang trọng (= although/even though) thường dùng trong văn viết học thuật, KHÔNG dùng trong văn nói. Cụm 'albeit at a lower rate' xuất hiện khi mô tả một xu hướng tương tự nhưng kém rõ rệt hơn. Rất ấn tượng trong Task 1 khi so sánh hai đường có xu hướng giống nhau nhưng khác mức độ.",
+        example:
+          "India followed a similar pattern, albeit at a lower rate than China.",
+        exampleTranslation:
+          "Ấn Độ cũng đi theo xu hướng tương tự, mặc dù với tốc độ thấp hơn Trung Quốc.",
+      },
+      {
+        id: 128,
+        word: "Overtaking",
+        pronunciation: "/ˌəʊvəˈteɪkɪŋ/",
+        meaning: "Vượt qua, bắt kịp và vượt lên trên",
+        note: "Phân từ hiện tại của 'overtake', dùng để mô tả thời điểm một đường vượt qua đường khác trong line graph. Tương đương: 'surpassing', 'bypassing'. Cấu trúc hay: 'overtaking Japan three years prior to become...' — dùng 'prior to' thay 'before' để thêm tính học thuật.",
+        example:
+          "China experienced a substantial rise, overtaking Japan to become Australia's largest goods export market.",
+        exampleTranslation:
+          "Trung Quốc đã tăng đáng kể, vượt qua Nhật Bản để trở thành thị trường xuất khẩu hàng hóa lớn nhất của Úc.",
+      },
+      {
+        id: 129,
+        word: "Accounting for approximately",
+        pronunciation: "/əˈkaʊntɪŋ fər əˈprɒksɪmətli/",
+        meaning: "Chiếm khoảng, đạt khoảng (một tỷ lệ phần trăm)",
+        note: "'Account for' = chiếm (một tỷ lệ trong tổng thể). Kết hợp với 'approximately' (khoảng, xấp xỉ) để mô tả số liệu ước lượng trong biểu đồ. Cấu trúc chuẩn: 'accounting for approximately X% of Y'. Thường dùng dưới dạng phân từ hiện tại bổ nghĩa cho mệnh đề trước.",
+        example:
+          "Japan imported significantly more from Australia than any other country listed, accounting for approximately 26% of Australian exports.",
+        exampleTranslation:
+          "Nhật Bản nhập khẩu từ Úc nhiều hơn đáng kể so với bất kỳ quốc gia nào được liệt kê, chiếm khoảng 26% kim ngạch xuất khẩu của Úc.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W5 - Task 2: Moving Away for Work (Sample 1 - Benefits outweigh)
+  // ==========================================
+  {
+    id: "wr_w5_task2_relocation_benefits",
+    skill: "Writing",
+    volume: "9",
+    topic: "Work / Society",
+    part: "Task 2 - Moving for Work (Benefits > Drawbacks)",
+    cards: [
+      {
+        id: 130,
+        word: "Today's dynamic job market",
+        pronunciation: "/təˈdeɪz daɪˈnæmɪk dʒɒb ˈmɑːkɪt/",
+        meaning: "Thị trường việc làm đầy biến động ngày nay",
+        note: "'Dynamic' (năng động, biến đổi nhanh) là tính từ học thuật quan trọng mô tả sự thay đổi liên tục và nhanh chóng. Cụm 'today's dynamic job market' là cách mở bài ấn tượng trong các bài về việc làm, nghề nghiệp, hoặc kinh tế. Tương đương: 'the ever-changing employment landscape', 'the competitive labor market'.",
+        example:
+          "In today's dynamic job market, individuals must continuously update their skills to remain competitive.",
+        exampleTranslation:
+          "Trong thị trường việc làm đầy biến động ngày nay, mọi người cần phải liên tục cập nhật kỹ năng của mình để giữ vững lợi thế cạnh tranh.",
+      },
+      {
+        id: 131,
+        word: "Separation",
+        pronunciation: "/ˌsɛpəˈreɪʃən/",
+        meaning: "Sự chia cách, tách biệt khỏi ai đó hoặc nơi nào đó",
+        note: "Danh từ trang trọng hơn 'being away from' hay 'distance from'. Thường dùng để chỉ sự xa cách cả về địa lý lẫn cảm xúc. Cấu trúc hay: 'leading to a separation from their traditional support systems' (dẫn đến sự chia cách khỏi hệ thống hỗ trợ truyền thống). Từ phái sinh: separate (v), separated (adj).",
+        example:
+          "The separation from family and friends can be one of the most challenging aspects of relocating for a new job.",
+        exampleTranslation:
+          "Sự tách biệt khỏi gia đình và bạn bè có thể là một trong những khía cạnh khó khăn nhất khi chuyển đến một công việc mới.",
+      },
+      {
+        id: 132,
+        word: "Urban centers",
+        pronunciation: "/ˈɜːbən ˈsɛntəz/",
+        meaning: "Các trung tâm đô thị, khu vực thành phố đông đúc",
+        note: "'Urban' (đô thị, thành thị) là tính từ đối lập với 'rural' (nông thôn). 'Centers' (trung tâm) hàm ý các điểm tập trung hoạt động kinh tế, văn hóa, xã hội. Cụm này thường đi với: 'move to urban centers' (chuyển đến các trung tâm đô thị). Đồng nghĩa: metropolitan areas, city hubs.",
+        example:
+          "Urban centers often offer more job opportunities and amenities but can also come with higher living costs.",
+        exampleTranslation:
+          "Các trung tâm đô thị thường cung cấp nhiều cơ hội việc làm và tiện ích hơn nhưng cũng có thể đi kèm với chi phí sinh hoạt cao hơn.",
+      },
+      {
+        id: 133,
+        word: "Emotional distress",
+        pronunciation: "/ɪˈməʊʃənl dɪˈstrɛs/",
+        meaning: "Đau khổ tinh thần, sự đau đớn và lo âu về mặt cảm xúc",
+        note: "'Distress' (đau khổ, kiệt sức) mạnh hơn 'stress' hay 'unhappiness', hàm ý trạng thái khổ sở nghiêm trọng. Phân biệt: 'emotional toll' (cái giá phải trả về mặt cảm xúc) vs. 'emotional distress' (trạng thái đau khổ cụ thể đang xảy ra). Thường xuất hiện trong bài về sức khỏe tâm thần, di dân, hoặc áp lực cuộc sống.",
+        example:
+          "The emotional distress experienced after losing a job can impact an individual's ability to seek new employment.",
+        exampleTranslation:
+          "Sự đau khổ tinh thần sau khi mất việc có thể ảnh hưởng đến khả năng tìm kiếm công việc mới của một người.",
+      },
+      {
+        id: 134,
+        word: "Logistical and financial hurdles",
+        pronunciation: "/ləˈdʒɪstɪkəl ænd faɪˈnænʃəl ˈhɜːdlz/",
+        meaning: "Những rào cản về hậu cần và tài chính",
+        note: "'Hurdles' (rào cản, chướng ngại vật) là từ ẩn dụ từ thể thao (chạy vượt rào), chỉ các khó khăn phải vượt qua. Mạnh hơn và hình ảnh hơn 'difficulties' hay 'challenges'. 'Logistical' (thuộc về hậu cần/tổ chức) chỉ các vấn đề lập kế hoạch và tổ chức thực hiện. Cụm hay: 'overcome logistical and financial hurdles'.",
+        example:
+          "The logistical and financial hurdles of relocating for a new job can deter many from pursuing opportunities far from home.",
+        exampleTranslation:
+          "Những rào cản về hậu cần và tài chính khi chuyển chỗ làm mới có thể ngăn cản nhiều người theo đuổi cơ hội xa nhà.",
+      },
+      {
+        id: 135,
+        word: "Career trajectory",
+        pronunciation: "/kəˈrɪə trəˈdʒɛktəri/",
+        meaning: "Lộ trình sự nghiệp, con đường phát triển nghề nghiệp",
+        note: "'Trajectory' (quỹ đạo, lộ trình) là từ ẩn dụ từ vật lý/thiên văn, chỉ đường đi của một vật thể trong không gian. Dùng theo nghĩa bóng để chỉ con đường phát triển của sự nghiệp. Rất ấn tượng trong bài IELTS. Cấu trúc hay: 'accelerate one's career trajectory' (đẩy nhanh lộ trình sự nghiệp).",
+        example:
+          "A well-planned career trajectory can help individuals achieve their professional goals and attain job satisfaction.",
+        exampleTranslation:
+          "Một lộ trình sự nghiệp được lên kế hoạch tốt có thể giúp cá nhân đạt được mục tiêu chuyên nghiệp và sự hài lòng trong công việc.",
+      },
+      {
+        id: 136,
+        word: "Resilience",
+        pronunciation: "/rɪˈzɪliəns/",
+        meaning: "Sức chịu đựng, khả năng phục hồi sau khó khăn",
+        note: "Danh từ không đếm được, chỉ khả năng vượt qua nghịch cảnh và phục hồi nhanh chóng. Đây là một trong những phẩm chất được nhà tuyển dụng và xã hội đánh giá cao nhất. Thường đi cùng 'adaptability' và 'perseverance'. Cấu trúc hay: 'cultivate resilience' (nuôi dưỡng sức chịu đựng), 'build resilience'.",
+        example:
+          "Resilience is a key trait for success in today's dynamic job market, allowing individuals to navigate through challenges and setbacks.",
+        exampleTranslation:
+          "Sự kiên cường là một đặc điểm quan trọng cho thành công trong thị trường việc làm đầy biến động ngày nay, cho phép cá nhân vượt qua thách thức và khó khăn.",
+      },
+      {
+        id: 137,
+        word: "Adaptability",
+        pronunciation: "/əˌdæptəˈbɪlɪti/",
+        meaning: "Khả năng thích nghi, tính linh hoạt trước sự thay đổi",
+        note: "Danh từ phái sinh từ 'adapt' (thích nghi). Đây là kỹ năng mềm quan trọng trong thế kỷ 21. Thường đi cùng 'resilience' và 'flexibility'. Cấu trúc hay: 'foster/develop adaptability' (nuôi dưỡng/phát triển khả năng thích nghi). Tính từ tương ứng: adaptable (có thể thích nghi).",
+        example:
+          "Adaptability is essential for individuals moving to urban centers, as it helps them to successfully integrate into new cultural and social settings.",
+        exampleTranslation:
+          "Khả năng thích nghi là cần thiết cho những người chuyển đến các trung tâm đô thị, giúp họ hòa nhập thành công vào môi trường văn hóa và xã hội mới.",
+      },
+      {
+        id: 138,
+        word: "A broader perspective on life",
+        pronunciation: "/ə ˈbrɔːdə pəˈspɛktɪv ɒn laɪf/",
+        meaning: "Góc nhìn rộng lớn hơn về cuộc sống",
+        note: "Cụm danh từ hình ảnh, dùng 'broader' (rộng hơn) dạng so sánh hơn của 'broad'. 'Perspective' (góc nhìn, quan điểm) gợi ý sự thay đổi cách nhìn nhận thế giới. Cụm hay trong kết luận hoặc đoạn về lợi ích cá nhân của việc di chuyển xa nhà. Đồng nghĩa: a wider worldview, an expanded outlook.",
+        example:
+          "Traveling the world can give you a broader perspective on life, exposing you to different cultures and lifestyles.",
+        exampleTranslation:
+          "Du lịch khắp thế giới có thể mang lại cho bạn một góc nhìn rộng lớn hơn về cuộc sống, mở rộng tầm nhìn với các nền văn hóa và lối sống khác nhau.",
+      },
+      {
+        id: 139,
+        word: "Diverse cultural settings",
+        pronunciation: "/daɪˈvɜːs ˈkʌltʃərəl ˈsɛtɪŋz/",
+        meaning: "Môi trường văn hóa đa dạng",
+        note: "'Diverse' (đa dạng) là tính từ học thuật quan trọng chỉ sự phong phú về loại hình. 'Settings' (môi trường, bối cảnh) trang trọng hơn 'environments' hay 'places'. Cụm này diễn đạt lợi ích văn hóa của việc sống ở nơi mới. Cấu trúc hay: 'living in/working in diverse cultural settings'.",
+        example:
+          "Working in diverse cultural settings can enhance one's adaptability and cross-cultural communication skills.",
+        exampleTranslation:
+          "Làm việc trong môi trường văn hóa đa dạng có thể tăng cường khả năng thích nghi và kỹ năng giao tiếp đa văn hóa.",
+      },
+      {
+        id: 140,
+        word: "Enhanced career opportunities",
+        pronunciation: "/ɪnˈhɑːnst kəˈrɪər ˌɒpəˈtjuːnɪtɪz/",
+        meaning: "Cơ hội nghề nghiệp được nâng cao và cải thiện",
+        note: "'Enhanced' (được tăng cường, cải thiện) là tính từ/phân từ mạnh hơn 'better' hay 'improved'. Thường xuất hiện trong kết luận như điểm nhấn cuối cùng của lập luận ủng hộ việc di chuyển để tìm việc. Đồng nghĩa: expanded career prospects, improved professional opportunities.",
+        example:
+          "Relocating to a major city often leads to enhanced career opportunities in various industries.",
+        exampleTranslation:
+          "Chuyển đến một thành phố lớn thường dẫn đến cơ hội nghề nghiệp được cải thiện trong nhiều ngành nghề.",
+      },
+      {
+        id: 141,
+        word: "Downsides",
+        pronunciation: "/ˈdaʊnsaɪdz/",
+        meaning: "Mặt trái, nhược điểm, bất lợi",
+        note: "Danh từ số nhiều thông dụng và tự nhiên hơn 'disadvantages' trong một số ngữ cảnh. Thường xuất hiện trong kết luận: 'substantially outweigh these downsides'. Tương đương: drawbacks, disadvantages, negative aspects. Phân biệt: 'downside' (nhược điểm cụ thể) vs. 'drawback' (hạn chế có tính hệ thống hơn).",
+        example:
+          "Despite the benefits, the downsides of living away from family include loneliness and the challenge of building a new support network.",
+        exampleTranslation:
+          "Mặc dù có lợi ích, nhưng nhược điểm của việc sống xa gia đình bao gồm cảm giác cô đơn và thách thức trong việc xây dựng một mạng lưới hỗ trợ mới.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W5 - Task 2: Moving Away for Work (Sample 2 - Drawbacks outweigh)
+  // ==========================================
+  {
+    id: "wr_w5_task2_relocation_drawbacks",
+    skill: "Writing",
+    volume: "9",
+    topic: "Work / Society",
+    part: "Task 2 - Moving for Work (Drawbacks > Benefits)",
+    cards: [
+      {
+        id: 142,
+        word: "Familial and social networks",
+        pronunciation: "/fəˈmɪliəl ænd ˈsəʊʃəl ˈnɛtwɜːks/",
+        meaning: "Mạng lưới quan hệ gia đình và xã hội",
+        note: "'Familial' (thuộc về gia đình) trang trọng hơn 'family'. 'Networks' (mạng lưới) gợi ý sự kết nối phức tạp và có giá trị của các mối quan hệ. Cụm này phong phú hơn 'family and friends'. Cấu trúc hay: 'compelled to leave their familial and social networks behind' (bị buộc phải rời bỏ mạng lưới quan hệ gia đình và xã hội).",
+        example:
+          "Maintaining strong familial and social networks is crucial for emotional wellbeing.",
+        exampleTranslation:
+          "Việc duy trì mạng lưới quan hệ gia đình và xã hội mạnh mẽ là rất quan trọng cho sức khỏe tinh thần.",
+      },
+      {
+        id: 143,
+        word: "Commonplace",
+        pronunciation: "/ˈkɒmənpleɪs/",
+        meaning: "Phổ biến, thông thường, không còn lạ lẫm",
+        note: "Tính từ chỉ điều gì đó đã trở nên phổ biến đến mức không còn đáng ngạc nhiên. Trang trọng hơn 'common' hay 'normal'. Cấu trúc hay: 'has become commonplace' (đã trở nên phổ biến) — dùng trong mở bài để xác nhận xu hướng trước khi đưa ra quan điểm. Đồng nghĩa: widespread, prevalent, routine.",
+        example:
+          "Remote work has become commonplace in many industries, allowing flexibility in work locations.",
+        exampleTranslation:
+          "Làm việc từ xa đã trở nên phổ biến trong nhiều ngành, cho phép linh hoạt về vị trí làm việc.",
+      },
+      {
+        id: 144,
+        word: "A myriad of career opportunities",
+        pronunciation: "/ə ˈmɪriəd əv kəˈrɪər ˌɒpəˈtjuːnɪtɪz/",
+        meaning: "Vô số cơ hội nghề nghiệp",
+        note: "'A myriad of' = vô số, rất nhiều (từ gốc Hy Lạp 'myrias' = 10,000). Đây là cách diễn đạt học thuật và văn chương, trang trọng hơn 'many' hay 'a lot of'. Thường đi với danh từ số nhiều. Biến thể: 'myriad opportunities' (không cần 'a... of'). Rất ấn tượng trong bài IELTS Band 7+.",
+        example:
+          "Graduates today face a myriad of career opportunities, making it challenging to choose a single path.",
+        exampleTranslation:
+          "Các sinh viên tốt nghiệp ngày nay đối mặt với nhiều cơ hội nghề nghiệp, khiến việc chọn một con đường trở nên khó khăn.",
+      },
+      {
+        id: 145,
+        word: "Rapid career progression",
+        pronunciation: "/ˈræpɪd kəˈrɪər prəˈɡrɛʃən/",
+        meaning: "Sự thăng tiến nhanh chóng trong sự nghiệp",
+        note: "'Progression' (sự tiến bộ, thăng tiến theo từng bước) khác với 'progress' (tiến độ nói chung). 'Rapid career progression' gợi ý việc leo thang sự nghiệp nhanh hơn bình thường. Phổ biến trong bài về việc làm và phát triển nghề nghiệp. Đồng nghĩa: swift professional advancement, fast-tracked career growth.",
+        example:
+          "The tech industry is known for offering rapid career progression for those who are highly skilled.",
+        exampleTranslation:
+          "Ngành công nghệ được biết đến với việc cung cấp cơ hội thăng tiến nhanh chóng cho những người có kỹ năng cao.",
+      },
+      {
+        id: 146,
+        word: "Invaluable life experiences",
+        pronunciation: "/ɪnˈvæljuəbl laɪf ɪkˈspɪəriənsɪz/",
+        meaning: "Những trải nghiệm sống vô cùng quý giá",
+        note: "'Invaluable' = cực kỳ có giá trị, không thể định giá được (KHÔNG phải 'vô giá trị'). Kết hợp với 'life experiences' tạo thành cụm mạnh nhấn mạnh giá trị của những trải nghiệm thực tế trong cuộc đời. Thường dùng khi lập luận về lợi ích cá nhân của di dân, du học, hoặc khám phá nơi mới.",
+        example:
+          "Traveling abroad provides invaluable life experiences that can shape one's perspective and understanding.",
+        exampleTranslation:
+          "Du lịch nước ngoài mang lại những kinh nghiệm sống quý báu có thể hình thành quan điểm và hiểu biết của một người.",
+      },
+      {
+        id: 147,
+        word: "Enrich personal development",
+        pronunciation: "/ɪnˈrɪtʃ ˈpɜːsənl dɪˈvɛləpmənt/",
+        meaning: "Làm phong phú/nâng cao sự phát triển cá nhân",
+        note: "'Enrich' (làm phong phú, làm giàu thêm) mạnh hơn 'improve' hay 'enhance', hàm ý thêm chiều sâu và giá trị. 'Personal development' chỉ quá trình phát triển bản thân về mọi mặt. Cụm hay: 'enrich personal development and broaden one's worldview'. Thường xuất hiện trong bài về giáo dục, du lịch, hay trải nghiệm mới.",
+        example:
+          "Engaging in volunteer work can enrich personal development by fostering empathy and social skills.",
+        exampleTranslation:
+          "Tham gia công tác tình nguyện có thể phát triển cá nhân sâu rộng bằng cách nuôi dưỡng lòng thương cảm và kỹ năng xã hội.",
+      },
+      {
+        id: 148,
+        word: "Long-lasting implications",
+        pronunciation: "/ˈlɒŋlɑːstɪŋ ˌɪmplɪˈkeɪʃənz/",
+        meaning: "Những hệ lụy lâu dài, hậu quả kéo dài",
+        note: "'Long-lasting' (tính từ ghép, luôn có gạch nối) = kéo dài, bền lâu. 'Implications' (hệ lụy, tác động tiềm ẩn) trang trọng hơn 'consequences' hay 'effects'. Cụm này nhấn mạnh tính nghiêm trọng và lâu dài của hậu quả. Thường đứng sau 'carry' hoặc 'have': 'carry long-lasting implications'.",
+        example:
+          "Decisions made early in one's career can have long-lasting implications for future opportunities.",
+        exampleTranslation:
+          "Những quyết định được đưa ra ở đầu sự nghiệp có thể có những hậu quả lâu dài đối với các cơ hội trong tương lai.",
+      },
+      {
+        id: 149,
+        word: "Feelings of isolation",
+        pronunciation: "/ˈfiːlɪŋz əv ˌaɪsəˈleɪʃən/",
+        meaning: "Cảm giác cô đơn, cô lập và tách biệt",
+        note: "'Isolation' (sự cô lập) mạnh hơn 'loneliness', hàm ý trạng thái bị tách rời hoàn toàn khỏi cộng đồng xã hội. Thường đi với 'feelings of' hoặc 'a sense of'. Cụm đầy đủ hay gặp: 'feelings of isolation, loneliness, and sometimes depression' — liệt kê ba trạng thái tâm lý tiêu cực theo mức độ tăng dần.",
+        example:
+          "Moving to a new city without any acquaintances can lead to feelings of isolation.",
+        exampleTranslation:
+          "Chuyển đến một thành phố mới mà không có bất kỳ sự quen biết nào có thể dẫn đến cảm giác cô đơn, tách biệt.",
+      },
+      {
+        id: 150,
+        word: "A profound sense of disconnection",
+        pronunciation: "/ə prəˈfaʊnd sɛns əv ˌdɪskəˈnɛkʃən/",
+        meaning: "Cảm giác tách biệt sâu sắc, cảm giác mất đi sự kết nối",
+        note: "'Profound' (sâu sắc, mạnh mẽ) nhấn mạnh mức độ cảm xúc rất lớn và ảnh hưởng sâu. 'Disconnection' (sự mất kết nối) diễn tả sự đứt gãy của các mối liên kết xã hội hoặc cảm xúc. Cụm này xuất hiện trong ngữ cảnh mô tả cảm xúc của người đã di chuyển xa và nhớ gia đình.",
+        example:
+          "Working remotely for extended periods can sometimes lead to a profound sense of disconnection from colleagues.",
+        exampleTranslation:
+          "Làm việc từ xa trong thời gian dài có thể đôi khi dẫn đến cảm giác tách biệt sâu sắc với đồng nghiệp.",
+      },
+      {
+        id: 151,
+        word: "Upheaval",
+        pronunciation: "/ʌpˈhiːvəl/",
+        meaning: "Biến động lớn, sự xáo trộn gây hỗn loạn và mất ổn định",
+        note: "Danh từ mạnh, hình ảnh (từ 'heave' = nâng lên mạnh), chỉ sự gián đoạn lớn làm đảo lộn trật tự cũ. Thường dùng cho các thay đổi lớn trong xã hội, gia đình, hoặc tổ chức. Mạnh hơn 'disruption' hay 'disturbance'. Cấu trúc hay: 'the upheaval affects not just X but Y as well'.",
+        example:
+          "The company's merger caused an upheaval that affected many employees' roles and responsibilities.",
+        exampleTranslation:
+          "Việc sáp nhập công ty đã gây ra một biến động lớn ảnh hưởng đến vai trò và trách nhiệm của nhiều nhân viên.",
+      },
+      {
+        id: 152,
+        word: "Close-knit community support",
+        pronunciation: "/ˈkləʊs nɪt kəˈmjuːnɪti səˈpɔːt/",
+        meaning: "Sự hỗ trợ của cộng đồng khăng khít, gắn bó",
+        note: "'Close-knit' (tính từ ghép, luôn có gạch nối) = khăng khít, gắn bó chặt chẽ như những mũi đan (knit). Cụm này gợi lên hình ảnh cộng đồng nơi mọi người kết nối chặt chẽ và hỗ trợ nhau. Thường dùng trong bài về cộng đồng địa phương, gia đình, hoặc lý do không nên rời xa quê hương.",
+        example:
+          "The close-knit community support in small towns often makes it easier to overcome personal challenges.",
+        exampleTranslation:
+          "Sự hỗ trợ của một cộng đồng khăng khít ở các thị trấn nhỏ thường làm cho việc vượt qua thách thức cá nhân trở nên dễ dàng hơn.",
+      },
+      {
+        id: 153,
+        word: "Potential strain on personal relationships",
+        pronunciation: "/pəˈtɛnʃəl streɪn ɒn ˈpɜːsənl rɪˈleɪʃənʃɪps/",
+        meaning: "Áp lực tiềm ẩn lên các mối quan hệ cá nhân",
+        note: "'Strain' (áp lực, căng thẳng) là danh từ/động từ gợi hình ảnh dây căng sắp đứt. 'Potential' (tiềm ẩn) hàm ý nguy cơ chưa xảy ra nhưng có thể xảy ra. Cụm hay trong kết luận: 'the potential strain on personal relationships render the costs too high'. 'Render' (khiến cho) là từ học thuật thay cho 'make'.",
+        example:
+          "Frequent business trips can cause potential strain on personal relationships, leading to conflicts and misunderstandings.",
+        exampleTranslation:
+          "Những chuyến công tác thường xuyên có thể gây áp lực lên mối quan hệ cá nhân, dẫn đến xung đột và hiểu lầm.",
+      },
+    ],
+  },
+  // ==========================================
+  // W6 - Task 1: Australian Workforce Mixed Charts (Pie + Line)
+  // ==========================================
+  {
+    id: "wr_w6_task1_workforce_charts",
+    skill: "Writing",
+    volume: "9",
+    topic: "Work / Society",
+    part: "Task 1 - Australian Workforce Mixed Charts (Pie + Line)",
+    cards: [
+      {
+        id: 154,
+        word: "Overwhelming majority",
+        pronunciation: "/ˌəʊvəˈwɛlmɪŋ məˈdʒɒrɪti/",
+        meaning: "Đa số áp đảo, phần lớn vượt trội hơn hẳn",
+        note: "Cụm danh từ cực kỳ phổ biến trong Task 1 dạng Pie chart khi muốn nhấn mạnh một nhóm chiếm tỷ lệ rất lớn. 'Overwhelming' (áp đảo) mạnh hơn nhiều so với 'large' hay 'significant'. Cấu trúc chuẩn: 'the overwhelming majority of X was/were Y'. Đồng nghĩa: the vast majority, the lion's share.",
+        example:
+          "An overwhelming majority of voters support the new environmental policy.",
+        exampleTranslation:
+          "Đa số áp đảo cử tri ủng hộ chính sách môi trường mới.",
+      },
+      {
+        id: 155,
+        word: "Labor force",
+        pronunciation: "/ˈleɪbə fɔːs/",
+        meaning:
+          "Lực lượng lao động (tổng số người lao động có và không có việc làm)",
+        note: "Cụm danh từ chuyên ngành kinh tế quan trọng. Phân biệt: 'labor force' (toàn bộ người có thể làm việc) vs. 'workforce' (người đang làm việc thực tế). Cả hai đều dùng được trong Task 1, nhưng 'labor force' mang tính học thuật hơn. Viết hoa: Labour force (Anh-Anh), Labor force (Mỹ).",
+        example:
+          "The national labor force has grown significantly with the increase in population.",
+        exampleTranslation:
+          "Lực lượng lao động quốc gia đã tăng đáng kể với sự tăng dân số.",
+      },
+      {
+        id: 156,
+        word: "Origins",
+        pronunciation: "/ˈɒrɪdʒɪnz/",
+        meaning: "Nguồn gốc, xuất xứ",
+        note: "Danh từ số nhiều dùng làm từ chuyển tiếp chủ đề (topic word) khi mô tả biểu đồ tròn về nơi sinh hoặc xuất xứ. Cấu trúc hay trong Task 1: 'Regarding the origins of the workforce...' (Về nguồn gốc của lực lượng lao động...) — đây là cách mở đầu đoạn thân bài thanh lịch thay cho 'Looking at the pie chart'.",
+        example: "The origins of the festival date back to ancient times.",
+        exampleTranslation: "Nguồn gốc của lễ hội trở lại từ thời cổ đại.",
+      },
+      {
+        id: 157,
+        word: "Three-fourths",
+        pronunciation: "/ˌθriːˈfɔːθs/",
+        meaning: "Ba phần tư (75%)",
+        note: "Phân số quan trọng thay thế cho '75%' trong Task 1 để tránh lặp cách diễn đạt số liệu. Dùng khi muốn thể hiện tỷ lệ bằng phân số thay vì phần trăm. Các phân số khác hay dùng: 'two-thirds' (2/3), 'half' (1/2), 'one-fifth' (1/5). Luôn có gạch nối khi viết phân số.",
+        example:
+          "Three-fourths of the company's profits come from international sales.",
+        exampleTranslation:
+          "Ba phần tư lợi nhuận của công ty đến từ doanh số bán hàng quốc tế.",
+      },
+      {
+        id: 158,
+        word: "The joblessness levels",
+        pronunciation: "/ðə ˈdʒɒbləsnəs ˈlɛvəlz/",
+        meaning: "Mức độ thất nghiệp",
+        note: "'Joblessness' là danh từ phái sinh từ 'jobless' (không có việc làm), dùng thay thế cho 'unemployment' để tránh lặp từ trong bài. Đây là kỹ thuật paraphrase quan trọng trong Task 1: cùng một khái niệm nhưng diễn đạt bằng từ khác. Cụm chuyển đoạn hay: 'Turning to the joblessness levels...'",
+        example:
+          "The joblessness levels have decreased due to new government policies.",
+        exampleTranslation:
+          "Mức độ thất nghiệp đã giảm do các chính sách mới của chính phủ.",
+      },
+      {
+        id: 159,
+        word: "Dominant position",
+        pronunciation: "/ˈdɒmɪnənt pəˈzɪʃən/",
+        meaning: "Vị trí thống trị, vị trí dẫn đầu chiếm ưu thế",
+        note: "Cụm danh từ dùng khi một nhóm/quốc gia/loại dữ liệu luôn chiếm vị trí cao nhất trong suốt thời gian. Cấu trúc hay: 'held its dominant position throughout' (giữ vững vị trí thống trị xuyên suốt). Thể hiện sự bền vững và nhất quán của vị trí dẫn đầu, không chỉ tại một điểm thời gian.",
+        example:
+          "The company has maintained its dominant position in the tech industry for years.",
+        exampleTranslation:
+          "Công ty đã giữ vững vị trí thống trị trong ngành công nghệ trong nhiều năm.",
+      },
+      {
+        id: 160,
+        word: "Distantly followed by",
+        pronunciation: "/ˈdɪstəntli ˈfɒləʊd baɪ/",
+        meaning: "Theo sau ở khoảng cách xa, đứng sau nhưng cách biệt đáng kể",
+        note: "Cụm từ quan trọng trong Task 1 Pie chart khi hai nhóm có tỷ lệ chênh lệch lớn. 'Distantly' (ở khoảng cách xa) nhấn mạnh sự cách biệt lớn giữa nhóm dẫn đầu và nhóm tiếp theo. Phân biệt: 'closely followed by' (theo sát ngay sau) vs. 'distantly followed by' (theo sau ở khoảng cách xa).",
+        example:
+          "This was distantly followed by NESC and ESC groups, accounting for 14% and 10% respectively.",
+        exampleTranslation:
+          "Theo sau ở khoảng cách xa là nhóm NESC và ESC, chiếm lần lượt 14% và 10%.",
+      },
+      {
+        id: 161,
+        word: "Mirrored this downward trend",
+        pronunciation: "/ˈmɪrəd ðɪs ˈdaʊnwəd trɛnd/",
+        meaning: "Phản chiếu (phản ánh gần như giống hệt) xu hướng giảm này",
+        note: "'Mirror' (v) = phản chiếu, sao chép gần như hoàn toàn — ẩn dụ từ gương phản chiếu. Rất ấn tượng khi mô tả hai đường biểu đồ có xu hướng gần như giống hệt nhau. Cụm đầy đủ hay gặp: 'almost exactly mirrored this downward trend, albeit at lower rates'. Mạnh hơn và hình ảnh hơn 'showed a similar trend'.",
+        example:
+          "The other two categories almost exactly mirrored this downward trend, albeit at lower rates.",
+        exampleTranslation:
+          "Hai danh mục còn lại gần như có xu hướng giảm giống hệt vậy, mặc dù ở mức thấp hơn.",
+      },
+      {
+        id: 162,
+        word: "A breakdown of",
+        pronunciation: "/ə ˈbreɪkdaʊn əv/",
+        meaning: "Sự phân tích chi tiết, bảng phân loại của",
+        note: "Cụm danh từ quan trọng trong mở bài Task 1 khi giới thiệu biểu đồ tròn hoặc bảng số liệu. 'Breakdown' chỉ sự phân chia một tổng thể thành các thành phần. Cấu trúc chuẩn: 'gives a breakdown of X according to Y' (cung cấp bảng phân loại X theo Y). Trang trọng hơn 'shows how X is divided'.",
+        example:
+          "The pie chart gives a breakdown of the Australian workforce according to their place of birth.",
+        exampleTranslation:
+          "Biểu đồ tròn cung cấp bảng phân loại lực lượng lao động Úc theo nơi sinh của họ.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W6 - Task 2: Personal Information Online (Sample 1 - Positive)
+  // ==========================================
+  {
+    id: "wr_w6_task2_data_positive",
+    skill: "Writing",
+    volume: "9",
+    topic: "Technology / Privacy",
+    part: "Task 2 - Personal Info Online (Benefits > Drawbacks)",
+    cards: [
+      {
+        id: 163,
+        word: "Private details",
+        pronunciation: "/ˈpraɪvɪt ˈdiːteɪlz/",
+        meaning: "Thông tin cá nhân mang tính bảo mật, thông tin riêng tư",
+        note: "Cụm danh từ thay thế cho 'personal information' trong mở bài để tránh lặp từ đề bài. 'Private' nhấn mạnh tính bí mật và quyền kiểm soát của cá nhân đối với thông tin đó. Thường đi với: 'share/upload/submit private details'. Tương đương: personal data, confidential information.",
+        example: "Keep your private details secure to prevent identity theft.",
+        exampleTranslation:
+          "Bảo vệ thông tin cá nhân mật của bạn để ngăn chặn việc đánh cắp danh tính.",
+      },
+      {
+        id: 164,
+        word: "Increasingly digital society",
+        pronunciation: "/ɪnˈkriːsɪŋli ˈdɪdʒɪtəl səˈsaɪəti/",
+        meaning: "Xã hội ngày càng số hóa",
+        note: "Cụm danh từ mô tả bối cảnh xã hội hiện đại. 'Increasingly' (ngày càng) + 'digital' (số hóa) nhấn mạnh xu hướng không thể đảo ngược của chuyển đổi số. Thường dùng trong mở bài hoặc kết luận. Biến thể: 'our increasingly connected world', 'the digital era', 'the age of technology'.",
+        example:
+          "Our increasingly digital society demands better cybersecurity measures.",
+        exampleTranslation:
+          "Xã hội số hóa ngày càng nhiều của chúng ta đòi hỏi các biện pháp an ninh mạng tốt hơn.",
+      },
+      {
+        id: 165,
+        word: "Privacy breaches",
+        pronunciation: "/ˈprɪvəsi ˈbriːtʃɪz/",
+        meaning:
+          "Vi phạm quyền riêng tư, truy cập trái phép vào thông tin cá nhân",
+        note: "'Breach' (danh từ/động từ) = sự vi phạm, phá vỡ rào cản bảo vệ. Đây là từ kỹ thuật trong lĩnh vực bảo mật thông tin. Cụm quan trọng: 'the heightened risk of privacy breaches' (nguy cơ gia tăng về vi phạm quyền riêng tư). Cặp từ hay đi cùng: privacy breaches AND identity theft.",
+        example:
+          "Privacy breaches can have serious consequences for individuals.",
+        exampleTranslation:
+          "Vi phạm quyền riêng tư có thể có hậu quả nghiêm trọng đối với cá nhân.",
+      },
+      {
+        id: 166,
+        word: "Identity theft",
+        pronunciation: "/aɪˈdɛntɪti θɛft/",
+        meaning:
+          "Đánh cắp danh tính, sử dụng gian lận thông tin cá nhân của người khác",
+        note: "'Theft' (sự đánh cắp) là danh từ pháp lý chỉ hành vi lấy thứ gì đó của người khác mà không được phép. 'Identity theft' = hành vi sử dụng thông tin cá nhân của người khác để thực hiện gian lận. Đây là từ chủ đề quan trọng trong các bài về công nghệ và bảo mật. Thường đi cặp với 'privacy breaches'.",
+        example: "Identity theft is a growing concern in our digital society.",
+        exampleTranslation:
+          "Đánh cắp danh tính là một mối lo ngại ngày càng tăng trong xã hội số của chúng ta.",
+      },
+      {
+        id: 167,
+        word: "Cybercriminals",
+        pronunciation: "/ˈsaɪbəˌkrɪmɪnəlz/",
+        meaning:
+          "Tội phạm mạng, người thực hiện hành vi phạm tội trên không gian mạng",
+        note: "Từ ghép từ 'cyber' (tiền tố chỉ không gian mạng) + 'criminals' (tội phạm). Từ này đặc trưng cho thời đại số và thường xuất hiện trong bài về công nghệ, quyền riêng tư, bảo mật. Cụm hay: 'cybercriminals exploit vulnerabilities' (tội phạm mạng khai thác lỗ hổng). Từ liên quan: cyberattack, cybersecurity.",
+        example: "Cybercriminals exploit vulnerabilities in digital systems.",
+        exampleTranslation:
+          "Tội phạm mạng lợi dụng các lỗ hổng trong hệ thống số.",
+      },
+      {
+        id: 168,
+        word: "Online data sharing",
+        pronunciation: "/ˈɒnlaɪn ˈdeɪtə ˈʃeərɪŋ/",
+        meaning: "Chia sẻ dữ liệu trực tuyến, phân phối thông tin qua internet",
+        note: "Cụm danh từ chỉ hành động chia sẻ thông tin qua mạng. Thường đi với: 'vulnerabilities associated with online data sharing' (lỗ hổng liên quan đến chia sẻ dữ liệu trực tuyến). Đây là cụm paraphrase cho 'uploading personal information online' từ đề bài. Liên quan: data protection, data privacy.",
+        example:
+          "Online data sharing facilitates collaboration but also poses privacy risks.",
+        exampleTranslation:
+          "Chia sẻ dữ liệu trực tuyến thúc đẩy sự hợp tác nhưng cũng đặt ra rủi ro về quyền riêng tư.",
+      },
+      {
+        id: 169,
+        word: "Enhanced convenience",
+        pronunciation: "/ɪnˈhɑːnst kənˈviːniəns/",
+        meaning: "Sự tiện lợi được cải thiện và nâng cao",
+        note: "'Enhanced' (được tăng cường, cải thiện) là tính từ học thuật thay cho 'better' hay 'improved'. 'Convenience' (sự tiện lợi, thuận tiện) là lợi ích thường được nhắc đến nhất khi nói về công nghệ. Cụm hay: 'the enhanced convenience of everyday transactions and communications'. Thường đi với: 'offer/provide enhanced convenience'.",
+        example:
+          "Online banking offers enhanced convenience for managing finances.",
+        exampleTranslation:
+          "Ngân hàng trực tuyến mang lại sự tiện lợi được cải thiện trong việc quản lý tài chính.",
+      },
+      {
+        id: 170,
+        word: "Instant transfers",
+        pronunciation: "/ˈɪnstənt ˈtrænsfɜːz/",
+        meaning: "Chuyển khoản tức thì, giao dịch diễn ra ngay lập tức",
+        note: "'Instant' (tức thì, ngay lập tức) nhấn mạnh tốc độ của giao dịch số so với giao dịch truyền thống. Cụm này thường được dùng làm ví dụ cụ thể minh họa lợi ích của ngân hàng trực tuyến. Liên quan: real-time transactions, immediate payments, digital transfers.",
+        example: "Instant transfers make sending money abroad quick and easy.",
+        exampleTranslation:
+          "Chuyển khoản tức thì làm cho việc gửi tiền ra nước ngoài nhanh chóng và dễ dàng.",
+      },
+      {
+        id: 171,
+        word: "Geographical barriers",
+        pronunciation: "/ˌdʒiːəˈɡræfɪkəl ˈbæriəz/",
+        meaning: "Rào cản địa lý, các trở ngại về khoảng cách và vị trí",
+        note: "Cụm danh từ thường đi với 'overcome' (vượt qua): 'overcome geographical barriers'. Đây là lợi ích điển hình của mạng xã hội và công nghệ truyền thông. Tương đương: physical distance, spatial boundaries. Biến thể: 'irrespective of their physical location' (bất kể vị trí thực tế của họ).",
+        example: "Technology helps overcome geographical barriers in business.",
+        exampleTranslation:
+          "Công nghệ giúp vượt qua rào cản địa lý trong kinh doanh.",
+      },
+      {
+        id: 172,
+        word: "Social interactions",
+        pronunciation: "/ˈsəʊʃəl ˌɪntərˈækʃənz/",
+        meaning: "Giao tiếp xã hội, sự tương tác và kết nối với người khác",
+        note: "Cụm danh từ chỉ các hoạt động trao đổi và kết nối giữa người với người. Trong bài về công nghệ, 'enrich social interactions' (làm phong phú giao tiếp xã hội) thường được dùng để lập luận rằng mạng xã hội có lợi. Phân biệt: 'social interactions' (giao tiếp xã hội nói chung) vs. 'face-to-face interactions' (giao tiếp trực tiếp).",
+        example: "Social interactions are vital for mental health.",
+        exampleTranslation:
+          "Giao tiếp xã hội rất quan trọng cho sức khỏe tâm thần.",
+      },
+      {
+        id: 173,
+        word: "A significant leap",
+        pronunciation: "/ə sɪɡˈnɪfɪkənt liːp/",
+        meaning: "Bước tiến lớn, sự nhảy vọt đáng kể",
+        note: "'Leap' (danh từ/động từ) = bước nhảy lớn, tiến bộ đột phá. Ẩn dụ từ hành động nhảy — gợi ý sự tiến bộ nhanh chóng và đáng kể, không phải dần dần. Trang trọng hơn và hình ảnh hơn 'a big step' hay 'a major advancement'. Cụm hay trong kết luận: 'represents a significant leap towards...'.",
+        example:
+          "The internet represented a significant leap in global communication.",
+        exampleTranslation:
+          "Internet đại diện cho một bước tiến lớn trong giao tiếp toàn cầu.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W6 - Task 2: Personal Information Online (Sample 2 - Negative)
+  // ==========================================
+  {
+    id: "wr_w6_task2_data_negative",
+    skill: "Writing",
+    volume: "9",
+    topic: "Technology / Privacy",
+    part: "Task 2 - Personal Info Online (Drawbacks > Benefits)",
+    cards: [
+      {
+        id: 174,
+        word: "Online banking engagements",
+        pronunciation: "/ˈɒnlaɪn ˈbæŋkɪŋ ɪnˈɡeɪdʒmənts/",
+        meaning:
+          "Hoạt động ngân hàng trực tuyến, việc sử dụng dịch vụ ngân hàng qua internet",
+        note: "'Engagements' (sự tham gia, tương tác) thay cho 'use' hay 'activities' — trang trọng và học thuật hơn. Cụm này thường xuất hiện trong mở bài khi paraphrase 'use online banking services' từ đề bài. Thể hiện khả năng diễn đạt cùng một ý bằng nhiều cách khác nhau.",
+        example:
+          "Online banking engagements have made financial transactions more convenient.",
+        exampleTranslation:
+          "Các hoạt động ngân hàng trực tuyến đã làm cho giao dịch tài chính trở nên thuận tiện hơn.",
+      },
+      {
+        id: 175,
+        word: "Digitization",
+        pronunciation: "/ˌdɪdʒɪtaɪˈzeɪʃən/",
+        meaning: "Quá trình số hóa, chuyển đổi thông tin sang định dạng số",
+        note: "Danh từ chỉ quá trình chuyển đổi thông tin hoặc quy trình sang dạng kỹ thuật số. Phân biệt: 'digitization' (chuyển đổi sang số) vs. 'digitalization' (ứng dụng công nghệ số để thay đổi quy trình). Cụm hay: 'the digitization of personal data has paved the way for...' (số hóa dữ liệu cá nhân đã mở đường cho...).",
+        example:
+          "The digitization of records improves accessibility and reduces storage space.",
+        exampleTranslation:
+          "Việc số hóa hồ sơ cải thiện khả năng truy cập và giảm không gian lưu trữ.",
+      },
+      {
+        id: 176,
+        word: "Personalized services",
+        pronunciation: "/ˈpɜːsənəlaɪzd ˈsɜːvɪsɪz/",
+        meaning:
+          "Dịch vụ được cá nhân hóa, thiết kế riêng theo nhu cầu từng người",
+        note: "'Personalized' (được cá nhân hóa) là tính từ chỉ sự tùy chỉnh theo từng cá nhân cụ thể. Đây là lợi ích của việc chia sẻ dữ liệu: công ty dùng dữ liệu để cung cấp dịch vụ phù hợp hơn. Thường đi với: 'tailored/customized/individualized services'. Đây cũng có thể là bất lợi nếu nhìn từ góc độ xâm phạm quyền riêng tư.",
+        example:
+          "Personalized services in online shopping can enhance customer experience.",
+        exampleTranslation:
+          "Dịch vụ cá nhân hóa trong mua sắm trực tuyến có thể nâng cao trải nghiệm của khách hàng.",
+      },
+      {
+        id: 177,
+        word: "Tailored engagement",
+        pronunciation: "/ˈteɪləd ɪnˈɡeɪdʒmənt/",
+        meaning:
+          "Sự tương tác được thiết kế riêng theo yêu cầu và sở thích cụ thể",
+        note: "'Tailored' (được may đo vừa vặn) là ẩn dụ từ nghề may, chỉ sự tùy chỉnh chính xác. 'Engagement' (sự tham gia, tương tác) trong bối cảnh digital marketing chỉ mức độ người dùng tương tác với nền tảng. Cụm này nhấn mạnh lợi thế của nền tảng số trong việc cá nhân hóa trải nghiệm.",
+        example:
+          "Tailored engagement strategies can significantly improve user retention.",
+        exampleTranslation:
+          "Các chiến lược tương tác được thiết kế riêng có thể cải thiện đáng kể sự giữ chân người dùng.",
+      },
+      {
+        id: 178,
+        word: "Digital security",
+        pronunciation: "/ˈdɪdʒɪtəl sɪˈkjʊərɪti/",
+        meaning:
+          "An ninh số, các biện pháp bảo vệ dữ liệu điện tử và danh tính trực tuyến",
+        note: "Cụm danh từ quan trọng chỉ lĩnh vực bảo vệ thông tin trong không gian số. Phân biệt: 'cybersecurity' (bảo mật mạng, rộng hơn) vs. 'digital security' (bảo mật dữ liệu số, cụ thể hơn). Thường đi với: 'concerns over digital security', 'invest in digital security'. Từ liên quan: encryption, firewall, data protection.",
+        example:
+          "Investing in digital security is essential to safeguard online transactions.",
+        exampleTranslation:
+          "Đầu tư vào an ninh số là cần thiết để bảo vệ giao dịch trực tuyến.",
+      },
+      {
+        id: 179,
+        word: "Fraudulent activities",
+        pronunciation: "/ˈfrɔːdjʊlənt ækˈtɪvɪtɪz/",
+        meaning: "Các hoạt động gian lận, hành vi lừa đảo để trục lợi",
+        note: "'Fraudulent' (gian lận, lừa đảo) là tính từ trang trọng và pháp lý. Mạnh hơn 'dishonest' hay 'illegal'. Cụm này thường đi với 'exploit information for fraudulent activities' (khai thác thông tin cho các hoạt động gian lận). Liên quan: scam, phishing, financial fraud, identity fraud.",
+        example:
+          "Authorities are cracking down on fraudulent activities in the financial sector.",
+        exampleTranslation:
+          "Các cơ quan chức năng đang trấn áp các hoạt động gian lận trong lĩnh vực tài chính.",
+      },
+      {
+        id: 180,
+        word: "Potential misuse of personal data",
+        pronunciation: "/pəˈtɛnʃəl ˈmɪsjuːs əv ˈpɜːsənəl ˈdeɪtə/",
+        meaning: "Khả năng thông tin cá nhân bị sử dụng sai mục đích",
+        note: "Cụm danh từ dài nhưng quan trọng, nhấn mạnh nguy cơ tiềm ẩn ('potential') của việc dữ liệu bị lạm dụng. 'Misuse' (lạm dụng, sử dụng sai) = dùng không đúng mục đích ban đầu. Thường xuất hiện trong bài về công nghệ, quyền riêng tư, hoặc đạo đức doanh nghiệp. Cấu trúc hay: 'the pervasive collection and potential misuse of personal data'.",
+        example:
+          "The potential misuse of personal data is a major concern in the era of big data.",
+        exampleTranslation:
+          "Khả năng lạm dụng dữ liệu cá nhân là một mối lo ngại lớn trong kỷ nguyên dữ liệu lớn.",
+      },
+      {
+        id: 181,
+        word: "Targeted advertising",
+        pronunciation: "/ˈtɑːɡɪtɪd ˈædvətaɪzɪŋ/",
+        meaning:
+          "Quảng cáo được nhắm mục tiêu theo sở thích và hành vi của từng người dùng",
+        note: "'Targeted' (nhắm mục tiêu) = được chỉ định hướng đến một đối tượng cụ thể. Trong bối cảnh này, dữ liệu cá nhân bị dùng để hiển thị quảng cáo phù hợp — có thể là lợi ích (quảng cáo hữu ích hơn) hoặc bất lợi (xâm phạm quyền riêng tư). Thường xuất hiện cùng 'profiling' (lập hồ sơ người dùng).",
+        example:
+          "Targeted advertising can improve sales by reaching the right audience.",
+        exampleTranslation:
+          "Quảng cáo mục tiêu có thể cải thiện doanh số bằng cách tiếp cận đúng đối tượng.",
+      },
+      {
+        id: 182,
+        word: "Overarching implications",
+        pronunciation: "/ˌəʊvərˈɑːtʃɪŋ ˌɪmplɪˈkeɪʃənz/",
+        meaning:
+          "Hậu quả bao trùm, tác động rộng lớn ảnh hưởng đến nhiều khía cạnh",
+        note: "'Overarching' (bao trùm, xuyên suốt) là tính từ chỉ điều gì đó bao phủ và ảnh hưởng đến toàn bộ một vấn đề hoặc hệ thống. Mạnh hơn 'broad' hay 'wide-ranging'. Cụm 'overarching implications for privacy and security' thường xuất hiện trong kết luận khi tóm tắt tác động toàn diện của một xu hướng.",
+        example:
+          "The rise of artificial intelligence has overarching implications for the workforce.",
+        exampleTranslation:
+          "Sự phát triển của trí tuệ nhân tạo có hậu quả rộng lớn đối với lực lượng lao động.",
+      },
+      {
+        id: 183,
+        word: "Financial management",
+        pronunciation: "/faɪˈnænʃəl ˈmænɪdʒmənt/",
+        meaning: "Quản lý tài chính, kiểm soát và phân bổ nguồn lực tài chính",
+        note: "Cụm danh từ chỉ quá trình lập kế hoạch, tổ chức và kiểm soát các hoạt động tài chính. Trong bài về ngân hàng trực tuyến, 'financial management' là lợi ích cụ thể mà người dùng được hưởng. Thường đi với: 'allows for/enables financial management without visiting a bank'. Đồng nghĩa: money management, fiscal management.",
+        example:
+          "Effective financial management is crucial for achieving financial stability.",
+        exampleTranslation:
+          "Quản lý tài chính hiệu quả là rất quan trọng để đạt được sự ổn định tài chính.",
+      },
+    ],
+  },
 ];

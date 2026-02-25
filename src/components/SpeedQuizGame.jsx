@@ -253,20 +253,16 @@ export default function SpeedQuizGame({
         <div
           className={`minecraft-shadow-lg group p-2 transition-all duration-300 hover:translate-y-[-2px] cursor-pointer border-3 ${
             isDarkMode
-              ? "bg-blue-600 border-blue-700"
-              : "bg-blue-400 border-blue-500"
+              ? "bg-gradient-to-br from-indigo-600 to-indigo-700 border-indigo-800"
+              : "bg-gradient-to-br from-indigo-400 to-indigo-500 border-indigo-600"
           }`}
         >
           <div className="flex flex-col items-center">
-            <Trophy className="w-5 h-5 mb-0.5 text-yellow-300 drop-shadow-lg group-hover:animate-tada" />
-            <p
-              className={`text-xl font-black mb-0 animate-countUp ${
-                isDarkMode ? "text-yellow-300" : "text-yellow-100"
-              }`}
-            >
+            <Trophy className="w-5 h-5 mb-0.5 text-amber-200 drop-shadow-lg group-hover:animate-tada" />
+            <p className="text-xl font-black mb-0 animate-countUp text-white">
               {score}
             </p>
-            <p className="text-[10px] font-bold text-white/80">Điểm</p>
+            <p className="text-[10px] font-bold text-white/90">Điểm</p>
           </div>
         </div>
 
@@ -275,34 +271,30 @@ export default function SpeedQuizGame({
           className={`minecraft-shadow-lg group p-2 transition-all duration-300 hover:translate-y-[-2px] cursor-pointer relative overflow-hidden border-3 ${
             combo >= 3
               ? isDarkMode
-                ? "bg-orange-600 border-orange-700 animate-fireGlow"
-                : "bg-orange-500 border-orange-600 animate-fireGlow"
+                ? "bg-gradient-to-br from-rose-600 to-rose-700 border-rose-800"
+                : "bg-gradient-to-br from-rose-400 to-rose-500 border-rose-600"
               : isDarkMode
-                ? "bg-gray-700 border-gray-800"
-                : "bg-gray-400 border-gray-500"
+                ? "bg-gradient-to-br from-slate-600 to-slate-700 border-slate-800"
+                : "bg-gradient-to-br from-slate-400 to-slate-500 border-slate-600"
           }`}
         >
           <div className="flex flex-col items-center relative z-10">
             <Flame
-              className={`w-5 h-5 mb-0.5 drop-shadow-lg ${
-                combo >= 3 ? "text-yellow-300 animate-wiggle" : "text-gray-500"
+              className={`w-5 h-5 mb-0.5 drop-shadow-lg transition-all ${
+                combo >= 3 ? "text-amber-200 animate-wiggle" : "text-slate-300"
               }`}
             />
             <p
               className={`text-xl font-black mb-0 ${
-                combo >= 3
-                  ? isDarkMode
-                    ? "text-yellow-300"
-                    : "text-yellow-100"
-                  : "text-gray-500"
+                combo >= 3 ? "text-white" : "text-slate-300"
               }`}
             >
               {combo}x
             </p>
-            <p className="text-[10px] font-bold text-white/80">Combo</p>
+            <p className="text-[10px] font-bold text-white/90">Combo</p>
           </div>
           {combo >= 3 && (
-            <Sparkles className="absolute top-1 right-1 w-2.5 h-2.5 text-yellow-300 animate-pulse" />
+            <Sparkles className="absolute top-1 right-1 w-2.5 h-2.5 text-amber-200 animate-pulse" />
           )}
         </div>
 
@@ -311,11 +303,11 @@ export default function SpeedQuizGame({
           className={`minecraft-shadow-lg group p-2 transition-all duration-300 hover:translate-y-[-2px] cursor-pointer border-3 ${
             timeLeft <= 5
               ? isDarkMode
-                ? "bg-red-600 border-red-700 animate-pulseScale"
-                : "bg-red-500 border-red-600 animate-pulseScale"
+                ? "bg-gradient-to-br from-amber-600 to-amber-700 border-amber-800 animate-pulseScale"
+                : "bg-gradient-to-br from-amber-400 to-amber-500 border-amber-600 animate-pulseScale"
               : isDarkMode
-                ? "bg-emerald-600 border-emerald-700"
-                : "bg-emerald-500 border-emerald-600"
+                ? "bg-gradient-to-br from-emerald-600 to-emerald-700 border-emerald-800"
+                : "bg-gradient-to-br from-emerald-400 to-emerald-500 border-emerald-600"
           }`}
         >
           <div className="flex flex-col items-center relative">
@@ -341,24 +333,18 @@ export default function SpeedQuizGame({
                   strokeDasharray={`${2 * Math.PI * 16}`}
                   strokeDashoffset={`${2 * Math.PI * 16 * (1 - timeProgress / 100)}`}
                   className={`transition-all duration-1000 ${
-                    timeLeft <= 5 ? "text-yellow-300" : "text-white"
+                    timeLeft <= 5 ? "text-amber-100" : "text-white"
                   }`}
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <Clock
-                  className={`w-4 h-4 ${timeLeft <= 5 ? "text-yellow-300" : "text-white"}`}
+                  className={`w-4 h-4 ${timeLeft <= 5 ? "text-amber-100" : "text-white"}`}
                 />
               </div>
             </div>
-            <p
-              className={`text-xl font-black mb-0 ${
-                timeLeft <= 5 ? "text-yellow-300" : "text-white"
-              }`}
-            >
-              {timeLeft}s
-            </p>
-            <p className="text-[10px] font-bold text-white/80">Thời gian</p>
+            <p className="text-xl font-black mb-0 text-white">{timeLeft}s</p>
+            <p className="text-[10px] font-bold text-white/90">Thời gian</p>
           </div>
         </div>
 
@@ -366,20 +352,16 @@ export default function SpeedQuizGame({
         <div
           className={`minecraft-shadow-lg group p-2 transition-all duration-300 hover:translate-y-[-2px] cursor-pointer border-3 ${
             isDarkMode
-              ? "bg-purple-600 border-purple-700"
-              : "bg-purple-500 border-purple-600"
+              ? "bg-gradient-to-br from-violet-600 to-violet-700 border-violet-800"
+              : "bg-gradient-to-br from-violet-400 to-violet-500 border-violet-600"
           }`}
         >
           <div className="flex flex-col items-center">
-            <Target className="w-5 h-5 mb-0.5 text-yellow-300 drop-shadow-lg group-hover:animate-spin3d" />
-            <p
-              className={`text-xl font-black mb-0 ${
-                isDarkMode ? "text-yellow-300" : "text-yellow-100"
-              }`}
-            >
+            <Target className="w-5 h-5 mb-0.5 text-violet-100 drop-shadow-lg group-hover:animate-spin3d" />
+            <p className={`text-xl font-black mb-0 text-white`}>
               {currentQuestionIndex + 1}/{questions.length}
             </p>
-            <p className="text-[10px] font-bold text-white/80">Câu hỏi</p>
+            <p className="text-[10px] font-bold text-white/90">Câu hỏi</p>
           </div>
         </div>
       </div>
@@ -513,38 +495,44 @@ export default function SpeedQuizGame({
               className={`minecraft-shadow-lg p-4 text-center font-bold text-lg animate-popIn border-4 ${
                 isCorrect
                   ? isDarkMode
-                    ? "bg-emerald-600 border-emerald-700 text-white"
-                    : "bg-emerald-500 border-emerald-600 text-white"
+                    ? "bg-gradient-to-r from-emerald-600 to-teal-600 border-emerald-700 text-white"
+                    : "bg-gradient-to-r from-emerald-500 to-teal-500 border-emerald-600 text-white"
                   : isDarkMode
-                    ? "bg-red-600 border-red-700 text-white"
-                    : "bg-red-500 border-red-600 text-white"
+                    ? "bg-gradient-to-r from-slate-600 to-slate-700 border-slate-800 text-white"
+                    : "bg-gradient-to-r from-slate-400 to-slate-500 border-slate-600 text-white"
               }`}
             >
               {isCorrect ? (
-                <div className="flex items-center justify-center gap-2">
-                  <span className="text-3xl animate-tada">🎉</span>
-                  <span>Chính xác!</span>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="minecraft-shadow p-1.5 bg-white/20 border-2 border-white/30 animate-tada">
+                    <Trophy className="w-5 h-5 text-emerald-100" />
+                  </div>
+                  <span className="text-emerald-50">Chính xác!</span>
                   {combo >= 3 && (
-                    <>
-                      <Flame className="w-6 h-6 text-yellow-300 animate-wiggle" />
-                      <span className="text-yellow-300 font-black">
-                        x{combo} COMBO!
+                    <div className="flex items-center gap-1.5 ml-2 minecraft-shadow px-2.5 py-1 bg-rose-500/80 border-2 border-rose-600">
+                      <Flame className="w-4 h-4 text-amber-200 animate-wiggle" />
+                      <span className="text-white font-black text-sm">
+                        {combo}x Combo
                       </span>
-                    </>
+                    </div>
                   )}
                 </div>
               ) : (
                 <div>
-                  <div className="flex items-center justify-center gap-2 mb-2">
-                    <span className="text-3xl">😔</span>
-                    <span>Sai rồi!</span>
+                  <div className="flex items-center justify-center gap-3 mb-2.5">
+                    <div className="minecraft-shadow p-1.5 bg-white/10 border-2 border-white/20">
+                      <Target className="w-5 h-5 text-slate-200" />
+                    </div>
+                    <span className="text-slate-100">Chưa chính xác</span>
                   </div>
-                  <p className="text-base font-medium opacity-90">
-                    Đáp án đúng:{" "}
-                    <span className="font-black">
+                  <div className="minecraft-shadow p-2.5 bg-black/20 border-2 border-white/10">
+                    <p className="text-sm font-semibold text-white/70 mb-1">
+                      Đáp án đúng:
+                    </p>
+                    <p className="text-base font-black text-white">
                       {currentQuestion.correct}
-                    </span>
-                  </p>
+                    </p>
+                  </div>
                 </div>
               )}
             </div>
@@ -554,19 +542,24 @@ export default function SpeedQuizGame({
 
       {/* Mega Combo Streak Indicator */}
       {combo >= 5 && !showFeedback && (
-        <div className="text-center mb-6 animate-tada">
+        <div className="text-center mb-6 animate-slideDown">
           <div
-            className={`inline-flex items-center gap-3 px-8 py-4 rounded-full backdrop-blur-xl border-2 ${
+            className={`minecraft-shadow-lg inline-flex items-center gap-4 px-8 py-3.5 backdrop-blur-sm border-4 ${
               isDarkMode
-                ? "bg-gradient-to-r from-orange-600/40 to-red-600/40 border-orange-400/60 shadow-2xl shadow-orange-500/50"
-                : "bg-gradient-to-r from-orange-200 to-red-200 border-orange-400 shadow-2xl shadow-orange-400/60"
+                ? "bg-gradient-to-r from-rose-600/90 to-pink-600/90 border-rose-700"
+                : "bg-gradient-to-r from-rose-400/90 to-pink-400/90 border-rose-500"
             }`}
           >
-            <Flame className="w-10 h-10 text-orange-500 animate-wiggle" />
-            <p className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-red-500 to-pink-500">
-              FIRE STREAK! x{combo}
-            </p>
-            <Flame className="w-10 h-10 text-orange-500 animate-wiggle" />
+            <div className="minecraft-shadow p-2 bg-white/20 border-2 border-white/30">
+              <Flame className="w-6 h-6 text-amber-200 animate-wiggle" />
+            </div>
+            <div className="flex flex-col">
+              <p className="text-xs font-bold text-white/80 uppercase tracking-wider">
+                Streak Bonus
+              </p>
+              <p className="text-2xl font-black text-white">{combo}x Combo</p>
+            </div>
+            <Sparkles className="w-5 h-5 text-amber-200 animate-pulse" />
           </div>
         </div>
       )}
