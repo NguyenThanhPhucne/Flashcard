@@ -192,37 +192,41 @@ export default function SurvivalTypingGame({
   if (!words[currentIndex]) return null;
 
   return (
-    <div className="w-full max-w-2xl mx-auto px-4 sm:px-6 md:px-8 py-4">
+    <div className="w-full max-w-2xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-3 sm:py-4">
       {showConfetti && <Confetti />}
 
       {/* Header */}
-      <div className="flex items-center justify-between mb-6 sm:mb-8">
-        <div className="flex items-center gap-3 sm:gap-4">
+      <div className="flex items-center justify-between mb-4 sm:mb-6 md:mb-8 gap-2">
+        <div className="flex items-center gap-2 sm:gap-3 md:gap-4 min-w-0 flex-1">
           <button
             onClick={onClose}
-            className={`group p-2.5 sm:p-3 rounded-xl border transition-all duration-200 hover:scale-110 active:scale-95 ${
+            className={`group p-2 sm:p-2.5 md:p-3 rounded-lg sm:rounded-xl border transition-all duration-200 hover:scale-110 active:scale-95 flex-shrink-0 ${
               isDarkMode
                 ? "bg-slate-800/80 border-slate-700/50 text-slate-300 hover:bg-slate-700 hover:border-slate-600"
                 : "bg-white border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-slate-300 shadow-sm hover:shadow"
             }`}
           >
             <ArrowLeft
-              size={20}
+              size={18}
               strokeWidth={2.5}
-              className="transition-transform group-hover:-translate-x-0.5"
+              className="sm:w-5 sm:h-5 transition-transform group-hover:-translate-x-0.5"
             />
           </button>
-          <div>
+          <div className="min-w-0 flex-1">
             <h2
-              className={`text-xl sm:text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 ${
+              className={`text-base sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight flex items-center gap-1.5 sm:gap-2 ${
                 isDarkMode ? "text-white" : "text-slate-900"
               }`}
             >
-              <Keyboard size={28} className="text-rose-500" />
-              Gõ Từ Sinh Tồn
+              <Keyboard
+                size={20}
+                className="sm:w-6 sm:h-6 md:w-7 md:h-7 text-rose-500 flex-shrink-0"
+              />
+              <span className="hidden xs:inline truncate">Gõ Từ Sinh Tồn</span>
+              <span className="xs:hidden">Gõ Từ</span>
             </h2>
             <p
-              className={`text-xs sm:text-sm mt-0.5 ${
+              className={`text-[10px] xs:text-xs sm:text-sm mt-0.5 truncate ${
                 isDarkMode ? "text-slate-400" : "text-slate-500"
               }`}
             >
@@ -235,7 +239,7 @@ export default function SurvivalTypingGame({
 
       {/* Game Container */}
       <div
-        className={`w-full p-6 md:p-8 rounded-3xl shadow-xl border relative overflow-hidden transition-all ${
+        className={`w-full p-4 xs:p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl shadow-xl border relative overflow-hidden transition-all ${
           isDarkMode
             ? "bg-slate-800/80 border-slate-700/50"
             : "bg-white border-slate-200"

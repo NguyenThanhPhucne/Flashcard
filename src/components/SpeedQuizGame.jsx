@@ -296,7 +296,7 @@ export default function SpeedQuizGame({
   const timeProgress = (timeLeft / 15) * 100;
 
   return (
-    <div className="w-full max-w-3xl mx-auto px-4 relative">
+    <div className="w-full max-w-3xl mx-auto px-3 sm:px-4 md:px-6 relative">
       {/* Confetti Effect */}
       <Confetti isActive={showConfetti} />
 
@@ -323,26 +323,26 @@ export default function SpeedQuizGame({
       </div>
 
       {/* Header - Glassmorphism */}
-      <div className="flex items-center justify-between mb-4 relative z-10">
+      <div className="flex items-center justify-between mb-3 sm:mb-4 relative z-10">
         <button
           onClick={onClose}
-          className={`group p-2.5 rounded-xl backdrop-blur-xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl ${
+          className={`group p-2 sm:p-2.5 rounded-lg sm:rounded-xl backdrop-blur-xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl ${
             isDarkMode
               ? "bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20"
               : "bg-white/60 hover:bg-white/80 text-slate-700 border border-black/5 hover:border-black/10"
           }`}
         >
-          <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-0.5" />
+          <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5 transition-transform group-hover:-translate-x-0.5" />
         </button>
 
         <ThemeToggle isDarkMode={isDarkMode} onToggle={onToggleTheme} />
       </div>
 
       {/* Game Stats - Professional Glassmorphism */}
-      <div className="grid grid-cols-4 gap-2 mb-4 relative z-10">
+      <div className="grid grid-cols-4 gap-1.5 xs:gap-2 sm:gap-2.5 md:gap-3 mb-3 sm:mb-4 relative z-10">
         {/* Score Card */}
         <div
-          className={`group p-2.5 rounded-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer shadow-md hover:shadow-lg border ${
+          className={`group p-2 xs:p-2.5 sm:p-3 rounded-lg sm:rounded-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer shadow-md hover:shadow-lg border ${
             isDarkMode
               ? "bg-gradient-to-br from-blue-500/15 to-indigo-600/15 border-blue-400/25 hover:border-blue-400/40"
               : "bg-gradient-to-br from-blue-200/30 to-indigo-300/30 border-blue-300/40 hover:border-blue-400/50"
@@ -350,21 +350,21 @@ export default function SpeedQuizGame({
         >
           <div className="flex flex-col items-center">
             <div
-              className={`p-1.5 rounded-lg mb-1 transition-all duration-300 group-hover:scale-110 ${
+              className={`p-1 xs:p-1.5 rounded-md sm:rounded-lg mb-0.5 xs:mb-1 transition-all duration-300 group-hover:scale-110 ${
                 isDarkMode ? "bg-blue-400/15" : "bg-blue-200/30"
               }`}
             >
-              <Trophy className="w-5 h-5 text-blue-300 drop-shadow-sm group-hover:animate-tada" />
+              <Trophy className="w-4 h-4 xs:w-5 xs:h-5 text-blue-300 drop-shadow-sm group-hover:animate-tada" />
             </div>
             <p
-              className={`text-xl font-black mb-0.5 animate-countUp ${
+              className={`text-base xs:text-lg sm:text-xl font-black mb-0.5 animate-countUp ${
                 isDarkMode ? "text-slate-200" : "text-slate-700"
               }`}
             >
               {score}
             </p>
             <p
-              className={`text-[10px] font-semibold ${
+              className={`text-[9px] xs:text-[10px] sm:text-[11px] font-semibold ${
                 isDarkMode ? "text-slate-300" : "text-slate-600"
               }`}
             >
@@ -375,7 +375,7 @@ export default function SpeedQuizGame({
 
         {/* Combo Card */}
         <div
-          className={`group p-2.5 rounded-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer relative overflow-hidden shadow-md hover:shadow-lg border ${
+          className={`group p-2 xs:p-2.5 sm:p-3 rounded-lg sm:rounded-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer relative overflow-hidden shadow-md hover:shadow-lg border ${
             combo >= 3
               ? isDarkMode
                 ? "bg-gradient-to-br from-amber-500/20 to-orange-600/20 border-amber-400/30 hover:border-amber-400/50"

@@ -47,6 +47,15 @@ export default function StudyView({
     setHoverTimeout(timeout);
   };
 
+  const toggleModeMenu = () => {
+    setShowModeMenu((prev) => !prev);
+  };
+
+  const handleModeSelect = (mode) => {
+    setShowModeMenu(false);
+    onSwitchMode(mode);
+  };
+
   if (!activeDeck || !currentCard) return null;
 
   return (
@@ -87,6 +96,158 @@ export default function StudyView({
           </h2>
         </div>
 
+        {/* Mode Switcher Button - Mobile/Tablet (visible on xl: hidden) */}
+        <div className="xl:hidden relative">
+          <button
+            onClick={toggleModeMenu}
+            className={`relative p-2 xs:p-2.5 sm:p-3 rounded-xl border-2 transition-all duration-300 hover:scale-110 active:scale-95 shadow-lg ${
+              showModeMenu
+                ? isDarkMode
+                  ? "bg-emerald-500/20 border-emerald-400/60 text-emerald-300"
+                  : "bg-emerald-100 border-emerald-400 text-emerald-700"
+                : isDarkMode
+                  ? "bg-slate-800/80 border-slate-700/40 text-slate-300 hover:bg-slate-700/80 hover:border-emerald-400/60"
+                  : "bg-white border-slate-300/60 text-slate-600 hover:bg-emerald-50 hover:border-emerald-300"
+            }`}
+          >
+            <Gamepad2 size={18} strokeWidth={2.5} className="xs:w-5 xs:h-5" />
+
+            {/* Badge indicator */}
+            <span
+              className={`absolute -top-1 -right-1 flex h-4 w-4 xs:h-5 xs:w-5 items-center justify-center rounded-full text-[9px] xs:text-[10px] font-bold ${
+                isDarkMode
+                  ? "bg-emerald-500 text-white"
+                  : "bg-emerald-600 text-white"
+              }`}
+            >
+              3
+            </span>
+          </button>
+
+          {/* Dropdown Menu for Mobile/Tablet */}
+          {showModeMenu && (
+            <>
+              {/* Backdrop */}
+              <div
+                className="fixed inset-0 z-40"
+                onClick={() => setShowModeMenu(false)}
+              />
+
+              <div
+                className={`absolute top-full right-0 mt-2 w-64 xs:w-72 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-2xl border-2 z-50 animate-in slide-in-from-top-2 duration-200 ${
+                  isDarkMode
+                    ? "bg-slate-800/98 border-slate-700/60"
+                    : "bg-white/98 border-slate-200"
+                }`}
+              >
+                {/* Menu Header */}
+                <div
+                  className={`px-4 py-3 border-b ${
+                    isDarkMode ? "border-slate-700/50" : "border-slate-200"
+                  }`}
+                >
+                  <h3
+                    className={`text-xs font-bold uppercase tracking-wider ${
+                      isDarkMode ? "text-slate-400" : "text-slate-500"
+                    }`}
+                  >
+                    Chọn chế độ chơi
+                  </h3>
+                </div>
+
+                {/* Menu Items */}
+                <div className="py-2">
+                  <button
+                    onClick={() => handleModeSelect("quiz")}
+                    className={`w-full flex items-start gap-3 px-4 py-3.5 transition-all duration-200 ${
+                      isDarkMode
+                        ? "hover:bg-emerald-500/20 text-emerald-200 hover:text-emerald-100"
+                        : "hover:bg-emerald-100/80 text-emerald-700 hover:text-emerald-800"
+                    }`}
+                  >
+                    <div
+                      className={`p-2 rounded-lg ${
+                        isDarkMode ? "bg-emerald-500/20" : "bg-emerald-100"
+                      }`}
+                    >
+                      <Gamepad2 size={20} strokeWidth={2.5} />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <div className="font-bold text-sm mb-0.5">
+                        Quiz Sinh Tồn
+                      </div>
+                      <div
+                        className={`text-xs ${
+                          isDarkMode ? "text-slate-400" : "text-slate-500"
+                        }`}
+                      >
+                        Trả lời câu hỏi trong thời gian giới hạn
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => handleModeSelect("match")}
+                    className={`w-full flex items-start gap-3 px-4 py-3.5 transition-all duration-200 ${
+                      isDarkMode
+                        ? "hover:bg-purple-500/20 text-purple-200 hover:text-purple-100"
+                        : "hover:bg-purple-100/80 text-purple-700 hover:text-purple-800"
+                    }`}
+                  >
+                    <div
+                      className={`p-2 rounded-lg ${
+                        isDarkMode ? "bg-purple-500/20" : "bg-purple-100"
+                      }`}
+                    >
+                      <Zap size={20} strokeWidth={2.5} />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <div className="font-bold text-sm mb-0.5">
+                        Ghép Từ Siêu Tốc
+                      </div>
+                      <div
+                        className={`text-xs ${
+                          isDarkMode ? "text-slate-400" : "text-slate-500"
+                        }`}
+                      >
+                        Ghép từ với nghĩa nhanh nhất có thể
+                      </div>
+                    </div>
+                  </button>
+
+                  <button
+                    onClick={() => handleModeSelect("typing")}
+                    className={`w-full flex items-start gap-3 px-4 py-3.5 transition-all duration-200 ${
+                      isDarkMode
+                        ? "hover:bg-rose-500/20 text-rose-200 hover:text-rose-100"
+                        : "hover:bg-rose-100/80 text-rose-700 hover:text-rose-800"
+                    }`}
+                  >
+                    <div
+                      className={`p-2 rounded-lg ${
+                        isDarkMode ? "bg-rose-500/20" : "bg-rose-100"
+                      }`}
+                    >
+                      <Keyboard size={20} strokeWidth={2.5} />
+                    </div>
+                    <div className="flex-1 text-left">
+                      <div className="font-bold text-sm mb-0.5">
+                        Gõ Từ Sinh Tồn
+                      </div>
+                      <div
+                        className={`text-xs ${
+                          isDarkMode ? "text-slate-400" : "text-slate-500"
+                        }`}
+                      >
+                        Gõ từ tiếng Anh trước khi bom nổ
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </>
+          )}
+        </div>
         <ThemeToggle isDarkMode={isDarkMode} onToggle={onToggleTheme} />
       </div>
 

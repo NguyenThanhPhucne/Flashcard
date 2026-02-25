@@ -341,38 +341,45 @@ export default function SpeedMatchGame({
     initializeGame();
   };
 
+  // Combo streak threshold
+  const isComboActive = comboStreak >= 3;
+
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 py-4">
+    <div className="w-full max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-3 sm:py-4">
       {showConfetti && <Confetti />}
 
       {/* Header - Cleaner Design */}
-      <div className="flex items-center justify-between mb-6 sm:mb-8">
-        <div className="flex items-center gap-3 sm:gap-4">
+      <div className="flex items-center justify-between mb-4 sm:mb-6 md:mb-8">
+        <div className="flex items-center gap-2 sm:gap-3 md:gap-4">
           <button
             onClick={onClose}
-            className={`group p-2.5 sm:p-3 rounded-xl border transition-all duration-200 hover:scale-110 active:scale-95 ${
+            className={`group p-2 sm:p-2.5 md:p-3 rounded-lg sm:rounded-xl border transition-all duration-200 hover:scale-110 active:scale-95 ${
               isDarkMode
                 ? "bg-slate-800/80 border-slate-700/50 text-slate-300 hover:bg-slate-700 hover:border-slate-600"
                 : "bg-white border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-slate-300 shadow-sm hover:shadow"
             }`}
           >
             <ArrowLeft
-              size={20}
+              size={18}
               strokeWidth={2.5}
-              className="transition-transform group-hover:-translate-x-0.5"
+              className="sm:w-5 sm:h-5 transition-transform group-hover:-translate-x-0.5"
             />
           </button>
           <div>
             <h2
-              className={`text-xl sm:text-2xl md:text-3xl font-bold tracking-tight flex items-center gap-2 ${
+              className={`text-base sm:text-xl md:text-2xl lg:text-3xl font-bold tracking-tight flex items-center gap-1.5 sm:gap-2 ${
                 isDarkMode ? "text-white" : "text-slate-900"
               }`}
             >
-              <Zap size={28} className="text-amber-400" />
-              Ghép Từ Siêu Tốc
+              <Zap
+                size={20}
+                className="sm:w-6 sm:h-6 md:w-7 md:h-7 text-amber-400"
+              />
+              <span className="hidden xs:inline">Ghép Từ Siêu Tốc</span>
+              <span className="xs:hidden">Ghép Từ</span>
             </h2>
             <p
-              className={`text-xs sm:text-sm mt-0.5 ${
+              className={`text-[10px] xs:text-xs sm:text-sm mt-0.5 truncate max-w-[150px] sm:max-w-none ${
                 isDarkMode ? "text-slate-400" : "text-slate-500"
               }`}
             >
@@ -384,22 +391,22 @@ export default function SpeedMatchGame({
       </div>
 
       {/* Stats Bar - Cleaner Layout */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-8">
         {/* Timer */}
         <div
-          className={`p-4 sm:p-5 rounded-2xl border relative overflow-hidden backdrop-blur-sm transition-all duration-200 ${
+          className={`p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border relative overflow-hidden backdrop-blur-sm transition-all duration-200 ${
             isDarkMode
               ? "bg-slate-800/60 border-slate-700/50 hover:bg-slate-800/80"
               : "bg-white/80 border-slate-200 hover:border-slate-300 shadow-sm hover:shadow"
           }`}
         >
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
             <Timer
-              size={18}
-              className={isDarkMode ? "text-blue-400" : "text-blue-600"}
+              size={14}
+              className={`sm:w-[18px] sm:h-[18px] ${isDarkMode ? "text-blue-400" : "text-blue-600"}`}
             />
             <span
-              className={`text-xs font-medium uppercase tracking-wider ${
+              className={`text-[9px] xs:text-[10px] sm:text-xs font-medium uppercase tracking-wider ${
                 isDarkMode ? "text-slate-400" : "text-slate-500"
               }`}
             >
@@ -407,7 +414,7 @@ export default function SpeedMatchGame({
             </span>
           </div>
           <div
-            className={`text-2xl sm:text-3xl font-bold font-mono tabular-nums ${
+            className={`text-xl xs:text-2xl sm:text-3xl font-bold font-mono tabular-nums ${
               isDarkMode ? "text-blue-300" : "text-blue-600"
             }`}
           >
@@ -417,19 +424,19 @@ export default function SpeedMatchGame({
 
         {/* Progress */}
         <div
-          className={`p-4 sm:p-5 rounded-2xl border relative overflow-hidden backdrop-blur-sm transition-all duration-200 ${
+          className={`p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border relative overflow-hidden backdrop-blur-sm transition-all duration-200 ${
             isDarkMode
               ? "bg-slate-800/60 border-slate-700/50 hover:bg-slate-800/80"
               : "bg-white/80 border-slate-200 hover:border-slate-300 shadow-sm hover:shadow"
           }`}
         >
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
             <Zap
-              size={18}
-              className={isDarkMode ? "text-amber-400" : "text-amber-600"}
+              size={14}
+              className={`sm:w-[18px] sm:h-[18px] ${isDarkMode ? "text-amber-400" : "text-amber-600"}`}
             />
             <span
-              className={`text-xs font-medium uppercase tracking-wider ${
+              className={`text-[9px] xs:text-[10px] sm:text-xs font-medium uppercase tracking-wider ${
                 isDarkMode ? "text-slate-400" : "text-slate-500"
               }`}
             >
@@ -437,7 +444,7 @@ export default function SpeedMatchGame({
             </span>
           </div>
           <div
-            className={`text-2xl sm:text-3xl font-bold tabular-nums ${
+            className={`text-xl xs:text-2xl sm:text-3xl font-bold tabular-nums ${
               isDarkMode ? "text-amber-300" : "text-amber-600"
             }`}
           >
@@ -464,8 +471,8 @@ export default function SpeedMatchGame({
 
         {/* Combo Streak */}
         <div
-          className={`p-4 sm:p-5 rounded-2xl border relative overflow-hidden backdrop-blur-sm transition-all duration-300 ${
-            comboStreak >= 3
+          className={`p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border relative overflow-hidden backdrop-blur-sm transition-all duration-300 ${
+            isComboActive
               ? isDarkMode
                 ? "bg-orange-900/40 border-orange-500/60 shadow-lg shadow-orange-500/20 scale-105"
                 : "bg-gradient-to-br from-orange-50 to-red-50 border-orange-400/60 shadow-lg shadow-orange-300/30 scale-105"
@@ -474,21 +481,21 @@ export default function SpeedMatchGame({
                 : "bg-white/80 border-slate-200 hover:border-slate-300 shadow-sm hover:shadow"
           }`}
         >
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
             <Flame
-              size={18}
-              className={
-                comboStreak >= 3
+              size={14}
+              className={`sm:w-[18px] sm:h-[18px] ${
+                isComboActive
                   ? isDarkMode
                     ? "text-orange-400 animate-bounce-slow"
                     : "text-orange-600 animate-bounce-slow"
                   : isDarkMode
                     ? "text-orange-400"
                     : "text-orange-600"
-              }
+              }`}
             />
             <span
-              className={`text-xs font-medium uppercase tracking-wider ${
+              className={`text-[9px] xs:text-[10px] sm:text-xs font-medium uppercase tracking-wider ${
                 isDarkMode ? "text-slate-400" : "text-slate-500"
               }`}
             >
@@ -496,8 +503,8 @@ export default function SpeedMatchGame({
             </span>
           </div>
           <div
-            className={`text-2xl sm:text-3xl font-bold tabular-nums ${
-              comboStreak >= 3
+            className={`text-xl xs:text-2xl sm:text-3xl font-bold tabular-nums ${
+              isComboActive
                 ? isDarkMode
                   ? "text-orange-300"
                   : "text-orange-700"
@@ -512,19 +519,19 @@ export default function SpeedMatchGame({
 
         {/* Personal Best */}
         <div
-          className={`p-4 sm:p-5 rounded-2xl border relative overflow-hidden backdrop-blur-sm transition-all duration-200 ${
+          className={`p-3 sm:p-4 md:p-5 rounded-xl sm:rounded-2xl border relative overflow-hidden backdrop-blur-sm transition-all duration-200 ${
             isDarkMode
               ? "bg-slate-800/60 border-slate-700/50 hover:bg-slate-800/80"
               : "bg-white/80 border-slate-200 hover:border-slate-300 shadow-sm hover:shadow"
           }`}
         >
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex items-center gap-1.5 sm:gap-2 mb-1.5 sm:mb-2">
             <Trophy
-              size={18}
-              className={isDarkMode ? "text-purple-400" : "text-purple-600"}
+              size={14}
+              className={`sm:w-[18px] sm:h-[18px] ${isDarkMode ? "text-purple-400" : "text-purple-600"}`}
             />
             <span
-              className={`text-xs font-medium uppercase tracking-wider ${
+              className={`text-[9px] xs:text-[10px] sm:text-xs font-medium uppercase tracking-wider ${
                 isDarkMode ? "text-slate-400" : "text-slate-500"
               }`}
             >
@@ -532,7 +539,7 @@ export default function SpeedMatchGame({
             </span>
           </div>
           <div
-            className={`text-2xl sm:text-3xl font-bold font-mono tabular-nums ${
+            className={`text-xl xs:text-2xl sm:text-3xl font-bold font-mono tabular-nums ${
               isDarkMode ? "text-purple-300" : "text-purple-600"
             }`}
           >
@@ -732,7 +739,7 @@ export default function SpeedMatchGame({
       )}
 
       {/* Cards Grid - Cleaner Design */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4">
         {cards.map((card) => {
           const isSelected = selectedCards.find((c) => c.id === card.id);
           const isMatched = matchedPairs.includes(card.pairId);
@@ -745,7 +752,7 @@ export default function SpeedMatchGame({
               key={card.id}
               onClick={() => handleCardClick(card)}
               disabled={isMatched}
-              className={`relative p-4 sm:p-5 rounded-2xl border transition-all duration-300 min-h-[100px] sm:min-h-[120px] flex flex-col items-center justify-center group backdrop-blur-sm ${
+              className={`relative p-3 xs:p-4 sm:p-5 rounded-xl sm:rounded-2xl border transition-all duration-300 min-h-[80px] xs:min-h-[90px] sm:min-h-[100px] md:min-h-[120px] flex flex-col items-center justify-center group backdrop-blur-sm touch-manipulation ${
                 isMatched
                   ? "opacity-0 cursor-not-allowed transform scale-75 pointer-events-none"
                   : isSelected
@@ -780,7 +787,7 @@ export default function SpeedMatchGame({
               {isWord ? (
                 <>
                   <div
-                    className={`text-base sm:text-lg font-bold mb-1.5 text-center transition-all duration-200 leading-tight ${
+                    className={`text-sm xs:text-base sm:text-lg font-bold mb-1 xs:mb-1.5 text-center transition-all duration-200 leading-tight ${
                       isSelected
                         ? isDarkMode
                           ? "text-purple-200"
@@ -795,7 +802,7 @@ export default function SpeedMatchGame({
                     {card.content}
                   </div>
                   <div
-                    className={`text-xs transition-all duration-200 ${
+                    className={`text-[10px] xs:text-xs transition-all duration-200 ${
                       isSelected
                         ? isDarkMode
                           ? "text-purple-300/80"
@@ -810,7 +817,7 @@ export default function SpeedMatchGame({
                 </>
               ) : (
                 <div
-                  className={`text-sm sm:text-base font-semibold text-center transition-all duration-200 leading-snug px-2 ${
+                  className={`text-xs xs:text-sm sm:text-base font-semibold text-center transition-all duration-200 leading-snug px-1 xs:px-2 ${
                     isSelected
                       ? isDarkMode
                         ? "text-pink-200"
