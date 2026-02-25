@@ -18,17 +18,16 @@ import ThemeToggle from "./components/ThemeToggle";
 export default function App() {
   // Library state
   const [decks] = useState(flashcardDecks);
-  const [activeTab, setActiveTab] = useState("Speaking"); // 'Speaking' | 'Writing'
-  const [activeDeckId, setActiveDeckId] = useState(null); // null = Library view
+  const [selectedVolume, setSelectedVolume] = useState(null); // null = Library, {skill, volume} = Volume detail
+  const [activeDeckId, setActiveDeckId] = useState(null); // null = Library/Volume view
 
   // Study state
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [flipDirection, setFlipDirection] = useState(null);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  // Generate heart positions once on mount
+  // Generate heart positions once on mount - optimized count
   const floatingHearts = useMemo(() => {
     const positions = [
       { size: 18, left: 15, top: 20, type: "float" },
@@ -39,73 +38,59 @@ export default function App() {
       { size: 17, left: 60, top: 80, type: "float" },
       { size: 21, left: 10, top: 50, type: "beat" },
       { size: 18, left: 90, top: 45, type: "float" },
-      { size: 14, left: 35, top: 10, type: "float" },
-      { size: 16, left: 50, top: 55, type: "beat" },
-      { size: 15, left: 5, top: 75, type: "float" },
-      { size: 19, left: 95, top: 70, type: "float" },
-      { size: 17, left: 70, top: 25, type: "beat" },
-      { size: 14, left: 20, top: 45, type: "float" },
-      { size: 16, left: 80, top: 35, type: "float" },
     ];
     return positions.map((pos, i) => ({
       id: i,
       ...pos,
-      delay: i * 1.5,
+      delay: i * 1.8,
       duration: 10 + (i % 4) * 2,
     }));
   }, []);
 
   const activeDeck = decks.find((d) => d.id === activeDeckId);
   const currentCard = activeDeck?.cards[currentIndex];
-  const nextCard = activeDeck
-    ? activeDeck.cards[(currentIndex + 1) % activeDeck.cards.length]
-    : null;
-  const prevCard = activeDeck
-    ? activeDeck.cards[
-        (currentIndex - 1 + activeDeck.cards.length) % activeDeck.cards.length
-      ]
-    : null;
 
   // Navigation handlers
   const handleNext = useCallback(() => {
     if (isAnimating || !activeDeck) return;
     setIsAnimating(true);
-    setFlipDirection("next");
     setIsFlipped(false);
-
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % activeDeck.cards.length);
     setTimeout(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % activeDeck.cards.length);
-      setFlipDirection(null);
       setIsAnimating(false);
-    }, 1000);
+    }, 100);
   }, [activeDeck, isAnimating]);
 
   const handlePrev = useCallback(() => {
     if (isAnimating || !activeDeck) return;
     setIsAnimating(true);
-    setFlipDirection("prev");
     setIsFlipped(false);
-
+    setCurrentIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + activeDeck.cards.length) % activeDeck.cards.length,
+    );
     setTimeout(() => {
-      setCurrentIndex(
-        (prevIndex) =>
-          (prevIndex - 1 + activeDeck.cards.length) % activeDeck.cards.length,
-      );
-      setFlipDirection(null);
       setIsAnimating(false);
-    }, 1000);
+    }, 100);
   }, [activeDeck, isAnimating]);
 
   const handleFlip = useCallback(() => {
     setIsFlipped((prev) => !prev);
   }, []);
 
-  // Deck management
+  // Volume & Deck management
+  const openVolume = (skill, volume) => {
+    setSelectedVolume({ skill, volume });
+  };
+
+  const closeVolume = () => {
+    setSelectedVolume(null);
+  };
+
   const openDeck = (deckId) => {
     setActiveDeckId(deckId);
     setCurrentIndex(0);
     setIsFlipped(false);
-    setFlipDirection(null);
   };
 
   const closeDeck = () => {
@@ -122,57 +107,74 @@ export default function App() {
     false,
   );
 
-  // ESC key to go back to library
+  // ESC key to go back
   useEffect(() => {
     const handleEscape = (e) => {
-      if (e.key === "Escape" && activeDeck) {
-        closeDeck();
+      if (e.key === "Escape") {
+        if (activeDeck) {
+          closeDeck(); // Study → Volume Detail
+        } else if (selectedVolume) {
+          closeVolume(); // Volume Detail → Library
+        }
       }
     };
     window.addEventListener("keydown", handleEscape);
     return () => window.removeEventListener("keydown", handleEscape);
-  }, [activeDeck]);
+  }, [activeDeck, selectedVolume]);
 
   // ==========================================
-  // LIBRARY VIEW (Dashboard)
+  // LIBRARY VIEW - Show Volumes (Books)
   // ==========================================
   const renderLibrary = () => {
-    const currentDecks = decks.filter((d) => d.skill === activeTab);
-
-    // Group by volume
-    const groupedDecks = currentDecks.reduce((acc, deck) => {
-      if (!acc[deck.volume]) acc[deck.volume] = [];
-      acc[deck.volume].push(deck);
+    // Group decks by skill and volume to create volume cards
+    const volumes = decks.reduce((acc, deck) => {
+      const key = `${deck.skill}-${deck.volume}`;
+      if (!acc[key]) {
+        acc[key] = {
+          skill: deck.skill,
+          volume: deck.volume,
+          topics: [],
+          totalCards: 0,
+        };
+      }
+      acc[key].topics.push(deck.topic);
+      acc[key].totalCards += deck.cards.length;
       return acc;
     }, {});
 
+    const volumeList = Object.values(volumes).sort((a, b) => {
+      // Sort by skill first, then by volume number
+      if (a.skill !== b.skill) return a.skill.localeCompare(b.skill);
+      return Number(a.volume) - Number(b.volume);
+    });
+
     return (
-      <div className="w-full max-w-6xl mx-auto px-3 xs:px-4 sm:px-6">
+      <div className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 sm:mb-8 md:mb-12 gap-4 sm:gap-6">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 gap-3 sm:gap-4 md:gap-6">
           <div className="space-y-2">
             <h1
-              className={`text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold flex items-center gap-2 xs:gap-3 sm:gap-4 ${isDarkMode ? "text-white" : "text-slate-900"}`}
+              className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold flex items-center gap-2 sm:gap-3 md:gap-4 ${isDarkMode ? "text-white" : "text-slate-900"}`}
             >
               <div
-                className={`p-2 xs:p-2.5 sm:p-3 rounded-xl sm:rounded-2xl ${isDarkMode ? "bg-sky-400/10" : "bg-blue-100"}`}
+                className={`p-2 sm:p-2.5 md:p-3 rounded-xl sm:rounded-2xl ${isDarkMode ? "bg-blue-400/10" : "bg-blue-100/80"}`}
               >
                 <Library
-                  className={`w-7 xs:w-8 sm:w-9 md:w-10 h-7 xs:h-8 sm:h-9 md:h-10 ${isDarkMode ? "text-sky-300" : "text-blue-400"}`}
+                  className={`w-6 sm:w-8 md:w-9 lg:w-10 h-6 sm:h-8 md:h-9 lg:h-10 ${isDarkMode ? "text-blue-300" : "text-blue-500"}`}
                   strokeWidth={2}
                 />
               </div>
               Thư viện IELTS
             </h1>
             <p
-              className={`text-xs xs:text-sm sm:text-base md:text-lg flex items-center gap-1.5 xs:gap-2 ml-1 ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}
+              className={`text-sm sm:text-sm md:text-base lg:text-lg flex items-center gap-1.5 sm:gap-2 ml-0.5 sm:ml-1 ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}
             >
               <Sparkles
                 size={16}
-                className={`w-4 xs:w-4.5 sm:w-5 md:w-5.5 ${isDarkMode ? "text-sky-300" : "text-blue-300"}`}
+                className={`w-4 sm:w-5 md:w-5 ${isDarkMode ? "text-blue-300" : "text-blue-400"}`}
                 strokeWidth={2}
               />
-              Chọn chủ đề để bắt đầu học
+              Chọn sách để xem chủ đề
             </p>
           </div>
 
@@ -182,115 +184,281 @@ export default function App() {
           />
         </div>
 
-        {/* Tabs */}
-        <div
-          className={`flex gap-1.5 xs:gap-2 p-1 xs:p-1.5 rounded-xl sm:rounded-2xl mb-6 sm:mb-8 md:mb-10 w-full max-w-md mx-auto md:mx-0 shadow-md transition-all ${isDarkMode ? "bg-slate-800/90" : "bg-white"}`}
-        >
-          <button
-            onClick={() => setActiveTab("Speaking")}
-            className={`flex-1 flex items-center justify-center gap-2 xs:gap-2.5 py-2.5 xs:py-3 sm:py-3.5 rounded-lg sm:rounded-xl font-semibold text-xs xs:text-sm md:text-base transition-all duration-300 ${
-              activeTab === "Speaking"
-                ? isDarkMode
-                  ? "bg-sky-400/20 text-sky-300 shadow-lg shadow-sky-500/20"
-                  : "bg-blue-50 text-blue-500 shadow-md"
-                : isDarkMode
-                  ? "text-slate-400 hover:text-slate-200 hover:bg-slate-700/50"
-                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
-            }`}
-          >
-            <Mic size={18} className="xs:w-5 xs:h-5" strokeWidth={2} />{" "}
-            <span className="hidden xs:inline">Speaking</span>
-            <span className="xs:hidden">Nói</span>
-          </button>
-          <button
-            onClick={() => setActiveTab("Writing")}
-            className={`flex-1 flex items-center justify-center gap-2 xs:gap-2.5 py-2.5 xs:py-3 sm:py-3.5 rounded-lg sm:rounded-xl font-semibold text-xs xs:text-sm md:text-base transition-all duration-300 ${
-              activeTab === "Writing"
-                ? isDarkMode
-                  ? "bg-sky-400/20 text-sky-300 shadow-lg shadow-sky-500/20"
-                  : "bg-blue-50 text-blue-500 shadow-md"
-                : isDarkMode
-                  ? "text-slate-400 hover:text-slate-200 hover:bg-slate-700/50"
-                  : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
-            }`}
-          >
-            <BookText size={18} className="xs:w-5 xs:h-5" strokeWidth={2} />{" "}
-            <span className="hidden xs:inline">Writing</span>
-            <span className="xs:hidden">Viết</span>
-          </button>
-        </div>
+        {/* Volume Cards - Books */}
+        {volumeList.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-4 md:gap-5 lg:gap-6">
+            {volumeList.map((vol) => {
+              const Icon = vol.skill === "Speaking" ? Mic : BookText;
+              const volumeNum = vol.volume.replace(/\D/g, "");
 
-        {/* Deck Grid */}
-        {Object.keys(groupedDecks)
-          .sort()
-          .reverse()
-          .map((volume) => (
-            <div key={volume} className="mb-8 xs:mb-10 sm:mb-12">
-              <div className="flex items-center gap-2 xs:gap-3 mb-4 xs:mb-5 sm:mb-6">
+              return (
                 <div
-                  className={`h-0.5 xs:h-1 w-8 xs:w-10 sm:w-12 rounded-full ${isDarkMode ? "bg-sky-400/30" : "bg-blue-200"}`}
-                />
-                <h2
-                  className={`text-lg xs:text-xl sm:text-2xl font-bold ${isDarkMode ? "text-slate-200" : "text-slate-800"}`}
+                  key={`${vol.skill}-${vol.volume}`}
+                  className="perspective-1000"
+                  style={{ perspective: "1000px" }}
                 >
-                  {activeTab} {volume}
-                </h2>
-                <div
-                  className={`h-0.5 xs:h-1 flex-1 rounded-full ${isDarkMode ? "bg-sky-400/10" : "bg-blue-100"}`}
-                />
-              </div>
-              <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 xs:gap-4 sm:gap-5 md:gap-6">
-                {groupedDecks[volume].map((deck) => (
                   <button
-                    key={deck.id}
-                    onClick={() => openDeck(deck.id)}
-                    className={`group text-left rounded-2xl p-4 xs:p-5 sm:p-6 md:p-7 border-2 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl active:scale-[0.98] ${
+                    onClick={() => openVolume(vol.skill, vol.volume)}
+                    onMouseMove={(e) => {
+                      const card = e.currentTarget;
+                      const rect = card.getBoundingClientRect();
+                      const x = e.clientX - rect.left;
+                      const y = e.clientY - rect.top;
+                      const centerX = rect.width / 2;
+                      const centerY = rect.height / 2;
+                      const rotateX = ((y - centerY) / centerY) * -15;
+                      const rotateY = ((x - centerX) / centerX) * 15;
+                      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform =
+                        "rotateX(0deg) rotateY(0deg) scale(1)";
+                    }}
+                    className={`group w-full text-left rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 transition-all duration-300 hover:shadow-2xl active:scale-[0.98] ${
                       isDarkMode
-                        ? "bg-slate-800/90 border-slate-700 hover:border-sky-400/50 hover:bg-slate-800"
-                        : "bg-white border-slate-200 hover:border-blue-300 hover:shadow-blue-100/50"
+                        ? "bg-slate-800/90 border-slate-700 hover:border-blue-400/40 hover:bg-slate-800"
+                        : "bg-white border-blue-200/60 hover:border-blue-300 hover:shadow-blue-200/40"
                     }`}
+                    style={{
+                      transformStyle: "preserve-3d",
+                      transition:
+                        "transform 0.1s ease-out, box-shadow 0.3s, border-color 0.3s",
+                    }}
                   >
-                    <div
-                      className={`w-12 xs:w-13 sm:w-14 md:w-16 h-12 xs:h-13 sm:h-14 md:h-16 rounded-2xl flex items-center justify-center mb-3 xs:mb-4 sm:mb-5 transition-all duration-300 group-hover:scale-110 ${
-                        isDarkMode
-                          ? "bg-sky-400/10 text-sky-300"
-                          : "bg-blue-50 text-blue-400"
-                      }`}
-                    >
-                      <BookOpen
-                        size={28}
-                        className="xs:w-7 xs:h-7 sm:w-7 sm:h-7 md:w-8 md:h-8"
-                        strokeWidth={2}
-                      />
+                    {/* Book Icon */}
+                    <div className="flex items-center justify-between mb-4 sm:mb-4">
+                      <div
+                        className={`w-14 sm:w-14 md:w-16 lg:w-16 h-14 sm:h-14 md:h-16 lg:h-16 rounded-lg sm:rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 ${
+                          isDarkMode
+                            ? "bg-gradient-to-br from-blue-400/15 to-pink-400/15 text-blue-300"
+                            : "bg-gradient-to-br from-blue-100 to-pink-100 text-blue-600"
+                        }`}
+                        style={{ transform: "translateZ(20px)" }}
+                      >
+                        <BookOpen
+                          size={28}
+                          className="w-7 sm:w-8 md:w-9"
+                          strokeWidth={2}
+                        />
+                      </div>
+                      {/* Skill badge - top right */}
+                      <div
+                        className={`flex items-center gap-1.5 sm:gap-2 px-2.5 md:px-3 py-1 sm:py-1.5 rounded-md text-xs md:text-sm font-bold ${
+                          isDarkMode
+                            ? "bg-pink-400/10 text-pink-300"
+                            : "bg-pink-100 text-pink-600"
+                        }`}
+                        style={{ transform: "translateZ(15px)" }}
+                      >
+                        <Icon
+                          size={14}
+                          className="w-3.5 h-3.5"
+                          strokeWidth={2.5}
+                        />
+                        {vol.skill}
+                      </div>
                     </div>
+
+                    {/* Title */}
                     <h3
-                      className={`text-base xs:text-lg sm:text-xl md:text-xl font-bold mb-2 xs:mb-2.5 sm:mb-3 transition-colors duration-300 ${
+                      className={`text-2xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 transition-colors duration-300 ${
                         isDarkMode
-                          ? "text-white group-hover:text-sky-300"
-                          : "text-slate-900 group-hover:text-blue-500"
+                          ? "text-white group-hover:text-blue-300"
+                          : "text-slate-900 group-hover:text-blue-600"
                       }`}
+                      style={{ transform: "translateZ(30px)" }}
                     >
-                      {deck.topic}
+                      Vol {volumeNum}
                     </h3>
+
+                    {/* Stats - Compact */}
                     <div
-                      className={`inline-flex items-center gap-1.5 xs:gap-2 px-2.5 xs:px-3 py-1 xs:py-1.5 rounded-lg text-[10px] xs:text-xs sm:text-sm font-semibold ${
-                        isDarkMode
-                          ? "bg-slate-700/50 text-sky-300"
-                          : "bg-blue-50 text-blue-600"
-                      }`}
+                      className="flex items-center gap-2 sm:gap-3 flex-wrap"
+                      style={{ transform: "translateZ(10px)" }}
                     >
-                      {deck.cards.length} từ vựng
+                      <div
+                        className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg text-xs sm:text-xs font-semibold ${
+                          isDarkMode
+                            ? "bg-slate-700/50 text-blue-300"
+                            : "bg-blue-100/80 text-blue-600"
+                        }`}
+                      >
+                        {vol.topics.length} chủ đề
+                      </div>
+                      <div
+                        className={`text-xs sm:text-xs font-medium ${
+                          isDarkMode ? "text-slate-400" : "text-slate-500"
+                        }`}
+                      >
+                        {vol.totalCards} từ
+                      </div>
                     </div>
                   </button>
-                ))}
-              </div>
-            </div>
-          ))}
-        {currentDecks.length === 0 && (
+                </div>
+              );
+            })}
+          </div>
+        ) : (
           <div
-            className={`text-center py-12 xs:py-16 sm:py-20 text-xs xs:text-sm sm:text-base ${isDarkMode ? "text-slate-500" : "text-slate-400"}`}
+            className={`text-center py-16 sm:py-20 text-sm sm:text-base ${isDarkMode ? "text-slate-500" : "text-slate-400"}`}
           >
-            Chưa có dữ liệu cho phần {activeTab}.
+            Chưa có dữ liệu.
+          </div>
+        )}
+      </div>
+    );
+  };
+
+  // ==========================================
+  // VOLUME DETAIL VIEW - Show Topics
+  // ==========================================
+  const renderVolumeDetail = () => {
+    const volumeDecks = decks
+      .filter(
+        (d) =>
+          d.skill === selectedVolume.skill &&
+          d.volume === selectedVolume.volume,
+      )
+      .sort((a, b) => a.topic.localeCompare(b.topic));
+
+    const Icon = selectedVolume.skill === "Speaking" ? Mic : BookText;
+    const volumeNum = selectedVolume.volume.replace(/\D/g, "");
+
+    return (
+      <div className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+        {/* Header with Back Button */}
+        <div className="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-6 md:mb-8">
+          <div style={{ perspective: "1000px" }}>
+            <button
+              onClick={closeVolume}
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -10;
+                const rotateY = ((x - centerX) / centerX) * 10;
+                card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform =
+                  "rotateX(0deg) rotateY(0deg) scale(1)";
+              }}
+              className={`p-2 sm:p-2.5 md:p-3 rounded-lg sm:rounded-xl hover:shadow-lg active:scale-95 ${
+                isDarkMode
+                  ? "bg-slate-800 text-blue-300 hover:bg-slate-700"
+                  : "bg-white text-blue-600 hover:bg-blue-50 shadow-md"
+              }`}
+              style={{
+                transformStyle: "preserve-3d",
+                transition:
+                  "transform 0.1s ease-out, box-shadow 0.3s, background-color 0.3s",
+              }}
+            >
+              <ArrowLeft size={24} className="w-6 sm:w-6" strokeWidth={2} />
+            </button>
+          </div>
+          <div className="flex-1 min-w-0">
+            <div
+              className={`flex items-center gap-1.5 text-xs sm:text-sm font-semibold mb-1 ${
+                isDarkMode ? "text-pink-300" : "text-pink-600"
+              }`}
+            >
+              <Icon size={16} className="w-4 h-4" strokeWidth={2} />
+              {selectedVolume.skill}
+            </div>
+            <h1
+              className={`text-2xl sm:text-3xl md:text-4xl font-bold truncate ${
+                isDarkMode ? "text-white" : "text-slate-900"
+              }`}
+            >
+              Vol {volumeNum}
+            </h1>
+          </div>
+          <ThemeToggle
+            isDarkMode={isDarkMode}
+            onToggle={() => setIsDarkMode(!isDarkMode)}
+          />
+        </div>
+
+        {/* Topics Grid */}
+        {volumeDecks.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-4 md:gap-5 lg:gap-6">
+            {volumeDecks.map((deck) => (
+              <div key={deck.id} style={{ perspective: "1000px" }}>
+                <button
+                  onClick={() => openDeck(deck.id)}
+                  onMouseMove={(e) => {
+                    const card = e.currentTarget;
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = ((y - centerY) / centerY) * -12;
+                    const rotateY = ((x - centerX) / centerX) * 12;
+                    card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.transform =
+                      "rotateX(0deg) rotateY(0deg) scale(1)";
+                  }}
+                  className={`group w-full text-left rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 hover:shadow-2xl active:scale-[0.98] ${
+                    isDarkMode
+                      ? "bg-slate-800/90 border-slate-700 hover:border-blue-400/40 hover:bg-slate-800"
+                      : "bg-white border-blue-200/60 hover:border-blue-300 hover:shadow-blue-200/40"
+                  }`}
+                  style={{
+                    transformStyle: "preserve-3d",
+                    transition:
+                      "transform 0.1s ease-out, box-shadow 0.3s, border-color 0.3s",
+                  }}
+                >
+                  <div
+                    className={`w-12 sm:w-12 md:w-14 lg:w-14 h-12 sm:h-12 md:h-14 lg:h-14 rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 transition-all duration-300 group-hover:scale-110 ${
+                      isDarkMode
+                        ? "bg-blue-400/10 text-blue-300"
+                        : "bg-blue-100/80 text-blue-500"
+                    }`}
+                    style={{ transform: "translateZ(20px)" }}
+                  >
+                    <BookOpen
+                      size={24}
+                      className="w-6 sm:w-6 md:w-7"
+                      strokeWidth={2}
+                    />
+                  </div>
+                  <h3
+                    className={`text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-2.5 transition-colors duration-300 line-clamp-2 ${
+                      isDarkMode
+                        ? "text-white group-hover:text-blue-300"
+                        : "text-slate-900 group-hover:text-blue-500"
+                    }`}
+                    style={{ transform: "translateZ(25px)" }}
+                  >
+                    {deck.topic}
+                  </h3>
+                  <div
+                    className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg text-xs sm:text-xs font-semibold ${
+                      isDarkMode
+                        ? "bg-slate-700/50 text-blue-300"
+                        : "bg-blue-100/80 text-blue-600"
+                    }`}
+                    style={{ transform: "translateZ(10px)" }}
+                  >
+                    {deck.cards.length} từ vựng
+                  </div>
+                </button>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div
+            className={`text-center py-16 sm:py-20 text-sm sm:text-base ${isDarkMode ? "text-slate-500" : "text-slate-400"}`}
+          >
+            Không có chủ đề nào.
           </div>
         )}
       </div>
@@ -304,25 +472,50 @@ export default function App() {
     if (!activeDeck || !currentCard) return null;
 
     return (
-      <div className="w-full max-w-4xl mx-auto flex flex-col px-3 xs:px-4 sm:px-6">
+      <div className="w-full max-w-5xl mx-auto flex flex-col px-4 sm:px-6 md:px-8 lg:px-10">
         {/* Top Navigation Bar */}
-        <div className="w-full flex justify-between items-center mb-4 xs:mb-6 sm:mb-8 gap-2 xs:gap-3 sm:gap-4">
-          <button
-            onClick={closeDeck}
-            className={`flex items-center gap-1.5 xs:gap-2 sm:gap-2.5 px-3 xs:px-4 sm:px-5 py-2 xs:py-2.5 rounded-xl text-xs xs:text-sm sm:text-base font-semibold transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 ${
-              isDarkMode
-                ? "bg-slate-800 border-2 border-slate-700 hover:border-sky-400/50 text-slate-200 hover:text-sky-300"
-                : "bg-white border-2 border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-600"
-            }`}
-          >
-            <ArrowLeft size={20} className="xs:w-5 xs:h-5" strokeWidth={2} />{" "}
-            <span className="hidden xs:inline">Thư viện</span>
-          </button>
+        <div className="w-full flex justify-between items-center mb-3 xs:mb-4 sm:mb-6 md:mb-8 gap-2 xs:gap-3 sm:gap-4">
+          <div style={{ perspective: "1000px" }}>
+            <button
+              onClick={closeDeck}
+              onMouseMove={(e) => {
+                const card = e.currentTarget;
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -10;
+                const rotateY = ((x - centerX) / centerX) * 10;
+                card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "rotateX(0deg) rotateY(0deg)";
+              }}
+              className={`flex items-center gap-1.5 xs:gap-2 sm:gap-2.5 px-2.5 xs:px-3 sm:px-4 md:px-5 py-1.5 xs:py-2 sm:py-2.5 rounded-lg sm:rounded-xl text-xs xs:text-sm sm:text-base font-semibold shadow-md hover:shadow-lg active:scale-95 ${
+                isDarkMode
+                  ? "bg-slate-800 border-2 border-slate-700 hover:border-blue-400/40 text-slate-200 hover:text-blue-300"
+                  : "bg-white border-2 border-blue-200/60 hover:border-blue-300 text-slate-700 hover:text-blue-600"
+              }`}
+              style={{
+                transformStyle: "preserve-3d",
+                transition:
+                  "transform 0.1s ease-out, box-shadow 0.3s, border-color 0.3s",
+              }}
+            >
+              <ArrowLeft
+                size={18}
+                className="xs:w-5 xs:h-5 sm:w-5 sm:h-5"
+                strokeWidth={2}
+              />{" "}
+              <span className="hidden xs:inline">Quay lại</span>
+            </button>
+          </div>
 
           <div className="text-center flex-1 min-w-0">
             <div
-              className={`text-[9px] xs:text-[10px] sm:text-xs font-bold uppercase tracking-wider mb-0.5 xs:mb-1 flex items-center justify-center gap-1 xs:gap-1.5 ${
-                isDarkMode ? "text-sky-300" : "text-blue-400"
+              className={`text-[9px] xs:text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-wider mb-0.5 xs:mb-1 flex items-center justify-center gap-1 xs:gap-1.5 ${
+                isDarkMode ? "text-blue-300" : "text-blue-400"
               }`}
             >
               <Heart
@@ -338,7 +531,7 @@ export default function App() {
               />
             </div>
             <h2
-              className={`text-sm xs:text-base sm:text-lg md:text-xl font-bold truncate ${
+              className={`text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold truncate ${
                 isDarkMode ? "text-white" : "text-slate-900"
               }`}
             >
@@ -359,83 +552,25 @@ export default function App() {
           isDarkMode={isDarkMode}
         />
 
-        {/* Flashcard with Page Turn Effect */}
-        <div className="w-full flex-shrink-0 mt-6">
-          <div
-            className="w-full relative"
-            style={{
-              perspective: "2500px",
-            }}
-          >
-            <div
-              style={{
-                transformStyle: "preserve-3d",
-                transformOrigin:
-                  flipDirection === "next"
-                    ? "left center"
-                    : flipDirection === "prev"
-                      ? "right center"
-                      : "center",
-                transform:
-                  flipDirection === "next"
-                    ? "rotateY(-180deg)"
-                    : flipDirection === "prev"
-                      ? "rotateY(180deg)"
-                      : "rotateY(0deg)",
-                transition: flipDirection
-                  ? "transform 1s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.5s ease-in-out"
-                  : "none",
-                opacity: flipDirection ? 0.95 : 1,
-                willChange: flipDirection ? "transform, opacity" : "auto",
-              }}
-            >
-              {/* Front side - Current card */}
-              <div
-                style={{
-                  backfaceVisibility: "hidden",
-                  WebkitBackfaceVisibility: "hidden",
-                }}
-              >
-                <Flashcard
-                  card={currentCard}
-                  isFlipped={isFlipped}
-                  onFlip={handleFlip}
-                  isDarkMode={isDarkMode}
-                />
-              </div>
+        {/* Flashcard */}
+        <div className="w-full flex-shrink-0 mt-4 xs:mt-5 sm:mt-6">
+          <Flashcard
+            card={currentCard}
+            isFlipped={isFlipped}
+            onFlip={handleFlip}
+            isDarkMode={isDarkMode}
+          />
+        </div>
 
-              {/* Back side - Next/Prev card (shows when page turns) */}
-              <div
-                style={{
-                  backfaceVisibility: "hidden",
-                  WebkitBackfaceVisibility: "hidden",
-                  transform: "rotateY(180deg)",
-                  position: "absolute",
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                }}
-              >
-                <Flashcard
-                  card={flipDirection === "next" ? nextCard : prevCard}
-                  isFlipped={false}
-                  onFlip={() => {}}
-                  isDarkMode={isDarkMode}
-                />
-              </div>
-            </div>
-          </div>
-
-          {/* Hover Hint */}
-          <div
-            className={`hidden md:flex items-center justify-center gap-2 mt-4 xs:mt-5 sm:mt-6 text-xs xs:text-sm font-medium transition-opacity duration-300 ${
-              isDarkMode ? "text-slate-400" : "text-slate-500"
-            }`}
-          >
-            <span className="opacity-70">
-              💡 Click để lật • Space hoặc Enter • ← → để chuyển từ
-            </span>
-          </div>
+        {/* Hover Hint */}
+        <div
+          className={`hidden md:flex items-center justify-center gap-2 mt-3 xs:mt-4 sm:mt-5 text-xs sm:text-sm font-medium transition-opacity duration-300 ${
+            isDarkMode ? "text-slate-400" : "text-slate-500"
+          }`}
+        >
+          <span className="opacity-70">
+            💡 Click để lật • Space hoặc Enter • ← → để chuyển từ
+          </span>
         </div>
 
         {/* Navigation Controls */}
@@ -506,9 +641,9 @@ export default function App() {
         ))}
       </div>
 
-      {/* Small Heart Particles */}
+      {/* Small Heart Particles - Optimized */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-15">
-        {Array.from({ length: 20 }).map((_, i) => (
+        {Array.from({ length: 10 }).map((_, i) => (
           <Heart
             key={`particle-${i}`}
             size={8 + (i % 4)}
@@ -516,9 +651,9 @@ export default function App() {
               isDarkMode ? "text-pink-200" : "text-pink-300"
             }`}
             style={{
-              left: `${(i * 5) % 100}%`,
-              top: `${(i * 7) % 100}%`,
-              animationDelay: `${i * 0.8}s`,
+              left: `${(i * 10) % 100}%`,
+              top: `${(i * 11) % 100}%`,
+              animationDelay: `${i * 1.2}s`,
               animationDuration: `${15 + (i % 5) * 2}s`,
             }}
             fill="currentColor"
@@ -526,27 +661,27 @@ export default function App() {
         ))}
       </div>
 
-      {/* Sparkles Effect */}
-      <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-30">
-        {Array.from({ length: 15 }).map((_, i) => (
+      {/* Sparkles Effect - Optimized */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden opacity-25">
+        {Array.from({ length: 8 }).map((_, i) => (
           <Sparkles
             key={`sparkle-${i}`}
             size={12 + (i % 3) * 2}
             className={`absolute animate-sparkle ${
-              isDarkMode ? "text-pink-200" : "text-pink-300"
+              isDarkMode ? "text-blue-200" : "text-blue-300"
             }`}
             style={{
-              left: `${(i * 7) % 100}%`,
-              top: `${(i * 11) % 100}%`,
-              animationDelay: `${i * 0.5}s`,
+              left: `${(i * 12) % 100}%`,
+              top: `${(i * 13) % 100}%`,
+              animationDelay: `${i * 0.6}s`,
             }}
           />
         ))}
       </div>
 
-      {/* Pulsing Heart Decorations */}
+      {/* Pulsing Heart Decorations - Optimized */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
-        {Array.from({ length: 8 }).map((_, i) => (
+        {Array.from({ length: 5 }).map((_, i) => (
           <Heart
             key={`pulse-${i}`}
             size={24 + (i % 3) * 4}
@@ -554,18 +689,22 @@ export default function App() {
               isDarkMode ? "text-pink-300" : "text-pink-400"
             }`}
             style={{
-              left: `${10 + i * 12}%`,
-              top: `${15 + (i % 2) * 35}%`,
-              animationDelay: `${i * 0.7}s`,
+              left: `${15 + i * 20}%`,
+              top: `${20 + (i % 2) * 40}%`,
+              animationDelay: `${i * 0.9}s`,
             }}
             fill="currentColor"
           />
         ))}
       </div>
 
-      {/* Conditional Render: Library or Study View */}
+      {/* Conditional Render: Library → Volume Detail → Study Room */}
       <main className="relative z-10 flex-grow flex items-center justify-center">
-        {activeDeckId === null ? renderLibrary() : renderStudyRoom()}
+        {activeDeckId !== null
+          ? renderStudyRoom()
+          : selectedVolume !== null
+            ? renderVolumeDetail()
+            : renderLibrary()}
       </main>
     </div>
   );

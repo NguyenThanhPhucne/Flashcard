@@ -4,11 +4,11 @@ export default function ProgressBar({ current, total, isDarkMode }) {
   const percentage = ((current + 1) / total) * 100;
 
   return (
-    <div className="w-full max-w-2xl mb-4 sm:mb-6 md:mb-8">
+    <div className="w-full max-w-2xl mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8">
       {/* Progress indicator */}
-      <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-3 mb-3 sm:mb-4 px-1">
+      <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-3 mb-2 xs:mb-2.5 sm:mb-3 md:mb-4 px-1">
         <span
-          className={`text-sm xs:text-base md:text-lg font-bold tracking-wide transition-colors ${
+          className={`text-sm xs:text-base sm:text-base md:text-lg font-bold tracking-wide transition-colors ${
             isDarkMode ? "text-slate-200" : "text-slate-800"
           }`}
         >
@@ -61,8 +61,8 @@ export default function ProgressBar({ current, total, isDarkMode }) {
         <div
           className={`h-2 xs:h-2.5 sm:h-3 rounded-full transition-all duration-700 ease-out ${
             isDarkMode
-              ? "bg-gradient-to-r from-sky-300 via-pink-300 to-blue-300"
-              : "bg-gradient-to-r from-blue-300 via-pink-300 to-sky-300"
+              ? "bg-gradient-to-r from-blue-400 via-pink-300 to-blue-400"
+              : "bg-gradient-to-r from-blue-300 via-pink-300 to-blue-300"
           }`}
           style={{ width: `${percentage}%` }}
         />
