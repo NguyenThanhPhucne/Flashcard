@@ -34,13 +34,17 @@ export default function ThemeToggle({ isDarkMode, onToggle }) {
       >
         {isDarkMode ? (
           <Sun
-            size={16}
-            className="xs:w-4 xs:h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 transition-transform duration-300 hover:rotate-90"
+            size={20}
+            strokeWidth={2.5}
+            style={{ minWidth: 20, minHeight: 20 }}
+            className="transition-transform duration-300 hover:rotate-90"
           />
         ) : (
           <Moon
-            size={16}
-            className="xs:w-4 xs:h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 lg:w-6 lg:h-6 transition-transform duration-300 hover:-rotate-12"
+            size={20}
+            strokeWidth={2.5}
+            style={{ minWidth: 20, minHeight: 20 }}
+            className="transition-transform duration-300 hover:-rotate-12"
           />
         )}
       </button>

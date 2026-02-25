@@ -40,9 +40,9 @@ export default function Navigation({ onPrev, onNext, onFlip, isDarkMode }) {
           aria-label="Previous card"
         >
           <ChevronLeft
-            size={18}
-            className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 md:w-6 md:h-6 lg:w-7 lg:h-7"
+            size={24}
             strokeWidth={2.5}
+            style={{ minWidth: 24, minHeight: 24 }}
           />
         </button>
       </div>
@@ -67,9 +67,9 @@ export default function Navigation({ onPrev, onNext, onFlip, isDarkMode }) {
           }}
         >
           <RotateCcw
-            size={14}
-            className="xs:w-4 xs:h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-5 lg:h-5"
+            size={18}
             strokeWidth={2.5}
+            style={{ minWidth: 18, minHeight: 18 }}
           />
           <span className="hidden sm:inline">Lật thẻ</span>
           <span className="sm:hidden">Lật</span>
@@ -97,7 +97,11 @@ export default function Navigation({ onPrev, onNext, onFlip, isDarkMode }) {
           aria-label="Next card"
         >
           <ChevronRight
-            size={18}
+            size={24}
+            strokeWidth={2.5}
+            style={{ minWidth: 24, minHeight: 24 }}
+          />
+        </button>
             className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 md:w-6 md:h-6 lg:w-7 lg:h-7"
             strokeWidth={2.5}
           />

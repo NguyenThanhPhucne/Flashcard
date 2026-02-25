@@ -38,9 +38,12 @@ export default function BackButton({ onClick, isDarkMode, showText = false }) {
         }}
       >
         <ArrowLeft
-          size={showText ? 18 : 24}
-          className={showText ? "xs:w-5 xs:h-5 sm:w-5 sm:h-5" : "w-6 sm:w-6"}
-          strokeWidth={2}
+          size={showText ? 20 : 24}
+          strokeWidth={2.5}
+          style={{
+            minWidth: showText ? 20 : 24,
+            minHeight: showText ? 20 : 24,
+          }}
         />
         {showText && <span className="hidden xs:inline">Quay lại</span>}
       </button>

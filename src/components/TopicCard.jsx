@@ -39,7 +39,11 @@ export default function TopicCard({ deck, isDarkMode, onOpen }) {
           }`}
           style={{ transform: "translateZ(20px)" }}
         >
-          <BookOpen size={24} className="w-6 sm:w-6 md:w-7" strokeWidth={2} />
+          <BookOpen
+            size={28}
+            strokeWidth={2.5}
+            style={{ minWidth: 28, minHeight: 28 }}
+          />
         </div>
         <h3
           className={`text-base sm:text-lg md:text-xl font-bold mb-2 sm:mb-2.5 transition-colors duration-300 line-clamp-2 ${

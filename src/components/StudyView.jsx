@@ -32,15 +32,19 @@ export default function StudyView({
             }`}
           >
             <Heart
-              size={10}
-              className="xs:w-2.5 xs:h-2.5 sm:w-3 sm:h-3 text-pink-400 opacity-60"
+              size={12}
+              strokeWidth={2}
               fill="currentColor"
+              style={{ minWidth: 12, minHeight: 12 }}
+              className="text-pink-400 opacity-60"
             />
             {activeDeck.skill} • {activeDeck.volume}
             <Heart
-              size={10}
-              className="xs:w-2.5 xs:h-2.5 sm:w-3 sm:h-3 text-pink-400 opacity-60"
+              size={12}
+              strokeWidth={2}
               fill="currentColor"
+              style={{ minWidth: 12, minHeight: 12 }}
+              className="text-pink-400 opacity-60"
             />
           </div>
           <h2

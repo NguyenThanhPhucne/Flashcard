@@ -56,9 +56,9 @@ export default function VolumeCard({ volume, isDarkMode, onOpen }) {
               style={{ transform: "translateZ(30px)" }}
             >
               <BookOpen
-                size={36}
-                className="w-8 sm:w-9 md:w-10"
+                size={40}
                 strokeWidth={2.5}
+                style={{ minWidth: 40, minHeight: 40 }}
               />
             </div>
             {/* Skill badge - top right */}
@@ -70,7 +70,11 @@ export default function VolumeCard({ volume, isDarkMode, onOpen }) {
               }`}
               style={{ transform: "translateZ(20px)" }}
             >
-              <Icon size={16} className="w-4 h-4" strokeWidth={3} />
+              <Icon
+                size={18}
+                strokeWidth={3}
+                style={{ minWidth: 18, minHeight: 18 }}
+              />
               {volume.skill}
             </div>
           </div>
@@ -107,7 +111,11 @@ export default function VolumeCard({ volume, isDarkMode, onOpen }) {
                     : "bg-blue-100 text-blue-700"
                 }`}
               >
-                <BookText size={18} strokeWidth={2.5} />
+                <BookText
+                  size={20}
+                  strokeWidth={2.5}
+                  style={{ minWidth: 20, minHeight: 20 }}
+                />
                 {volume.topics.length} chủ đề
               </div>
             </div>
@@ -116,7 +124,12 @@ export default function VolumeCard({ volume, isDarkMode, onOpen }) {
                 isDarkMode ? "text-slate-400" : "text-slate-600"
               }`}
             >
-              <Sparkles size={16} className="opacity-70" />
+              <Sparkles
+                size={18}
+                strokeWidth={2.5}
+                style={{ minWidth: 18, minHeight: 18 }}
+                className="opacity-70"
+              />
               {volume.totalCards} từ vựng
             </div>
           </div>
@@ -129,7 +142,9 @@ export default function VolumeCard({ volume, isDarkMode, onOpen }) {
           >
             <span>Nhấn để mở</span>
             <ArrowLeft
-              size={16}
+              size={18}
+              strokeWidth={2.5}
+              style={{ minWidth: 18, minHeight: 18 }}
               className="rotate-180 group-hover:translate-x-1 transition-transform"
             />
           </div>

@@ -42,8 +42,10 @@ export default function LibraryView({
               className={`p-3 sm:p-3.5 md:p-4 lg:p-5 rounded-2xl sm:rounded-2xl shadow-lg ${isDarkMode ? "bg-gradient-to-br from-blue-500/20 to-purple-500/20 shadow-blue-500/20" : "bg-gradient-to-br from-blue-200 to-purple-200 shadow-blue-300/50"}`}
             >
               <Library
-                className={`w-8 sm:w-9 md:w-11 lg:w-12 h-8 sm:h-9 md:h-11 lg:h-12 ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}
+                size={40}
                 strokeWidth={2.5}
+                style={{ minWidth: 40, minHeight: 40 }}
+                className={`${isDarkMode ? "text-blue-300" : "text-blue-600"}`}
               />
             </div>
             <span
@@ -56,9 +58,10 @@ export default function LibraryView({
             className={`text-base sm:text-lg md:text-xl lg:text-2xl flex items-center gap-2 sm:gap-2.5 ml-1 font-medium ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}
           >
             <Sparkles
-              size={20}
-              className={`w-5 sm:w-6 md:w-6 ${isDarkMode ? "text-purple-300" : "text-purple-500"}`}
+              size={22}
               strokeWidth={2.5}
+              style={{ minWidth: 22, minHeight: 22 }}
+              className={`${isDarkMode ? "text-purple-300" : "text-purple-500"}`}
             />
             Chọn sách để xem chủ đề
           </p>

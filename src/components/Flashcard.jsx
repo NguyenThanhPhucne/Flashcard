@@ -141,9 +141,10 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
             }`}
           >
             <Languages
-              size={16}
-              strokeWidth={2}
-              className={`xs:w-4 xs:h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 ${isDarkMode ? "text-blue-300" : "text-blue-500"}`}
+              size={18}
+              strokeWidth={2.5}
+              style={{ minWidth: 18, minHeight: 18 }}
+              className={`${isDarkMode ? "text-blue-300" : "text-blue-500"}`}
             />
             <span
               className={`text-[9px] xs:text-[10px] sm:text-xs md:text-sm font-bold uppercase tracking-wider ${
@@ -153,9 +154,11 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
               English
             </span>
             <Heart
-              size={10}
-              className={`ml-0.5 xs:ml-1 xs:w-2.5 xs:h-2.5 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 ${isDarkMode ? "text-pink-300" : "text-pink-400"} opacity-60`}
+              size={14}
+              strokeWidth={2}
               fill="currentColor"
+              style={{ minWidth: 14, minHeight: 14 }}
+              className={`ml-0.5 xs:ml-1 ${isDarkMode ? "text-pink-300" : "text-pink-400"} opacity-60`}
             />
           </div>
           <h2
@@ -180,14 +183,17 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
             }`}
           >
             <Heart
-              size={12}
-              className={`xs:w-3 xs:h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 ${isDarkMode ? "text-pink-300" : "text-pink-400"} opacity-50`}
+              size={16}
+              strokeWidth={2}
               fill="currentColor"
+              style={{ minWidth: 16, minHeight: 16 }}
+              className={`${isDarkMode ? "text-pink-300" : "text-pink-400"} opacity-50`}
             />
             <RotateCcw
-              size={14}
-              strokeWidth={2}
-              className="xs:w-4 xs:h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 animate-spin-slow"
+              size={16}
+              strokeWidth={2.5}
+              style={{ minWidth: 16, minHeight: 16 }}
+              className="animate-spin-slow"
             />
             <span className="hidden sm:inline font-medium">
               Nhấn để xem mặt sau
@@ -224,9 +230,10 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
 
           <div className="absolute top-2.5 xs:top-3 sm:top-3.5 md:top-4 lg:top-5 left-1/2 -translate-x-1/2 flex items-center gap-1 xs:gap-1.5 sm:gap-2 px-2.5 xs:px-3 sm:px-3.5 md:px-4 py-0.5 xs:py-1 sm:py-1.5 rounded-full bg-white/50 backdrop-blur-md border-2 border-white/60 shadow-lg z-10">
             <Languages
-              size={16}
-              strokeWidth={2}
-              className="xs:w-4 xs:h-4 sm:w-5 sm:h-5 md:w-5 md:h-5 text-slate-700"
+              size={18}
+              strokeWidth={2.5}
+              style={{ minWidth: 18, minHeight: 18 }}
+              className="text-slate-700"
             />
             <span className="text-[9px] xs:text-[10px] sm:text-xs md:text-sm font-bold text-slate-800 uppercase tracking-wider">
               Tiếng Việt
@@ -247,10 +254,11 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
                   <div className="shrink-0 mt-px">
                     <div className="bg-gradient-to-br from-green-400 to-emerald-500 p-1 xs:p-1.5 sm:p-2 rounded-lg shadow-md">
                       <Lightbulb
-                        size={14}
-                        className="xs:w-4 xs:h-4 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white"
+                        size={18}
                         strokeWidth={2.5}
                         fill="currentColor"
+                        style={{ minWidth: 18, minHeight: 18 }}
+                        className="text-white"
                       />
                     </div>
                   </div>

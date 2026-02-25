@@ -32,7 +32,11 @@ export default function VolumeDetailView({
               isDarkMode ? "text-pink-300" : "text-pink-600"
             }`}
           >
-            <Icon size={16} className="w-4 h-4" strokeWidth={2} />
+            <Icon
+              size={18}
+              strokeWidth={2.5}
+              style={{ minWidth: 18, minHeight: 18 }}
+            />
             {selectedVolume.skill}
           </div>
           <h1
