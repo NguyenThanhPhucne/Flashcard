@@ -1,10 +1,9 @@
-import { BookOpen } from "lucide-react";
+import { BookOpen, Gamepad2 } from "lucide-react";
 
 export default function TopicCard({ deck, isDarkMode, onOpen }) {
   return (
     <div style={{ perspective: "1000px" }}>
-      <button
-        onClick={() => onOpen(deck.id)}
+      <div
         onMouseMove={(e) => {
           const card = e.currentTarget;
           const rect = card.getBoundingClientRect();
@@ -20,7 +19,7 @@ export default function TopicCard({ deck, isDarkMode, onOpen }) {
           e.currentTarget.style.transform =
             "rotateX(0deg) rotateY(0deg) scale(1)";
         }}
-        className={`group w-full text-left rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 hover:shadow-2xl active:scale-[0.98] ${
+        className={`group w-full text-left rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 hover:shadow-2xl ${
           isDarkMode
             ? "bg-slate-800/60 border-slate-700/50 hover:border-blue-400/60 hover:bg-slate-800/70"
             : "bg-white border-blue-200/60 hover:border-blue-300 hover:shadow-blue-200/40"
@@ -56,7 +55,7 @@ export default function TopicCard({ deck, isDarkMode, onOpen }) {
           {deck.topic}
         </h3>
         <div
-          className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg text-xs sm:text-xs font-semibold ${
+          className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg text-xs sm:text-xs font-semibold mb-4 ${
             isDarkMode
               ? "bg-slate-700/35 text-blue-300"
               : "bg-blue-100/80 text-blue-600"
@@ -65,7 +64,37 @@ export default function TopicCard({ deck, isDarkMode, onOpen }) {
         >
           {deck.cards.length} từ vựng
         </div>
-      </button>
+
+        {/* Action Buttons */}
+        <div
+          className="flex gap-2 mt-1 -ml-3"
+          style={{ transform: "translateZ(10px)" }}
+        >
+          <button
+            onClick={() => onOpen(deck.id, false)}
+            className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:scale-105 active:scale-95 ${
+              isDarkMode
+                ? "bg-blue-600 hover:bg-blue-700 text-white"
+                : "bg-blue-500 hover:bg-blue-600 text-white"
+            }`}
+          >
+            <BookOpen size={16} />
+            Học
+          </button>
+
+          <button
+            onClick={() => onOpen(deck.id, true)}
+            className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:scale-105 active:scale-95 ${
+              isDarkMode
+                ? "bg-emerald-400 hover:bg-emerald-500 text-slate-900"
+                : "bg-emerald-300 hover:bg-emerald-400 text-slate-800"
+            }`}
+          >
+            <Gamepad2 size={16} />
+            Chơi
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

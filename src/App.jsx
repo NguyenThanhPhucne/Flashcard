@@ -4,6 +4,7 @@ import { useKeyboardNavigation } from "./hooks/useKeyboardNavigation";
 import LibraryView from "./components/LibraryView";
 import VolumeDetailView from "./components/VolumeDetailView";
 import StudyView from "./components/StudyView";
+import SpeedQuizGame from "./components/SpeedQuizGame";
 import DecorativeBackground from "./components/DecorativeBackground";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
   const [decks] = useState(flashcardDecks);
   const [selectedVolume, setSelectedVolume] = useState(null); // null = Library, {skill, volume} = Volume detail
   const [activeDeckId, setActiveDeckId] = useState(null); // null = Library/Volume view
+  const [isGameMode, setIsGameMode] = useState(false); // false = Study mode, true = Game mode
 
   // Study state
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -78,14 +80,16 @@ export default function App() {
     setSelectedVolume(null);
   };
 
-  const openDeck = (deckId) => {
+  const openDeck = (deckId, gameMode = false) => {
     setActiveDeckId(deckId);
+    setIsGameMode(gameMode);
     setCurrentIndex(0);
     setIsFlipped(false);
   };
 
   const closeDeck = () => {
     setActiveDeckId(null);
+    setIsGameMode(false);
     setCurrentIndex(0);
     setIsFlipped(false);
   };
@@ -129,21 +133,30 @@ export default function App() {
         floatingHearts={floatingHearts}
       />
 
-      {/* Conditional Render: Library → Volume Detail → Study Room */}
+      {/* Conditional Render: Library → Volume Detail → Study Room / Game Mode */}
       <main className="relative z-10 flex-grow flex items-center justify-center">
         {activeDeckId !== null ? (
-          <StudyView
-            activeDeck={activeDeck}
-            currentIndex={currentIndex}
-            currentCard={currentCard}
-            isFlipped={isFlipped}
-            isDarkMode={isDarkMode}
-            onToggleTheme={() => setIsDarkMode(!isDarkMode)}
-            onClose={closeDeck}
-            onFlip={handleFlip}
-            onPrev={handlePrev}
-            onNext={handleNext}
-          />
+          isGameMode ? (
+            <SpeedQuizGame
+              deck={activeDeck}
+              isDarkMode={isDarkMode}
+              onToggleTheme={() => setIsDarkMode(!isDarkMode)}
+              onClose={closeDeck}
+            />
+          ) : (
+            <StudyView
+              activeDeck={activeDeck}
+              currentIndex={currentIndex}
+              currentCard={currentCard}
+              isFlipped={isFlipped}
+              isDarkMode={isDarkMode}
+              onToggleTheme={() => setIsDarkMode(!isDarkMode)}
+              onClose={closeDeck}
+              onFlip={handleFlip}
+              onPrev={handlePrev}
+              onNext={handleNext}
+            />
+          )
         ) : selectedVolume !== null ? (
           <VolumeDetailView
             selectedVolume={selectedVolume}

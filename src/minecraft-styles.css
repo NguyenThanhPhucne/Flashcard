@@ -1,0 +1,57 @@
+/* Minecraft-inspired styles */
+
+/* Pixelated box shadow effect */
+.minecraft-shadow {
+  box-shadow:
+    4px 0 0 0 rgba(0, 0, 0, 0.2),
+    0 4px 0 0 rgba(0, 0, 0, 0.2),
+    4px 4px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.minecraft-shadow-sm {
+  box-shadow:
+    2px 0 0 0 rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(0, 0, 0, 0.2),
+    2px 2px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+.minecraft-shadow-lg {
+  box-shadow:
+    6px 0 0 0 rgba(0, 0, 0, 0.2),
+    0 6px 0 0 rgba(0, 0, 0, 0.2),
+    6px 6px 0 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Inset shadow for pressed effect */
+.minecraft-inset {
+  box-shadow:
+    inset 3px 3px 0 0 rgba(0, 0, 0, 0.3),
+    inset -2px -2px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Bright top-left highlight */
+.minecraft-highlight {
+  position: relative;
+}
+
+.minecraft-highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 40%;
+  bottom: 60%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+/* Blocky border */
+.minecraft-border {
+  border-width: 3px;
+  border-style: solid;
+  image-rendering: pixelated;
+}
