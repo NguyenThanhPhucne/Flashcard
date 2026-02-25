@@ -102,10 +102,6 @@ export default function Navigation({ onPrev, onNext, onFlip, isDarkMode }) {
             style={{ minWidth: 24, minHeight: 24 }}
           />
         </button>
-            className="xs:w-5 xs:h-5 sm:w-6 sm:h-6 md:w-6 md:h-6 lg:w-7 lg:h-7"
-            strokeWidth={2.5}
-          />
-        </button>
       </div>
     </div>
   );
