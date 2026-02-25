@@ -4,7 +4,7 @@ export default function ProgressBar({ current, total, isDarkMode }) {
   const percentage = ((current + 1) / total) * 100;
 
   return (
-    <div className="w-full max-w-2xl mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8">
+    <div className="w-full max-w-3xl mx-auto mb-3 xs:mb-4 sm:mb-5 md:mb-6 lg:mb-8">
       {/* Progress indicator */}
       <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 sm:gap-3 mb-2 xs:mb-2.5 sm:mb-3 md:mb-4 px-1">
         <span
@@ -41,7 +41,7 @@ export default function ProgressBar({ current, total, isDarkMode }) {
           <span className="opacity-50">•</span>
           <div className="flex items-center gap-1.5">
             <kbd
-              className={`px-2 py-0.5 rounded text-xs font-semibold ${isDarkMode ? "bg-slate-700 text-slate-300" : "bg-slate-200 text-slate-700"}`}
+              className={`px-2 py-0.5 rounded text-xs font-semibold ${isDarkMode ? "bg-slate-700/70 text-slate-300" : "bg-slate-200 text-slate-700"}`}
             >
               Space
             </kbd>

@@ -103,7 +103,7 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
         <div
           className={`absolute inset-0 w-full h-full rounded-lg xs:rounded-xl sm:rounded-2xl md:rounded-2xl lg:rounded-3xl border-2 xs:border-[2.5px] sm:border-[3px] flex flex-col items-center justify-center p-4 xs:p-5 sm:p-6 md:p-7 text-center overflow-hidden transition-all duration-300 ${
             isDarkMode
-              ? "bg-gradient-to-br from-slate-800/95 via-slate-700/90 to-slate-800/95 border-blue-400/30 shadow-2xl shadow-blue-400/20 ring-1 ring-blue-300/10"
+              ? "bg-gradient-to-br from-slate-800/75 via-slate-700/70 to-blue-900/75 border-blue-400/50 shadow-2xl shadow-blue-500/10 ring-1 ring-blue-400/20"
               : "bg-gradient-to-br from-white via-blue-50/30 via-pink-50/25 to-blue-50/20 border-blue-300/40 shadow-2xl shadow-blue-300/30 ring-1 ring-pink-200/20"
           }`}
           style={{

@@ -22,7 +22,7 @@ export default function ThemeToggle({ isDarkMode, onToggle }) {
         }}
         className={`p-2 xs:p-2.5 sm:p-2.5 md:p-3 lg:p-3.5 rounded-lg xs:rounded-xl shadow-md hover:shadow-lg active:scale-95 border-2 touch-manipulation ${
           isDarkMode
-            ? "bg-slate-800 border-slate-600 hover:bg-slate-700 hover:border-amber-400/50 text-amber-300 hover:text-amber-400 hover:shadow-amber-400/20"
+            ? "bg-slate-800/70 border-slate-600/40 hover:bg-slate-700/70 hover:border-amber-400/60 text-amber-300 hover:text-amber-400 hover:shadow-amber-400/15"
             : "bg-white border-blue-200/60 hover:bg-pink-50 hover:border-pink-300 text-slate-600 hover:text-pink-500 hover:shadow-pink-300/25"
         }`}
         style={{

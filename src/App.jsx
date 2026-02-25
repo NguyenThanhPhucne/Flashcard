@@ -216,7 +216,7 @@ export default function App() {
                     }}
                     className={`group w-full text-left rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 transition-all duration-300 hover:shadow-2xl active:scale-[0.98] ${
                       isDarkMode
-                        ? "bg-slate-800/90 border-slate-700 hover:border-blue-400/40 hover:bg-slate-800"
+                        ? "bg-slate-800/60 border-slate-700/50 hover:border-blue-400/60 hover:bg-slate-800/70"
                         : "bg-white border-blue-200/60 hover:border-blue-300 hover:shadow-blue-200/40"
                     }`}
                     style={{
@@ -279,7 +279,7 @@ export default function App() {
                       <div
                         className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg text-xs sm:text-xs font-semibold ${
                           isDarkMode
-                            ? "bg-slate-700/50 text-blue-300"
+                            ? "bg-slate-700/40 text-blue-300"
                             : "bg-blue-100/80 text-blue-600"
                         }`}
                       >
@@ -348,7 +348,7 @@ export default function App() {
               }}
               className={`p-2 sm:p-2.5 md:p-3 rounded-lg sm:rounded-xl hover:shadow-lg active:scale-95 ${
                 isDarkMode
-                  ? "bg-slate-800 text-blue-300 hover:bg-slate-700"
+                  ? "bg-slate-800/70 text-blue-300 hover:bg-slate-700/70 border border-slate-700/40"
                   : "bg-white text-blue-600 hover:bg-blue-50 shadow-md"
               }`}
               style={{
@@ -407,7 +407,7 @@ export default function App() {
                   }}
                   className={`group w-full text-left rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 hover:shadow-2xl active:scale-[0.98] ${
                     isDarkMode
-                      ? "bg-slate-800/90 border-slate-700 hover:border-blue-400/40 hover:bg-slate-800"
+                      ? "bg-slate-800/60 border-slate-700/50 hover:border-blue-400/60 hover:bg-slate-800/70"
                       : "bg-white border-blue-200/60 hover:border-blue-300 hover:shadow-blue-200/40"
                   }`}
                   style={{
@@ -443,7 +443,7 @@ export default function App() {
                   <div
                     className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg text-xs sm:text-xs font-semibold ${
                       isDarkMode
-                        ? "bg-slate-700/50 text-blue-300"
+                        ? "bg-slate-700/35 text-blue-300"
                         : "bg-blue-100/80 text-blue-600"
                     }`}
                     style={{ transform: "translateZ(10px)" }}
@@ -553,7 +553,7 @@ export default function App() {
         />
 
         {/* Flashcard */}
-        <div className="w-full flex-shrink-0 mt-4 xs:mt-5 sm:mt-6">
+        <div className="w-full max-w-3xl mx-auto flex-shrink-0 mt-4 xs:mt-5 sm:mt-6">
           <Flashcard
             card={currentCard}
             isFlipped={isFlipped}
@@ -591,7 +591,7 @@ export default function App() {
     <div
       className={`min-h-screen font-sans px-3 xs:px-4 sm:px-6 md:px-8 lg:px-10 py-4 xs:py-5 sm:py-6 md:py-8 lg:py-10 flex flex-col transition-all duration-500 ${
         isDarkMode
-          ? "bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-slate-50"
+          ? "bg-gradient-to-br from-slate-800/90 via-blue-950/85 to-slate-800/90 text-slate-50"
           : "bg-gradient-to-br from-blue-50/25 via-pink-50/30 to-sky-50/25 text-slate-900"
       }`}
     >

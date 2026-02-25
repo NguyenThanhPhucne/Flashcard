@@ -29,7 +29,7 @@ export default function Navigation({ onPrev, onNext, onFlip, isDarkMode }) {
           onMouseLeave={resetTilt}
           className={`p-2.5 xs:p-3 sm:p-3 md:p-3.5 lg:p-4 rounded-lg xs:rounded-xl border-2 shadow-md active:scale-90 touch-manipulation ${
             isDarkMode
-              ? "bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700 hover:border-blue-400/40 hover:text-blue-300 hover:shadow-blue-400/20"
+              ? "bg-slate-800/70 border-slate-700/40 text-slate-300 hover:bg-slate-700/70 hover:border-blue-400/60 hover:text-blue-300 hover:shadow-blue-400/15"
               : "bg-white border-blue-200/60 text-slate-600 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-500 hover:shadow-blue-300/30"
           }`}
           style={{
@@ -86,7 +86,7 @@ export default function Navigation({ onPrev, onNext, onFlip, isDarkMode }) {
           onMouseLeave={resetTilt}
           className={`p-2.5 xs:p-3 sm:p-3 md:p-3.5 lg:p-4 rounded-lg xs:rounded-xl border-2 shadow-md active:scale-90 touch-manipulation ${
             isDarkMode
-              ? "bg-slate-800 border-slate-700 text-slate-300 hover:bg-slate-700 hover:border-blue-400/40 hover:text-blue-300 hover:shadow-blue-400/20"
+              ? "bg-slate-800/70 border-slate-700/40 text-slate-300 hover:bg-slate-700/70 hover:border-blue-400/60 hover:text-blue-300 hover:shadow-blue-400/15"
               : "bg-white border-blue-200/60 text-slate-600 hover:bg-blue-50 hover:border-blue-300 hover:text-blue-500 hover:shadow-blue-300/30"
           }`}
           style={{
