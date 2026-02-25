@@ -7450,4 +7450,408 @@ export const flashcardDecks = [
       },
     ],
   },
+  // ==========================================
+  // W11 - Task 1: Protein and Calorie Intake by Region
+  // ==========================================
+  {
+    id: "wr_w11_task1_nutrition",
+    skill: "Writing",
+    volume: "9",
+    topic: "Health / Nutrition",
+    part: "Task 1 - Protein and Calorie Intake (Bar Charts)",
+    cards: [
+      {
+        id: 299,
+        word: "Exceed",
+        pronunciation: "/ɪkˈsiːd/",
+        meaning:
+          "Vượt quá, đi vượt ra ngoài giới hạn hoặc mức kỳ vọng đã đặt ra",
+        note: "Động từ học thuật thường dùng trong Task 1 khi một giá trị vượt qua một ngưỡng nhất định (như mức lý tưởng, mức trung bình...). Thường đi với: 'consumption exceeds the ideal intake levels', 'exceed expectations/targets/limits'. Đồng nghĩa: surpass, go beyond, top, outstrip. Phân biệt: 'exceed' (vượt quá một ngưỡng cố định) vs 'surpass' (vượt qua một đối tượng so sánh khác).",
+        example: "Her performance this quarter exceeded all expectations.",
+        exampleTranslation:
+          "Hiệu suất của cô ấy trong quý này đã vượt quá mọi kỳ vọng.",
+      },
+      {
+        id: 300,
+        word: "Stark contrast",
+        pronunciation: "/stɑːk ˈkɒntrɑːst/",
+        meaning:
+          "Sự tương phản rõ rệt, sự khác biệt hoàn toàn và dễ thấy giữa hai đối tượng hoặc tình huống",
+        note: "Cụm danh từ dùng 'stark' (trần trụi, rõ ràng đến mức khắc nghiệt) để nhấn mạnh sự tương phản cực đoan. Phổ biến trong cả Task 1 lẫn Task 2. Thường đi với: 'in stark contrast to India', 'present a stark contrast'. Đồng nghĩa: a sharp contrast, a striking difference, a marked divergence. Lưu ý cấu trúc: 'in stark contrast to + đối tượng' (sau đó là mệnh đề mô tả).",
+        example:
+          "The economic growth of the two countries presents a stark contrast.",
+        exampleTranslation:
+          "Sự tăng trưởng kinh tế của hai quốc gia đưa ra một sự tương phản rõ rệt.",
+      },
+      {
+        id: 301,
+        word: "A negligible difference",
+        pronunciation: "/ə ˈneɡlɪdʒɪbəl ˈdɪfrəns/",
+        meaning:
+          "Sự khác biệt không đáng kể, sự chênh lệch nhỏ đến mức không cần phải xem xét hay quan tâm",
+        note: "Cụm danh từ dùng 'negligible' (có thể bỏ qua được, quá nhỏ để tính đến) để mô tả sự khác biệt gần như không có. Rất hữu ích trong Task 1 khi hai giá trị gần bằng nhau. Thường đi với: 'there is a negligible difference in the protein intake between', 'the difference is negligible'. Đồng nghĩa: a minimal difference, an insignificant gap, a marginal variation. Trái nghĩa: a significant/substantial difference.",
+        example:
+          "The difference in performance between the two models is negligible.",
+        exampleTranslation:
+          "Sự khác biệt về hiệu suất giữa hai mẫu là không đáng kể.",
+      },
+      {
+        id: 302,
+        word: "Derive from",
+        pronunciation: "/dɪˈraɪv frɒm/",
+        meaning:
+          "Bắt nguồn từ, có nguồn gốc hoặc xuất phát từ một nguồn nhất định",
+        note: "Cụm động từ chỉ nguồn gốc hoặc xuất xứ của một thứ gì đó. Trong Task 1 về dinh dưỡng, dùng để nói protein có nguồn gốc từ đâu (động vật hay nguồn khác). Thường đi với: 'derived from other unspecified sources', 'derive from animal/plant sources'. Đồng nghĩa: originate from, come from, stem from. Lưu ý: thường dùng dạng bị động 'derived from' trong văn viết học thuật.",
+        example: "The word 'coffee' derives from the Arabic word 'qahwa'.",
+        exampleTranslation: "Từ 'coffee' bắt nguồn từ từ tiếng Ả Rập 'qahwa'.",
+      },
+      {
+        id: 303,
+        word: "Top the list",
+        pronunciation: "/tɒp ðə lɪst/",
+        meaning:
+          "Đứng đầu danh sách, chiếm vị trí cao nhất trong một bảng xếp hạng hoặc danh sách so sánh",
+        note: "Cụm động từ dùng 'top' như động từ (đứng đầu, dẫn đầu). Mang sắc thái tích cực và thường dùng để nhấn mạnh vị trí số một. Thường đi với: 'North Americans again top the list', 'top the list of priorities'. Đồng nghĩa: lead the ranking, come first, be at the top. Phân biệt: 'top the list' (dẫn đầu bảng xếp hạng) vs 'be the largest' (lớn nhất — không nhất thiết là xếp hạng).",
+        example: "Sustainability tops the list of our company's priorities.",
+        exampleTranslation:
+          "Bền vững đứng đầu danh sách ưu tiên của công ty chúng tôi.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W11 - Task 2: Senior Manager Salaries (Sample 1 - Totally Disagree)
+  // ==========================================
+  {
+    id: "wr_w11_task2_salary_disagree",
+    skill: "Writing",
+    volume: "9",
+    topic: "Business / Workplace / Inequality",
+    part: "Task 2 - Senior Manager Salaries (Totally Disagree)",
+    cards: [
+      {
+        id: 304,
+        word: "Substantial wage disparity",
+        pronunciation: "/səbˈstænʃəl weɪdʒ dɪˈspærɪti/",
+        meaning:
+          "Chênh lệch lương lớn, sự khác biệt đáng kể và nổi bật về mức thu nhập giữa các nhóm nhân viên",
+        note: "Cụm danh từ kết hợp 'substantial' (đáng kể, lớn) với 'wage disparity' (chênh lệch lương). 'Disparity' học thuật hơn 'gap' hay 'difference'. Thường xuất hiện trong phần thesis statement khi nêu quan điểm phản đối. Thường đi với: 'the substantial wage disparity between senior management and the rest', 'address wage disparity'. Đồng nghĩa: significant pay gap, considerable salary difference, major income inequality.",
+        example:
+          "The audit revealed a substantial wage disparity between management and entry-level positions.",
+        exampleTranslation:
+          "Cuộc kiểm toán tiết lộ một chênh lệch lương lớn giữa ban quản lý và các vị trí mới được nhận vào.",
+      },
+      {
+        id: 305,
+        word: "Unjustifiable",
+        pronunciation: "/ʌnˈdʒʌstɪfaɪəbəl/",
+        meaning:
+          "Không thể biện minh được, không hợp lý và không thể bảo vệ bằng lý lẽ hoặc bằng chứng",
+        note: "Tính từ mạnh dùng để phủ nhận hoàn toàn tính hợp lý của một quan điểm hay hành động. Thường xuất hiện trong thesis statement khi người viết muốn bày tỏ sự phản đối mạnh mẽ. Thường đi với: 'the substantial wage disparity is unjustifiable', 'an unjustifiable decision'. Đồng nghĩa: indefensible, unreasonable, unwarranted, inexcusable. Trái nghĩa: justifiable, defensible, reasonable.",
+        example:
+          "The decision to cut benefits while executives receive bonuses is unjustifiable.",
+        exampleTranslation:
+          "Quyết định cắt giảm phúc lợi trong khi các giám đốc nhận thưởng là không hợp lý.",
+      },
+      {
+        id: 306,
+        word: "Attract and retain talent",
+        pronunciation: "/əˈtrækt ənd rɪˈteɪn ˈtælənt/",
+        meaning:
+          "Thu hút và giữ chân nhân tài, quá trình tuyển dụng người giỏi và đảm bảo họ tiếp tục gắn bó với tổ chức",
+        note: "Cụm động từ kép rất phổ biến trong bài về kinh doanh và nhân sự. 'Attract' (thu hút vào) và 'retain' (giữ lại) là hai giai đoạn của quản lý nhân tài. Thường đi với: 'higher salaries are essential to attract and retain talent', 'strategies to attract and retain talent'. Đồng nghĩa: recruit and keep skilled workers, draw in and hold onto top performers.",
+        example:
+          "Our competitive benefits package is designed to attract and retain talent.",
+        exampleTranslation:
+          "Gói phúc lợi cạnh tranh của chúng tôi được thiết kế để thu hút và giữ chân nhân tài.",
+      },
+      {
+        id: 307,
+        word: "The collective effort",
+        pronunciation: "/ðə kəˈlektɪv ˈefət/",
+        meaning:
+          "Nỗ lực tập thể, sự đóng góp và hợp tác kết hợp của một nhóm người hướng đến mục tiêu chung",
+        note: "Cụm danh từ nhấn mạnh rằng thành công không đến từ cá nhân mà từ cả tập thể. Thường xuất hiện trong phần refutation khi bác bỏ lập luận rằng chỉ lãnh đạo cấp cao tạo ra giá trị. Thường đi với: 'overlooks the collective effort required to drive a company forward', 'recognize the collective effort of'. Đồng nghĩa: team effort, joint endeavor, combined work, collaborative contribution.",
+        example:
+          "The project's success was the result of the collective effort of the entire team.",
+        exampleTranslation:
+          "Thành công của dự án là kết quả của nỗ lực tập thể của toàn bộ nhóm.",
+      },
+      {
+        id: 308,
+        word: "Drive a company forward",
+        pronunciation: "/draɪv ə ˈkʌmpəni ˈfɔːwəd/",
+        meaning:
+          "Thúc đẩy công ty phát triển, dẫn dắt và đẩy doanh nghiệp tiến về phía trước theo hướng tăng trưởng và thành công",
+        note: "Cụm động từ dùng 'drive' (lái, thúc đẩy) và 'forward' (về phía trước) theo nghĩa bóng. Rất phổ biến trong bài về kinh doanh và lãnh đạo. Thường đi với: 'the collective effort required to drive a company forward', 'key to drive a company forward'. Đồng nghĩa: propel a company forward, push a business ahead, lead an organization towards growth.",
+        example:
+          "Innovative ideas and strong leadership are key to drive a company forward.",
+        exampleTranslation:
+          "Ý tưởng đổi mới và sự lãnh đạo mạnh mẽ là chìa khóa để thúc đẩy công ty phát triển.",
+      },
+      {
+        id: 309,
+        word: "Equitable pay scales",
+        pronunciation: "/ˈekwɪtəbəl peɪ skeɪlz/",
+        meaning:
+          "Cấu trúc lương công bằng, hệ thống thang lương đảm bảo nhân viên được trả lương hợp lý dựa trên vai trò, kinh nghiệm và đóng góp mà không có sự chênh lệch vô lý",
+        note: "Cụm danh từ dùng 'equitable' (công bằng, hợp lý — từ tiếng Latin 'aequus') thay cho 'fair', mang sắc thái học thuật và pháp lý hơn. 'Scales' (thang bậc) nhấn mạnh cấu trúc phân cấp hệ thống. Thường đi với: 'more equitable pay scales could foster a motivated workforce', 'implement equitable pay scales'. Đồng nghĩa: fair salary structures, just compensation systems, balanced pay grades.",
+        example:
+          "Equitable pay scales are essential for fostering a sense of justice and equality within the workplace.",
+        exampleTranslation:
+          "Cấu trúc lương công bằng là điều cần thiết để nuôi dưỡng cảm giác công bằng và bình đẳng trong nơi làm việc.",
+      },
+      {
+        id: 310,
+        word: "Motivated and cohesive workforce",
+        pronunciation: "/ˈməʊtɪveɪtɪd ənd kəʊˈhiːsɪv ˈwɜːkfɔːs/",
+        meaning:
+          "Đội ngũ nhân viên đầy động lực và gắn kết, tập thể lao động vừa có tinh thần làm việc cao vừa đoàn kết, phối hợp ăn ý với nhau",
+        note: "Cụm danh từ kết hợp hai tính từ bổ sung nhau: 'motivated' (có động lực) và 'cohesive' (gắn kết, liên kết chặt chẽ — từ 'cohere': kết dính). Thường xuất hiện như kết quả tích cực của chính sách lương công bằng. Thường đi với: 'foster a more motivated and cohesive workforce', 'build a motivated and cohesive workforce'. Đồng nghĩa: an engaged and unified team, a driven and harmonious staff.",
+        example:
+          "A motivated and cohesive workforce significantly contributes to the company's ongoing success and innovation.",
+        exampleTranslation:
+          "Đội ngũ nhân viên đầy động lực và gắn kết đóng góp đáng kể vào thành công và đổi mới liên tục của công ty.",
+      },
+      {
+        id: 311,
+        word: "Senior executives",
+        pronunciation: "/ˈsiːniər ɪɡˈzekjətɪvz/",
+        meaning:
+          "Các giám đốc cấp cao, những nhà quản lý ở cấp độ cao nhất chịu trách nhiệm về định hướng và chiến lược tổng thể của công ty",
+        note: "Cụm danh từ chỉ nhóm lãnh đạo cao cấp nhất. 'Executive' (người điều hành) thường chỉ CEO, CFO, COO... Thường đi với: 'incentivize senior executives', 'senior executives play a critical role'. Đồng nghĩa: top executives, C-suite leaders, upper management, senior management. Phân biệt: 'senior executives' (giám đốc cấp cao — C-level) vs 'senior managers' (quản lý cấp cao — dưới C-level).",
+        example:
+          "Senior executives play a critical role in shaping the vision and future of the company.",
+        exampleTranslation:
+          "Các giám đốc cấp cao đóng vai trò quan trọng trong việc hình thành tầm nhìn và tương lai của công ty.",
+      },
+      {
+        id: 312,
+        word: "Employee morale",
+        pronunciation: "/ɪmˈplɔɪiː məˈrɑːl/",
+        meaning:
+          "Tinh thần nhân viên, thái độ tổng thể, triển vọng và sự hài lòng của nhân viên trong môi trường làm việc, ảnh hưởng trực tiếp đến động lực và hiệu suất",
+        note: "Cụm danh từ chủ chốt trong các bài về quản lý nhân sự và chính sách lương. 'Morale' (tinh thần — từ tiếng Pháp) khác với 'morals' (đạo đức). Thường đi với: 'the impact of such disparities on employee morale', 'boost/damage employee morale'. Đồng nghĩa: staff morale, team spirit, workforce motivation, employee satisfaction.",
+        example:
+          "High employee morale is linked to increased productivity and lower turnover rates.",
+        exampleTranslation:
+          "Tinh thần nhân viên cao được liên kết với năng suất tăng cao và tỷ lệ thay đổi nhân sự thấp.",
+      },
+      {
+        id: 313,
+        word: "A fair and transparent compensation system",
+        pronunciation: "/ə feər ənd trænsˈpærənt ˌkɒmpənˈseɪʃən ˈsɪstəm/",
+        meaning:
+          "Hệ thống lương thưởng công bằng và minh bạch, phương thức trả lương rõ ràng, công khai tiêu chí và quy trình xác định mức lương, đảm bảo sự công bằng cho tất cả nhân viên",
+        note: "Cụm danh từ dài kết hợp hai tính chất cốt lõi: 'fair' (công bằng về kết quả) và 'transparent' (minh bạch về quy trình). Thường xuất hiện như giải pháp đề xuất trong phần thân bài và kết luận. Thường đi với: 'a fair and transparent compensation system can be equally effective', 'implement a fair and transparent compensation system'. Đồng nghĩa: an open and equitable pay structure, a just and clear remuneration system.",
+        example:
+          "Implementing a fair and transparent compensation system has improved trust between employees and management.",
+        exampleTranslation:
+          "Việc thực hiện một hệ thống lương thưởng công bằng và minh bạch đã cải thiện niềm tin giữa nhân viên và ban quản lý.",
+      },
+      {
+        id: 314,
+        word: "A less pronounced pay gap",
+        pronunciation: "/ə les prəˈnaʊnst peɪ ɡæp/",
+        meaning:
+          "Khoảng cách lương ít rõ rệt hơn, sự chênh lệch thu nhập giữa các cấp bậc được thu hẹp lại so với tình trạng hiện tại",
+        note: "Cụm danh từ dùng 'less pronounced' (ít nổi bật hơn, bớt rõ ràng hơn) để diễn tả sự thu hẹp khoảng cách một cách tinh tế. 'Pronounced' ở đây dùng như tính từ (= rõ ràng, nổi bật). Thường đi với: 'a less pronounced pay gap does not hinder business success', 'work towards a less pronounced pay gap'. Đồng nghĩa: a narrower pay gap, a smaller salary difference, a reduced income disparity.",
+        example:
+          "Efforts to close the gender wage gap have resulted in a less pronounced pay gap within the company.",
+        exampleTranslation:
+          "Những nỗ lực nhằm thu hẹp khoảng cách tiền lương giữa các giới đã dẫn đến khoảng cách lương ít hơn rõ rệt hơn trong công ty.",
+      },
+      {
+        id: 315,
+        word: "A more harmonious and productive work environment",
+        pronunciation: "/ə mɔː hɑːˈməʊniəs ənd prəˈdʌktɪv wɜːk ɪnˈvaɪrənmənt/",
+        meaning:
+          "Môi trường làm việc hài hòa và năng suất hơn, bầu không khí nơi làm việc thuận lợi cho sự hợp tác và hiệu quả, dẫn đến năng suất cao hơn và sự hài lòng của nhân viên",
+        note: "Cụm danh từ kết hợp 'harmonious' (hài hòa, không có xung đột) và 'productive' (năng suất, hiệu quả). Thường xuất hiện như kết quả tích cực của việc thu hẹp khoảng cách lương. Thường đi với: 'contributes to a more harmonious and productive work environment'. Đồng nghĩa: a more cohesive and efficient workplace, a better and more cooperative working atmosphere.",
+        example:
+          "Fostering a more harmonious and productive work environment has been key to our project's success.",
+        exampleTranslation:
+          "Thúc đẩy một môi trường làm việc hài hòa và năng suất hơn là chìa khóa thành công cho dự án của chúng tôi.",
+      },
+      {
+        id: 316,
+        word: "A more equitable compensation model",
+        pronunciation: "/ə mɔːr ˈekwɪtəbəl ˌkɒmpənˈseɪʃən ˈmɒdəl/",
+        meaning:
+          "Mô hình lương thưởng công bằng hơn, hệ thống xác định mức lương phản ánh chính xác hơn đóng góp, kỹ năng và trách nhiệm của nhân viên",
+        note: "Cụm danh từ dùng 'model' (mô hình — hệ thống tổng thể) thay cho 'system' (hệ thống — quy trình cụ thể). 'Equitable' nhấn mạnh tính công bằng dựa trên xứng đáng. Thường đi với: 'advocating for a more equitable compensation model', 'adopt a more equitable compensation model'. Đồng nghĩa: a fairer pay structure, a more just remuneration system, an equitable salary framework.",
+        example:
+          "Adopting a more equitable compensation model has helped to reduce employee turnover.",
+        exampleTranslation:
+          "Việc áp dụng mô hình lương thưởng công bằng hơn đã giúp giảm tỷ lệ luân chuyển nhân viên.",
+      },
+      {
+        id: 317,
+        word: "Sustained organizational success",
+        pronunciation: "/səˈsteɪnd ˌɔːɡənaɪˈzeɪʃənəl səkˈses/",
+        meaning:
+          "Thành công tổ chức bền vững, sự đạt được và duy trì liên tục những thành tựu của một tổ chức theo thời gian thông qua hiệu suất nhất quán và quản lý chiến lược",
+        note: "Cụm danh từ ba từ: 'sustained' (bền vững, được duy trì lâu dài) + 'organizational' (thuộc về tổ chức) + 'success' (thành công). Thường xuất hiện trong phần kết luận. Thường đi với: 'ultimately leading to sustained organizational success', 'achieve sustained organizational success'. Đồng nghĩa: long-term business success, enduring corporate achievement, continuous organizational growth.",
+        example:
+          "Sustained organizational success is the result of strategic planning and the dedication of our team.",
+        exampleTranslation:
+          "Thành công bền vững của tổ chức là kết quả của việc hoạch định chiến lược và sự cống hiến của đội ngũ chúng tôi.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W11 - Task 2: Senior Manager Salaries (Sample 2 - Partly Agree)
+  // ==========================================
+  {
+    id: "wr_w11_task2_salary_partly",
+    skill: "Writing",
+    volume: "9",
+    topic: "Business / Workplace / Inequality",
+    part: "Task 2 - Senior Manager Salaries (Partly Agree)",
+    cards: [
+      {
+        id: 318,
+        word: "Complexity",
+        pronunciation: "/kəmˈpleksɪti/",
+        meaning:
+          "Sự phức tạp, trạng thái hoặc tính chất của điều gì đó có nhiều yếu tố liên kết với nhau theo cách khó hiểu hoặc khó giải quyết",
+        note: "Danh từ từ tính từ 'complex', thường xuất hiện khi người viết muốn thừa nhận rằng vấn đề không đơn giản. Thường dùng trong thesis statement của bài 'partly agree'. Thường đi với: 'recognizing the complexity of the issue', 'given the complexity of this topic'. Đồng nghĩa: intricacy, complication, multifaceted nature. Phân biệt: 'complexity' (sự phức tạp về bản chất) vs 'complication' (sự phức tạp nảy sinh do vấn đề).",
+        example: "The complexity of the project required detailed planning.",
+        exampleTranslation: "Sự phức tạp của dự án đòi hỏi kế hoạch chi tiết.",
+      },
+      {
+        id: 319,
+        word: "Varying factors",
+        pronunciation: "/ˈveəriɪŋ ˈfæktəz/",
+        meaning:
+          "Các yếu tố khác nhau, những điều kiện và nhân tố đa dạng có thể tác động đến kết quả theo những cách khác biệt",
+        note: "Cụm danh từ dùng 'varying' (biến đổi, đa dạng — dạng tính từ của 'vary') để nhấn mạnh tính đa dạng của các yếu tố. Thường xuất hiện trong phần giới thiệu để biện minh cho lập trường 'partly agree'. Thường đi với: 'the complexity and varying factors that influence this stance', 'considering varying factors'. Đồng nghĩa: diverse factors, multiple variables, a range of considerations.",
+        example:
+          "Varying factors such as weather and market demand affected the production schedule.",
+        exampleTranslation:
+          "Các yếu tố khác nhau như thời tiết và nhu cầu thị trường đã ảnh hưởng đến tiến độ sản xuất.",
+      },
+      {
+        id: 320,
+        word: "Decision-making authority",
+        pronunciation: "/dɪˈsɪʒən ˈmeɪkɪŋ ɔːˈθɒrɪti/",
+        meaning:
+          "Quyền quyết định, quyền hạn hoặc thẩm quyền đưa ra các quyết định quan trọng, thường được trao cho những người ở vị trí lãnh đạo hoặc quản lý",
+        note: "Cụm danh từ kết hợp 'decision-making' (tính từ ghép chỉ quá trình ra quyết định) với 'authority' (quyền hạn, thẩm quyền). Thường xuất hiện khi liệt kê các đặc điểm của vị trí quản lý cấp cao. Thường đi với: 'characterized by their decision-making authority', 'have the decision-making authority to'. Đồng nghĩa: executive power, managerial authority, the right to make decisions.",
+        example:
+          "She has the decision-making authority to allocate resources for the project.",
+        exampleTranslation:
+          "Cô ấy có quyền quyết định phân bổ nguồn lực cho dự án.",
+      },
+      {
+        id: 321,
+        word: "Compensation differential",
+        pronunciation: "/ˌkɒmpənˈseɪʃən ˌdɪfəˈrenʃəl/",
+        meaning:
+          "Chênh lệch tiền lương, sự khác biệt trong mức lương nhận được bởi các nhân viên, thường dựa trên vị trí công việc, kinh nghiệm hoặc hiệu suất",
+        note: "Cụm danh từ học thuật cao, 'differential' (chênh lệch, hiệu số) mang sắc thái kinh tế học hơn 'gap' hay 'difference'. Thường xuất hiện khi giải thích lý do tồn tại của sự chênh lệch lương. Thường đi với: 'this compensation differential acknowledges the unique challenges', 'justify the compensation differential'. Đồng nghĩa: pay differential, salary difference, wage gap.",
+        example:
+          "The compensation differential between the two positions reflects the level of responsibility.",
+        exampleTranslation:
+          "Chênh lệch tiền lương giữa hai vị trí phản ánh mức độ trách nhiệm.",
+      },
+      {
+        id: 322,
+        word: "Bear the brunt of stakeholder expectations",
+        pronunciation: "/beər ðə brʌnt əv ˈsteɪkhəʊldər ˌekspekˈteɪʃənz/",
+        meaning:
+          "Gánh chịu áp lực chính từ kỳ vọng của các bên liên quan, phải đối mặt với phần nặng nề nhất của đòi hỏi và mong đợi từ những người có lợi ích trong tổ chức",
+        note: "Cụm động từ dùng thành ngữ 'bear the brunt of' (gánh chịu phần nặng nề nhất của) kết hợp với 'stakeholder expectations'. 'Brunt' nghĩa gốc là cú đánh mạnh nhất. Rất ấn tượng trong bài viết về vai trò của CEO. Thường đi với: 'CEOs bear the brunt of stakeholder expectations', 'forced to bear the brunt of criticism'. Đồng nghĩa: face the main impact of, shoulder the greatest pressure from.",
+        example:
+          "As CEO, she bears the brunt of stakeholder expectations for the company's performance.",
+        exampleTranslation:
+          "Là CEO, cô ấy gánh chịu áp lực từ kỳ vọng của các bên liên quan về hiệu suất công ty.",
+      },
+      {
+        id: 323,
+        word: "A stark disparity",
+        pronunciation: "/ə stɑːk dɪˈspærɪti/",
+        meaning:
+          "Sự chênh lệch lớn và rõ ràng, sự bất bình đẳng đáng chú ý và thường gây sốc giữa hai hay nhiều yếu tố",
+        note: "Cụm danh từ kết hợp 'stark' (trần trụi, khắc nghiệt — mạnh hơn 'significant') với 'disparity' (chênh lệch, bất bình đẳng). Thường xuất hiện trong phần phản bác để chỉ ra tác hại của khoảng cách lương quá lớn. Thường đi với: 'advocating for a stark disparity without considering its implications', 'highlight a stark disparity in'. Đồng nghĩa: a glaring inequality, a sharp discrepancy, a pronounced gap.",
+        example:
+          "The report highlighted a stark disparity in wealth distribution among the population.",
+        exampleTranslation:
+          "Báo cáo nêu bật sự chênh lệch lớn trong phân phối tài sản giữa dân số.",
+      },
+      {
+        id: 324,
+        word: "Equitable compensation framework",
+        pronunciation: "/ˈekwɪtəbəl ˌkɒmpənˈseɪʃən ˈfreɪmwɜːk/",
+        meaning:
+          "Khung lương công bằng, hệ thống hoặc bộ nguyên tắc hướng dẫn được thiết kế để đảm bảo việc trả lương công bằng và hợp lý cho tất cả nhân viên",
+        note: "Cụm danh từ dùng 'framework' (khung, cơ cấu tổng thể) thay cho 'system' hay 'model', nhấn mạnh đây là một cấu trúc nền tảng bao quát hơn. Thường xuất hiện như giải pháp đề xuất trong bài partly agree. Thường đi với: 'a more equitable compensation framework could still offer competitive salaries', 'develop an equitable compensation framework'. Đồng nghĩa: a fair pay structure, a just remuneration system, an equitable salary framework.",
+        example:
+          "The company is developing an equitable compensation framework to address pay disparities.",
+        exampleTranslation:
+          "Công ty đang phát triển một khung lương công bằng để giải quyết sự chênh lệch về tiền lương.",
+      },
+      {
+        id: 325,
+        word: "Salary gap",
+        pronunciation: "/ˈsæləri ɡæp/",
+        meaning:
+          "Khoảng cách tiền lương, sự chênh lệch trong mức lương nhận được giữa hai nhóm người, thường phản ánh sự bất bình đẳng",
+        note: "Cụm danh từ đơn giản nhưng phổ biến, thường đi kèm với các tính từ mô tả mức độ như 'wide/large/narrow/growing salary gap'. Phân biệt với 'wage disparity' (mang sắc thái học thuật hơn). Thường đi với: 'ensuring that the salary gap does not demoralize other employees', 'close/narrow the salary gap'. Đồng nghĩa: pay gap, income gap, wage differential. Phân biệt: 'salary gap' (khoảng cách giữa các cấp bậc) vs 'gender pay gap' (khoảng cách lương theo giới tính).",
+        example:
+          "Efforts are being made to close the salary gap between men and women in the company.",
+        exampleTranslation:
+          "Nỗ lực đang được thực hiện để thu hẹp khoảng cách tiền lương giữa nam và nữ trong công ty.",
+      },
+      {
+        id: 326,
+        word: "Demoralize",
+        pronunciation: "/dɪˈmɒrəlaɪz/",
+        meaning:
+          "Làm mất tinh thần, khiến ai đó mất đi sự tự tin, niềm hy vọng hoặc động lực làm việc",
+        note: "Động từ từ danh từ 'morale', thêm tiền tố 'de-' (phủ định, làm ngược lại). Thường xuất hiện khi mô tả tác hại của khoảng cách lương lớn đến tâm lý nhân viên. Thường đi với: 'the salary gap does not demoralize other employees', 'policies that demoralize workers'. Đồng nghĩa: dishearten, discourage, dispirit, undermine morale. Trái nghĩa: motivate, inspire, boost morale.",
+        example:
+          "The constant criticism from management began to demoralize the team.",
+        exampleTranslation:
+          "Sự chỉ trích liên tục từ ban quản lý bắt đầu làm mất tinh thần của nhóm.",
+      },
+      {
+        id: 327,
+        word: "Capped ratios",
+        pronunciation: "/kæpt ˈreɪʃiəʊz/",
+        meaning:
+          "Tỷ lệ giới hạn, các giới hạn được thiết lập cho tỷ lệ giữa các mức lương khác nhau, chẳng hạn như mức chênh lệch tối đa cho phép giữa lương cao nhất và thấp nhất",
+        note: "Cụm danh từ dùng 'capped' (có giới hạn trần) như tính từ. Thường xuất hiện khi đưa ví dụ về các công ty áp dụng chính sách lương minh bạch. Thường đi với: 'companies have experimented with capped ratios between the highest and lowest-paid employees'. Đồng nghĩa: pay ratio limits, salary caps, maximum compensation ratios. Lưu ý: khác với 'salary cap' (giới hạn lương tối đa cho một cá nhân) — 'capped ratios' là tỷ lệ tối đa giữa hai mức lương.",
+        example:
+          "The organization implements capped ratios for executive to worker pay to promote equity.",
+        exampleTranslation:
+          "Tổ chức áp dụng tỷ lệ giới hạn cho tiền lương giữa người quản lý và người lao động để thúc đẩy công bằng.",
+      },
+      {
+        id: 328,
+        word: "A sense of fairness and solidarity",
+        pronunciation: "/ə sens əv ˈfeənəs ənd ˌsɒlɪˈdærɪti/",
+        meaning:
+          "Cảm giác công bằng và đoàn kết, nhận thức được đối xử bình đẳng và chính đáng kết hợp với sự thống nhất và gắn bó giữa các thành viên có chung lợi ích",
+        note: "Cụm danh từ kết hợp hai giá trị cốt lõi: 'fairness' (công bằng) và 'solidarity' (đoàn kết — từ tiếng Latin 'solidus': vững chắc). Thường xuất hiện khi mô tả lợi ích của việc áp dụng tỷ lệ lương cân bằng. Thường đi với: 'promoting a sense of fairness and solidarity among workers', 'foster a sense of fairness and solidarity'. Đồng nghĩa: a feeling of equity and unity, a culture of fairness and togetherness.",
+        example:
+          "The new policies foster a sense of fairness and solidarity among employees.",
+        exampleTranslation:
+          "Các chính sách mới nuôi dưỡng cảm giác công bằng và đoàn kết giữa nhân viên.",
+      },
+      {
+        id: 329,
+        word: "A cohesive and motivated workforce",
+        pronunciation: "/ə kəʊˈhiːsɪv ənd ˈməʊtɪveɪtɪd ˈwɜːkfɔːs/",
+        meaning:
+          "Đội ngũ nhân viên gắn kết và đầy động lực, tập thể lao động vừa liên kết chặt chẽ với nhau vừa có tinh thần làm việc tích cực và nhiệt huyết",
+        note: "Cụm danh từ đảo thứ tự so với 'motivated and cohesive workforce' (id 310) — cả hai đều đúng. Thứ tự tính từ có thể thay đổi nhưng 'cohesive' (gắn kết) thường đứng trước 'motivated' (có động lực) trong ngữ cảnh nhấn mạnh sự đoàn kết. Thường đi với: 'fostering a cohesive and motivated workforce'. Đồng nghĩa: a unified and driven team, an engaged and harmonious staff.",
+        example:
+          "Investment in team-building activities has resulted in a cohesive and motivated workforce.",
+        exampleTranslation:
+          "Việc đầu tư vào các hoạt động xây dựng nhóm đã dẫn đến một đội ngũ nhân viên có tính gắn kết và được truyền động lực.",
+      },
+    ],
+  },
 ];

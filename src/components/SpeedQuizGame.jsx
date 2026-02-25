@@ -268,7 +268,7 @@ export default function SpeedQuizGame({
 
   if (!deck || questions.length === 0) {
     return (
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center min-h-screen">
         <p className="text-xl">Đang tải câu hỏi...</p>
       </div>
     );
@@ -354,9 +354,11 @@ export default function SpeedQuizGame({
             >
               <Trophy className="w-5 h-5 text-blue-300 drop-shadow-sm group-hover:animate-tada" />
             </div>
-            <p className={`text-xl font-black mb-0.5 animate-countUp ${
-              isDarkMode ? "text-slate-200" : "text-slate-700"
-            }`}>
+            <p
+              className={`text-xl font-black mb-0.5 animate-countUp ${
+                isDarkMode ? "text-slate-200" : "text-slate-700"
+              }`}
+            >
               {score}
             </p>
             <p
@@ -471,9 +473,7 @@ export default function SpeedQuizGame({
             </div>
             <p
               className={`text-2xl font-black mb-1 ${
-                timeLeft <= 5
-                  ? "text-rose-300"
-                  : "text-teal-300"
+                timeLeft <= 5 ? "text-rose-300" : "text-teal-300"
               }`}
             >
               {timeLeft}s
@@ -590,9 +590,7 @@ export default function SpeedQuizGame({
               </div>
               <h2
                 className={`text-3xl md:text-4xl font-black tracking-tight ${
-                  isDarkMode
-                    ? "text-slate-100"
-                    : "text-slate-800"
+                  isDarkMode ? "text-slate-100" : "text-slate-800"
                 }`}
               >
                 {currentQuestion.word}
@@ -628,7 +626,9 @@ export default function SpeedQuizGame({
                   buttonClass = isDarkMode
                     ? "bg-gradient-to-r from-rose-500/25 to-red-500/25 text-white border-rose-400/40 shadow-lg shadow-rose-500/15"
                     : "bg-gradient-to-r from-rose-200/40 to-red-300/40 text-slate-900 border-rose-300/50 shadow-lg shadow-rose-500/20";
-                  iconBgClass = isDarkMode ? "bg-rose-400/25" : "bg-rose-200/40";
+                  iconBgClass = isDarkMode
+                    ? "bg-rose-400/25"
+                    : "bg-rose-200/40";
                 } else {
                   buttonClass = isDarkMode
                     ? "bg-white/5 border-white/10 opacity-50 text-slate-400"
@@ -853,7 +853,6 @@ export default function SpeedQuizGame({
             <Sparkles
               className="w-5 h-5 text-amber-300 animate-pulse"
               style={{ filter: "drop-shadow(0 0 4px rgba(251, 191, 36, 0.4))" }}
-            />
             />
           </div>
         </div>
