@@ -17,15 +17,19 @@ export function useKeyboardNavigation(
     const handleKeyDown = (e) => {
       if (isModalOpen) return;
 
-      if (e.key === "ArrowRight") onNext();
-      if (e.key === "ArrowLeft") onPrev();
-      if (e.key === " " || e.key === "Spacebar") {
+      // Không chặn keyboard khi đang gõ trong input/textarea
+      const isTyping =
+        e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA";
+
+      if (e.key === "ArrowRight" && !isTyping) onNext();
+      if (e.key === "ArrowLeft" && !isTyping) onPrev();
+      if ((e.key === " " || e.key === "Spacebar") && !isTyping) {
         e.preventDefault();
         onFlip();
       }
     };
 
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    globalThis.addEventListener("keydown", handleKeyDown);
+    return () => globalThis.removeEventListener("keydown", handleKeyDown);
   }, [onNext, onPrev, onFlip, isModalOpen]);
 }

@@ -7,6 +7,8 @@ import {
   ArrowLeft,
   Zap,
   Sparkles,
+  PartyPopper,
+  Check,
 } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 import GameSummary from "./GameSummary";
@@ -33,7 +35,7 @@ export default function SpeedQuizGame({
   const [showConfetti, setShowConfetti] = useState(false);
   const [particleTrigger, setParticleTrigger] = useState(0);
 
-  // 🎉 Hàm bắn pháo hoa chuyên nghiệp (Canvas Confetti - Dynamic Loading)
+  // Hàm bắn pháo hoa chuyên nghiệp (Canvas Confetti - Dynamic Loading)
   const triggerFireworks = (intensity = "normal") => {
     // Tải thư viện canvas-confetti từ CDN nếu chưa có
     if (!window.confetti) {
@@ -149,7 +151,7 @@ export default function SpeedQuizGame({
     return () => clearInterval(timer);
   }, [currentQuestionIndex, gameOver, showFeedback, questions]);
 
-  // 🎉 Trigger pháo hoa mega khi hoàn thành game
+  // Trigger pháo hoa mega khi hoàn thành game
   useEffect(() => {
     if (gameOver && correctAnswers > 0) {
       // Delay một chút để UI render xong rồi mới bắn pháo hoa
@@ -180,7 +182,7 @@ export default function SpeedQuizGame({
     setShowFeedback(true);
 
     if (correct) {
-      // 🎉 Bắn pháo hoa nhỏ khi trả lời đúng
+      // Bắn pháo hoa nhỏ khi trả lời đúng
       triggerFireworks("normal");
 
       const newCombo = combo + 1;
@@ -668,7 +670,7 @@ export default function SpeedQuizGame({
                     <span className="flex-1">{option}</span>
                     {showFeedback && isCurrentCorrect && (
                       <span className="text-xl animate-popIn bg-emerald-300/20 rounded-full w-7 h-7 flex items-center justify-center text-emerald-300">
-                        ✓
+                        <Check size={18} strokeWidth={3} />
                       </span>
                     )}
                     {showFeedback && isSelected && !isCorrect && (
@@ -717,11 +719,11 @@ export default function SpeedQuizGame({
                     />
                   </div>
                   <span
-                    className={`text-lg ${
+                    className={`text-lg flex items-center gap-2 ${
                       isDarkMode ? "text-white" : "text-slate-900"
                     }`}
                   >
-                    Chính xác! 🎉
+                    Chính xác! <PartyPopper size={20} className="inline" />
                   </span>
                   {combo >= 3 && (
                     <div
@@ -831,11 +833,11 @@ export default function SpeedQuizGame({
             </div>
             <div className="flex flex-col items-start">
               <p
-                className={`text-xs font-bold uppercase tracking-wider mb-1 ${
+                className={`text-xs font-bold uppercase tracking-wider mb-1 flex items-center gap-1.5 justify-center ${
                   isDarkMode ? "text-amber-200" : "text-amber-600"
                 }`}
               >
-                🔥 Streak Bonus
+                <Flame size={16} /> Streak Bonus
               </p>
               <p
                 className={`text-2xl font-black ${

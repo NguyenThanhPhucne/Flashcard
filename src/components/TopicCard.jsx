@@ -1,4 +1,4 @@
-import { BookOpen, Gamepad2 } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 export default function TopicCard({ deck, isDarkMode, onOpen }) {
   return (
@@ -65,41 +65,25 @@ export default function TopicCard({ deck, isDarkMode, onOpen }) {
           {deck.cards.length} từ vựng
         </div>
 
-        {/* Action Buttons - Professional Glassmorphism */}
+        {/* Single Action Button - Clean & Professional */}
         <div
-          className="flex gap-2.5 mt-1 -ml-3"
+          className="flex justify-center mt-1"
           style={{ transform: "translateZ(10px)" }}
         >
           <button
-            onClick={() => onOpen(deck.id, false)}
-            className={`group/btn flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold backdrop-blur-xl border transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 active:scale-95 shadow-md hover:shadow-lg ${
+            onClick={() => onOpen(deck.id, false, false)}
+            className={`group/btn w-full flex items-center justify-center gap-2 px-4 sm:px-5 py-3 sm:py-3.5 rounded-xl text-sm sm:text-base font-bold backdrop-blur-xl border-2 transition-all duration-300 hover:scale-105 hover:-translate-y-1 active:scale-95 shadow-lg hover:shadow-xl ${
               isDarkMode
-                ? "bg-gradient-to-br from-blue-500/20 to-indigo-600/20 border-blue-400/30 hover:border-blue-300/50 text-blue-200 hover:text-blue-100"
-                : "bg-gradient-to-br from-blue-200/40 to-indigo-300/40 border-blue-300/50 hover:border-blue-400/70 text-blue-700 hover:text-blue-800"
+                ? "bg-gradient-to-br from-blue-500/20 to-indigo-600/20 border-blue-400/40 hover:border-blue-300/60 text-blue-200 hover:text-blue-100"
+                : "bg-gradient-to-br from-blue-200/50 to-indigo-300/50 border-blue-300/60 hover:border-blue-400/80 text-blue-700 hover:text-blue-800"
             }`}
           >
             <BookOpen
-              size={18}
+              size={20}
               className="transition-transform duration-300 group-hover/btn:scale-110"
               strokeWidth={2.5}
             />
-            <span>Học</span>
-          </button>
-
-          <button
-            onClick={() => onOpen(deck.id, true)}
-            className={`group/btn flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold backdrop-blur-xl border transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 active:scale-95 shadow-md hover:shadow-lg ${
-              isDarkMode
-                ? "bg-gradient-to-br from-emerald-500/20 to-teal-600/20 border-emerald-400/30 hover:border-emerald-300/50 text-emerald-200 hover:text-emerald-100"
-                : "bg-gradient-to-br from-emerald-200/40 to-teal-300/40 border-emerald-300/50 hover:border-emerald-400/70 text-emerald-700 hover:text-emerald-800"
-            }`}
-          >
-            <Gamepad2
-              size={18}
-              className="transition-transform duration-300 group-hover/btn:rotate-12 group-hover/btn:scale-110"
-              strokeWidth={2.5}
-            />
-            <span>Chơi</span>
+            <span>Bắt đầu học</span>
           </button>
         </div>
       </div>

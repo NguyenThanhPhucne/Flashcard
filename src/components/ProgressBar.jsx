@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, Dot } from "lucide-react";
 
 export default function ProgressBar({ current, total, isDarkMode }) {
   const percentage = ((current + 1) / total) * 100;
@@ -38,7 +38,7 @@ export default function ProgressBar({ current, total, isDarkMode }) {
             <ArrowRight size={16} strokeWidth={2} />
           </div>
           <span className="font-medium">Chuyển</span>
-          <span className="opacity-50">•</span>
+          <Dot size={8} className="opacity-50" />
           <div className="flex items-center gap-1.5">
             <kbd
               className={`px-2 py-0.5 rounded text-xs font-semibold ${isDarkMode ? "bg-slate-700/70 text-slate-300" : "bg-slate-200 text-slate-700"}`}

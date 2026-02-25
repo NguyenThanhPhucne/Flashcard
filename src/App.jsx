@@ -5,6 +5,8 @@ import LibraryView from "./components/LibraryView";
 import VolumeDetailView from "./components/VolumeDetailView";
 import StudyView from "./components/StudyView";
 import SpeedQuizGame from "./components/SpeedQuizGame";
+import SpeedMatchGame from "./components/SpeedMatchGame";
+import SurvivalTypingGame from "./components/SurvivalTypingGame";
 import DecorativeBackground from "./components/DecorativeBackground";
 
 // Hàm shuffle array (Fisher-Yates algorithm)
@@ -23,6 +25,8 @@ export default function App() {
   const [selectedVolume, setSelectedVolume] = useState(null); // null = Library, {skill, volume} = Volume detail
   const [activeDeckId, setActiveDeckId] = useState(null); // null = Library/Volume view
   const [isGameMode, setIsGameMode] = useState(false); // false = Study mode, true = Game mode
+  const [isMatchMode, setIsMatchMode] = useState(false); // true = Speed Match mode
+  const [isTypingMode, setIsTypingMode] = useState(false); // true = Survival Typing mode
 
   // Study state
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -98,7 +102,12 @@ export default function App() {
     setSelectedVolume(null);
   };
 
-  const openDeck = (deckId, gameMode = false) => {
+  const openDeck = (
+    deckId,
+    gameMode = false,
+    matchMode = false,
+    typingMode = false,
+  ) => {
     const deck = decks.find((d) => d.id === deckId);
     if (deck) {
       // Shuffle cards để tránh học thuộc
@@ -107,6 +116,8 @@ export default function App() {
     }
     setActiveDeckId(deckId);
     setIsGameMode(gameMode);
+    setIsMatchMode(matchMode);
+    setIsTypingMode(typingMode);
     setCurrentIndex(0);
     setIsFlipped(false);
   };
@@ -114,9 +125,27 @@ export default function App() {
   const closeDeck = () => {
     setActiveDeckId(null);
     setIsGameMode(false);
+    setIsMatchMode(false);
+    setIsTypingMode(false);
     setCurrentIndex(0);
     setIsFlipped(false);
     setShuffledCards(null); // Reset shuffled cards khi đóng deck
+  };
+
+  const switchMode = (mode) => {
+    if (mode === "quiz") {
+      setIsGameMode(true);
+      setIsMatchMode(false);
+      setIsTypingMode(false);
+    } else if (mode === "match") {
+      setIsGameMode(false);
+      setIsMatchMode(true);
+      setIsTypingMode(false);
+    } else if (mode === "typing") {
+      setIsGameMode(false);
+      setIsMatchMode(false);
+      setIsTypingMode(true);
+    }
   };
 
   // Keyboard navigation - chỉ hoạt động trong study mode
@@ -159,10 +188,24 @@ export default function App() {
         floatingHearts={floatingHearts}
       />
 
-      {/* Conditional Render: Library → Volume Detail → Study Room / Game Mode */}
+      {/* Conditional Render: Library → Volume Detail → Study Room / Game Mode / Match Mode / Typing Mode */}
       <main className="relative z-10 flex-grow flex items-center justify-center">
         {activeDeckId !== null ? (
-          isGameMode ? (
+          isTypingMode ? (
+            <SurvivalTypingGame
+              deck={activeDeck}
+              isDarkMode={isDarkMode}
+              onToggleTheme={() => setIsDarkMode(!isDarkMode)}
+              onClose={closeDeck}
+            />
+          ) : isMatchMode ? (
+            <SpeedMatchGame
+              deck={activeDeck}
+              isDarkMode={isDarkMode}
+              onToggleTheme={() => setIsDarkMode(!isDarkMode)}
+              onClose={closeDeck}
+            />
+          ) : isGameMode ? (
             <SpeedQuizGame
               deck={activeDeck}
               isDarkMode={isDarkMode}
@@ -181,6 +224,7 @@ export default function App() {
               onFlip={handleFlip}
               onPrev={handlePrev}
               onNext={handleNext}
+              onSwitchMode={switchMode}
             />
           )
         ) : selectedVolume !== null ? (

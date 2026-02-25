@@ -7854,4 +7854,396 @@ export const flashcardDecks = [
       },
     ],
   },
+  // ==========================================
+  // W12 - Task 1: Foreign Language Study (1984 vs 2007)
+  // ==========================================
+  {
+    id: "wr_w12_task1_language",
+    skill: "Writing",
+    volume: "9",
+    topic: "Education / Language Learning",
+    part: "Task 1 - Foreign Language Study (Bar Charts)",
+    cards: [
+      {
+        id: 330,
+        word: "Male and female students",
+        pronunciation: "/meɪl ənd ˈfiːmeɪl ˈstjuːdənts/",
+        meaning:
+          "Học sinh nam và nữ, đề cập đến học sinh thuộc cả hai giới tính",
+        note: "Cụm danh từ dùng 'male' và 'female' như tính từ (lịch sự, học thuật) thay cho 'boys' và 'girls' khi nói về học sinh ở độ tuổi thanh thiếu niên. Thường đi với: 'the percentage of male and female students', 'both male and female students'. Đồng nghĩa: boys and girls, students of both genders, both sexes. Lưu ý: 'male/female' (học thuật, trung lập) vs 'boys/girls' (thông thường, phù hợp cho trẻ nhỏ hơn).",
+        example:
+          "The university aims to provide equal opportunities for both male and female students.",
+        exampleTranslation:
+          "Trường đại học nhắm tới việc cung cấp cơ hội bình đẳng cho cả học sinh nam và nữ.",
+      },
+      {
+        id: 331,
+        word: "Regardless of",
+        pronunciation: "/rɪˈɡɑːdləs əv/",
+        meaning:
+          "Bất chấp, không bị ảnh hưởng bởi, dù cho điều kiện hay hoàn cảnh như thế nào",
+        note: "Giới từ phức hợp rất phổ biến trong cả Task 1 và Task 2. Sau 'regardless of' là danh từ hoặc cụm danh từ (không dùng mệnh đề). Thường đi với: 'regardless of their gender/age/background', 'regardless of the outcome'. Đồng nghĩa: irrespective of, despite, no matter what. Lưu ý: không viết 'irregardless' — đây là lỗi sai phổ biến.",
+        example:
+          "Scholarships are awarded regardless of the applicant's background.",
+        exampleTranslation:
+          "Học bổng được trao bất chấp lý lịch của người nộp đơn.",
+      },
+      {
+        id: 332,
+        word: "Popularity",
+        pronunciation: "/ˌpɒpjəˈlærɪti/",
+        meaning:
+          "Sự phổ biến, trạng thái hoặc điều kiện được nhiều người yêu thích, ngưỡng mộ hoặc ủng hộ",
+        note: "Danh từ từ tính từ 'popular', rất hữu ích trong Task 1 khi mô tả xu hướng của một ngôn ngữ hoặc sản phẩm. Thường đi với: 'saw a rise in its popularity', 'gain/lose popularity', 'growing popularity'. Đồng nghĩa: prevalence, widespread use, widespread appeal. Phân biệt: 'popularity' (sự phổ biến/được ưa chuộng) vs 'frequency' (tần suất xuất hiện).",
+        example:
+          "The popularity of the new smartphone model exceeded the manufacturer's expectations.",
+        exampleTranslation:
+          "Sự phổ biến của mẫu điện thoại thông minh mới đã vượt qua kỳ vọng của nhà sản xuất.",
+      },
+      {
+        id: 333,
+        word: "Declined slightly",
+        pronunciation: "/dɪˈklaɪnd ˈslaɪtli/",
+        meaning: "Giảm nhẹ, giảm xuống một lượng nhỏ không đáng kể",
+        note: "Cụm động từ kết hợp 'declined' (giảm — lịch sự hơn 'fell' hay 'dropped') với trạng từ 'slightly' (một chút, không đáng kể). Rất phổ biến trong Task 1 khi mô tả xu hướng giảm nhẹ. Thường đi với: 'the figures for both sexes had declined slightly to', 'sales declined slightly'. Đồng nghĩa: decreased marginally, dipped slightly, reduced modestly. Phân biệt: 'declined slightly' (giảm nhẹ) vs 'declined sharply/dramatically' (giảm mạnh).",
+        example:
+          "Sales have declined slightly in the past quarter, but overall performance remains strong.",
+        exampleTranslation:
+          "Doanh số đã giảm nhẹ trong quý trước, nhưng hiệu suất tổng thể vẫn mạnh.",
+      },
+      {
+        id: 334,
+        word: "A two-fold increase",
+        pronunciation: "/ə ˈtuːfəʊld ˈɪŋkriːs/",
+        meaning:
+          "Sự tăng gấp đôi, mức tăng bằng hai lần so với số lượng ban đầu",
+        note: "Cụm danh từ dùng 'two-fold' (gấp đôi) như tính từ. Cấu trúc '-fold' rất linh hoạt: three-fold (gấp ba), four-fold (gấp bốn)... Rất hữu ích trong Task 1 khi mô tả sự tăng đáng kể. Thường đi với: 'experienced a two-fold increase', 'saw a two-fold rise'. Đồng nghĩa: doubled, increased by 100%, grew twofold. Lưu ý: 'two-fold' (có gạch nối khi dùng trước danh từ) hoặc 'twofold' (viết liền).",
+        example:
+          "There has been a two-fold increase in the number of online courses offered by the university.",
+        exampleTranslation:
+          "Đã có sự tăng gấp đôi trong số lượng khóa học trực tuyến được trường đại học cung cấp.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W12 - Task 2: Live Performance vs Television (Sample 1 - Totally Agree)
+  // ==========================================
+  {
+    id: "wr_w12_task2_live_agree",
+    skill: "Writing",
+    volume: "9",
+    topic: "Arts / Entertainment / Media",
+    part: "Task 2 - Live Performance vs Television (Totally Agree)",
+    cards: [
+      {
+        id: 335,
+        word: "A theatrical play",
+        pronunciation: "/ə θiˈætrɪkəl pleɪ/",
+        meaning:
+          "Một vở kịch sân khấu, màn trình diễn trực tiếp thường là kịch hoặc hài kịch với diễn viên thể hiện một câu chuyện có kịch bản trước khán giả",
+        note: "Cụm danh từ dùng 'theatrical' (thuộc về sân khấu, kịch nghệ) để chỉ loại hình nghệ thuật biểu diễn trực tiếp. Hay xuất hiện khi liệt kê ví dụ về live performance. Thường đi với: 'whether it be a theatrical play, a musical concert, or a sports match'. Đồng nghĩa: a stage play, a drama, a theater production. Phân biệt: 'theatrical play' (vở kịch sân khấu — chú trọng tính nghệ thuật) vs 'stage play' (vở diễn sân khấu — trung lập hơn).",
+        example:
+          "We attended a theatrical play at the local theater last weekend, and it was an incredible experience.",
+        exampleTranslation:
+          "Chúng tôi đã tham dự một vở kịch sân khấu tại nhà hát địa phương vào cuối tuần trước, và đó là một trải nghiệm tuyệt vời.",
+      },
+      {
+        id: 336,
+        word: "Surpass",
+        pronunciation: "/səˈpɑːs/",
+        meaning:
+          "Vượt qua, vượt trội hơn so với một tiêu chuẩn, kỳ vọng hoặc đối tượng so sánh",
+        note: "Động từ học thuật mạnh hơn 'exceed' — 'surpass' thường dùng khi so sánh về chất lượng, trong khi 'exceed' thường dùng khi vượt quá giới hạn số lượng. Thường đi với: 'surpasses the experience of watching on television', 'surpass expectations/competitors'. Đồng nghĩa: exceed, outdo, outstrip, eclipse. Phân biệt: 'surpass' (vượt trội về chất lượng/thành tích) vs 'exceed' (vượt quá về số lượng/giới hạn).",
+        example: "Her performance surpassed all expectations.",
+        exampleTranslation: "Màn trình diễn của cô ấy đã vượt qua mọi kỳ vọng.",
+      },
+      {
+        id: 337,
+        word: "The unparalleled atmosphere",
+        pronunciation: "/ðə ʌnˈpærəleld ˈætməsfɪər/",
+        meaning:
+          "Bầu không khí vô song, môi trường và cảm xúc không có gì sánh được, hoàn toàn độc đáo và không thể so sánh",
+        note: "Cụm danh từ dùng 'unparalleled' (không có gì sánh bằng, vô song) để diễn tả sức hút đặc biệt không thể nhân tạo. Từ cực kỳ ấn tượng trong bài viết về trải nghiệm trực tiếp. Thường đi với: 'the unparalleled atmosphere of live performances', 'create an unparalleled atmosphere'. Đồng nghĩa: an incomparable atmosphere, a matchless ambiance, an unrivaled setting.",
+        example:
+          "The unparalleled atmosphere of the final match had fans on the edge of their seats.",
+        exampleTranslation:
+          "Không khí không gì sánh được của trận chung kết đã khiến người hâm mộ phấn khích.",
+      },
+      {
+        id: 338,
+        word: "Collective energy",
+        pronunciation: "/kəˈlektɪv ˈenədʒi/",
+        meaning:
+          "Năng lượng tập thể, sức mạnh và nhiệt huyết chung được tạo ra từ sự đóng góp của cả nhóm người",
+        note: "Cụm danh từ diễn tả hiệu ứng cộng hưởng khi nhiều người cùng hào hứng tại một sự kiện. Thường xuất hiện khi mô tả lợi ích của buổi biểu diễn trực tiếp. Thường đi với: 'the collective energy of the audience amplifies the overall experience', 'feed off the collective energy'. Đồng nghĩa: shared enthusiasm, group energy, communal spirit.",
+        example: "The collective energy of the crowd lifted the team's spirit.",
+        exampleTranslation:
+          "Năng lượng tập thể của đám đông đã nâng cao tinh thần của đội.",
+      },
+      {
+        id: 339,
+        word: "Live ambiance",
+        pronunciation: "/laɪv ˈæmbiɑːns/",
+        meaning:
+          "Không khí trực tiếp, bầu không khí và tâm trạng đặc trưng của một môi trường trong một sự kiện, đặc biệt khi được trải nghiệm trực tiếp tại chỗ",
+        note: "Cụm danh từ dùng 'ambiance' (không khí, bầu không khí — từ tiếng Pháp 'ambiance') thay cho 'atmosphere' để tránh lặp. 'Live' nhấn mạnh tính trực tiếp, không qua trung gian. Thường đi với: 'this live ambiance fosters a deeper emotional connection', 'the live ambiance of the concert'. Đồng nghĩa: the live atmosphere, the in-person ambience, the real-time setting.",
+        example: "The live ambiance at the jazz club was cozy and inviting.",
+        exampleTranslation:
+          "Không khí trực tiếp tại câu lạc bộ jazz thật ấm cúng và lôi cuốn.",
+      },
+      {
+        id: 340,
+        word: "A deeper emotional connection",
+        pronunciation: "/ə ˈdiːpər ɪˈməʊʃənəl kəˈnekʃən/",
+        meaning:
+          "Mối kết nối cảm xúc sâu sắc hơn, sự gắn bó và liên hệ tình cảm ở mức độ sâu hơn, mạnh hơn so với bình thường",
+        note: "Cụm danh từ dùng 'deeper' (so sánh hơn của 'deep') để hàm ý sự kết nối vượt trội so với khi xem qua màn hình. Thường đi với: 'fosters a deeper emotional connection to the performance', 'develop a deeper emotional connection with'. Đồng nghĩa: a more profound emotional bond, a stronger personal connection, a more meaningful attachment.",
+        example:
+          "Their shared experience created a deeper emotional connection between them.",
+        exampleTranslation:
+          "Trải nghiệm chung đã tạo ra một mối kết nối tình cảm sâu sắc giữa họ.",
+      },
+      {
+        id: 341,
+        word: "Visual and auditory experience",
+        pronunciation: "/ˈvɪʒuəl ənd ɔːˈdɪtəri ɪkˈspɪəriəns/",
+        meaning:
+          "Trải nghiệm thị giác và thính giác, sự kết hợp nhận thức qua cả hai giác quan nhìn và nghe",
+        note: "Cụm danh từ kết hợp hai tính từ chỉ giác quan: 'visual' (thị giác) và 'auditory' (thính giác — từ Latin 'audire': nghe). Thường dùng khi so sánh trải nghiệm trực tiếp vs qua màn hình. Thường đi với: 'the visual and auditory experience of live events far exceeds that of the televised event'. Đồng nghĩa: sight and sound experience, sensory experience, audio-visual experience.",
+        example:
+          "The concert provided a rich visual and auditory experience that captivated the audience.",
+        exampleTranslation:
+          "Buổi hòa nhạc mang lại trải nghiệm thị giác và thính giác phong phú, làm say mê khán giả.",
+      },
+      {
+        id: 342,
+        word: "Lose their luster",
+        pronunciation: "/luːz ðeə ˈlʌstər/",
+        meaning:
+          "Mất đi sự hấp dẫn, trở nên kém ấn tượng hoặc kém thu hút hơn so với trước",
+        note: "Thành ngữ dùng 'luster' (ánh sáng, sự tỏa sáng) theo nghĩa bóng là sức hấp dẫn. Thường xuất hiện khi mô tả trải nghiệm mất đi giá trị khi được truyền tải qua màn hình. Thường đi với: 'elements that lose their luster when mediated through a screen', 'the novelty has lost its luster'. Đồng nghĩa: lose their appeal, become less impressive, diminish in quality. Lưu ý chính tả: 'luster' (Anh-Mỹ) = 'lustre' (Anh-Anh).",
+        example:
+          "Over time, the once-popular tourist destination began to lose its luster.",
+        exampleTranslation:
+          "Theo thời gian, điểm du lịch nổi tiếng một thời bắt đầu mất đi sự hấp dẫn của mình.",
+      },
+      {
+        id: 343,
+        word: "Reverberation",
+        pronunciation: "/rɪˌvɜːbəˈreɪʃən/",
+        meaning:
+          "Âm vang, sự tiếp tục của âm thanh sau khi nguồn phát đã dừng, do sóng âm phản chiếu từ các bề mặt",
+        note: "Danh từ chuyên ngành âm học, dùng theo nghĩa đen và nghĩa bóng. Trong bài về live music, dùng để diễn tả cảm giác vật lý khi nghe nhạc trực tiếp. Thường đi với: 'feeling the reverberation of live music through your body'. Đồng nghĩa: echo, resonance, sound reflection. Phân biệt: 'reverberation' (âm vang do phản xạ nhiều lần) vs 'echo' (tiếng vang đơn giản).",
+        example:
+          "The reverberation of the bell could be heard throughout the valley.",
+        exampleTranslation:
+          "Âm vang của chuông có thể được nghe khắp thung lũng.",
+      },
+      {
+        id: 344,
+        word: "Superior",
+        pronunciation: "/suːˈpɪəriər/",
+        meaning:
+          "Cao cấp hơn, xuất sắc hơn, có chất lượng hoặc mức độ tuyệt vời hơn so với đối tượng so sánh",
+        note: "Tính từ so sánh nội tại (không cần 'more' hay '-er') chỉ sự vượt trội. Thường đi với giới từ 'to': 'superior to'. Thường xuất hiện trong phần kết luận khi khẳng định lại quan điểm. Thường đi với: 'live performances provide a superior experience to that of their televised counterparts'. Đồng nghĩa: better, finer, of higher quality, preferable. Phân biệt: 'superior to' (vượt trội hơn) vs 'better than' (tốt hơn — thông thường hơn).",
+        example:
+          "The handmade products were of superior quality compared to the mass-produced ones.",
+        exampleTranslation:
+          "Các sản phẩm handmade có chất lượng cao cấp hơn so với sản phẩm sản xuất hàng loạt.",
+      },
+      {
+        id: 345,
+        word: "Immersive sensory experiences",
+        pronunciation: "/ɪˈmɜːsɪv ˈsensəri ɪkˈspɪəriənsɪz/",
+        meaning:
+          "Trải nghiệm giác quan chìm đắm, những trải nghiệm kích thích đầy đủ các giác quan khiến người tham gia cảm thấy hoàn toàn bị cuốn hút vào tình huống",
+        note: "Cụm danh từ kết hợp 'immersive' (nhấn chìm, cuốn hút hoàn toàn — từ 'immerse': nhúng chìm) và 'sensory' (thuộc về giác quan). Thường xuất hiện trong phần kết luận như từ chốt. Thường đi với: 'the immersive sensory experiences of live events', 'provide immersive sensory experiences'. Đồng nghĩa: fully engaging sensory encounters, absorbing multi-sensory experiences, all-encompassing sensory engagement.",
+        example:
+          "The VR game offered immersive sensory experiences that made players feel as if they were truly in another world.",
+        exampleTranslation:
+          "Trò chơi VR mang lại trải nghiệm giác quan chìm đắm khiến người chơi cảm thấy như họ thực sự đang ở một thế giới khác.",
+      },
+      {
+        id: 346,
+        word: "Replicate",
+        pronunciation: "/ˈreplɪkeɪt/",
+        meaning: "Sao chép, tái tạo hoặc lặp lại điều gì đó một cách chính xác",
+        note: "Động từ học thuật thường dùng trong ngữ cảnh 'không thể tái tạo được trải nghiệm trực tiếp'. Mạnh hơn và chính xác hơn 'copy' hay 'reproduce' trong văn viết. Thường đi với: 'cannot be replicated by television', 'replicate the experiment/experience'. Đồng nghĩa: reproduce, duplicate, copy, recreate. Phân biệt: 'replicate' (tái tạo chính xác) vs 'imitate' (bắt chước, có thể không chính xác).",
+        example:
+          "Scientists managed to replicate the experiment's results, confirming the initial findings.",
+        exampleTranslation:
+          "Các nhà khoa học đã sao chép được kết quả thí nghiệm, xác nhận các phát hiện ban đầu.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W12 - Task 2: Live Performance vs Television (Sample 2 - Partly Agree)
+  // ==========================================
+  {
+    id: "wr_w12_task2_live_partly",
+    skill: "Writing",
+    volume: "9",
+    topic: "Arts / Entertainment / Media",
+    part: "Task 2 - Live Performance vs Television (Partly Agree)",
+    cards: [
+      {
+        id: 347,
+        word: "Enjoyment",
+        pronunciation: "/ɪnˈdʒɔɪmənt/",
+        meaning:
+          "Sự thích thú, hưởng thụ, trạng thái hoặc quá trình tìm kiếm niềm vui và sự thỏa mãn từ điều gì đó",
+        note: "Danh từ từ động từ 'enjoy', là từ chủ chốt của đề bài Task 2 này. Thường đi với: 'provides more enjoyment than watching on television', 'find enjoyment in'. Đồng nghĩa: pleasure, satisfaction, delight, gratification. Phân biệt: 'enjoyment' (sự thích thú quá trình đang diễn ra) vs 'satisfaction' (sự hài lòng sau khi hoàn thành) vs 'pleasure' (niềm vui chung).",
+        example:
+          "Finding enjoyment in simple daily activities can greatly improve one's quality of life.",
+        exampleTranslation:
+          "Việc tìm thấy niềm vui trong các hoạt động hàng ngày đơn giản có thể cải thiện đáng kể chất lượng cuộc sống của một người.",
+      },
+      {
+        id: 348,
+        word: "Distinct value",
+        pronunciation: "/dɪˈstɪŋkt ˈvæljuː/",
+        meaning:
+          "Giá trị đặc biệt riêng biệt, sự xứng đáng hoặc tầm quan trọng độc đáo mà điều gì đó sở hữu",
+        note: "Cụm danh từ dùng 'distinct' (riêng biệt, dễ nhận ra, không thể nhầm lẫn) thay cho 'unique' hay 'special'. Thường xuất hiện trong thesis statement của bài partly agree khi thừa nhận cả hai phía đều có ưu điểm. Thường đi với: 'both live and televised performances have their own distinct value'. Đồng nghĩa: unique worth, particular merit, specific advantage.",
+        example:
+          "Each painting in the museum holds a distinct value, contributing to the overall collection's diversity.",
+        exampleTranslation:
+          "Mỗi bức tranh trong bảo tàng mang một giá trị đặc biệt, góp phần vào sự đa dạng của tổng thể bộ sưu tập.",
+      },
+      {
+        id: 349,
+        word: "A sense of unity and engagement",
+        pronunciation: "/ə sens əv ˈjuːnɪti ənd ɪnˈɡeɪdʒmənt/",
+        meaning:
+          "Cảm giác đoàn kết và tham gia, cảm nhận là một phần của nhóm và tích cực dấn thân vào hoạt động chung",
+        note: "Cụm danh từ kết hợp 'unity' (sự đoàn kết, hợp nhất) và 'engagement' (sự tham gia chủ động). Thường xuất hiện khi mô tả lợi ích xã hội của buổi biểu diễn trực tiếp. Thường đi với: 'fosters a sense of unity and engagement among attendees', 'create a sense of unity and engagement'. Đồng nghĩa: a feeling of togetherness and involvement, a spirit of community and participation.",
+        example:
+          "The community project fostered a sense of unity and engagement among the residents.",
+        exampleTranslation:
+          "Dự án cộng đồng đã nuôi dưỡng cảm giác đoàn kết và tham gia giữa các cư dân.",
+      },
+      {
+        id: 350,
+        word: "Real-time interaction",
+        pronunciation: "/ˈrɪəl taɪm ˌɪntərˈækʃən/",
+        meaning:
+          "Tương tác thời gian thực, quá trình giao tiếp hoặc trao đổi thông tin ngay lập tức mà không có độ trễ",
+        note: "Cụm danh từ dùng tính từ ghép 'real-time' (theo thời gian thực, không có độ trễ) để nhấn mạnh tính tức thời. Thường xuất hiện khi mô tả lợi ích của việc có mặt trực tiếp tại sự kiện. Thường đi với: 'allows for real-time interaction with the performance', 'enable real-time interaction'. Đồng nghĩa: immediate interaction, instantaneous exchange, live engagement.",
+        example:
+          "Real-time interaction in online games enhances the gaming experience by allowing instant feedback and collaboration.",
+        exampleTranslation:
+          "Tương tác thời gian thực trong các trò chơi trực tuyến tăng cường trải nghiệm chơi game bằng cách cho phép phản hồi và hợp tác tức thì.",
+      },
+      {
+        id: 351,
+        word: "Profoundly impactful",
+        pronunciation: "/prəˈfaʊndli ɪmˈpæktfəl/",
+        meaning:
+          "Có tác động sâu sắc, có ảnh hưởng mạnh mẽ và đáng kể đến cảm xúc hoặc nhận thức",
+        note: "Cụm tính từ kết hợp trạng từ 'profoundly' (một cách sâu sắc, thấu đáo) với 'impactful' (có tác động). Thường xuất hiện khi mô tả những khoảnh khắc đáng nhớ tại sự kiện trực tiếp. Thường đi với: 'creates moments that are profoundly impactful', 'a profoundly impactful experience'. Đồng nghĩa: deeply meaningful, tremendously influential, powerfully moving.",
+        example:
+          "The documentary was profoundly impactful, changing many viewers' perspectives on the issue.",
+        exampleTranslation:
+          "Bộ phim tài liệu có ảnh hưởng sâu sắc, thay đổi quan điểm của nhiều người xem về vấn đề.",
+      },
+      {
+        id: 352,
+        word: "Unique allure",
+        pronunciation: "/juːˈniːk əˈlʊər/",
+        meaning:
+          "Sức hấp dẫn độc đáo, sức thu hút đặc biệt và riêng biệt không thể tìm thấy ở nơi nào khác",
+        note: "Cụm danh từ dùng 'allure' (sức hút, sự quyến rũ — từ tiếng Pháp cổ 'alurer') thay cho 'appeal' hay 'attraction', mang sắc thái văn học hơn. Thường xuất hiện trong phần kết luận đoạn thân bài. Thường đi với: 'underscore the unique allure of live performances', 'the unique allure of'. Đồng nghĩa: distinctive appeal, special charm, incomparable attraction.",
+        example:
+          "The unique allure of the ancient city attracts visitors from all over the world.",
+        exampleTranslation:
+          "Sức hấp dẫn độc đáo của thành phố cổ đã thu hút khách du lịch từ khắp nơi trên thế giới.",
+      },
+      {
+        id: 353,
+        word: "Accessibility and convenience",
+        pronunciation: "/əkˌsesɪˈbɪlɪti ənd kənˈviːniəns/",
+        meaning:
+          "Tính tiếp cận dễ dàng và sự thuận tiện, khả năng dễ dàng sử dụng hoặc tiếp cận kết hợp với sự thoải mái và không rắc rối",
+        note: "Cụm danh từ kép kết hợp hai lợi ích đặc trưng của việc xem qua truyền hình: 'accessibility' (ai cũng có thể tiếp cận) và 'convenience' (không cần di chuyển, không tốn kém). Thường đi với: 'televised performances provide accessibility and convenience that live events cannot match'. Đồng nghĩa: ease of access and comfort, reach and practicality, inclusivity and ease.",
+        example:
+          "Online shopping offers unparalleled accessibility and convenience for consumers.",
+        exampleTranslation:
+          "Mua sắm trực tuyến mang lại tính tiếp cận dễ dàng và thuận tiện không thể so sánh cho người tiêu dùng.",
+      },
+      {
+        id: 354,
+        word: "Flexibility and ease",
+        pronunciation: "/ˌfleksɪˈbɪlɪti ənd iːz/",
+        meaning:
+          "Tính linh hoạt và dễ dàng, khả năng thích nghi với nhiều tình huống khác nhau mà không gặp khó khăn",
+        note: "Cụm danh từ kép kết hợp 'flexibility' (linh hoạt về thời gian và cách thức) với 'ease' (dễ dàng, không phải nỗ lực nhiều). Thường xuất hiện khi liệt kê lợi ích của việc xem ở nhà. Thường đi với: 'offers a degree of flexibility and ease', 'enjoy flexibility and ease of use'. Đồng nghĩa: adaptability and simplicity, versatility and comfort, practicality and effortlessness.",
+        example:
+          "The software's flexibility and ease of use make it popular among users of all ages.",
+        exampleTranslation:
+          "Tính linh hoạt và dễ sử dụng của phần mềm khiến nó phổ biến với người dùng mọi lứa tuổi.",
+      },
+      {
+        id: 355,
+        word: "Multiple camera angles",
+        pronunciation: "/ˈmʌltɪpəl ˈkæmərə ˈæŋɡəlz/",
+        meaning:
+          "Nhiều góc máy quay, việc sử dụng nhiều vị trí camera khác nhau để ghi lại các góc nhìn đa dạng của một cảnh",
+        note: "Cụm danh từ chỉ lợi thế kỹ thuật đặc trưng của truyền hình so với xem trực tiếp. Thường xuất hiện khi lập luận về ưu điểm của việc xem qua màn hình. Thường đi với: 'with the added benefits of multiple camera angles, close-ups, and instant replays'. Đồng nghĩa: various viewing angles, different camera perspectives, diverse camera shots.",
+        example:
+          "The movie's action scenes were enhanced by the use of multiple camera angles.",
+        exampleTranslation:
+          "Các cảnh hành động của bộ phim được nâng cao nhờ sử dụng nhiều góc máy.",
+      },
+      {
+        id: 356,
+        word: "Instant replays",
+        pronunciation: "/ˈɪnstənt ˈriːpleɪz/",
+        meaning:
+          "Phát lại tức thì, việc lặp lại ngay lập tức một đoạn video của một sự kiện ngay sau khi nó xảy ra, đặc biệt trong thể thao",
+        note: "Cụm danh từ chỉ tính năng đặc trưng của phát sóng truyền hình, không có trong trải nghiệm trực tiếp. Thường xuất hiện cùng 'multiple camera angles' như một bộ lợi ích của truyền hình. Thường đi với: 'instant replays enhancing the viewer's understanding', 'benefit from instant replays'. Đồng nghĩa: immediate replays, action replays, video replays.",
+        example:
+          "Instant replays during the football match allowed fans to relive the goals in high definition.",
+        exampleTranslation:
+          "Phát lại tức thì trong trận bóng đá cho phép người hâm mộ tái hiện các bàn thắng ở chất lượng cao.",
+      },
+      {
+        id: 357,
+        word: "Reach a global audience",
+        pronunciation: "/riːtʃ ə ˈɡləʊbəl ˈɔːdiəns/",
+        meaning:
+          "Tiếp cận khán giả toàn cầu, khả năng kết nối và phục vụ người xem từ khắp nơi trên thế giới",
+        note: "Cụm động từ kết hợp 'reach' (tiếp cận, chạm tới) với 'global audience' (khán giả toàn cầu). Thường xuất hiện khi lập luận về lợi thế của truyền hình trong việc phổ biến sự kiện. Thường đi với: 'televised events can reach a global audience', 'the ability to reach a global audience'. Đồng nghĩa: connect with viewers worldwide, access audiences internationally, broadcast to people globally.",
+        example:
+          "Through social media, small businesses can now reach a global audience with minimal investment.",
+        exampleTranslation:
+          "Qua mạng xã hội, các doanh nghiệp nhỏ giờ đây có thể tiếp cận khán giả toàn cầu với khoản đầu tư tối thiểu.",
+      },
+      {
+        id: 358,
+        word: "Communal joy",
+        pronunciation: "/kəˈmjuːniəl dʒɔɪ/",
+        meaning:
+          "Niềm vui cộng đồng, hạnh phúc và sự thích thú được chia sẻ bởi một cộng đồng hoặc nhóm người",
+        note: "Cụm danh từ dùng 'communal' (thuộc về cộng đồng, chia sẻ chung) thay cho 'shared' hay 'collective', mang sắc thái ấm áp và gắn bó hơn. Thường xuất hiện trong phần kết luận khi nhìn nhận giá trị của trải nghiệm trực tiếp. Thường đi với: 'the unparalleled atmosphere and communal joy of attending live performances'. Đồng nghĩa: shared happiness, collective delight, group pleasure.",
+        example:
+          "The festival was a great success, spreading communal joy among all attendees.",
+        exampleTranslation:
+          "Lễ hội đã thành công rực rỡ, mang lại niềm vui cộng đồng cho tất cả những người tham dự.",
+      },
+      {
+        id: 359,
+        word: "Televised events",
+        pronunciation: "/ˈtelɪvaɪzd ɪˈvents/",
+        meaning:
+          "Sự kiện được phát sóng trên truyền hình, các dịp hoặc hoạt động được truyền phát qua kênh truyền hình",
+        note: "Cụm danh từ dùng 'televised' (được phát sóng trên TV — dạng tính từ của 'televise') như tính từ. Thường xuất hiện như từ đối lập với 'live performances' trong bài Task 2 này. Thường đi với: 'accessibility and convenience offered by televised events', 'prefer televised events'. Đồng nghĩa: TV broadcasts, televised broadcasts, programs aired on television. Phân biệt: 'televised events' (sự kiện phát trên TV) vs 'live events' (sự kiện trực tiếp).",
+        example:
+          "The Olympics are among the most watched televised events worldwide.",
+        exampleTranslation:
+          "Olympic là một trong những sự kiện được xem nhiều nhất trên truyền hình toàn cầu.",
+      },
+    ],
+  },
 ];

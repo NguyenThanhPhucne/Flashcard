@@ -264,8 +264,8 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-0.5 xs:gap-1 sm:gap-1.5 mb-0.5 xs:mb-1 sm:mb-1.5 md:mb-2">
-                      <span className="text-[10px] xs:text-[11px] sm:text-xs md:text-sm font-bold text-green-700 uppercase tracking-wide">
-                        💡 Lưu ý sử dụng
+                      <span className="text-[10px] xs:text-[11px] sm:text-xs md:text-sm font-bold text-green-700 uppercase tracking-wide flex items-center gap-1">
+                        <Lightbulb size={14} className="inline" /> Lưu ý sử dụng
                       </span>
                     </div>
                     <p className="text-[11px] xs:text-xs sm:text-sm md:text-base text-slate-800 leading-relaxed font-medium break-words">
