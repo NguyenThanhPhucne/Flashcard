@@ -84,16 +84,26 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
       onClick={handleClick}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ perspective: "1200px" }}
+      style={{
+        perspective: "1200px",
+        WebkitPerspective: "1200px",
+      }}
     >
       <div
         className="relative w-full h-full"
         style={{
           transformStyle: "preserve-3d",
+          WebkitTransformStyle: "preserve-3d",
           transform: isFlipped
             ? `rotate${flipDirection.axis}(${flipDirection.angle}deg) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`
             : `rotateY(${tilt.rotateY}deg) rotateX(${tilt.rotateX}deg)`,
+          WebkitTransform: isFlipped
+            ? `rotate${flipDirection.axis}(${flipDirection.angle}deg) rotateX(${tilt.rotateX}deg) rotateY(${tilt.rotateY}deg)`
+            : `rotateY(${tilt.rotateY}deg) rotateX(${tilt.rotateX}deg)`,
           transition: isFlipping
+            ? "transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)"
+            : "transform 0.08s ease-out",
+          WebkitTransition: isFlipping
             ? "transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)"
             : "transform 0.08s ease-out",
           willChange: "transform",
@@ -109,6 +119,10 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
           style={{
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
+            MozBackfaceVisibility: "hidden",
+            transform: "rotateY(0deg)",
+            WebkitTransform: "rotateY(0deg)",
+            zIndex: isFlipped ? 1 : 2,
           }}
         >
           {/* Glare/Shine Effect */}
@@ -188,10 +202,16 @@ export default function Flashcard({ card, isFlipped, onFlip, isDarkMode }) {
           style={{
             backfaceVisibility: "hidden",
             WebkitBackfaceVisibility: "hidden",
+            MozBackfaceVisibility: "hidden",
             transform:
               flipDirection.axis === "Y"
                 ? "rotateY(180deg)"
                 : "rotateX(180deg)",
+            WebkitTransform:
+              flipDirection.axis === "Y"
+                ? "rotateY(180deg)"
+                : "rotateX(180deg)",
+            zIndex: isFlipped ? 2 : 1,
           }}
         >
           {/* Glare/Shine Effect */}
