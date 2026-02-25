@@ -149,30 +149,34 @@ export default function App() {
     });
 
     return (
-      <div className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 sm:mb-8 md:mb-10 lg:mb-12 gap-3 sm:gap-4 md:gap-6">
-          <div className="space-y-2">
+      <div className="w-full max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-10">
+        {/* Header - Enhanced */}
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 sm:mb-10 md:mb-14 lg:mb-16 gap-4 sm:gap-5 md:gap-6">
+          <div className="space-y-3 sm:space-y-4">
             <h1
-              className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold flex items-center gap-2 sm:gap-3 md:gap-4 ${isDarkMode ? "text-white" : "text-slate-900"}`}
+              className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold flex items-center gap-3 sm:gap-4 md:gap-5 ${isDarkMode ? "text-white" : "text-slate-900"}`}
             >
               <div
-                className={`p-2 sm:p-2.5 md:p-3 rounded-xl sm:rounded-2xl ${isDarkMode ? "bg-blue-400/10" : "bg-blue-100/80"}`}
+                className={`p-3 sm:p-3.5 md:p-4 lg:p-5 rounded-2xl sm:rounded-2xl shadow-lg ${isDarkMode ? "bg-gradient-to-br from-blue-500/20 to-purple-500/20 shadow-blue-500/20" : "bg-gradient-to-br from-blue-200 to-purple-200 shadow-blue-300/50"}`}
               >
                 <Library
-                  className={`w-6 sm:w-8 md:w-9 lg:w-10 h-6 sm:h-8 md:h-9 lg:h-10 ${isDarkMode ? "text-blue-300" : "text-blue-500"}`}
-                  strokeWidth={2}
+                  className={`w-8 sm:w-9 md:w-11 lg:w-12 h-8 sm:h-9 md:h-11 lg:h-12 ${isDarkMode ? "text-blue-300" : "text-blue-600"}`}
+                  strokeWidth={2.5}
                 />
               </div>
-              Thư viện IELTS
+              <span
+                className={`bg-gradient-to-r ${isDarkMode ? "from-blue-300 to-purple-300" : "from-blue-600 to-purple-600"} bg-clip-text text-transparent`}
+              >
+                Thư viện IELTS
+              </span>
             </h1>
             <p
-              className={`text-sm sm:text-sm md:text-base lg:text-lg flex items-center gap-1.5 sm:gap-2 ml-0.5 sm:ml-1 ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}
+              className={`text-base sm:text-lg md:text-xl lg:text-2xl flex items-center gap-2 sm:gap-2.5 ml-1 font-medium ${isDarkMode ? "text-slate-400" : "text-slate-600"}`}
             >
               <Sparkles
-                size={16}
-                className={`w-4 sm:w-5 md:w-5 ${isDarkMode ? "text-blue-300" : "text-blue-400"}`}
-                strokeWidth={2}
+                size={20}
+                className={`w-5 sm:w-6 md:w-6 ${isDarkMode ? "text-purple-300" : "text-purple-500"}`}
+                strokeWidth={2.5}
               />
               Chọn sách để xem chủ đề
             </p>
@@ -184,9 +188,9 @@ export default function App() {
           />
         </div>
 
-        {/* Volume Cards - Books */}
+        {/* Volume Cards - Books Enhanced */}
         {volumeList.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 sm:gap-4 md:gap-5 lg:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-6 md:gap-7 lg:gap-8">
             {volumeList.map((vol) => {
               const Icon = vol.skill === "Speaking" ? Mic : BookText;
               const volumeNum = vol.volume.replace(/\D/g, "");
@@ -195,7 +199,7 @@ export default function App() {
                 <div
                   key={`${vol.skill}-${vol.volume}`}
                   className="perspective-1000"
-                  style={{ perspective: "1000px" }}
+                  style={{ perspective: "1200px" }}
                 >
                   <button
                     onClick={() => openVolume(vol.skill, vol.volume)}
@@ -206,91 +210,126 @@ export default function App() {
                       const y = e.clientY - rect.top;
                       const centerX = rect.width / 2;
                       const centerY = rect.height / 2;
-                      const rotateX = ((y - centerY) / centerY) * -15;
-                      const rotateY = ((x - centerX) / centerX) * 15;
-                      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
+                      const rotateX = ((y - centerY) / centerY) * -8;
+                      const rotateY = ((x - centerX) / centerX) * 8;
+                      card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
                     }}
                     onMouseLeave={(e) => {
                       e.currentTarget.style.transform =
                         "rotateX(0deg) rotateY(0deg) scale(1)";
                     }}
-                    className={`group w-full text-left rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 transition-all duration-300 hover:shadow-2xl active:scale-[0.98] ${
+                    className={`group relative w-full text-left rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8 lg:p-9 border-2 transition-all duration-500 hover:shadow-2xl active:scale-[0.97] overflow-hidden ${
                       isDarkMode
-                        ? "bg-slate-800/60 border-slate-700/50 hover:border-blue-400/60 hover:bg-slate-800/70"
-                        : "bg-white border-blue-200/60 hover:border-blue-300 hover:shadow-blue-200/40"
+                        ? "bg-gradient-to-br from-slate-800/90 via-slate-800/80 to-slate-900/90 border-slate-700/60 hover:border-blue-400/70 hover:shadow-blue-500/30"
+                        : "bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 border-blue-200 hover:border-blue-400 hover:shadow-blue-300/50"
                     }`}
                     style={{
                       transformStyle: "preserve-3d",
                       transition:
-                        "transform 0.1s ease-out, box-shadow 0.3s, border-color 0.3s",
+                        "transform 0.2s ease-out, box-shadow 0.4s, border-color 0.4s, background 0.4s",
                     }}
                   >
-                    {/* Book Icon */}
-                    <div className="flex items-center justify-between mb-4 sm:mb-4">
-                      <div
-                        className={`w-14 sm:w-14 md:w-16 lg:w-16 h-14 sm:h-14 md:h-16 lg:h-16 rounded-lg sm:rounded-xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 ${
-                          isDarkMode
-                            ? "bg-gradient-to-br from-blue-400/15 to-pink-400/15 text-blue-300"
-                            : "bg-gradient-to-br from-blue-100 to-pink-100 text-blue-600"
-                        }`}
-                        style={{ transform: "translateZ(20px)" }}
-                      >
-                        <BookOpen
-                          size={28}
-                          className="w-7 sm:w-8 md:w-9"
-                          strokeWidth={2}
-                        />
+                    {/* Background Gradient Overlay */}
+                    <div
+                      className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                        isDarkMode
+                          ? "bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10"
+                          : "bg-gradient-to-br from-blue-100/50 via-purple-100/50 to-pink-100/50"
+                      }`}
+                    />
+
+                    {/* Content Container */}
+                    <div className="relative">
+                      {/* Top Section: Icon and Badge */}
+                      <div className="flex items-center justify-between mb-6 sm:mb-7">
+                        <div
+                          className={`w-16 sm:w-18 md:w-20 lg:w-20 h-16 sm:h-18 md:h-20 lg:h-20 rounded-xl sm:rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-6 shadow-lg ${
+                            isDarkMode
+                              ? "bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 shadow-blue-500/20 text-blue-300"
+                              : "bg-gradient-to-br from-blue-200 via-purple-200 to-pink-200 shadow-blue-300/40 text-blue-600"
+                          }`}
+                          style={{ transform: "translateZ(30px)" }}
+                        >
+                          <BookOpen
+                            size={36}
+                            className="w-8 sm:w-9 md:w-10"
+                            strokeWidth={2.5}
+                          />
+                        </div>
+                        {/* Skill badge - top right */}
+                        <div
+                          className={`flex items-center gap-2 px-3 md:px-4 py-1.5 sm:py-2 rounded-lg sm:rounded-xl text-sm md:text-base font-extrabold shadow-md transition-all duration-300 group-hover:scale-105 ${
+                            isDarkMode
+                              ? "bg-gradient-to-r from-pink-500/20 to-purple-500/20 text-pink-300 shadow-pink-500/20"
+                              : "bg-gradient-to-r from-pink-200 to-purple-200 text-pink-700 shadow-pink-300/40"
+                          }`}
+                          style={{ transform: "translateZ(20px)" }}
+                        >
+                          <Icon size={16} className="w-4 h-4" strokeWidth={3} />
+                          {vol.skill}
+                        </div>
                       </div>
-                      {/* Skill badge - top right */}
-                      <div
-                        className={`flex items-center gap-1.5 sm:gap-2 px-2.5 md:px-3 py-1 sm:py-1.5 rounded-md text-xs md:text-sm font-bold ${
+
+                      {/* Title - More Prominent */}
+                      <h3
+                        className={`text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-black mb-5 sm:mb-6 transition-all duration-300 tracking-tight ${
                           isDarkMode
-                            ? "bg-pink-400/10 text-pink-300"
-                            : "bg-pink-100 text-pink-600"
+                            ? "text-white group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-300 group-hover:to-purple-300 group-hover:bg-clip-text"
+                            : "text-slate-900 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-purple-600 group-hover:bg-clip-text"
+                        }`}
+                        style={{ transform: "translateZ(40px)" }}
+                      >
+                        Vol {volumeNum}
+                      </h3>
+
+                      {/* Divider */}
+                      <div
+                        className={`h-0.5 w-16 mb-5 rounded-full transition-all duration-300 group-hover:w-24 ${
+                          isDarkMode
+                            ? "bg-gradient-to-r from-blue-400 to-purple-400"
+                            : "bg-gradient-to-r from-blue-500 to-purple-500"
                         }`}
                         style={{ transform: "translateZ(15px)" }}
+                      />
+
+                      {/* Stats - Enhanced */}
+                      <div
+                        className="space-y-3"
+                        style={{ transform: "translateZ(20px)" }}
                       >
-                        <Icon
-                          size={14}
-                          className="w-3.5 h-3.5"
-                          strokeWidth={2.5}
+                        <div className="flex items-center gap-3">
+                          <div
+                            className={`flex items-center gap-2 px-4 py-2 rounded-lg sm:rounded-xl text-sm sm:text-base font-bold transition-all duration-300 group-hover:scale-105 ${
+                              isDarkMode
+                                ? "bg-slate-700/50 text-blue-300"
+                                : "bg-blue-100 text-blue-700"
+                            }`}
+                          >
+                            <BookText size={18} strokeWidth={2.5} />
+                            {vol.topics.length} chủ đề
+                          </div>
+                        </div>
+                        <div
+                          className={`text-base sm:text-lg font-semibold flex items-center gap-2 ${
+                            isDarkMode ? "text-slate-400" : "text-slate-600"
+                          }`}
+                        >
+                          <Sparkles size={16} className="opacity-70" />
+                          {vol.totalCards} từ vựng
+                        </div>
+                      </div>
+
+                      {/* Hover Indicator */}
+                      <div
+                        className={`mt-6 flex items-center gap-2 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 ${
+                          isDarkMode ? "text-blue-300" : "text-blue-600"
+                        }`}
+                      >
+                        <span>Nhấn để mở</span>
+                        <ArrowLeft
+                          size={16}
+                          className="rotate-180 group-hover:translate-x-1 transition-transform"
                         />
-                        {vol.skill}
-                      </div>
-                    </div>
-
-                    {/* Title */}
-                    <h3
-                      className={`text-2xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 transition-colors duration-300 ${
-                        isDarkMode
-                          ? "text-white group-hover:text-blue-300"
-                          : "text-slate-900 group-hover:text-blue-600"
-                      }`}
-                      style={{ transform: "translateZ(30px)" }}
-                    >
-                      Vol {volumeNum}
-                    </h3>
-
-                    {/* Stats - Compact */}
-                    <div
-                      className="flex items-center gap-2 sm:gap-3 flex-wrap"
-                      style={{ transform: "translateZ(10px)" }}
-                    >
-                      <div
-                        className={`inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-md sm:rounded-lg text-xs sm:text-xs font-semibold ${
-                          isDarkMode
-                            ? "bg-slate-700/40 text-blue-300"
-                            : "bg-blue-100/80 text-blue-600"
-                        }`}
-                      >
-                        {vol.topics.length} chủ đề
-                      </div>
-                      <div
-                        className={`text-xs sm:text-xs font-medium ${
-                          isDarkMode ? "text-slate-400" : "text-slate-500"
-                        }`}
-                      >
-                        {vol.totalCards} từ
                       </div>
                     </div>
                   </button>

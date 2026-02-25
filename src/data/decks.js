@@ -3498,4 +3498,335 @@ export const flashcardDecks = [
       },
     ],
   },
+  // ==========================================
+  // P1.21 - Science
+  // ==========================================
+  {
+    id: "sp_s5_p21_science",
+    skill: "Speaking",
+    volume: "9",
+    topic: "Science",
+    part: "P1.21",
+    cards: [
+      {
+        id: 303,
+        word: "Make sense",
+        pronunciation: "/meɪk sɛns/",
+        meaning: "có lý, hợp lý, dễ hiểu",
+        note: "Thường được sử dụng để mô tả một ý tưởng, lời giải thích, hoặc lập luận mà dễ dàng được hiểu và chấp nhận.",
+        example:
+          "Science classes are packed with 'aha' moments when complex things suddenly make sense.",
+        exampleTranslation:
+          "Các buổi học khoa học đầy những khoảnh khắc 'à ra vậy' khi những thứ phức tạp đột nhiên trở nên có lý.",
+      },
+      {
+        id: 304,
+        word: "Brings the textbooks to life",
+        pronunciation: "/brɪŋz ðə ˈtɛkstbʊks tə laɪf/",
+        meaning: "làm cho sách giáo khoa trở nên sinh động",
+        note: "Được dùng để miêu tả việc giáo viên hay phương pháp giảng dạy biến nội dung sách giáo khoa từ những thông tin khô khan trở nên hấp dẫn và dễ hiểu, thường qua các ví dụ thực tế hoặc hoạt động tương tác.",
+        example: "Doing experiments really brings the textbooks to life!",
+        exampleTranslation:
+          "Làm thí nghiệm thực sự làm cho sách giáo khoa trở nên sinh động!",
+      },
+      {
+        id: 305,
+        word: "Challenging",
+        pronunciation: "/ˈtʃælɪndʒɪŋ/",
+        meaning: "thách thức, đòi hỏi sự cố gắng",
+        note: "Thường được dùng để mô tả một nhiệm vụ hay tình huống đòi hỏi sự cố gắng, sáng tạo, và quyết tâm cao để đạt được thành công.",
+        example:
+          "I find science classes a bit challenging, especially when it comes to memorizing all those formulas.",
+        exampleTranslation:
+          "Tôi thấy các lớp khoa học hơi thách thức, đặc biệt khi phải ghi nhớ tất cả những công thức đó.",
+      },
+      {
+        id: 306,
+        word: "Formulas",
+        pronunciation: "/ˈfɔːr.mjʊ.lə/",
+        meaning: "công thức (toán học, hóa học)",
+        note: "Trong toán học hoặc hóa học, 'formulas' được dùng để chỉ những biểu thức chuẩn mực dùng để giải quyết vấn đề cụ thể. Có thể áp dụng trong nhiều tình huống khác nhau với những điều chỉnh phù hợp.",
+        example:
+          "I find physics challenging especially when it comes to memorizing all those formulas.",
+        exampleTranslation:
+          "Tôi thấy vật lý khó, đặc biệt khi phải ghi nhớ tất cả các công thức đó.",
+      },
+      {
+        id: 307,
+        word: "Tiny cells",
+        pronunciation: "/ˈtaɪ.ni sɛlz/",
+        meaning: "tế bào nhỏ",
+        note: "Trong sinh học, 'cells' là các đơn vị cơ bản nhất của sự sống. Thuật ngữ 'tiny' nhấn mạnh kích thước nhỏ bé của chúng, thường không thể nhìn thấy bằng mắt thường mà cần dùng kính hiển vi.",
+        example:
+          "I'm really into understanding how living things work, from tiny cells to complex ecosystems.",
+        exampleTranslation:
+          "Tôi thực sự thích tìm hiểu cách các sinh vật sống hoạt động, từ tế bào nhỏ đến hệ sinh thái phức tạp.",
+      },
+      {
+        id: 308,
+        word: "Complex ecosystems",
+        pronunciation: "/kəmˈplɛks ˈiː.koʊˌsɪs.təmz/",
+        meaning: "hệ sinh thái phức tạp",
+        note: "Được dùng để mô tả sự tương tác giữa các sinh vật sống và môi trường vật lý xung quanh chúng, trong đó các thành phần đều phụ thuộc lẫn nhau. 'Complex' chỉ sự phức tạp của mối quan hệ.",
+        example:
+          "Biology is like exploring a whole new world, from tiny cells to complex ecosystems.",
+        exampleTranslation:
+          "Sinh học giống như khám phá một thế giới hoàn toàn mới, từ tế bào nhỏ đến hệ sinh thái phức tạp.",
+      },
+      {
+        id: 309,
+        word: "I've never been particularly drawn to",
+        pronunciation: "/aɪv ˈnɛvər bɪn pərˈtɪk.jə.lər.li drɔːn tuː/",
+        meaning: "tôi chưa bao giờ thực sự hứng thú với",
+        note: "Câu này bày tỏ sự thiếu hứng thú hoặc không có sự thu hút đặc biệt đối với điều gì đó. Thường dùng để mô tả cá nhân cảm thấy thờ ơ hoặc không quan tâm mạnh mẽ tới một sở thích hoặc hoạt động nào đó.",
+        example:
+          "I've never been particularly drawn to any one science subject, to be honest.",
+        exampleTranslation:
+          "Thành thật mà nói, tôi chưa bao giờ thực sự hứng thú với bất kỳ môn khoa học nào.",
+      },
+      {
+        id: 310,
+        word: "Accessible",
+        pronunciation: "/ækˈses.ə.bəl/",
+        meaning: "dễ tiếp cận, dễ hiểu với mọi người",
+        note: "Được sử dụng để mô tả một nơi, thông tin, hoặc nguồn tài nguyên có thể dễ dàng truy cập hoặc sử dụng bởi mọi người.",
+        example:
+          "Shows like 'Cosmos' really open up the universe to me, making complex topics super accessible and fun.",
+        exampleTranslation:
+          "Những chương trình như 'Cosmos' thực sự mở ra vũ trụ cho tôi, làm cho các chủ đề phức tạp rất dễ tiếp cận và thú vị.",
+      },
+      {
+        id: 311,
+        word: "A window into the mysteries of",
+        pronunciation: "/ə ˈwɪn.doʊ ˈɪn.tuː ðə ˈmɪs.tər.iz əv/",
+        meaning: "cái nhìn sâu vào những điều bí ẩn của",
+        note: "Thường được dùng để miêu tả một phương pháp hoặc cách thức mà qua đó có thể hiểu được các khía cạnh phức tạp hoặc không rõ ràng của một vấn đề hoặc lĩnh vực nghiên cứu.",
+        example:
+          "Science programs are like a window into the mysteries of space and nature.",
+        exampleTranslation:
+          "Các chương trình khoa học giống như cái nhìn sâu vào những điều bí ẩn của không gian và tự nhiên.",
+      },
+      {
+        id: 312,
+        word: "A comedy series",
+        pronunciation: "/ə ˈkɒm.ə.di ˈsɪə.riːz/",
+        meaning: "một loạt phim hài",
+        note: "Loại hình giải trí này bao gồm nhiều tập, mỗi tập đều nhằm mục đích tạo tiếng cười và giải trí cho khán giả. Các tình huống hài hước và mâu thuẫn giữa các nhân vật là trọng tâm chính.",
+        example:
+          "I usually prefer something lighter like a comedy series rather than heavy science shows.",
+        exampleTranslation:
+          "Tôi thường thích xem thứ gì đó nhẹ nhàng hơn như một loạt phim hài thay vì những chương trình khoa học nặng nề.",
+      },
+      {
+        id: 313,
+        word: "After a long day",
+        pronunciation: "/ˈɑːf.tər ə lɒŋ deɪ/",
+        meaning: "sau một ngày dài mệt mỏi",
+        note: "Thường được dùng để bày tỏ sự giải tỏa hoặc thư giãn sau khi trải qua nhiều giờ làm việc hoặc hoạt động nặng nhọc.",
+        example: "Science shows can be a bit heavy for me after a long day.",
+        exampleTranslation:
+          "Các chương trình khoa học có thể hơi nặng nề với tôi sau một ngày dài.",
+      },
+      {
+        id: 314,
+        word: "A nice day out",
+        pronunciation: "/ə naɪs deɪ aʊt/",
+        meaning: "một ngày vui chơi ngoài trời",
+        note: "Cụm từ này thường được sử dụng khi nói về việc dành thời gian ngoài trời cho các hoạt động giải trí. Nó nhấn mạnh đến việc trải nghiệm thời gian chất lượng, thư giãn hoặc vui vẻ.",
+        example:
+          "Science museums are great for learning and fun at the same time – a nice day out for everyone.",
+        exampleTranslation:
+          "Bảo tàng khoa học tuyệt vời cho việc học và vui chơi cùng một lúc – một ngày vui chơi ngoài trời cho mọi người.",
+      },
+      {
+        id: 315,
+        word: "Amusement parks",
+        pronunciation: "/əˈmjuːz.mənt pɑːrks/",
+        meaning: "công viên giải trí",
+        note: "Là nơi giải trí được thiết kế để cung cấp sự vui vẻ và hấp dẫn cho mọi lứa tuổi, bao gồm các trò chơi, tàu lượn siêu tốc và các hình thức giải trí khác.",
+        example:
+          "Science museums aren't very popular compared to shopping malls or amusement parks.",
+        exampleTranslation:
+          "Bảo tàng khoa học không phổ biến lắm so với trung tâm thương mại hay công viên giải trí.",
+      },
+      {
+        id: 316,
+        word: "More active entertainment options",
+        pronunciation: "/mɔːr ˈæk.tɪv ˌɛn.təˈteɪn.mənt ˈɒp.ʃənz/",
+        meaning: "các lựa chọn giải trí năng động hơn",
+        note: "Ám chỉ những hoạt động giải trí mà yêu cầu sự tham gia tích cực về thể chất, như leo núi, chèo thuyền kayak, hoặc chơi các môn thể thao.",
+        example:
+          "People here tend to prefer more active entertainment options over visiting museums.",
+        exampleTranslation:
+          "Mọi người ở đây có xu hướng thích các lựa chọn giải trí năng động hơn hơn là tham quan bảo tàng.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // P1.22 - Public Transport
+  // ==========================================
+  {
+    id: "sp_s5_p22_publictransport",
+    skill: "Speaking",
+    volume: "9",
+    topic: "Public Transport",
+    part: "P1.22",
+    cards: [
+      {
+        id: 317,
+        word: "Hassle",
+        pronunciation: "/ˈhæs.əl/",
+        meaning: "phiền toái, rắc rối không mong muốn",
+        note: "Thường được sử dụng để mô tả một tình huống hoặc nhiệm vụ gây ra sự bực bội hoặc khó chịu. Nó có thể liên quan đến nhiều nỗ lực không cần thiết hoặc rắc rối không mong muốn.",
+        example:
+          "Public transport helps me avoid the hassle of finding parking downtown.",
+        exampleTranslation:
+          "Phương tiện công cộng giúp tôi tránh phiền toái khi phải tìm chỗ đỗ xe ở trung tâm.",
+      },
+      {
+        id: 318,
+        word: "Save on gas",
+        pronunciation: "/seɪv ɒn ɡæs/",
+        meaning: "tiết kiệm xăng, giảm chi phí xăng",
+        note: "Được dùng khi nói về việc giảm thiểu lượng xăng dùng trong xe hơi hoặc các phương tiện khác. Điều này không chỉ giúp giảm chi phí cá nhân mà còn có lợi cho môi trường.",
+        example:
+          "Using public transport is a great way to save on gas and do a bit for the environment.",
+        exampleTranslation:
+          "Sử dụng phương tiện công cộng là cách tuyệt vời để tiết kiệm xăng và đóng góp một chút cho môi trường.",
+      },
+      {
+        id: 319,
+        word: "Flexible",
+        pronunciation: "/ˈflek.sɪ.bəl/",
+        meaning: "linh hoạt, dễ thích ứng",
+        note: "Mô tả khả năng thích ứng hoặc điều chỉnh dễ dàng theo yêu cầu hoặc điều kiện thay đổi. Có thể áp dụng cho tình huống như thời gian làm việc, kế hoạch.",
+        example:
+          "I prefer driving because it's more flexible with my schedule.",
+        exampleTranslation:
+          "Tôi thích lái xe vì nó linh hoạt hơn với lịch trình của tôi.",
+      },
+      {
+        id: 320,
+        word: "Crowded",
+        pronunciation: "/ˈkraʊ.dɪd/",
+        meaning: "đông đúc, chật chội",
+        note: "Được sử dụng để mô tả một không gian có quá nhiều người hoặc vật, khiến cho việc di chuyển trở nên khó khăn và có thể cảm thấy chật chội.",
+        example:
+          "I find it more comfortable to drive than to be on a crowded bus or train.",
+        exampleTranslation:
+          "Tôi thấy lái xe thoải mái hơn là đi trên xe buýt hay tàu đông đúc.",
+      },
+      {
+        id: 321,
+        word: "All the time",
+        pronunciation: "/ɔːl ðə taɪm/",
+        meaning: "luôn luôn, suốt, liên tục",
+        note: "Được sử dụng để mô tả một hành động hoặc sự kiện xảy ra một cách thường xuyên hoặc liên tục, không có nghỉ ngơi hoặc gián đoạn.",
+        example:
+          "I used public transport all the time as a child – my school was quite far from home.",
+        exampleTranslation:
+          "Tôi đi phương tiện công cộng suốt khi còn nhỏ – trường học khá xa nhà.",
+      },
+      {
+        id: 322,
+        word: "Took the bus",
+        pronunciation: "/tʊk ðə bʌs/",
+        meaning: "đi xe buýt (quá khứ)",
+        note: "Cụm từ này chỉ việc sử dụng phương tiện giao thông công cộng là xe buýt để đi từ nơi này đến nơi khác. Đây là một lựa chọn vận chuyển phổ biến trong các thành phố.",
+        example:
+          "My school was quite far from home, so I took the bus every day.",
+        exampleTranslation:
+          "Trường học khá xa nhà nên tôi đi xe buýt mỗi ngày.",
+      },
+      {
+        id: 323,
+        word: "Drove me to school",
+        pronunciation: "/droʊv miː tə skuːl/",
+        meaning: "lái xe đưa tôi đến trường",
+        note: "Cụm từ này mô tả hành động của một người lái xe và đưa người nói đến trường, thường là trong bối cảnh gia đình hoặc bạn bè.",
+        example:
+          "My parents usually drove me to school and other activities when I was a child.",
+        exampleTranslation:
+          "Bố mẹ thường lái xe đưa tôi đến trường và các hoạt động khác khi tôi còn nhỏ.",
+      },
+      {
+        id: 324,
+        word: "Well-developed",
+        pronunciation: "/ˈwel dɪˈvel.əpt/",
+        meaning: "phát triển tốt, hoàn thiện",
+        note: "Thường được dùng để miêu tả một cá nhân, một ý tưởng, hoặc một hệ thống đã đạt đến một trình độ phát triển cao hoặc phức tạp. Nó thể hiện sự trưởng thành hoặc sự hoàn thiện trong nhiều khía cạnh.",
+        example:
+          "Most people prefer using their own cars because our public transport system isn't very well-developed.",
+        exampleTranslation:
+          "Hầu hết mọi người thích dùng xe riêng vì hệ thống giao thông công cộng của chúng tôi chưa phát triển tốt lắm.",
+      },
+      {
+        id: 325,
+        word: "Rely on",
+        pronunciation: "/rɪˈlaɪ ɒn/",
+        meaning: "phụ thuộc vào, dựa vào",
+        note: "Thường được dùng để mô tả một sự phụ thuộc vào người khác hoặc một thứ gì đó để thực hiện công việc hoặc để đạt được kết quả mong muốn.",
+        example:
+          "A lot of people in my country rely on public transport, especially during rush hour.",
+        exampleTranslation:
+          "Nhiều người ở đất nước tôi phụ thuộc vào phương tiện giao thông công cộng, đặc biệt trong giờ cao điểm.",
+      },
+      {
+        id: 326,
+        word: "A lifesaver",
+        pronunciation: "/ˈlaɪfˌseɪ.vər/",
+        meaning: "cứu cánh, thứ giúp ích rất nhiều trong lúc khó khăn",
+        note: "Dùng để mô tả một người hoặc một thứ gì đó cung cấp sự hỗ trợ quan trọng trong lúc khó khăn hoặc nguy cấp.",
+        example:
+          "Buses and trains are a lifesaver especially during rush hour when parking is a nightmare.",
+        exampleTranslation:
+          "Xe buýt và tàu là cứu cánh đặc biệt trong giờ cao điểm khi việc đỗ xe là cơn ác mộng.",
+      },
+      {
+        id: 327,
+        word: "More frequent services",
+        pronunciation: "/mɔːr ˈfriː.kwənt ˈsɜː.vɪsɪz/",
+        meaning: "các dịch vụ thường xuyên hơn, tần suất cao hơn",
+        note: "Cụm từ này đề cập đến việc gia tăng tần suất hoạt động của các dịch vụ giao thông công cộng, như xe buýt, tàu điện, để giảm thời gian chờ đợi và phục vụ tốt hơn nhu cầu di chuyển.",
+        example:
+          "Public transport is getting better each year, with new routes and more frequent services.",
+        exampleTranslation:
+          "Giao thông công cộng ngày càng tốt hơn mỗi năm, với các tuyến đường mới và dịch vụ thường xuyên hơn.",
+      },
+      {
+        id: 328,
+        word: "Reduce my carbon footprint",
+        pronunciation: "/rɪˈdjuːs maɪ ˈkɑː.bən ˈfʊt.prɪnt/",
+        meaning: "giảm lượng khí thải carbon của tôi",
+        note: "Cụm từ này mô tả việc giảm thiểu tác động tiêu cực đến môi trường bằng cách giảm lượng khí thải carbon do hoạt động cá nhân gây ra, chẳng hạn như đi lại, sử dụng điện, hoặc tiêu thụ thực phẩm.",
+        example:
+          "Using public transport more is a good way to reduce my carbon footprint.",
+        exampleTranslation:
+          "Sử dụng phương tiện công cộng nhiều hơn là cách tốt để giảm lượng khí thải carbon của tôi.",
+      },
+      {
+        id: 329,
+        word: "Switch",
+        pronunciation: "/swɪtʃ/",
+        meaning: "chuyển đổi, thay đổi sang thứ khác",
+        note: "Được sử dụng khi muốn mô tả việc thay đổi hoặc chuyển đổi từ một lựa chọn, hành động hoặc sản phẩm này sang một lựa chọn khác. Ví dụ: 'switch jobs' (chuyển việc), 'switch channels' (chuyển kênh).",
+        example:
+          "I enjoy the comfort of my own car too much to switch unless there's a significant improvement in service.",
+        exampleTranslation:
+          "Tôi thích sự thoải mái của xe riêng quá nhiều để chuyển đổi trừ khi có sự cải thiện đáng kể về dịch vụ.",
+      },
+      {
+        id: 330,
+        word: "Significant improvement",
+        pronunciation: "/sɪɡˈnɪf.ɪ.kənt ɪmˈpruːv.mənt/",
+        meaning: "sự cải thiện đáng kể",
+        note: "Thường dùng để chỉ một sự thay đổi tích cực hoặc tiến bộ lớn trong một vấn đề hoặc tình huống. Nó nhấn mạnh sự khác biệt rõ ràng và quan trọng trước và sau sự cải thiện.",
+        example:
+          "I won't switch to public transport unless there's a significant improvement in service.",
+        exampleTranslation:
+          "Tôi sẽ không chuyển sang phương tiện công cộng trừ khi có sự cải thiện đáng kể về dịch vụ.",
+      },
+    ],
+  },
 ];
