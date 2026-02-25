@@ -3829,4 +3829,367 @@ export const flashcardDecks = [
       },
     ],
   },
+
+  // ==========================================
+  // Writing - Task 1: Recycled Paper Process
+  // ==========================================
+  {
+    id: "wr_task1_recycled_paper",
+    skill: "Writing",
+    volume: "9",
+    topic: "Process / Environment",
+    part: "Task 1 - Recycled Paper",
+    cards: [
+      {
+        id: 1,
+        word: "Mechanical process",
+        pronunciation: "/məˈkænɪkəl ˈprɒsɛs/",
+        meaning: "Quá trình cơ khí, liên quan tới máy móc",
+        note: "Dùng để mô tả một quy trình được vận hành hoặc điều khiển bởi máy móc hoặc cơ chế vật lý. Thường dùng trong Task 1 dạng Process để giới thiệu tổng quan.",
+        example:
+          "The production of paper is a mechanical process in many modern factories.",
+        exampleTranslation:
+          "Việc sản xuất giấy là một quá trình cơ khí ở nhiều nhà máy hiện đại.",
+      },
+      {
+        id: 2,
+        word: "Placed onto",
+        pronunciation: "/pleɪst ˈɒntə/",
+        meaning: "Được đặt lên",
+        note: "Cụm động từ thể bị động, dùng để mô tả hành động đặt vật lên trên một bề mặt. Phổ biến trong Task 1 dạng Process khi mô tả từng bước của quy trình.",
+        example: "The ingredients were carefully placed onto the baking tray.",
+        exampleTranslation: "Các nguyên liệu được cẩn thận đặt lên khay nướng.",
+      },
+      {
+        id: 3,
+        word: "Slurry",
+        pronunciation: "/ˈslʌri/",
+        meaning: "Hỗn hợp lỏng (dạng bùn nhão)",
+        note: "Danh từ chỉ hỗn hợp bán lỏng, thường là các hạt mịn lơ lửng trong nước. Đây là từ chuyên ngành thường xuất hiện trong các bài viết về quy trình sản xuất công nghiệp hoặc xây dựng.",
+        example:
+          "The slurry was used in the construction site to lay the foundation.",
+        exampleTranslation:
+          "Hỗn hợp lỏng được sử dụng trong công trường xây dựng để đặt nền móng.",
+      },
+      {
+        id: 4,
+        word: "Sieved",
+        pronunciation: "/sɪvd/",
+        meaning: "Được rây, được sàng lọc",
+        note: "Động từ thể bị động, mô tả quá trình lọc vật liệu qua rây để loại bỏ các hạt lớn hoặc tạp chất. Dùng trong mô tả quy trình sản xuất hoặc chế biến thực phẩm.",
+        example:
+          "The flour was sieved to ensure its fineness before being used for baking.",
+        exampleTranslation:
+          "Bột được rây để đảm bảo độ mịn trước khi sử dụng để nướng bánh.",
+      },
+      {
+        id: 5,
+        word: "Homogeneous",
+        pronunciation: "/ˌhɒməˈdʒiːniəs/",
+        meaning: "Đồng nhất, có cùng bản chất hoặc cấu trúc",
+        note: "Tính từ mô tả sự đồng đều về thành phần hoặc cấu trúc. Thường dùng trong các bài viết khoa học hoặc mô tả kết quả của một quá trình xử lý. Cặp từ đối nghĩa: heterogeneous (không đồng nhất).",
+        example: "The solution was stirred until it became homogeneous.",
+        exampleTranslation:
+          "Dung dịch được khuấy cho đến khi trở nên đồng nhất.",
+      },
+      {
+        id: 6,
+        word: "Impurities",
+        pronunciation: "/ɪmˈpjʊərɪtiz/",
+        meaning: "Tạp chất",
+        note: "Danh từ số nhiều chỉ các chất không mong muốn hoặc làm bẩn một hỗn hợp. Thường xuất hiện trong bài viết về quy trình lọc, làm sạch hoặc xử lý vật liệu.",
+        example:
+          "The water was treated to remove any impurities before consumption.",
+        exampleTranslation:
+          "Nước đã được xử lý để loại bỏ bất kỳ tạp chất nào trước khi sử dụng.",
+      },
+      {
+        id: 7,
+        word: "Laid out on",
+        pronunciation: "/leɪd aʊt ɒn/",
+        meaning: "Được trải ra trên",
+        note: "Cụm động từ thể bị động, mô tả hành động sắp xếp hoặc trải đều vật liệu lên một bề mặt. Phổ biến trong Task 1 dạng Process khi mô tả giai đoạn cuối của quy trình sản xuất.",
+        example: "The documents were neatly laid out on the table for review.",
+        exampleTranslation:
+          "Các tài liệu được trải gọn gàng ra trên bàn để xem xét.",
+      },
+      {
+        id: 8,
+        word: "Ready for distribution and use",
+        pronunciation: "/ˈrɛdi fə ˌdɪstrɪˈbjuːʃən ænd juːz/",
+        meaning: "Sẵn sàng cho việc phân phối và sử dụng",
+        note: "Cụm từ kết thúc bài Task 1 dạng Process, dùng để chỉ trạng thái hoàn thiện của sản phẩm cuối cùng. Đây là cách diễn đạt tự nhiên và học thuật để kết thúc mô tả một quy trình.",
+        example:
+          "The vaccines were ready for distribution and use in the affected regions.",
+        exampleTranslation:
+          "Vắc xin đã sẵn sàng cho việc phân phối và sử dụng ở các khu vực bị ảnh hưởng.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // Writing - Task 2: Famous People as Role Models (Sample 1 - Positive)
+  // ==========================================
+  {
+    id: "wr_task2_role_models_positive",
+    skill: "Writing",
+    volume: "9",
+    topic: "Society / Celebrity",
+    part: "Task 2 - Role Models (Positive View)",
+    cards: [
+      {
+        id: 9,
+        word: "Inspirational figures",
+        pronunciation: "/ɪnˌspɪərəˈʃənl ˈfɪɡəz/",
+        meaning: "Những hình tượng truyền cảm hứng",
+        note: "Danh từ ghép dùng để chỉ những cá nhân truyền cảm hứng hoặc thúc đẩy người khác thông qua hành động hoặc thành tựu của họ. Thường xuất hiện trong bài Task 2 về người nổi tiếng, thần tượng, hay hình mẫu lý tưởng.",
+        example:
+          "Historical leaders like Mahatma Gandhi are often seen as inspirational figures due to their impactful life stories.",
+        exampleTranslation:
+          "Các nhà lãnh đạo lịch sử như Mahatma Gandhi thường được coi là những nhân vật truyền cảm hứng nhờ những câu chuyện về cuộc đời đầy sức ảnh hưởng của họ.",
+      },
+      {
+        id: 10,
+        word: "Catalyst for positive growth",
+        pronunciation: "/ˈkætəlɪst fə ˈpɒzɪtɪv ɡrəʊθ/",
+        meaning: "Chất xúc tác cho sự phát triển tích cực",
+        note: "Cụm danh từ ẩn dụ mạnh, dùng 'catalyst' theo nghĩa bóng để chỉ yếu tố kích thích sự thay đổi hoặc phát triển. Rất ấn tượng trong câu thesis statement của phần mở bài Task 2.",
+        example:
+          "Technological innovation has been a catalyst for positive growth in many industries.",
+        exampleTranslation:
+          "Sự đổi mới của công nghệ đã là chất xúc tác cho sự phát triển tích cực trong nhiều ngành công nghiệp.",
+      },
+      {
+        id: 11,
+        word: "Hard work and perseverance",
+        pronunciation: "/hɑːd wɜːk ænd ˌpɜːsɪˈvɪərəns/",
+        meaning: "Sự chăm chỉ và kiên trì",
+        note: "Cụm danh từ phổ biến trong các bài viết về thành công, hình mẫu, hoặc phát triển cá nhân. Thường đi kèm với các động từ như 'exemplify', 'demonstrate', 'require'.",
+        example:
+          "Their achievements, often the result of hard work and perseverance, provide tangible examples for young individuals to emulate.",
+        exampleTranslation:
+          "Những thành tựu của họ, thường là kết quả của sự chăm chỉ và kiên trì, cung cấp những ví dụ hữu hình cho những người trẻ noi theo.",
+      },
+      {
+        id: 12,
+        word: "Dedication and resilience",
+        pronunciation: "/ˌdɛdɪˈkeɪʃən ænd rɪˈzɪliəns/",
+        meaning: "Sự tận tụy và kiên cường",
+        note: "Cặp danh từ thể hiện hai phẩm chất quan trọng của người thành công. 'Dedication' nghĩa là cam kết, tận tâm; 'resilience' nghĩa là khả năng vượt qua khó khăn, bật dậy sau thất bại. Thường dùng để mô tả người nổi tiếng là hình mẫu.",
+        example:
+          "Her dedication and resilience were key factors in her successful career.",
+        exampleTranslation:
+          "Sự tận tụy và kiên cường của cô ấy là những yếu tố then chốt trong sự nghiệp thành công của cô.",
+      },
+      {
+        id: 13,
+        word: "A strong work ethic",
+        pronunciation: "/ə strɒŋ wɜːk ˈɛθɪk/",
+        meaning: "Đạo đức làm việc tốt, tinh thần làm việc chăm chỉ",
+        note: "Cụm danh từ chỉ hệ thống các nguyên tắc đạo đức tập trung vào tầm quan trọng của sự chăm chỉ và cần cù. Rất phổ biến trong các bài viết về nghề nghiệp, thành công, hoặc phẩm chất cá nhân.",
+        example:
+          "Employees with a strong work ethic are highly valued in any organization.",
+        exampleTranslation:
+          "Những nhân viên có đạo đức làm việc tốt sẽ được đánh giá cao ở bất kỳ tổ chức nào.",
+      },
+      {
+        id: 14,
+        word: "Ignite a passion for excellence",
+        pronunciation: "/ɪɡˈnaɪt ə ˈpæʃən fər ˈɛksələns/",
+        meaning: "Khơi dậy niềm đam mê với sự xuất sắc",
+        note: "Cụm động từ ẩn dụ mạnh, dùng 'ignite' (thắp lên) theo nghĩa bóng. Phù hợp trong phần thân bài Task 2 khi lập luận về tác động tích cực của người nổi tiếng lên thế hệ trẻ.",
+        example:
+          "The influence of such role models can ignite a passion for excellence and a strong work ethic among the youth.",
+        exampleTranslation:
+          "Sự ảnh hưởng của những hình mẫu như vậy có thể khơi dậy niềm đam mê với sự xuất sắc và tinh thần làm việc chăm chỉ trong giới trẻ.",
+      },
+      {
+        id: 15,
+        word: "Social and cultural awareness",
+        pronunciation: "/ˈsəʊʃəl ænd ˈkʌltʃərəl əˈweənəs/",
+        meaning: "Nhận thức về xã hội và văn hóa",
+        note: "Cụm danh từ chỉ sự hiểu biết hoặc ý thức về các vấn đề xã hội và văn hóa. Thường xuất hiện trong các bài Task 2 về người nổi tiếng, giáo dục, hoặc toàn cầu hóa.",
+        example:
+          "Traveling abroad often enhances a person's social and cultural awareness.",
+        exampleTranslation:
+          "Du lịch nước ngoài thường tăng cường nhận thức xã hội và văn hóa của một người.",
+      },
+      {
+        id: 16,
+        word: "Environmental conservation efforts",
+        pronunciation: "/ɪnˌvaɪrənˈmɛntl ˌkɒnsəˈveɪʃən ˈɛfəts/",
+        meaning: "Những nỗ lực bảo tồn môi trường",
+        note: "Cụm danh từ chỉ các hành động nhằm bảo vệ môi trường tự nhiên khỏi tổn hại. Phổ biến trong các bài Task 2 về môi trường, người nổi tiếng hoạt động xã hội, hoặc trách nhiệm cộng đồng.",
+        example:
+          "The community's environmental conservation efforts helped to restore the local park.",
+        exampleTranslation:
+          "Những nỗ lực bảo tồn môi trường của cộng đồng đã giúp phục hồi công viên địa phương.",
+      },
+      {
+        id: 17,
+        word: "Famous personalities",
+        pronunciation: "/ˈfeɪməs ˌpɜːsəˈnælɪtiz/",
+        meaning: "Những cá nhân nổi tiếng và có ảnh hưởng",
+        note: "Cụm danh từ dùng thay thế cho 'celebrities' hoặc 'famous people' để tránh lặp từ trong bài viết. Thể hiện vốn từ vựng phong phú - điều được đánh giá cao trong IELTS Writing.",
+        example:
+          "Famous personalities often use their status to promote charitable causes.",
+        exampleTranslation:
+          "Những nhân vật nổi tiếng thường sử dụng địa vị của mình để thúc đẩy các hoạt động từ thiện.",
+      },
+      {
+        id: 18,
+        word: "Pivotal contribution",
+        pronunciation: "/ˈpɪvətl ˌkɒntrɪˈbjuːʃən/",
+        meaning: "Đóng góp then chốt, đóng góp mang tính quyết định",
+        note: "Cụm danh từ mạnh, 'pivotal' nghĩa là then chốt, có vai trò quyết định. Dùng để nhấn mạnh tầm quan trọng của một đóng góp. Thường xuất hiện trong phần kết luận để tổng kết tác động của người nổi tiếng.",
+        example:
+          "Her research made a pivotal contribution to the field of renewable energy.",
+        exampleTranslation:
+          "Nghiên cứu của cô ấy đã đóng góp then chốt vào lĩnh vực năng lượng tái tạo.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // Writing - Task 2: Famous People as Role Models (Sample 2 - Negative outweighs)
+  // ==========================================
+  {
+    id: "wr_task2_role_models_negative",
+    skill: "Writing",
+    volume: "9",
+    topic: "Society / Celebrity",
+    part: "Task 2 - Role Models (Negative View)",
+    cards: [
+      {
+        id: 19,
+        word: "Increasingly revered",
+        pronunciation: "/ɪnˈkriːsɪŋli rɪˈvɪəd/",
+        meaning: "Ngày càng được tôn kính, ngày càng được kính trọng",
+        note: "Cụm trạng từ + động từ bị động. 'Revered' mang nghĩa tôn kính sâu sắc hơn 'respected'. Dùng trong mở bài để mô tả xu hướng ngưỡng mộ người nổi tiếng ngày càng gia tăng.",
+        example:
+          "The scientist was increasingly revered for her contribution to renewable energy.",
+        exampleTranslation:
+          "Nhà khoa học này ngày càng được kính trọng vì đóng góp của bà vào năng lượng tái tạo.",
+      },
+      {
+        id: 20,
+        word: "Significant influence",
+        pronunciation: "/sɪɡˈnɪfɪkənt ˈɪnfluəns/",
+        meaning: "Ảnh hưởng đáng kể",
+        note: "Cụm danh từ phổ biến và linh hoạt trong Task 2. Có thể dùng 'exert a significant influence on' (tác động ảnh hưởng lớn đến) để thể hiện cấu trúc đa dạng. Đây là cách diễn đạt học thuật hơn 'have a big effect on'.",
+        example:
+          "The teacher's significant influence on her students helped shape their future.",
+        exampleTranslation:
+          "Ảnh hưởng đáng kể của giáo viên đối với học sinh của cô ấy đã giúp hình thành tương lai của họ.",
+      },
+      {
+        id: 21,
+        word: "Source of inspiration",
+        pronunciation: "/sɔːs əv ˌɪnspɪˈreɪʃən/",
+        meaning: "Nguồn cảm hứng",
+        note: "Cụm danh từ thông dụng và ấn tượng. Có thể dùng trong body paragraph để thừa nhận mặt tích cực trước khi đưa ra lập luận phản bác (concession). Biến thể: 'serve as a source of inspiration for'.",
+        example: "Nature is often a source of inspiration for artists.",
+        exampleTranslation:
+          "Thiên nhiên thường là nguồn cảm hứng cho các nghệ sĩ.",
+      },
+      {
+        id: 22,
+        word: "Overcoming adversity",
+        pronunciation: "/ˌəʊvəˈkʌmɪŋ ədˈvɜːsɪti/",
+        meaning: "Vượt qua nghịch cảnh",
+        note: "Cụm danh từ/động từ thể hiện tinh thần kiên cường. 'Adversity' là danh từ trang trọng chỉ hoàn cảnh khó khăn. Thường xuất hiện khi dẫn chứng về người nổi tiếng vượt khó (ví dụ: Malala, Nelson Mandela).",
+        example:
+          "Figures like Malala Yousafzai exemplify resilience and determination in overcoming adversity.",
+        exampleTranslation:
+          "Những nhân vật như Malala Yousafzai là ví dụ điển hình về sự kiên cường và quyết tâm vượt qua nghịch cảnh.",
+      },
+      {
+        id: 23,
+        word: "Unrealistic standards",
+        pronunciation: "/ˌʌnrɪəˈlɪstɪk ˈstændədz/",
+        meaning: "Chuẩn mực không thực tế",
+        note: "Cụm danh từ quan trọng khi lập luận về tác hại của người nổi tiếng. Thường đi kèm: 'promote/set unrealistic standards of beauty, success, and lifestyle'. Từ đồng nghĩa: unattainable expectations.",
+        example:
+          "Unrealistic standards in social media can affect self-esteem.",
+        exampleTranslation:
+          "Những chuẩn mực không thực tế trên mạng xã hội có thể ảnh hưởng đến sự tự tin.",
+      },
+      {
+        id: 24,
+        word: "Unattainable lifestyle",
+        pronunciation: "/ˌʌnəˈteɪnəbl ˈlaɪfstaɪl/",
+        meaning: "Lối sống không thể đạt được, lối sống xa tầm với",
+        note: "Tính từ 'unattainable' (không thể đạt được) kết hợp với 'lifestyle' tạo ra cụm từ mạnh trong lập luận phản bác ảnh hưởng tiêu cực của người nổi tiếng. Thường xuất hiện khi đề cập đến Kardashians hoặc các influencer.",
+        example:
+          "Some celebrities project an unattainable lifestyle that leads young people to unhealthy comparisons.",
+        exampleTranslation:
+          "Một số người nổi tiếng thể hiện lối sống xa tầm với, dẫn đến những so sánh không lành mạnh ở giới trẻ.",
+      },
+      {
+        id: 25,
+        word: "Body image issues",
+        pronunciation: "/ˈbɒdi ˈɪmɪdʒ ˈɪʃuːz/",
+        meaning: "Vấn đề về hình ảnh cơ thể, mặc cảm ngoại hình",
+        note: "Cụm danh từ quan trọng trong các bài về tác động tâm lý của truyền thông và người nổi tiếng. Thể hiện sự am hiểu về các vấn đề xã hội, giúp bài viết có chiều sâu hơn.",
+        example:
+          "Unrealistic beauty standards promoted by celebrities can lead to body image issues among teenagers.",
+        exampleTranslation:
+          "Các tiêu chuẩn sắc đẹp không thực tế được người nổi tiếng quảng bá có thể dẫn đến vấn đề về hình ảnh cơ thể ở thanh thiếu niên.",
+      },
+      {
+        id: 26,
+        word: "Skewed sense of reality",
+        pronunciation: "/skjuːd sɛns əv riˈæləti/",
+        meaning: "Nhận thức méo mó về thực tế",
+        note: "'Skewed' nghĩa là lệch lạc, bóp méo. Cụm từ này diễn tả sự hiểu biết sai lệch về thực tế do ảnh hưởng của người nổi tiếng hoặc truyền thông. Rất ấn tượng trong bài IELTS Task 2 Band 7+.",
+        example:
+          "Overexposure to celebrity culture can lead to a skewed sense of reality among the youth.",
+        exampleTranslation:
+          "Tiếp xúc quá nhiều với văn hóa người nổi tiếng có thể dẫn đến nhận thức méo mó về thực tế ở giới trẻ.",
+      },
+      {
+        id: 27,
+        word: "Impressionable young minds",
+        pronunciation: "/ɪmˈprɛʃənəbl jʌŋ maɪndz/",
+        meaning: "Những tâm hồn trẻ dễ bị ảnh hưởng",
+        note: "'Impressionable' là tính từ chỉ người dễ bị tác động bởi môi trường xung quanh, đặc biệt là trẻ em và thanh thiếu niên. Cụm từ này nhấn mạnh sự dễ tổn thương của giới trẻ trước các ảnh hưởng tiêu cực.",
+        example:
+          "The controversial behavior of some celebrities can set poor examples for impressionable young minds.",
+        exampleTranslation:
+          "Hành vi gây tranh cãi của một số người nổi tiếng có thể tạo ra những tiền lệ xấu cho những tâm hồn trẻ dễ bị ảnh hưởng.",
+      },
+      {
+        id: 28,
+        word: "Substantially outweighed",
+        pronunciation: "/səbˈstænʃəli ˌaʊtˈweɪd/",
+        meaning: "Nặng hơn hoặc quan trọng hơn đáng kể",
+        note: "Cụm từ quan trọng trong bài 'outweigh' essay (dạng bài lợi hại). Thường dùng trong kết luận: 'the benefits are substantially outweighed by the drawbacks'. Đây là cách diễn đạt học thuật, trang trọng hơn 'much more than'.",
+        example:
+          "The benefits of the policy are substantially outweighed by its negative consequences.",
+        exampleTranslation:
+          "Lợi ích của chính sách đó bị lu mờ đáng kể bởi những hậu quả tiêu cực của nó.",
+      },
+      {
+        id: 29,
+        word: "Detrimental effects",
+        pronunciation: "/ˌdɛtrɪˈmɛntl ɪˈfɛkts/",
+        meaning: "Tác động có hại, ảnh hưởng tiêu cực",
+        note: "Cụm danh từ trang trọng thường dùng thay cho 'negative effects' hoặc 'bad effects'. 'Detrimental' (có hại) mạnh hơn 'negative' và thể hiện trình độ từ vựng cao hơn. Đồng nghĩa: adverse effects, harmful consequences.",
+        example: "The detrimental effects of smoking are well-documented.",
+        exampleTranslation:
+          "Những tác động có hại của việc hút thuốc đã được ghi chép kỹ lưỡng.",
+      },
+      {
+        id: 30,
+        word: "Mental and emotional well-being",
+        pronunciation: "/ˈmɛntl ænd ɪˈməʊʃənl ˈwɛlˌbiːɪŋ/",
+        meaning: "Sức khỏe tinh thần và cảm xúc",
+        note: "Cụm danh từ quan trọng trong các bài Task 2 liên quan đến sức khỏe tâm lý, ảnh hưởng của truyền thông, hoặc giáo dục. Phân biệt: 'mental health' (sức khỏe tâm thần - mang tính y tế hơn) và 'well-being' (trạng thái tổng thể tốt).",
+        example:
+          "Excessive social media use can negatively impact the mental and emotional well-being of teenagers.",
+        exampleTranslation:
+          "Sử dụng mạng xã hội quá mức có thể ảnh hưởng tiêu cực đến sức khỏe tinh thần và cảm xúc của thanh thiếu niên.",
+      },
+    ],
+  },
 ];
