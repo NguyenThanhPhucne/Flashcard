@@ -5950,111 +5950,6 @@ export const flashcardDecks = [
     part: "Task 2 - Personal Info Online (Drawbacks > Benefits)",
     cards: [
       {
-        id: 174,
-        word: "Online banking engagements",
-        pronunciation: "/ˈɒnlaɪn ˈbæŋkɪŋ ɪnˈɡeɪdʒmənts/",
-        meaning:
-          "Hoạt động ngân hàng trực tuyến, việc sử dụng dịch vụ ngân hàng qua internet",
-        note: "'Engagements' (sự tham gia, tương tác) thay cho 'use' hay 'activities' — trang trọng và học thuật hơn. Cụm này thường xuất hiện trong mở bài khi paraphrase 'use online banking services' từ đề bài. Thể hiện khả năng diễn đạt cùng một ý bằng nhiều cách khác nhau.",
-        example:
-          "Online banking engagements have made financial transactions more convenient.",
-        exampleTranslation:
-          "Các hoạt động ngân hàng trực tuyến đã làm cho giao dịch tài chính trở nên thuận tiện hơn.",
-      },
-      {
-        id: 175,
-        word: "Digitization",
-        pronunciation: "/ˌdɪdʒɪtaɪˈzeɪʃən/",
-        meaning: "Quá trình số hóa, chuyển đổi thông tin sang định dạng số",
-        note: "Danh từ chỉ quá trình chuyển đổi thông tin hoặc quy trình sang dạng kỹ thuật số. Phân biệt: 'digitization' (chuyển đổi sang số) vs. 'digitalization' (ứng dụng công nghệ số để thay đổi quy trình). Cụm hay: 'the digitization of personal data has paved the way for...' (số hóa dữ liệu cá nhân đã mở đường cho...).",
-        example:
-          "The digitization of records improves accessibility and reduces storage space.",
-        exampleTranslation:
-          "Việc số hóa hồ sơ cải thiện khả năng truy cập và giảm không gian lưu trữ.",
-      },
-      {
-        id: 176,
-        word: "Personalized services",
-        pronunciation: "/ˈpɜːsənəlaɪzd ˈsɜːvɪsɪz/",
-        meaning:
-          "Dịch vụ được cá nhân hóa, thiết kế riêng theo nhu cầu từng người",
-        note: "'Personalized' (được cá nhân hóa) là tính từ chỉ sự tùy chỉnh theo từng cá nhân cụ thể. Đây là lợi ích của việc chia sẻ dữ liệu: công ty dùng dữ liệu để cung cấp dịch vụ phù hợp hơn. Thường đi với: 'tailored/customized/individualized services'. Đây cũng có thể là bất lợi nếu nhìn từ góc độ xâm phạm quyền riêng tư.",
-        example:
-          "Personalized services in online shopping can enhance customer experience.",
-        exampleTranslation:
-          "Dịch vụ cá nhân hóa trong mua sắm trực tuyến có thể nâng cao trải nghiệm của khách hàng.",
-      },
-      {
-        id: 177,
-        word: "Tailored engagement",
-        pronunciation: "/ˈteɪləd ɪnˈɡeɪdʒmənt/",
-        meaning:
-          "Sự tương tác được thiết kế riêng theo yêu cầu và sở thích cụ thể",
-        note: "'Tailored' (được may đo vừa vặn) là ẩn dụ từ nghề may, chỉ sự tùy chỉnh chính xác. 'Engagement' (sự tham gia, tương tác) trong bối cảnh digital marketing chỉ mức độ người dùng tương tác với nền tảng. Cụm này nhấn mạnh lợi thế của nền tảng số trong việc cá nhân hóa trải nghiệm.",
-        example:
-          "Tailored engagement strategies can significantly improve user retention.",
-        exampleTranslation:
-          "Các chiến lược tương tác được thiết kế riêng có thể cải thiện đáng kể sự giữ chân người dùng.",
-      },
-      {
-        id: 178,
-        word: "Digital security",
-        pronunciation: "/ˈdɪdʒɪtəl sɪˈkjʊərɪti/",
-        meaning:
-          "An ninh số, các biện pháp bảo vệ dữ liệu điện tử và danh tính trực tuyến",
-        note: "Cụm danh từ quan trọng chỉ lĩnh vực bảo vệ thông tin trong không gian số. Phân biệt: 'cybersecurity' (bảo mật mạng, rộng hơn) vs. 'digital security' (bảo mật dữ liệu số, cụ thể hơn). Thường đi với: 'concerns over digital security', 'invest in digital security'. Từ liên quan: encryption, firewall, data protection.",
-        example:
-          "Investing in digital security is essential to safeguard online transactions.",
-        exampleTranslation:
-          "Đầu tư vào an ninh số là cần thiết để bảo vệ giao dịch trực tuyến.",
-      },
-      {
-        id: 179,
-        word: "Fraudulent activities",
-        pronunciation: "/ˈfrɔːdjʊlənt ækˈtɪvɪtɪz/",
-        meaning: "Các hoạt động gian lận, hành vi lừa đảo để trục lợi",
-        note: "'Fraudulent' (gian lận, lừa đảo) là tính từ trang trọng và pháp lý. Mạnh hơn 'dishonest' hay 'illegal'. Cụm này thường đi với 'exploit information for fraudulent activities' (khai thác thông tin cho các hoạt động gian lận). Liên quan: scam, phishing, financial fraud, identity fraud.",
-        example:
-          "Authorities are cracking down on fraudulent activities in the financial sector.",
-        exampleTranslation:
-          "Các cơ quan chức năng đang trấn áp các hoạt động gian lận trong lĩnh vực tài chính.",
-      },
-      {
-        id: 180,
-        word: "Potential misuse of personal data",
-        pronunciation: "/pəˈtɛnʃəl ˈmɪsjuːs əv ˈpɜːsənəl ˈdeɪtə/",
-        meaning: "Khả năng thông tin cá nhân bị sử dụng sai mục đích",
-        note: "Cụm danh từ dài nhưng quan trọng, nhấn mạnh nguy cơ tiềm ẩn ('potential') của việc dữ liệu bị lạm dụng. 'Misuse' (lạm dụng, sử dụng sai) = dùng không đúng mục đích ban đầu. Thường xuất hiện trong bài về công nghệ, quyền riêng tư, hoặc đạo đức doanh nghiệp. Cấu trúc hay: 'the pervasive collection and potential misuse of personal data'.",
-        example:
-          "The potential misuse of personal data is a major concern in the era of big data.",
-        exampleTranslation:
-          "Khả năng lạm dụng dữ liệu cá nhân là một mối lo ngại lớn trong kỷ nguyên dữ liệu lớn.",
-      },
-      {
-        id: 181,
-        word: "Targeted advertising",
-        pronunciation: "/ˈtɑːɡɪtɪd ˈædvətaɪzɪŋ/",
-        meaning:
-          "Quảng cáo được nhắm mục tiêu theo sở thích và hành vi của từng người dùng",
-        note: "'Targeted' (nhắm mục tiêu) = được chỉ định hướng đến một đối tượng cụ thể. Trong bối cảnh này, dữ liệu cá nhân bị dùng để hiển thị quảng cáo phù hợp — có thể là lợi ích (quảng cáo hữu ích hơn) hoặc bất lợi (xâm phạm quyền riêng tư). Thường xuất hiện cùng 'profiling' (lập hồ sơ người dùng).",
-        example:
-          "Targeted advertising can improve sales by reaching the right audience.",
-        exampleTranslation:
-          "Quảng cáo mục tiêu có thể cải thiện doanh số bằng cách tiếp cận đúng đối tượng.",
-      },
-      {
-        id: 182,
-        word: "Overarching implications",
-        pronunciation: "/ˌəʊvərˈɑːtʃɪŋ ˌɪmplɪˈkeɪʃənz/",
-        meaning:
-          "Hậu quả bao trùm, tác động rộng lớn ảnh hưởng đến nhiều khía cạnh",
-        note: "'Overarching' (bao trùm, xuyên suốt) là tính từ chỉ điều gì đó bao phủ và ảnh hưởng đến toàn bộ một vấn đề hoặc hệ thống. Mạnh hơn 'broad' hay 'wide-ranging'. Cụm 'overarching implications for privacy and security' thường xuất hiện trong kết luận khi tóm tắt tác động toàn diện của một xu hướng.",
-        example:
-          "The rise of artificial intelligence has overarching implications for the workforce.",
-        exampleTranslation:
-          "Sự phát triển của trí tuệ nhân tạo có hậu quả rộng lớn đối với lực lượng lao động.",
-      },
-      {
         id: 183,
         word: "Financial management",
         pronunciation: "/faɪˈnænʃəl ˈmænɪdʒmənt/",
@@ -6064,6 +5959,1494 @@ export const flashcardDecks = [
           "Effective financial management is crucial for achieving financial stability.",
         exampleTranslation:
           "Quản lý tài chính hiệu quả là rất quan trọng để đạt được sự ổn định tài chính.",
+      },
+    ],
+  },
+  // ==========================================
+  // W7 - Task 1: Unemployment Rates (UK, EU, Japan 1993–2007)
+  // ==========================================
+  {
+    id: "wr_w7_task1_unemployment",
+    skill: "Writing",
+    volume: "9",
+    topic: "Economics / Employment",
+    part: "Task 1 - Unemployment Rates (UK, EU, Japan)",
+    cards: [
+      {
+        id: 184,
+        word: "Joblessness levels",
+        pronunciation: "/ˈdʒɒbləsnəs ˈlevəlz/",
+        meaning:
+          "Tỷ lệ thất nghiệp, mức độ không có việc làm trong nền kinh tế",
+        note: "Cụm danh từ dùng để diễn đạt 'unemployment rate' theo cách học thuật hơn. Trong Task 1 bài về thất nghiệp, đây là từ thay thế quan trọng tránh lặp từ 'unemployment'. Thường đi với: 'changes in joblessness levels', 'rising/falling joblessness levels'. Đồng nghĩa: unemployment rates, unemployment figures.",
+        example:
+          "The economic crisis led to an increase in the joblessness levels.",
+        exampleTranslation:
+          "Cuộc khủng hoảng kinh tế đã dẫn đến sự tăng lên của tỷ lệ thất nghiệp.",
+      },
+      {
+        id: 185,
+        word: "Unemployment figures",
+        pronunciation: "/ˌʌnɪmˈplɔɪmənt ˈfɪɡəz/",
+        meaning:
+          "Số liệu thất nghiệp, dữ liệu thống kê về người không có việc làm",
+        note: "Cụm danh từ chỉ dữ liệu thống kê cụ thể về tỷ lệ thất nghiệp. Khác với 'unemployment rate' (tỷ lệ phần trăm), 'figures' mang nghĩa rộng hơn, bao gồm cả con số thực tế. Thường đi với: 'unemployment figures were consistently higher/lower than', 'rising/falling unemployment figures'. Đồng nghĩa: joblessness levels, unemployment data.",
+        example:
+          "The government is concerned about the rising unemployment figures.",
+        exampleTranslation:
+          "Chính phủ lo ngại về việc số liệu thất nghiệp tăng lên.",
+      },
+      {
+        id: 186,
+        word: "Jobless people",
+        pronunciation: "/ˈdʒɒbləs ˈpiːpəl/",
+        meaning: "Người thất nghiệp, những cá nhân không có việc làm",
+        note: "Cụm danh từ dùng 'jobless' như tính từ bổ nghĩa cho 'people', thay thế cho 'unemployed people'. Trong Task 1, dùng để tránh lặp từ khi đề cập đến những người không có công việc. Thường đi với: 'the percentage of jobless people', 'support for jobless people'. Đồng nghĩa: unemployed individuals, the unemployed.",
+        example:
+          "Support services are essential for helping jobless people find work.",
+        exampleTranslation:
+          "Các dịch vụ hỗ trợ là thiết yếu để giúp người thất nghiệp tìm việc làm.",
+      },
+      {
+        id: 187,
+        word: "Plummet",
+        pronunciation: "/ˈplʌmɪt/",
+        meaning: "Giảm mạnh và nhanh chóng, rơi thẳng xuống với tốc độ cao",
+        note: "Động từ mô tả sự giảm mạnh và đột ngột, mạnh hơn 'decrease' hay 'fall'. Rất phổ biến trong Task 1 khi mô tả xu hướng giảm sâu. Thường đi với: 'plummeted to a low of X%', 'plummeted sharply'. Đồng nghĩa: drop sharply, fall dramatically, nosedive. Trái nghĩa: soar, rocket, surge.",
+        example: "Stock prices began to plummet after the announcement.",
+        exampleTranslation: "Giá cổ phiếu bắt đầu giảm mạnh sau thông báo.",
+      },
+      {
+        id: 188,
+        word: "A subsequent leveling off",
+        pronunciation: "/ə ˈsʌbsɪkwənt ˈlevəlɪŋ ɒf/",
+        meaning:
+          "Sự ổn định tiếp theo sau đó, giai đoạn không thay đổi sau một chuỗi biến động",
+        note: "Cụm danh từ kết hợp 'subsequent' (tiếp theo sau đó) và 'leveling off' (ổn định, không tăng không giảm). Dùng trong Task 1 để mô tả giai đoạn dữ liệu đi ngang sau khi tăng hoặc giảm. Thường đi với: 'with a subsequent leveling off over the following X years', 'followed by a leveling off'. Đồng nghĩa: a subsequent stabilization, a subsequent plateau.",
+        example:
+          "After a rapid increase, there was a subsequent leveling off in demand.",
+        exampleTranslation:
+          "Sau sự tăng trưởng nhanh chóng, đã có sự ổn định về nhu cầu sau đó.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W7 - Task 2: Parental Pressure on Children (Sample 1 - Positive)
+  // ==========================================
+  {
+    id: "wr_w7_task2_parental_positive",
+    skill: "Writing",
+    volume: "9",
+    topic: "Society / Education / Parenting",
+    part: "Task 2 - Parental Pressure (Beneficial)",
+    cards: [
+      {
+        id: 189,
+        word: "Underlying reasons",
+        pronunciation: "/ˌʌndəˈlaɪɪŋ ˈriːzənz/",
+        meaning: "Nguyên nhân cơ bản, lý do nằm sâu bên dưới bề mặt hiện tượng",
+        note: "Cụm danh từ dùng 'underlying' (cơ bản, tiềm ẩn) để chỉ các nguyên nhân gốc rễ chứ không phải biểu hiện bên ngoài. Phổ biến trong phần giới thiệu bài Task 2 khi phân tích nguyên nhân. Thường đi với: 'delve into the underlying reasons for', 'explore the underlying reasons behind'. Đồng nghĩa: root causes, fundamental reasons, core reasons.",
+        example:
+          "The underlying reasons for the economic crisis were not immediately apparent.",
+        exampleTranslation:
+          "Nguyên nhân cơ bản của cuộc khủng hoảng kinh tế không ngay lập tức được nhận biết.",
+      },
+      {
+        id: 190,
+        word: "Beneficial impact",
+        pronunciation: "/ˌbenɪˈfɪʃəl ˈɪmpækt/",
+        meaning:
+          "Tác động tích cực, ảnh hưởng có lợi lên một đối tượng hay tình huống",
+        note: "Cụm danh từ thường xuất hiện trong thesis statement của bài Task 2 khi người viết muốn nêu quan điểm tích cực. Thường đi với: 'argue for the beneficial impact of', 'have a beneficial impact on'. Đồng nghĩa: positive effect, advantageous influence. Trái nghĩa: detrimental impact, adverse effect.",
+        example:
+          "The new policy had a beneficial impact on the community's health.",
+        exampleTranslation:
+          "Chính sách mới đã có ảnh hưởng tích cực đến sức khỏe của cộng đồng.",
+      },
+      {
+        id: 191,
+        word: "Heightened expectations of parents",
+        pronunciation: "/ˈhaɪtənd ˌekspekˈteɪʃənz əv ˈpeərənts/",
+        meaning:
+          "Kỳ vọng tăng cao của cha mẹ, những đòi hỏi và mong đợi ngày càng cao từ phụ huynh",
+        note: "Cụm danh từ dùng 'heightened' (được nâng cao, tăng cường) để diễn tả mức độ kỳ vọng đang gia tăng. Thay thế tự nhiên cho 'high parental expectations'. Thường đi với: 'the heightened expectations of parents stem from', 'driven by heightened expectations'. Đồng nghĩa: elevated parental expectations, intensified parental standards.",
+        example:
+          "The heightened expectations of parents can sometimes put too much pressure on children.",
+        exampleTranslation:
+          "Kỳ vọng tăng cao của cha mẹ đôi khi tạo áp lực quá lớn lên trẻ em.",
+      },
+      {
+        id: 192,
+        word: "Secure a prosperous future",
+        pronunciation: "/sɪˈkjʊər ə ˈprɒspərəs ˈfjuːtʃər/",
+        meaning:
+          "Đảm bảo một tương lai thịnh vượng, đạt được một tương lai giàu có và thành công",
+        note: "Cụm động từ kết hợp 'secure' (đảm bảo, đạt được) với 'prosperous future' (tương lai thịnh vượng). Rất hay xuất hiện trong phần phân tích lý do cha mẹ tạo áp lực. Thường đi với: 'desire for their children to secure a prosperous future', 'help children secure a prosperous future'. Đồng nghĩa: ensure a bright/successful future, guarantee a thriving future.",
+        example: "She's working hard in school to secure a prosperous future.",
+        exampleTranslation:
+          "Cô ấy đang học chăm chỉ để đảm bảo một tương lai thành công.",
+      },
+      {
+        id: 193,
+        word: "Academic excellence",
+        pronunciation: "/ˌækəˈdemɪk ˈeksələns/",
+        meaning:
+          "Thành tích học thuật cao, sự xuất sắc trong các hoạt động học tập",
+        note: "Cụm danh từ chỉ mức thành tích cao nhất trong môi trường giáo dục. Rất phổ biến trong bài viết về giáo dục và áp lực học tập. Thường đi với: 'strive for/achieve academic excellence', 'emphasis on academic excellence'. Đồng nghĩa: scholastic achievement, high academic performance. Phân biệt: 'academic performance' (kết quả học tập nói chung) vs 'academic excellence' (xuất sắc, vượt trội).",
+        example: "She was awarded a scholarship for her academic excellence.",
+        exampleTranslation:
+          "Cô ấy được trao học bổng vì thành tích học thuật cao.",
+      },
+      {
+        id: 194,
+        word: "A deep-seated commitment",
+        pronunciation: "/ə ˌdiːpˈsiːtɪd kəˈmɪtmənt/",
+        meaning: "Cam kết sâu sắc và bền vững, sự tận tâm ăn sâu vào bản chất",
+        note: "Cụm danh từ dùng 'deep-seated' (ăn sâu, căn cơ) để nhấn mạnh sự cam kết không phải bề ngoài mà xuất phát từ tận cùng nội tâm. Thường đi với: 'illustrating a deep-seated commitment to', 'show a deep-seated commitment to'. Đồng nghĩa: profound dedication, unwavering commitment. Lưu ý: 'deep-seated' thường đi với các cảm xúc hoặc thái độ mang tính lâu dài như belief, prejudice, commitment.",
+        example: "He has a deep-seated commitment to social justice.",
+        exampleTranslation: "Anh ấy có cam kết sâu sắc với công lý xã hội.",
+      },
+      {
+        id: 195,
+        word: "Parental pressure",
+        pronunciation: "/pəˈrentəl ˈpreʃər/",
+        meaning:
+          "Áp lực từ cha mẹ, căng thẳng hoặc kỳ vọng mà cha mẹ đặt lên con cái",
+        note: "Cụm danh từ cốt lõi của bài Task 2 này. 'Parental' là tính từ chỉ liên quan đến cha mẹ. Thay thế tự nhiên cho 'pressure from parents'. Thường đi với: 'positive/negative ramifications of parental pressure', 'exert parental pressure on'. Đồng nghĩa: pressure from parents, parental demands, parental expectations.",
+        example: "Parental pressure can sometimes lead to student burnout.",
+        exampleTranslation:
+          "Áp lực từ phía cha mẹ đôi khi dẫn đến kiệt sức cho học sinh.",
+      },
+      {
+        id: 196,
+        word: "Strong work ethic",
+        pronunciation: "/strɒŋ wɜːk ˈeθɪk/",
+        meaning:
+          "Đạo đức làm việc nghiêm túc, tinh thần chăm chỉ và tận tụy trong công việc",
+        note: "Cụm danh từ chỉ tập hợp các nguyên tắc đạo đức liên quan đến sự chăm chỉ và cống hiến. Đây là một trong những lợi ích tích cực khi trẻ được rèn luyện dưới áp lực. Thường đi với: 'develop a strong work ethic', 'instill a strong work ethic'. Đồng nghĩa: diligence, industriousness, dedication to hard work.",
+        example: "A strong work ethic is essential for career advancement.",
+        exampleTranslation:
+          "Đạo đức làm việc nghiêm túc là điều thiết yếu cho sự thăng tiến trong sự nghiệp.",
+      },
+      {
+        id: 197,
+        word: "Navigate life's challenges",
+        pronunciation: "/ˈnævɪɡeɪt laɪvz ˈtʃælɪndʒɪz/",
+        meaning:
+          "Vượt qua khó khăn cuộc sống, tìm cách đối phó và giải quyết những thử thách trong cuộc đời",
+        note: "Cụm động từ dùng ẩn dụ 'navigate' (điều hướng như lái thuyền) để diễn tả khả năng xử lý các khó khăn một cách khéo léo. Thường đi với: 'equip them with the ability to navigate life's challenges', 'help people navigate life's challenges more effectively'. Đồng nghĩa: overcome difficulties, cope with life's obstacles, deal with adversity.",
+        example: "Resilience is key to navigate life's challenges.",
+        exampleTranslation:
+          "Sự kiên cường là chìa khóa để vượt qua khó khăn cuộc sống.",
+      },
+      {
+        id: 198,
+        word: "Professional success",
+        pronunciation: "/prəˈfeʃənəl səkˈses/",
+        meaning:
+          "Thành công nghề nghiệp, những thành tựu và kết quả đạt được trong sự nghiệp",
+        note: "Cụm danh từ chỉ sự thành đạt trong môi trường công việc chuyên nghiệp. Thường dùng trong các bài về giáo dục, sự nghiệp, áp lực xã hội. Thường đi với: 'prepare them for professional success', 'achieve professional success'. Đồng nghĩa: career achievement, occupational success. Phân biệt: 'professional success' (thành công nghề nghiệp cụ thể) vs 'personal success' (thành công cá nhân).",
+        example:
+          "Networking is often a critical factor in professional success.",
+        exampleTranslation:
+          "Mạng lưới quan hệ thường là yếu tố quan trọng trong thành công nghề nghiệp.",
+      },
+      {
+        id: 199,
+        word: "Valuable life skills",
+        pronunciation: "/ˈvæljuəbəl laɪf skɪlz/",
+        meaning:
+          "Kỹ năng sống quan trọng, những năng lực thiết yếu giúp con người tham gia hiệu quả vào cuộc sống hàng ngày",
+        note: "Cụm danh từ chỉ các kỹ năng thực tiễn có giá trị cao trong cuộc sống, không chỉ trong học thuật. Thường xuất hiện khi liệt kê lợi ích của giáo dục hoặc rèn luyện. Thường đi với: 'instill valuable life skills', 'develop/acquire valuable life skills'. Đồng nghĩa: essential life skills, practical skills, transferable skills.",
+        example:
+          "Critical thinking and communication are valuable life skills.",
+        exampleTranslation:
+          "Tư duy phản biện và giao tiếp là kỹ năng sống quan trọng.",
+      },
+      {
+        id: 200,
+        word: "Cultivation of essential skills",
+        pronunciation: "/ˌkʌltɪˈveɪʃən əv ɪˈsenʃəl skɪlz/",
+        meaning:
+          "Sự phát triển và trau dồi các kỹ năng cần thiết, quá trình nuôi dưỡng và hoàn thiện những năng lực quan trọng",
+        note: "Cụm danh từ dùng 'cultivation' (vốn nghĩa là canh tác, gieo trồng) theo nghĩa bóng để chỉ quá trình phát triển kỹ năng từng bước. Mang sắc thái tích cực, chủ động hơn 'development of skills'. Thường đi với: 'results in the cultivation of essential skills', 'focus on the cultivation of essential skills'. Đồng nghĩa: development of crucial abilities, nurturing of key skills.",
+        example:
+          "The education system should focus on the cultivation of essential skills.",
+        exampleTranslation:
+          "Hệ thống giáo dục nên tập trung vào việc phát triển kỹ năng cần thiết.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W7 - Task 2: Parental Pressure on Children (Sample 2 - Negative)
+  // ==========================================
+  {
+    id: "wr_w7_task2_parental_negative",
+    skill: "Writing",
+    volume: "9",
+    topic: "Society / Education / Parenting",
+    part: "Task 2 - Parental Pressure (Harmful)",
+    cards: [
+      {
+        id: 201,
+        word: "Attain success",
+        pronunciation: "/əˈteɪn səkˈses/",
+        meaning: "Đạt được thành công, hoàn thành mục tiêu ở mức độ mong muốn",
+        note: "Cụm động từ dùng 'attain' (đạt tới, giành được qua nỗ lực) thay cho 'achieve success'. 'Attain' mang hàm ý nỗ lực lâu dài để đạt tới một đích cao hơn. Thường đi với: 'pressure on their offspring to attain success', 'strive to attain success'. Đồng nghĩa: achieve success, accomplish goals, reach one's potential. Lưu ý: 'attain' thường dùng với danh từ trừu tượng như success, goal, standard.",
+        example: "Hard work and perseverance are crucial to attain success.",
+        exampleTranslation:
+          "Làm việc chăm chỉ và kiên trì là rất quan trọng để đạt được thành công.",
+      },
+      {
+        id: 202,
+        word: "Deleterious effects",
+        pronunciation: "/ˌdelɪˈtɪəriəs ɪˈfekts/",
+        meaning:
+          "Hậu quả có hại, tác động gây tổn hại nghiêm trọng đến một đối tượng",
+        note: "Cụm danh từ học thuật cao, 'deleterious' là từ trang trọng thay cho 'harmful' hay 'damaging'. Thường xuất hiện trong thesis statement khi người viết muốn nêu quan điểm tiêu cực mạnh mẽ. Thường đi với: 'have deleterious effects on', 'posit that such phenomenon has deleterious effects'. Đồng nghĩa: harmful consequences, detrimental effects, adverse impacts.",
+        example: "Pollution has deleterious effects on the environment.",
+        exampleTranslation:
+          "Ô nhiễm có những hậu quả có hại đối với môi trường.",
+      },
+      {
+        id: 203,
+        word: "Contemporary job market",
+        pronunciation: "/kənˈtempərəri dʒɒb ˈmɑːkɪt/",
+        meaning:
+          "Thị trường việc làm đương đại, thực trạng cơ hội và điều kiện tuyển dụng hiện nay",
+        note: "Cụm danh từ dùng 'contemporary' (đương đại, hiện thời) thay cho 'current' hay 'modern'. Thường được dùng trong phần phân tích nguyên nhân xã hội. Thường đi với: 'the escalating competitiveness of the contemporary job market', 'demands of the contemporary job market'. Đồng nghĩa: current labor market, modern employment landscape, today's job market.",
+        example: "The contemporary job market demands a wide range of skills.",
+        exampleTranslation:
+          "Thị trường việc làm hiện đại đòi hỏi một loạt các kỹ năng.",
+      },
+      {
+        id: 204,
+        word: "A pivotal indicator",
+        pronunciation: "/ə ˈpɪvətəl ˈɪndɪkeɪtər/",
+        meaning:
+          "Dấu hiệu then chốt, thước đo hoặc chỉ số quan trọng nhất để đánh giá điều gì đó",
+        note: "Cụm danh từ dùng 'pivotal' (then chốt, mang tính bước ngoặt) mạnh hơn 'important' hay 'key'. Thường xuất hiện khi phân tích các yếu tố đánh giá thành công trong xã hội. Thường đi với: 'a pivotal indicator of success', 'serve as a pivotal indicator of'. Đồng nghĩa: a key measure, a crucial benchmark, a central indicator.",
+        example:
+          "Graduation rates are a pivotal indicator of educational quality.",
+        exampleTranslation:
+          "Tỷ lệ tốt nghiệp là một chỉ báo then chốt về chất lượng giáo dục.",
+      },
+      {
+        id: 205,
+        word: "Societal and peer comparisons",
+        pronunciation: "/səˈsaɪətəl ənd pɪər kəmˈpærɪsənz/",
+        meaning:
+          "So sánh xã hội và đồng trang lứa, những đánh giá giữa cá nhân với người khác trong xã hội hoặc nhóm bạn bè",
+        note: "Cụm danh từ kết hợp hai loại so sánh: 'societal' (ở cấp độ xã hội rộng) và 'peer' (trong nhóm đồng trang lứa). Thường xuất hiện khi giải thích tại sao cha mẹ tạo áp lực. Thường đi với: 'the influence of societal and peer comparisons', 'driven by societal and peer comparisons'. Đồng nghĩa: social benchmarking, comparative pressure from society and peers.",
+        example:
+          "Societal and peer comparisons can significantly influence self-esteem.",
+        exampleTranslation:
+          "So sánh xã hội và bạn bè đồng trang lứa có thể ảnh hưởng đáng kể đến lòng tự tôn.",
+      },
+      {
+        id: 206,
+        word: "Fall behind",
+        pronunciation: "/fɔːl bɪˈhaɪnd/",
+        meaning:
+          "Tụt lại phía sau, chậm hơn hoặc kém hơn so với những người xung quanh trong tiến độ hay thành tích",
+        note: "Cụm động từ phrasal verb rất thông dụng, mang nghĩa tiêu cực về việc không theo kịp người khác. Thường xuất hiện khi miêu tả nỗi lo sợ của cha mẹ. Thường đi với: 'fearing they will fall behind their peers', 'fall behind in class/at work'. Đồng nghĩa: lag behind, trail behind, be left behind. Trái nghĩa: keep up with, stay ahead of.",
+        example: "Without adequate study, students may fall behind in class.",
+        exampleTranslation:
+          "Nếu không học đủ, học sinh có thể tụt lại đằng sau các bạn trong lớp.",
+      },
+      {
+        id: 207,
+        word: "Exert undue pressure",
+        pronunciation: "/ɪɡˈzɜːt ʌnˈdjuː ˈpreʃər/",
+        meaning:
+          "Gây áp lực quá mức, tạo ra sức ép không cần thiết hoặc vượt quá giới hạn hợp lý",
+        note: "Cụm động từ kết hợp 'exert' (tạo ra, gây ra) với 'undue' (quá mức, không đáng). 'Undue' nhấn mạnh rằng áp lực đó vượt quá giới hạn chấp nhận được. Thường đi với: 'exert undue pressure on their children/offspring', 'should not exert undue pressure'. Đồng nghĩa: put excessive pressure on, place unreasonable demands on. Phân biệt: 'undue pressure' (quá mức) vs 'appropriate pressure' (áp lực phù hợp).",
+        example: "Parents should not exert undue pressure on their children.",
+        exampleTranslation: "Cha mẹ không nên gây áp lực quá mức lên con cái.",
+      },
+      {
+        id: 208,
+        word: "Adverse implications",
+        pronunciation: "/ˈædvɜːs ˌɪmplɪˈkeɪʃənz/",
+        meaning:
+          "Hậu quả tiêu cực, những tác động bất lợi hoặc kết quả không mong muốn của một hành động hay chính sách",
+        note: "Cụm danh từ học thuật, 'adverse' (bất lợi, tiêu cực) mạnh hơn 'negative'. 'Implications' (hàm ý, tác động) rộng hơn 'effects' vì bao gồm cả hệ quả gián tiếp. Thường đi với: 'due to its adverse implications for mental health', 'have adverse implications for'. Đồng nghĩa: negative consequences, detrimental repercussions, harmful ramifications.",
+        example: "The new law has adverse implications for small businesses.",
+        exampleTranslation:
+          "Luật mới có hậu quả tiêu cực đối với các doanh nghiệp nhỏ.",
+      },
+      {
+        id: 209,
+        word: "Multiple domains",
+        pronunciation: "/ˈmʌltɪpəl dəˈmeɪnz/",
+        meaning:
+          "Nhiều lĩnh vực khác nhau, các phạm vi hoạt động hoặc chuyên môn đa dạng",
+        note: "Cụm danh từ dùng 'domains' (lĩnh vực, phạm vi) thay cho 'areas' hay 'fields', mang sắc thái học thuật hơn. Thường xuất hiện khi mô tả áp lực trẻ phải xuất sắc ở nhiều mảng. Thường đi với: 'demands to excel across multiple domains', 'expertise in multiple domains'. Đồng nghĩa: various fields, diverse areas, different spheres.",
+        example:
+          "She has expertise in multiple domains, including science and literature.",
+        exampleTranslation:
+          "Cô ấy có chuyên môn trong nhiều lĩnh vực, bao gồm khoa học và văn học.",
+      },
+      {
+        id: 210,
+        word: "Susceptible to",
+        pronunciation: "/səˈseptɪbəl tuː/",
+        meaning:
+          "Dễ bị ảnh hưởng bởi, có khả năng bị tác động hoặc tổn hại bởi một yếu tố nào đó",
+        note: "Cụm tính từ dùng với giới từ 'to', chỉ tính dễ bị ảnh hưởng hoặc tổn thương. Thường đi với danh từ chỉ tác hại hoặc ảnh hưởng tiêu cực. Thường đi với: 'are more susceptible to feelings of inundation/stress/anxiety', 'become susceptible to illness'. Đồng nghĩa: vulnerable to, prone to, at risk of. Phân biệt: 'susceptible to' (dễ bị ảnh hưởng về tâm lý/sức khỏe) vs 'capable of' (có khả năng làm gì).",
+        example:
+          "Children are more susceptible to the flu during winter months.",
+        exampleTranslation: "Trẻ em dễ bị cảm cúm hơn vào các tháng mùa đông.",
+      },
+      {
+        id: 211,
+        word: "Physical reprimand",
+        pronunciation: "/ˈfɪzɪkəl ˈreprɪmɑːnd/",
+        meaning:
+          "Hình phạt về thể chất, sự trừng phạt liên quan đến can thiệp vật lý lên cơ thể",
+        note: "Cụm danh từ kết hợp 'physical' (thể chất) và 'reprimand' (khiển trách, trừng phạt). Mang sắc thái học thuật, trang trọng hơn 'physical punishment'. Thường xuất hiện khi thảo luận về hậu quả nghiêm trọng của áp lực thất bại. Thường đi với: 'leading to verbal, or in more severe cases, physical reprimand'. Đồng nghĩa: corporal punishment, physical punishment.",
+        example:
+          "Physical reprimand is considered inappropriate in many educational settings.",
+        exampleTranslation:
+          "Hình phạt về thể chất được coi là không phù hợp trong nhiều môi trường giáo dục.",
+      },
+      {
+        id: 212,
+        word: "Serves as a principal catalyst for",
+        pronunciation: "/sɜːvz əz ə ˈprɪnsɪpəl ˈkætəlɪst fɔː/",
+        meaning:
+          "Đóng vai trò là lực lượng thúc đẩy chính, là nhân tố then chốt kích hoạt hoặc đẩy nhanh một quá trình",
+        note: "Cụm động từ học thuật cao, dùng ẩn dụ hóa học 'catalyst' (chất xúc tác) để diễn đạt nhân tố thúc đẩy. 'Principal' (chủ yếu, chính) nhấn mạnh đây là nguyên nhân quan trọng nhất. Thường dùng trong phần kết luận khi tóm tắt nguyên nhân chính. Thường đi với: 'serves as a principal catalyst for change/growth/pressure'. Đồng nghĩa: acts as the main driving force for, is the primary trigger for.",
+        example:
+          "Innovation serves as a principal catalyst for economic growth.",
+        exampleTranslation:
+          "Đổi mới là lực lượng chính thúc đẩy tăng trưởng kinh tế.",
+      },
+      {
+        id: 213,
+        word: "Psychological health",
+        pronunciation: "/ˌsaɪkəˈlɒdʒɪkəl helθ/",
+        meaning:
+          "Sức khỏe tâm thần, trạng thái lành mạnh về tinh thần và cảm xúc của một người",
+        note: "Cụm danh từ dùng 'psychological' (tâm lý) thay cho 'mental' khi muốn văn phong học thuật hơn. Thường xuất hiện khi phân tích tác hại của áp lực lên trẻ em. Thường đi với: 'detrimentally impact the psychological health of', 'maintain psychological health'. Đồng nghĩa: mental health, mental well-being, emotional health. Lưu ý: 'psychological health' nhấn mạnh khía cạnh tâm lý học, trong khi 'mental health' phổ biến hơn trong văn phong thông thường.",
+        example:
+          "Maintaining psychological health is essential for overall well-being.",
+        exampleTranslation:
+          "Duy trì sức khỏe tinh thần là điều thiết yếu cho sức khỏe tổng thể.",
+      },
+    ],
+  },
+  // ==========================================
+  // W8 - Task 1: Australian Workforce by Industry (1962–2012)
+  // ==========================================
+  {
+    id: "wr_w8_task1_workforce",
+    skill: "Writing",
+    volume: "9",
+    topic: "Economics / Employment",
+    part: "Task 1 - Australian Workforce by Industry",
+    cards: [
+      {
+        id: 214,
+        word: "Sectors",
+        pronunciation: "/ˈsektəz/",
+        meaning:
+          "Các lĩnh vực hoặc ngành riêng biệt trong một nền kinh tế, xã hội hoặc hoạt động nào đó",
+        note: "Danh từ số nhiều, thường được dùng để chỉ các phân khúc trong nền kinh tế hoặc xã hội. Trong Task 1 về lực lượng lao động, 'sectors' thay thế cho 'industries' hay 'fields' để tránh lặp từ. Thường đi với: 'the proportion of the workforce in different sectors', 'growth across sectors'. Đồng nghĩa: industries, fields, segments, divisions.",
+        example:
+          "The technology and healthcare sectors are experiencing significant growth.",
+        exampleTranslation:
+          "Lĩnh vực công nghệ và chăm sóc sức khỏe đang có sự tăng trưởng đáng kể.",
+      },
+      {
+        id: 215,
+        word: "Relatively stable",
+        pronunciation: "/ˈrelətɪvli ˈsteɪbəl/",
+        meaning:
+          "Tương đối ổn định, không chịu đựng sự biến động cực kỳ lớn trong một khoảng thời gian",
+        note: "Cụm tính từ kết hợp trạng từ 'relatively' (tương đối) để làm mềm mức độ ổn định, tránh tuyệt đối hóa. Rất hữu ích trong Task 1 khi mô tả các đường xu hướng gần như nằm ngang. Thường đi với: 'remained relatively stable', 'the trend was relatively stable'. Đồng nghĩa: fairly consistent, broadly unchanged, largely flat. Phân biệt: 'stable' (ổn định hoàn toàn) vs 'relatively stable' (ổn định nhưng vẫn có biến động nhỏ).",
+        example:
+          "Despite economic challenges, the housing market has remained relatively stable.",
+        exampleTranslation:
+          "Bất chấp những thách thức kinh tế, thị trường nhà đất vẫn tương đối ổn định.",
+      },
+      {
+        id: 216,
+        word: "Labor force",
+        pronunciation: "/ˈleɪbər fɔːs/",
+        meaning:
+          "Lực lượng lao động, tổng số người trong độ tuổi lao động đang làm việc hoặc tìm việc",
+        note: "Cụm danh từ chỉ toàn bộ nguồn nhân lực của một quốc gia hoặc ngành. Thay thế tự nhiên cho 'workforce' hay 'workers' trong Task 1. Thường đi với: 'the percentage of its labor force', 'a decline in the labor force', 'enhance the skills of the labor force'. Đồng nghĩa: workforce, working population, human resources. Lưu ý: 'labor force' (Anh-Mỹ) = 'labour force' (Anh-Anh).",
+        example:
+          "Government policies aim to enhance the skills of the labor force for economic growth.",
+        exampleTranslation:
+          "Các chính sách của Chính phủ nhằm nâng cao kỹ năng của lực lượng lao động để tăng trưởng kinh tế.",
+      },
+      {
+        id: 217,
+        word: "Reach parity with",
+        pronunciation: "/riːtʃ ˈpærɪti wɪð/",
+        meaning:
+          "Đạt được sự ngang bằng với, đạt đến mức tương đương với một đối tượng khác",
+        note: "Cụm động từ dùng 'parity' (sự bình đẳng, ngang bằng về mức độ) trong ngữ cảnh so sánh hai đường xu hướng trong Task 1. Mang sắc thái học thuật cao hơn 'reach the same level as'. Thường đi với: 'grew slightly to reach parity with that of manufacturing', 'achieve parity with global standards'. Đồng nghĩa: catch up with, equal, match, draw level with.",
+        example:
+          "The goal is to reach parity with global environmental standards in the coming years.",
+        exampleTranslation:
+          "Mục tiêu là đạt được sự ngang bằng với tiêu chuẩn môi trường toàn cầu trong những năm tới.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W8 - Task 2: Interdependence vs Independence (Sample 1 - Pro-Independence)
+  // ==========================================
+  {
+    id: "wr_w8_task2_independence",
+    skill: "Writing",
+    volume: "9",
+    topic: "Society / Technology / Modern Life",
+    part: "Task 2 - Interdependence vs Independence (Pro-Independence)",
+    cards: [
+      {
+        id: 218,
+        word: "Increasingly relying on",
+        pronunciation: "/ɪnˈkriːsɪŋli rɪˈlaɪɪŋ ɒn/",
+        meaning:
+          "Ngày càng phụ thuộc vào, xu hướng dựa dẫm nhiều hơn theo thời gian",
+        note: "Cụm động từ kết hợp trạng từ 'increasingly' (ngày càng) với phrasal verb 'rely on' (phụ thuộc vào). Thường xuất hiện trong phần giới thiệu đề bài về sự phụ thuộc/độc lập trong xã hội hiện đại. Thường đi với: 'whether people are increasingly relying on one another', 'increasingly relying on technology'. Đồng nghĩa: becoming more dependent on, growing more reliant on.",
+        example:
+          "We are increasingly relying on technology in our daily lives.",
+        exampleTranslation:
+          "Chúng ta dựa vào công nghệ nhiều hơn trong cuộc sống hàng ngày.",
+      },
+      {
+        id: 219,
+        word: "Greater independence",
+        pronunciation: "/ˈɡreɪtər ˌɪndɪˈpendəns/",
+        meaning: "Sự độc lập cao hơn, mức tự chủ và tự do lớn hơn so với trước",
+        note: "Cụm danh từ dùng dạng so sánh hơn 'greater' để diễn tả xu hướng gia tăng về sự độc lập. Thường xuất hiện trong thesis statement khi người viết muốn nêu quan điểm ủng hộ sự tự chủ. Thường đi với: 'moving towards greater independence', 'provide greater independence'. Đồng nghĩa: increased autonomy, enhanced self-reliance, more freedom.",
+        example: "She enjoys her greater independence after moving out.",
+        exampleTranslation:
+          "Cô ấy thích sự tự do hơn sau khi chuyển ra ở riêng.",
+      },
+      {
+        id: 220,
+        word: "Interconnected global society",
+        pronunciation: "/ˌɪntəkəˈnektɪd ˈɡləʊbəl səˈsaɪəti/",
+        meaning:
+          "Xã hội toàn cầu liên kết, một cộng đồng thế giới trong đó các cá nhân và quốc gia được kết nối chặt chẽ với nhau",
+        note: "Cụm danh từ ba từ kết hợp 'interconnected' (liên kết lẫn nhau) + 'global' (toàn cầu) + 'society' (xã hội). Thường xuất hiện trong phần lập luận về sự phụ thuộc lẫn nhau. Thường đi với: 'observation of our interconnected global society', 'living in an interconnected global society'. Đồng nghĩa: globalized world, globally connected community, interdependent world.",
+        example: "The internet has created an interconnected global society.",
+        exampleTranslation: "Internet đã tạo ra một xã hội toàn cầu liên kết.",
+      },
+      {
+        id: 221,
+        word: "Collaborative efforts",
+        pronunciation: "/kəˈlæbərətɪv ˈefəts/",
+        meaning:
+          "Nỗ lực hợp tác, những cố gắng phối hợp cùng nhau giữa nhiều cá nhân hoặc tổ chức",
+        note: "Cụm danh từ kết hợp 'collaborative' (có tính hợp tác, làm việc cùng nhau) và 'efforts' (nỗ lực). Thường xuất hiện khi mô tả sự cần thiết của hợp tác trong giải quyết vấn đề toàn cầu. Thường đi với: 'enabling and necessitating collaborative efforts across borders', 'require collaborative efforts'. Đồng nghĩa: joint efforts, cooperative work, collective action.",
+        example: "The project was successful thanks to collaborative efforts.",
+        exampleTranslation: "Dự án thành công nhờ vào nỗ lực hợp tác.",
+      },
+      {
+        id: 222,
+        word: "A unified response",
+        pronunciation: "/ə ˈjuːnɪfaɪd rɪˈspɒns/",
+        meaning:
+          "Phản hồi thống nhất, hành động hoặc phản ứng đồng bộ từ nhiều bên cùng nhau",
+        note: "Cụm danh từ dùng 'unified' (thống nhất, hợp nhất thành một) để nhấn mạnh tính đồng bộ. Thường xuất hiện khi nói về các thách thức toàn cầu đòi hỏi sự hợp tác quốc tế. Thường đi với: 'global challenges demand a unified response', 'issue a unified response to'. Đồng nghĩa: a collective response, a coordinated reaction, a joint answer.",
+        example: "The countries issued a unified response to the crisis.",
+        exampleTranslation:
+          "Các quốc gia đã đưa ra phản hồi đồng nhất với cuộc khủng hoảng.",
+      },
+      {
+        id: 223,
+        word: "Unprecedented access",
+        pronunciation: "/ʌnˈpresɪdentɪd ˈækses/",
+        meaning:
+          "Khả năng tiếp cận chưa từng có, mức độ truy cập hoặc tiếp cận chưa bao giờ xảy ra trước đây",
+        note: "Cụm danh từ dùng 'unprecedented' (chưa có tiền lệ) để nhấn mạnh sự vượt trội hoàn toàn so với trước. Rất hay xuất hiện khi nói về internet và công nghệ mang lại lợi ích gì. Thường đi với: 'offer unprecedented access to information', 'provide unprecedented access to resources'. Đồng nghĩa: unparalleled access, unrivaled availability, never-before-seen access.",
+        example:
+          "The internet has provided unprecedented access to information.",
+        exampleTranslation:
+          "Internet đã cung cấp khả năng truy cập thông tin chưa từng có.",
+      },
+      {
+        id: 224,
+        word: "The burgeoning gig economy",
+        pronunciation: "/ðə ˈbɜːdʒənɪŋ ɡɪɡ ɪˈkɒnəmi/",
+        meaning:
+          "Nền kinh tế việc làm tự do đang phát triển nhanh chóng, thị trường lao động dựa trên các hợp đồng ngắn hạn và công việc freelance đang bùng nổ",
+        note: "Cụm danh từ kết hợp 'burgeoning' (đang nảy nở, phát triển mạnh) với 'gig economy' (nền kinh tế gig — làm theo hợp đồng ngắn hạn). 'Gig economy' là thuật ngữ hiện đại chỉ nền kinh tế với Uber, Grab, Upwork... Thường đi với: 'the burgeoning gig economy exemplifies this shift', 'driven by the burgeoning gig economy'. Đồng nghĩa: the rapidly growing freelance economy, the expanding on-demand economy.",
+        example: "The burgeoning gig economy has reshaped the job market.",
+        exampleTranslation:
+          "Sự phát triển nhanh của nền kinh tế việc làm tự do đã tái hình thành thị trường việc làm.",
+      },
+      {
+        id: 225,
+        word: "Autonomous living",
+        pronunciation: "/ɔːˈtɒnəməs ˈlɪvɪŋ/",
+        meaning:
+          "Lối sống độc lập, cách sống tự chủ không cần phụ thuộc vào người khác",
+        note: "Cụm danh từ dùng 'autonomous' (tự trị, tự chủ — từ gốc Hy Lạp 'autos' = tự + 'nomos' = luật) để diễn đạt lối sống tự lập. Mang sắc thái học thuật hơn 'independent living'. Thường đi với: 'a move towards autonomous living', 'facilitate autonomous living'. Đồng nghĩa: independent living, self-sufficient lifestyle, self-governing way of life.",
+        example:
+          "Technological advances have facilitated autonomous living for many.",
+        exampleTranslation:
+          "Tiến bộ công nghệ đã tạo điều kiện cho nhiều người sống độc lập.",
+      },
+      {
+        id: 226,
+        word: "Self-directed learning",
+        pronunciation: "/ˌself dɪˈrektɪd ˈlɜːnɪŋ/",
+        meaning:
+          "Học tập tự giác, phương thức học tập do người học tự điều hướng thay vì phụ thuộc vào giáo viên",
+        note: "Cụm danh từ kết hợp tính từ ghép 'self-directed' (tự điều hướng) với 'learning'. Thường xuất hiện khi bàn về internet/công nghệ trao quyền cho cá nhân học hỏi độc lập. Thường đi với: 'engaging in self-directed learning', 'self-directed learning opportunities'. Đồng nghĩa: autonomous learning, self-regulated learning, independent study.",
+        example:
+          "Online courses have empowered people with self-directed learning opportunities.",
+        exampleTranslation:
+          "Các khóa học trực tuyến đã trao quyền cho mọi người với cơ hội học tập tự giác.",
+      },
+      {
+        id: 227,
+        word: "Self-reliance",
+        pronunciation: "/ˌself rɪˈlaɪəns/",
+        meaning:
+          "Sự tự lực, khả năng và thái độ dựa vào chính mình thay vì nhờ cậy người khác",
+        note: "Danh từ ghép chỉ đức tính tự lập, tự cậy vào bản thân. Thường xuất hiện trong kết luận khi tóm tắt xu hướng ngày càng độc lập. Thường đi với: 'fostering a new era of autonomy and self-reliance', 'promote self-reliance'. Đồng nghĩa: independence, self-sufficiency, autonomy. Phân biệt: 'self-reliance' (tự lực về mặt tinh thần/thái độ) vs 'self-sufficiency' (tự cung tự cấp về vật chất).",
+        example: "Self-reliance is a key principle in personal development.",
+        exampleTranslation:
+          "Tự lực là một nguyên tắc quan trọng trong phát triển cá nhân.",
+      },
+      {
+        id: 228,
+        word: "A distinctive shift towards",
+        pronunciation: "/ə dɪˈstɪŋktɪv ʃɪft təˈwɔːdz/",
+        meaning:
+          "Sự chuyển hướng rõ rệt sang, một sự thay đổi mang tính đặc trưng và dễ nhận thấy theo một chiều hướng nhất định",
+        note: "Cụm danh từ kết hợp 'distinctive' (nổi bật, dễ phân biệt) + 'shift' (sự thay đổi hướng đi) + giới từ 'towards'. Thường dùng trong phần kết luận để tổng kết xu hướng chính. Thường đi với: 'marking a distinctive shift towards individual independence', 'a distinctive shift towards remote work'. Đồng nghĩa: a clear movement towards, a notable transition to, a marked change towards.",
+        example:
+          "There's been a distinctive shift towards remote work in recent years.",
+        exampleTranslation:
+          "Đã có một sự chuyển hướng rõ rệt đối với việc làm từ xa trong những năm gần đây.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W8 - Task 2: Interdependence vs Independence (Sample 2 - Pro-Interdependence)
+  // ==========================================
+  {
+    id: "wr_w8_task2_interdependence",
+    skill: "Writing",
+    volume: "9",
+    topic: "Society / Technology / Modern Life",
+    part: "Task 2 - Interdependence vs Independence (Pro-Interdependence)",
+    cards: [
+      {
+        id: 229,
+        word: "Reliant on",
+        pronunciation: "/rɪˈlaɪənt ɒn/",
+        meaning:
+          "Phụ thuộc vào, dựa dẫm vào ai đó hoặc điều gì đó để hoạt động hoặc tồn tại",
+        note: "Cụm tính từ dùng với giới từ 'on', là dạng tính từ của động từ 'rely on'. Thường xuất hiện trong phần giới thiệu khi đặt vấn đề về sự phụ thuộc trong xã hội hiện đại. Thường đi với: 'more reliant on internet technology', 'become reliant on each other'. Đồng nghĩa: dependent on, contingent on. Phân biệt: 'reliant on' (tính từ — mô tả trạng thái) vs 'rely on' (động từ — mô tả hành động).",
+        example: "Many businesses are now more reliant on internet technology.",
+        exampleTranslation:
+          "Nhiều doanh nghiệp hiện nay phụ thuộc nhiều vào công nghệ internet.",
+      },
+      {
+        id: 230,
+        word: "Digital connectivity",
+        pronunciation: "/ˈdɪdʒɪtəl kəˌnektɪˈvɪti/",
+        meaning:
+          "Kết nối số, trạng thái được kết nối trực tuyến thông qua các thiết bị và nền tảng kỹ thuật số",
+        note: "Cụm danh từ kết hợp 'digital' (kỹ thuật số) và 'connectivity' (khả năng kết nối). Thường xuất hiện trong bài về công nghệ và xã hội hiện đại. Thường đi với: 'globalization and digital connectivity have knitted individuals closer', 'enhanced by digital connectivity'. Đồng nghĩa: online connection, internet connectivity, digital networking.",
+        example:
+          "Digital connectivity has transformed how we work and communicate.",
+        exampleTranslation:
+          "Kết nối số đã biến đổi cách chúng ta làm việc và giao tiếp.",
+      },
+      {
+        id: 231,
+        word: "Social media platforms",
+        pronunciation: "/ˈsəʊʃəl ˈmiːdiə ˈplætfɔːmz/",
+        meaning:
+          "Nền tảng truyền thông xã hội, các ứng dụng và trang web trực tuyến cho phép người dùng tạo nội dung và tham gia mạng lưới xã hội",
+        note: "Cụm danh từ quen thuộc trong bài viết về công nghệ và xã hội. 'Platforms' nhấn mạnh đây là cơ sở hạ tầng kỹ thuật số, không chỉ là ứng dụng. Thường đi với: 'the rise of social media platforms like Facebook', 'using social media platforms to connect'. Đồng nghĩa: social networks, online platforms, digital social channels.",
+        example:
+          "Social media platforms like Facebook and Twitter have become integral to daily life.",
+        exampleTranslation:
+          "Các nền tảng truyền thông xã hội như Facebook và Twitter đã trở thành một phần không thể thiếu của cuộc sống hàng ngày.",
+      },
+      {
+        id: 232,
+        word: "Social movements",
+        pronunciation: "/ˈsəʊʃəl ˈmuːvmənts/",
+        meaning:
+          "Phong trào xã hội, các hành động tập thể có tổ chức nhằm thúc đẩy, chống lại hoặc tạo ra sự thay đổi xã hội",
+        note: "Cụm danh từ chỉ các làn sóng hoạt động tập thể trong xã hội như phong trào nữ quyền, bảo vệ môi trường... Thường xuất hiện khi nêu ví dụ về sự kết nối và phụ thuộc lẫn nhau trong xã hội. Thường đi với: 'how social movements gain momentum', 'social movements have played a key role in'. Đồng nghĩa: collective action, grassroots movements, advocacy movements.",
+        example:
+          "Social movements have played a key role in political and social reforms.",
+        exampleTranslation:
+          "Các phong trào xã hội đã đóng vai trò quan trọng trong cải cách chính trị và xã hội.",
+      },
+      {
+        id: 233,
+        word: "A collective dependence",
+        pronunciation: "/ə kəˈlektɪv dɪˈpendəns/",
+        meaning:
+          "Sự phụ thuộc tập thể, trạng thái cả một nhóm hoặc xã hội cùng dựa vào một yếu tố chung",
+        note: "Cụm danh từ dùng 'collective' (tập thể, cộng đồng) để nhấn mạnh sự phụ thuộc không chỉ ở cá nhân mà ở cả cộng đồng. Thường xuất hiện khi tổng kết lập luận ủng hộ sự phụ thuộc lẫn nhau. Thường đi với: 'underscore a world moving towards a collective dependence', 'highlighted our collective dependence on'. Đồng nghĩa: shared reliance, mutual dependence, communal dependency.",
+        example:
+          "The pandemic highlighted our collective dependence on healthcare systems.",
+        exampleTranslation:
+          "Đại dịch đã làm nổi bật sự phụ thuộc tập thể của chúng ta vào hệ thống chăm sóc sức khỏe.",
+      },
+      {
+        id: 234,
+        word: "Technological advancements",
+        pronunciation: "/ˌteknəˈlɒdʒɪkəl ədˈvɑːnsmənts/",
+        meaning:
+          "Tiến bộ công nghệ, những bước phát triển và cải tiến được thực hiện trong lĩnh vực kỹ thuật và công nghệ",
+        note: "Cụm danh từ rất phổ biến trong bài viết về xã hội và công nghệ. 'Advancements' (số nhiều) nhấn mạnh nhiều bước tiến liên tiếp. Thường đi với: 'considering technological advancements', 'driven by technological advancements'. Đồng nghĩa: technological progress, tech innovations, digital advances. Lưu ý: có thể dùng 'technological advances' hoặc 'technological advancements' — cả hai đều đúng.",
+        example:
+          "Technological advancements have revolutionized the way we live and work.",
+        exampleTranslation:
+          "Tiến bộ công nghệ đã cách mạng hóa cách chúng ta sống và làm việc.",
+      },
+      {
+        id: 235,
+        word: "Remote work",
+        pronunciation: "/rɪˈməʊt wɜːk/",
+        meaning:
+          "Làm việc từ xa, hình thức làm việc ngoài văn phòng truyền thống, thường là từ nhà hoặc bất kỳ đâu qua internet",
+        note: "Cụm danh từ chỉ xu hướng làm việc hiện đại không cần đến văn phòng. Rất phổ biến sau đại dịch COVID-19. Thường đi với: 'the shift towards remote work', 'the rise of remote work and freelancing'. Đồng nghĩa: teleworking, working from home (WFH), distance working. Phân biệt: 'remote work' (làm từ xa nói chung) vs 'work from home' (cụ thể là làm từ nhà).",
+        example: "Remote work has become more popular due to its flexibility.",
+        exampleTranslation:
+          "Làm việc từ xa trở nên phổ biến hơn do tính linh hoạt của nó.",
+      },
+      {
+        id: 236,
+        word: "Direct human assistance",
+        pronunciation: "/dɪˈrekt ˈhjuːmən əˈsɪstəns/",
+        meaning:
+          "Sự hỗ trợ trực tiếp từ con người, sự giúp đỡ được cung cấp bởi người khác trong tương tác trực tiếp",
+        note: "Cụm danh từ ba từ nhấn mạnh tính 'trực tiếp' (direct) và 'từ người' (human), phân biệt với hỗ trợ từ máy móc hoặc AI. Thường xuất hiện khi lập luận về sự độc lập nhờ công nghệ. Thường đi với: 'without needing direct human assistance', 'tasks that require direct human assistance'. Đồng nghĩa: personal assistance, hands-on help, in-person support.",
+        example:
+          "Some tasks still require direct human assistance, despite technological advances.",
+        exampleTranslation:
+          "Một số công việc vẫn cần sự hỗ trợ trực tiếp từ con người, bất chấp tiến bộ công nghệ.",
+      },
+      {
+        id: 237,
+        word: "Flexible and autonomous lifestyle",
+        pronunciation: "/ˈfleksɪbəl ənd ɔːˈtɒnəməs ˈlaɪfstaɪl/",
+        meaning:
+          "Lối sống linh hoạt và tự chủ, cách sống có thể điều chỉnh theo ý mình và không bị ràng buộc bởi các cấu trúc cứng nhắc",
+        note: "Cụm danh từ kết hợp hai tính từ bổ sung nhau: 'flexible' (linh hoạt về thời gian/địa điểm) và 'autonomous' (tự chủ về quyết định). Thường xuất hiện khi miêu tả lợi ích của làm việc từ xa và kinh tế gig. Thường đi với: 'allowing for a more flexible and autonomous lifestyle', 'enjoy a flexible and autonomous lifestyle'. Đồng nghĩa: adaptable and independent way of life, self-governing and versatile lifestyle.",
+        example:
+          "Digital nomads enjoy a flexible and autonomous lifestyle, working from anywhere in the world.",
+        exampleTranslation:
+          "Người làm việc tự do sống một lối sống linh hoạt và tự chủ, làm việc từ bất cứ đâu trên thế giới.",
+      },
+      {
+        id: 238,
+        word: "Face-to-face interactions",
+        pronunciation: "/ˌfeɪs tə ˈfeɪs ˌɪntərˈækʃənz/",
+        meaning:
+          "Tương tác trực tiếp, giao tiếp và trao đổi giữa người với người trong cùng không gian vật lý",
+        note: "Cụm danh từ dùng tính từ ghép 'face-to-face' (mặt đối mặt) để nhấn mạnh tính trực tiếp, phân biệt với giao tiếp trực tuyến. Thường xuất hiện khi lập luận về xu hướng giảm tương tác người với người. Thường đi với: 'reducing the need for face-to-face interactions', 'prefer face-to-face interactions'. Đồng nghĩa: in-person interactions, direct communication, personal contact.",
+        example:
+          "Despite the rise of digital communication, face-to-face interactions remain valuable for building strong relationships.",
+        exampleTranslation:
+          "Mặc dù giao tiếp kỹ thuật số ngày càng phát triển, tương tác trực tiếp vẫn quý báu trong việc xây dựng mối quan hệ thân thiết.",
+      },
+      {
+        id: 239,
+        word: "Valid points",
+        pronunciation: "/ˈvælɪd pɔɪnts/",
+        meaning:
+          "Ý kiến hợp lý, các lập luận hoặc ý tưởng có căn cứ logic và lập luận chắc chắn",
+        note: "Cụm danh từ ngắn gọn, thường xuất hiện trong phần kết luận khi người viết thừa nhận cả hai phía của vấn đề. 'Valid' (hợp lệ, có cơ sở) nhấn mạnh tính thuyết phục của lập luận. Thường đi với: 'while there are valid points supporting the idea that', 'both sides presented valid points'. Đồng nghĩa: sound arguments, reasonable claims, legitimate viewpoints.",
+        example:
+          "Both sides of the debate presented valid points, making it hard to choose a side.",
+        exampleTranslation:
+          "Cả hai bên của cuộc tranh luận đều đưa ra ý kiến hợp lý, khiến việc chọn phe trở nên khó khăn.",
+      },
+    ],
+  },
+  // ==========================================
+  // W9 - Task 1: Library Ground Floor Layout (2001 vs 2009)
+  // ==========================================
+  {
+    id: "wr_w9_task1_library",
+    skill: "Writing",
+    volume: "9",
+    topic: "Architecture / Urban Development",
+    part: "Task 1 - Library Layout (Map)",
+    cards: [
+      {
+        id: 240,
+        word: "Substantially renovated",
+        pronunciation: "/səbˈstænʃəli ˈrenəveɪtɪd/",
+        meaning:
+          "Được cải tạo đáng kể, được nâng cấp và cải thiện ở mức độ lớn về cấu trúc hoặc diện mạo",
+        note: "Cụm động từ bị động kết hợp trạng từ 'substantially' (đáng kể, ở mức độ lớn) với 'renovated' (được cải tạo). Rất phổ biến trong Task 1 dạng Map khi tóm tắt tổng quan sự thay đổi. Thường đi với: 'the ground floor was substantially renovated', 'the building was substantially renovated to include...'. Đồng nghĩa: significantly redeveloped, extensively refurbished, considerably transformed.",
+        example:
+          "The library was substantially renovated to include modern amenities and more space for reading.",
+        exampleTranslation:
+          "Thư viện đã được cải tạo đáng kể để bao gồm tiện nghi hiện đại và nhiều không gian đọc sách hơn.",
+      },
+      {
+        id: 241,
+        word: "Expanded variety of book genres",
+        pronunciation: "/ɪkˈspændɪd vəˈraɪəti əv bʊk ˈʒɒnrəz/",
+        meaning:
+          "Sự đa dạng mở rộng của các thể loại sách, phạm vi các loại sách được cung cấp ngày càng phong phú hơn",
+        note: "Cụm danh từ dùng 'expanded' (được mở rộng) như tính từ bổ nghĩa cho 'variety'. Đặc biệt phù hợp trong Task 1 về thư viện khi mô tả sự thêm mới các thể loại sách. Thường đi với: 'with an expanded variety of book genres', 'offer an expanded variety of'. Đồng nghĩa: a wider range of book categories, a broader selection of genres.",
+        example:
+          "The bookstore has expanded its variety of book genres to attract a wider audience.",
+        exampleTranslation:
+          "Nhà sách đã mở rộng sự đa dạng của các thể loại sách để thu hút một lượng khán giả rộng lớn hơn.",
+      },
+      {
+        id: 242,
+        word: "Modern amenities",
+        pronunciation: "/ˈmɒdən əˈmiːnɪtiz/",
+        meaning:
+          "Tiện nghi hiện đại, các tính năng và thiết bị cung cấp sự tiện lợi và thoải mái được cập nhật theo tiêu chuẩn hiện tại",
+        note: "Cụm danh từ rất phổ biến trong Task 1 dạng Map khi mô tả những bổ sung mới. 'Amenities' (số nhiều) chỉ các tiện ích đi kèm như WiFi, máy tính, khu vui chơi... Thường đi với: 'the addition of modern amenities', 'equipped with modern amenities'. Đồng nghĩa: contemporary facilities, up-to-date features, current conveniences.",
+        example:
+          "Our hotel offers modern amenities such as free Wi-Fi, a fitness center, and a heated pool.",
+        exampleTranslation:
+          "Khách sạn của chúng tôi cung cấp các tiện nghi hiện đại như Wi-Fi miễn phí, trung tâm thể dục, và hồ bơi có sưởi.",
+      },
+      {
+        id: 243,
+        word: "Shelving units",
+        pronunciation: "/ˈʃelvɪŋ ˈjuːnɪts/",
+        meaning:
+          "Các đơn vị kệ, cấu trúc hoặc đồ nội thất dùng để lưu trữ và sắp xếp sách hoặc đồ vật, thường gồm nhiều tầng kệ",
+        note: "Cụm danh từ chuyên dụng trong Task 1 về thư viện hoặc cửa hàng sách. 'Unit' nhấn mạnh đây là một khối hoàn chỉnh độc lập. Thường đi với: 'two shelving units dedicated to', 'install/add shelving units'. Đồng nghĩa: bookshelves, bookcases, display units. Lưu ý: 'shelving unit' (một kệ đứng độc lập) khác với 'shelf' (một tầng kệ đơn lẻ).",
+        example:
+          "The new library design includes several shelving units that can accommodate a larger collection of books.",
+        exampleTranslation:
+          "Thiết kế thư viện mới bao gồm một số đơn vị kệ có thể chứa một bộ sưu tập sách lớn hơn.",
+      },
+      {
+        id: 244,
+        word: "Accommodate",
+        pronunciation: "/əˈkɒmədeɪt/",
+        meaning:
+          "Chứa đựng, đáp ứng nhu cầu, điều chỉnh để phù hợp với ai đó hoặc điều gì đó",
+        note: "Động từ đa nghĩa: (1) cung cấp không gian/chỗ ở cho; (2) điều chỉnh để đáp ứng nhu cầu. Trong Task 1 Maps, thường dùng nghĩa (1) — để chứa, để có chỗ cho. Thường đi với: 'reorganized to accommodate the relocation of', 'can accommodate up to X people'. Đồng nghĩa: house, hold, contain, make room for. Lưu ý chính tả: hay bị viết sai thành 'accomodate' — phải có hai 'c' và hai 'm'.",
+        example: "The conference room can accommodate up to 50 participants.",
+        exampleTranslation: "Phòng hội nghị có thể chứa đến 50 người tham gia.",
+      },
+      {
+        id: 245,
+        word: "Relocation",
+        pronunciation: "/ˌriːləʊˈkeɪʃən/",
+        meaning:
+          "Sự di dời, quá trình chuyển một người hoặc một vật từ vị trí này sang vị trí khác",
+        note: "Danh từ từ động từ 'relocate' (di dời, chuyển vị trí). Rất hữu ích trong Task 1 Maps khi mô tả các khu vực bị di chuyển sang chỗ khác. Thường đi với: 'to accommodate the relocation of history/fiction books', 'the relocation of the office'. Đồng nghĩa: moving, repositioning, transfer. Phân biệt: 'relocation' (quá trình di dời) vs 'replacement' (thay thế bằng thứ khác).",
+        example:
+          "The company offered assistance for employees affected by the office relocation.",
+        exampleTranslation:
+          "Công ty đã cung cấp sự hỗ trợ cho các nhân viên bị ảnh hưởng bởi việc di dời văn phòng.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W9 - Task 2: Working in Old Age (Sample 1 - Disagree)
+  // ==========================================
+  {
+    id: "wr_w9_task2_elderly_work_disagree",
+    skill: "Writing",
+    volume: "9",
+    topic: "Society / Aging / Employment",
+    part: "Task 2 - Working in Old Age (Disagree)",
+    cards: [
+      {
+        id: 246,
+        word: "Professional endeavors",
+        pronunciation: "/prəˈfeʃənəl ɪnˈdevəz/",
+        meaning:
+          "Nỗ lực trong sự nghiệp, những cố gắng và hoạt động nhằm đạt được thành tựu trong cuộc sống nghề nghiệp",
+        note: "Cụm danh từ dùng 'endeavors' (những nỗ lực, cố gắng có mục tiêu) thay cho 'work' hay 'career', mang sắc thái trang trọng hơn. Thường xuất hiện trong phần giới thiệu khi diễn đạt ý tưởng 'tiếp tục làm việc'. Thường đi với: 'persist in their professional endeavors into their advanced years', 'pursue professional endeavors'. Đồng nghĩa: career pursuits, professional activities, work-related efforts.",
+        example:
+          "Her professional endeavors led her to become the CEO of a successful startup.",
+        exampleTranslation:
+          "Nỗ lực chuyên nghiệp của cô ấy đã đưa cô trở thành CEO của một startup thành công.",
+      },
+      {
+        id: 247,
+        word: "Advanced years",
+        pronunciation: "/ədˈvɑːnst jɪəz/",
+        meaning:
+          "Tuổi già, giai đoạn cuối của cuộc đời, thường liên quan đến độ tuổi nghỉ hưu hoặc lớn hơn",
+        note: "Cụm danh từ lịch sự và trang trọng để chỉ tuổi già, tránh từ 'old age' có thể nghe tiêu cực. Hay xuất hiện trong phần giới thiệu và các bài viết về người cao tuổi. Thường đi với: 'persist in their endeavors into their advanced years', 'in one's advanced years'. Đồng nghĩa: later years, senior years, old age, later life. Phân biệt: 'advanced years' (tuổi tác đã cao — lịch sự) vs 'old age' (tuổi già — thông thường).",
+        example: "In his advanced years, he took up painting as a hobby.",
+        exampleTranslation:
+          "Ở tuổi già, ông đã bắt đầu học vẽ như một sở thích.",
+      },
+      {
+        id: 248,
+        word: "Mental engagement",
+        pronunciation: "/ˈmentəl ɪnˈɡeɪdʒmənt/",
+        meaning:
+          "Sự tham gia về mặt tinh thần, trạng thái được kích hoạt và vận dụng trí tuệ một cách chủ động",
+        note: "Cụm danh từ chỉ mức độ hoạt động của não bộ và tư duy. Hay xuất hiện khi trình bày lập luận phản bác (counterargument) về lợi ích của việc tiếp tục làm việc. Thường đi với: 'promotes mental engagement', 'maintain mental engagement through work'. Đồng nghĩa: cognitive stimulation, intellectual involvement, mental activity.",
+        example:
+          "Mental engagement in puzzles can help improve cognitive functions.",
+        exampleTranslation:
+          "Sự tham gia về mặt tinh thần vào trò chơi xếp hình có thể giúp cải thiện các chức năng nhận thức.",
+      },
+      {
+        id: 249,
+        word: "Social interaction",
+        pronunciation: "/ˈsəʊʃəl ˌɪntərˈækʃən/",
+        meaning:
+          "Tương tác xã hội, quá trình con người hành động và phản ứng trong mối quan hệ với người khác",
+        note: "Cụm danh từ cơ bản nhưng quan trọng trong nhiều chủ đề IELTS liên quan đến sức khỏe, tuổi già, công nghệ. Thường đi với: 'promotes social interaction', 'lack of social interaction leads to loneliness'. Đồng nghĩa: social contact, interpersonal communication, human connection. Phân biệt: 'social interaction' (tương tác qua lại hai chiều) vs 'face-to-face interaction' (tương tác trực tiếp).",
+        example:
+          "Social interaction is crucial for mental health and well-being.",
+        exampleTranslation:
+          "Tương tác xã hội là rất quan trọng cho sức khỏe và sự ổn định tinh thần.",
+      },
+      {
+        id: 250,
+        word: "Financial stability",
+        pronunciation: "/faɪˈnænʃəl stəˈbɪlɪti/",
+        meaning:
+          "Sự ổn định tài chính, trạng thái có nguồn thu nhập và tài sản vững chắc, không bị biến động lớn",
+        note: "Cụm danh từ rất phổ biến trong bài viết về kinh tế, nghỉ hưu, và việc làm. Thường xuất hiện khi liệt kê lợi ích của việc tiếp tục làm việc. Thường đi với: 'provides financial stability', 'achieve/maintain financial stability'. Đồng nghĩa: financial security, economic stability, monetary security. Phân biệt: 'financial stability' (ổn định lâu dài) vs 'financial independence' (không cần người khác hỗ trợ tài chính).",
+        example:
+          "Achieving financial stability is a common goal for many individuals.",
+        exampleTranslation:
+          "Đạt được sự ổn định tài chính là mục tiêu chung của nhiều người.",
+      },
+      {
+        id: 251,
+        word: "Narrowly defines fulfillment",
+        pronunciation: "/ˈnærəʊli dɪˈfaɪnz fʊlˈfɪlmənt/",
+        meaning:
+          "Định nghĩa hạn hẹp về sự thỏa mãn, hiểu sự thỏa mãn theo nghĩa quá giới hạn và thiếu toàn diện",
+        note: "Cụm động từ kết hợp trạng từ 'narrowly' (một cách hạn hẹp) với 'defines fulfillment' (định nghĩa sự thỏa mãn). Đây là cấu trúc mạnh dùng để bác bỏ lập luận đối lập trong phần refutation. Thường đi với: 'this view narrowly defines fulfillment and overlooks...'. Đồng nghĩa: takes a limited view of fulfillment, restricts the definition of satisfaction.",
+        example:
+          "Society often narrowly defines fulfillment as achieving professional success, ignoring other aspects of life.",
+        exampleTranslation:
+          "Xã hội thường định nghĩa hạn hẹp về sự thỏa mãn khi cho đó chỉ là việc đạt được thành công trong sự nghiệp, mà bỏ qua các khía cạnh khác của cuộc sống.",
+      },
+      {
+        id: 252,
+        word: "Physical and emotional toll",
+        pronunciation: "/ˈfɪzɪkəl ənd ɪˈməʊʃənəl təʊl/",
+        meaning:
+          "Gánh nặng về thể chất và tinh thần, tác động tiêu cực tích lũy lên cơ thể và cảm xúc của một người",
+        note: "Cụm danh từ dùng 'toll' (thiệt hại, cái giá phải trả) theo nghĩa bóng. Kết hợp hai khía cạnh 'physical' và 'emotional' để diễn tả toàn diện hậu quả. Thường đi với: 'take a physical and emotional toll on', 'the physical and emotional toll of work'. Đồng nghĩa: physical and psychological burden, bodily and mental strain, wear and tear on body and mind.",
+        example:
+          "Continuous work without rest can take a physical and emotional toll on individuals.",
+        exampleTranslation:
+          "Làm việc liên tục mà không nghỉ ngơi có thể tạo ra gánh nặng về thể chất và tinh thần cho cá nhân.",
+      },
+      {
+        id: 253,
+        word: "Exacerbate health issues",
+        pronunciation: "/ɪɡˈzæsəbeɪt helθ ˈɪʃuːz/",
+        meaning:
+          "Làm trầm trọng thêm vấn đề sức khỏe, khiến các vấn đề sức khỏe hiện có trở nên nghiêm trọng hơn",
+        note: "Cụm động từ học thuật cao, 'exacerbate' (làm tồi tệ hơn, làm trầm trọng thêm) mạnh hơn 'worsen' hay 'aggravate'. Rất hữu ích trong bài về sức khỏe và người cao tuổi. Thường đi với: 'can exacerbate health issues', 'exacerbate existing conditions'. Đồng nghĩa: worsen health problems, aggravate medical conditions, compound health difficulties. Lưu ý phát âm: /ɪɡˈzæsəbeɪt/ — trọng âm ở âm tiết thứ hai.",
+        example: "Ignoring symptoms can exacerbate health issues over time.",
+        exampleTranslation:
+          "Bỏ qua triệu chứng có thể làm trầm trọng thêm vấn đề sức khỏe theo thời gian.",
+      },
+      {
+        id: 254,
+        word: "Labor-intensive fields",
+        pronunciation: "/ˈleɪbər ɪnˈtensɪv fiːldz/",
+        meaning:
+          "Ngành nghề lao động nặng nhọc, các lĩnh vực công việc đòi hỏi nhiều sức lao động thể chất của con người",
+        note: "Cụm danh từ dùng tính từ ghép 'labor-intensive' (cần nhiều lao động thủ công) để chỉ các ngành như nông nghiệp, xây dựng, khai thác mỏ. Thường xuất hiện khi đưa ví dụ về người cao tuổi làm việc vất vả. Thường đi với: 'continue to work in labor-intensive fields', 'labor-intensive fields such as agriculture'. Đồng nghĩa: physically demanding industries, manual labor sectors. Trái nghĩa: capital-intensive fields (ngành thâm dụng vốn), knowledge-intensive fields.",
+        example:
+          "Agriculture and construction are examples of labor-intensive fields.",
+        exampleTranslation:
+          "Nông nghiệp và xây dựng là ví dụ về các ngành nghề lao động nặng nhọc.",
+      },
+      {
+        id: 255,
+        word: "Personal fulfillment",
+        pronunciation: "/ˈpɜːsənəl fʊlˈfɪlmənt/",
+        meaning:
+          "Sự thỏa mãn cá nhân, cảm giác hạnh phúc và hài lòng đạt được khi làm điều gì đó phát huy hết khả năng và phù hợp với sở thích của bản thân",
+        note: "Cụm danh từ chỉ trạng thái thỏa mãn nội tâm, không phải thành công bên ngoài. Hay xuất hiện trong phần kết luận khi nói về mục đích của việc nghỉ hưu. Thường đi với: 'dedicated to well-being and personal fulfillment', 'find/achieve personal fulfillment'. Đồng nghĩa: personal satisfaction, inner contentment, self-actualization. Phân biệt: 'personal fulfillment' (thỏa mãn cá nhân) vs 'professional success' (thành công nghề nghiệp).",
+        example:
+          "Volunteering for social causes brought her personal fulfillment.",
+        exampleTranslation:
+          "Tình nguyện vì các nguyên nhân xã hội mang lại sự thỏa mãn cá nhân cho cô ấy.",
+      },
+      {
+        id: 256,
+        word: "A well-deserved break",
+        pronunciation: "/ə ˌwel dɪˈzɜːvd breɪk/",
+        meaning:
+          "Kỳ nghỉ xứng đáng, thời gian nghỉ ngơi hoặc tạm dừng công việc được đạt được sau nhiều nỗ lực và cống hiến",
+        note: "Cụm danh từ dùng tính từ ghép 'well-deserved' (xứng đáng được nhận, thật sự đáng được hưởng) để nhấn mạnh quyền lợi chính đáng. Thường xuất hiện trong phần kết luận khi khẳng định rằng nghỉ hưu là quyền lợi hợp lý. Thường đi với: 'retirement is a well-deserved break after decades of labor', 'take a well-deserved break'. Đồng nghĩa: an earned rest, a deserved respite, a rightful period of rest.",
+        example:
+          "After completing the project, the team took a well-deserved break.",
+        exampleTranslation:
+          "Sau khi hoàn thành dự án, đội ngũ đã có một kỳ nghỉ xứng đáng.",
+      },
+      {
+        id: 257,
+        word: "A crucial phase for personal growth",
+        pronunciation: "/ə ˈkruːʃəl feɪz fə ˈpɜːsənəl ɡrəʊθ/",
+        meaning:
+          "Giai đoạn quan trọng cho sự phát triển cá nhân, một thời kỳ thiết yếu trong cuộc đời có ý nghĩa lớn đối với sự trưởng thành và hoàn thiện bản thân",
+        note: "Cụm danh từ kết hợp 'crucial' (then chốt, không thể thiếu) với 'phase' (giai đoạn) và 'personal growth' (phát triển cá nhân). Thường dùng để tái định nghĩa nghỉ hưu không phải là kết thúc mà là một giai đoạn mới quan trọng. Thường đi với: 'retirement is a crucial phase for personal growth', 'serve as a crucial phase for'. Đồng nghĩa: a vital stage for self-development, an important period for personal maturation.",
+        example:
+          "College years are often seen as a crucial phase for personal growth.",
+        exampleTranslation:
+          "Những năm đại học thường được coi là giai đoạn quan trọng cho sự phát triển cá nhân.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W9 - Task 2: Working in Old Age (Sample 2 - Agree)
+  // ==========================================
+  {
+    id: "wr_w9_task2_elderly_work_agree",
+    skill: "Writing",
+    volume: "9",
+    topic: "Society / Aging / Employment",
+    part: "Task 2 - Working in Old Age (Agree)",
+    cards: [
+      {
+        id: 258,
+        word: "Senior years",
+        pronunciation: "/ˈsiːniər jɪəz/",
+        meaning:
+          "Những năm cuối đời, giai đoạn về già thường gắn với độ tuổi nghỉ hưu trở lên",
+        note: "Cụm danh từ lịch sự thay cho 'old age', 'senior' mang nghĩa cao tuổi nhưng vẫn có địa vị và kinh nghiệm. Thường đi với: 'persist in their employment into their senior years', 'in one's senior years'. Đồng nghĩa: later years, advanced years, golden years. Phân biệt: 'senior years' (lịch sự, trang trọng) vs 'old age' (thông thường) vs 'advanced years' (trang trọng nhất).",
+        example: "She focused on traveling during her senior years.",
+        exampleTranslation:
+          "Bà tập trung vào việc du lịch trong những năm cuối đời của mình.",
+      },
+      {
+        id: 259,
+        word: "Increasingly gaining traction",
+        pronunciation: "/ɪnˈkriːsɪŋli ˈɡeɪnɪŋ ˈtrækʃən/",
+        meaning:
+          "Ngày càng trở nên phổ biến và được chấp nhận rộng rãi hơn, đang thu hút ngày càng nhiều sự ủng hộ theo thời gian",
+        note: "Cụm động từ dùng ẩn dụ 'traction' (lực kéo, độ bám) để diễn tả ý tưởng ngày càng có nhiều người ủng hộ hơn. 'Gaining traction' là thành ngữ học thuật hiện đại. Thường đi với: 'the proposition is increasingly gaining traction', 'the idea has gained traction among'. Đồng nghĩa: becoming increasingly popular, gaining wider acceptance, growing in support.",
+        example: "The idea is increasingly gaining traction among the youth.",
+        exampleTranslation:
+          "Ý tưởng này ngày càng trở nên phổ biến trong giới trẻ.",
+      },
+      {
+        id: 260,
+        word: "Exacerbating physical and mental health issues",
+        pronunciation: "/ɪɡˈzæsəbeɪtɪŋ ˈfɪzɪkəl ənd ˈmentəl helθ ˈɪʃuːz/",
+        meaning:
+          "Làm trầm trọng thêm các vấn đề sức khỏe thể chất và tinh thần, khiến cả hai loại vấn đề sức khỏe trở nên nghiêm trọng hơn",
+        note: "Cụm động từ hiện tại phân từ (dạng -ing) dùng trong phần phản bác lập luận đối lập. Kết hợp cả 'physical' (thể chất) và 'mental' (tinh thần) để diễn tả toàn diện tác hại. Thường đi với: 'possibly exacerbating physical and mental health issues among older workers'. Đồng nghĩa: worsening both physical and mental health, aggravating bodily and psychological conditions.",
+        example:
+          "Lack of sleep is exacerbating physical and mental health issues.",
+        exampleTranslation:
+          "Thiếu ngủ làm trầm trọng thêm vấn đề sức khỏe thể chất và tinh thần.",
+      },
+      {
+        id: 261,
+        word: "Seasoned employees",
+        pronunciation: "/ˈsiːzənd ɪmˈplɔɪiːz/",
+        meaning:
+          "Nhân viên dày dặn kinh nghiệm, những người lao động có nhiều năm kinh nghiệm và hiểu biết sâu trong lĩnh vực của họ",
+        note: "Cụm danh từ dùng 'seasoned' (dày dạn, trải qua nhiều thử thách — ẩn dụ từ gia vị được ướp lâu ngày) thay cho 'experienced employees'. Mang sắc thái tích cực về giá trị của người lao động lớn tuổi. Thường đi với: 'the substantial contributions that seasoned employees bring', 'retain seasoned employees'. Đồng nghĩa: experienced workers, veteran employees, skilled professionals.",
+        example:
+          "Seasoned employees often provide invaluable insights into the business.",
+        exampleTranslation:
+          "Những nhân viên dày dạn kinh nghiệm thường cung cấp những hiểu biết vô giá về doanh nghiệp.",
+      },
+      {
+        id: 262,
+        word: "Individual and societal levels",
+        pronunciation: "/ˌɪndɪˈvɪdʒuəl ənd səˈsaɪətəl ˈlevəlz/",
+        meaning:
+          "Cấp độ cá nhân và xã hội, phạm vi tác động bao gồm cả từng người riêng lẻ lẫn cộng đồng xã hội rộng lớn",
+        note: "Cụm danh từ kết hợp hai phạm vi tác động để thể hiện sự toàn diện của lập luận. 'Societal' (thuộc về xã hội) là dạng tính từ học thuật của 'social'. Thường đi với: 'positive impact at both individual and societal levels', 'effect change at individual and societal levels'. Đồng nghĩa: personal and social dimensions, micro and macro levels, individual and collective spheres.",
+        example:
+          "The program aims to effect change at both individual and societal levels.",
+        exampleTranslation:
+          "Chương trình nhằm tạo ra sự thay đổi ở cả cấp độ cá nhân và xã hội.",
+      },
+      {
+        id: 263,
+        word: "Maintain financial independence",
+        pronunciation: "/meɪnˈteɪn faɪˈnænʃəl ˌɪndɪˈpendəns/",
+        meaning:
+          "Duy trì sự độc lập tài chính, giữ được khả năng tự lo về mặt kinh tế mà không cần phụ thuộc vào người khác",
+        note: "Cụm động từ kết hợp 'maintain' (duy trì, giữ vững) với 'financial independence' (độc lập tài chính). Thường xuất hiện khi liệt kê lợi ích cụ thể của việc người cao tuổi tiếp tục làm việc. Thường đi với: 'allows older adults to maintain financial independence', 'strive to maintain financial independence'. Đồng nghĩa: preserve financial self-sufficiency, sustain economic autonomy.",
+        example:
+          "She works hard to maintain financial independence from her family.",
+        exampleTranslation:
+          "Cô ấy làm việc chăm chỉ để duy trì độc lập tài chính khỏi gia đình.",
+      },
+      {
+        id: 264,
+        word: "Social security systems",
+        pronunciation: "/ˈsəʊʃəl sɪˈkjʊərɪti ˈsɪstəmz/",
+        meaning:
+          "Hệ thống an sinh xã hội, các chương trình của chính phủ được thiết kế để cung cấp hỗ trợ tài chính cho công dân, đặc biệt là người nghèo, người già hoặc người khuyết tật",
+        note: "Cụm danh từ chuyên ngành về chính sách xã hội. Thường xuất hiện trong bài về người cao tuổi, phúc lợi xã hội, ngân sách nhà nước. Thường đi với: 'alleviate the strain on social security systems', 'reform social security systems'. Đồng nghĩa: welfare systems, public assistance programs, state pension systems.",
+        example:
+          "The social security systems play a crucial role in supporting the nation's most vulnerable populations.",
+        exampleTranslation:
+          "Hệ thống an sinh xã hội đóng vai trò quan trọng trong việc hỗ trợ các nhóm dân cư dễ bị tổn thương nhất của quốc gia.",
+      },
+      {
+        id: 265,
+        word: "Economic stability",
+        pronunciation: "/ˌiːkəˈnɒmɪk stəˈbɪlɪti/",
+        meaning:
+          "Sự ổn định kinh tế, trạng thái nền kinh tế tăng trưởng đều đặn và ít biến động lớn trong hoạt động tổng thể",
+        note: "Cụm danh từ chuyên ngành kinh tế, thường xuất hiện trong phần ví dụ về các quốc gia có người cao tuổi vẫn tích cực tham gia lao động. Thường đi với: 'contributed to economic stability', 'ensure/achieve economic stability'. Đồng nghĩa: economic steadiness, macroeconomic stability, financial equilibrium. Phân biệt: 'economic stability' (ổn định kinh tế vĩ mô) vs 'financial stability' (ổn định tài chính cá nhân/tổ chức).",
+        example:
+          "Economic stability is essential for attracting foreign investments.",
+        exampleTranslation:
+          "Ổn định kinh tế là cần thiết để thu hút đầu tư nước ngoài.",
+      },
+      {
+        id: 266,
+        word: "Sustained employment",
+        pronunciation: "/səˈsteɪnd ɪmˈplɔɪmənt/",
+        meaning:
+          "Việc làm ổn định liên tục, trạng thái có công việc trong thời gian dài mà không bị gián đoạn",
+        note: "Cụm danh từ dùng 'sustained' (được duy trì liên tục, bền vững) để nhấn mạnh tính lâu dài của việc làm. Thường xuất hiện trong phần kết luận khi tóm tắt lợi ích của việc tiếp tục làm việc. Thường đi với: 'the advantages that sustained employment offers', 'benefits of sustained employment'. Đồng nghĩa: continuous employment, long-term work, ongoing employment.",
+        example:
+          "Sustained employment is vital for economic independence and self-esteem.",
+        exampleTranslation:
+          "Việc làm ổn định là điều quan trọng cho sự độc lập kinh tế và lòng tự trọng.",
+      },
+      {
+        id: 267,
+        word: "The elderly population",
+        pronunciation: "/ði ˈeldəli ˌpɒpjuˈleɪʃən/",
+        meaning:
+          "Dân số cao tuổi, nhóm người lớn tuổi trong một cộng đồng hoặc xã hội",
+        note: "Cụm danh từ chỉ nhóm người cao tuổi ở cấp độ xã hội. 'Elderly' (cao tuổi) lịch sự hơn 'old people'. Thường xuất hiện khi bàn về chính sách xã hội và tác động của xu hướng dân số. Thường đi với: 'benefits for the elderly population', 'support the elderly population'. Đồng nghĩa: older adults, senior citizens, the aged population. Lưu ý: 'the elderly' có thể dùng một mình như danh từ số nhiều, còn 'elderly population' nhấn mạnh tính chất nhóm/cộng đồng.",
+        example:
+          "The elderly population requires special attention to ensure their health and well-being.",
+        exampleTranslation:
+          "Người cao tuổi cần được quan tâm đặc biệt để đảm bảo sức khỏe và tinh thần.",
+      },
+    ],
+  },
+  // ==========================================
+  // W10 - Task 1: Drug Company Sales by Region (2002–2006)
+  // ==========================================
+  {
+    id: "wr_w10_task1_drug_sales",
+    skill: "Writing",
+    volume: "9",
+    topic: "Economics / Business",
+    part: "Task 1 - Drug Company Sales by Region (Stacked Bar Chart)",
+    cards: [
+      {
+        id: 268,
+        word: "The largest market",
+        pronunciation: "/ðə ˈlɑːdʒɪst ˈmɑːkɪt/",
+        meaning:
+          "Thị trường lớn nhất, khu vực hoặc phạm vi tiêu thụ lớn nhất trong một nhóm so sánh",
+        note: "Cụm danh từ dùng dạng so sánh nhất 'largest' để chỉ thị trường chiếm tỷ trọng cao nhất. Rất phổ biến trong Task 1 khi mô tả điểm xuất phát hoặc vị trí dẫn đầu của một khu vực. Thường đi với: 'America was the largest market for the company', 'dominate the largest market'. Đồng nghĩa: the biggest market, the dominant market, the top market. Phân biệt: 'the largest market' (lớn nhất về quy mô) vs 'the leading market' (dẫn đầu về vị thế/hiệu suất).",
+        example:
+          "The company is looking to expand into the largest market in Asia.",
+        exampleTranslation:
+          "Công ty đang tìm cách mở rộng vào thị trường lớn nhất ở Châu Á.",
+      },
+      {
+        id: 269,
+        word: "A low of",
+        pronunciation: "/ə ləʊ əv/",
+        meaning:
+          "Mức thấp nhất là, điểm thấp nhất đạt được trong một chuỗi dữ liệu",
+        note: "Cụm danh từ dùng 'low' như danh từ (điểm thấp nhất) thay vì tính từ, theo sau bởi con số cụ thể. Cặp đôi với 'a high of' (mức cao nhất là). Rất hữu ích trong Task 1 để đánh dấu đỉnh và đáy của xu hướng. Thường đi với: 'dropped to a low of 27%', 'hit a low of X'. Đồng nghĩa: a bottom of, a minimum of, a trough of. Cặp trái nghĩa: 'a high of' (mức cao nhất là).",
+        example: "The stock hit a low of $50 before rebounding.",
+        exampleTranslation:
+          "Cổ phiếu đã chạm mức thấp nhất là 50 đô la trước khi phục hồi.",
+      },
+      {
+        id: 270,
+        word: "Sales percentages",
+        pronunciation: "/seɪlz pəˈsentɪdʒɪz/",
+        meaning:
+          "Tỷ lệ phần trăm bán hàng, phần trăm doanh số của từng khu vực hoặc sản phẩm so với tổng thể",
+        note: "Cụm danh từ kết hợp 'sales' (doanh số) với 'percentages' (tỷ lệ %) để chỉ dữ liệu dạng phần trăm trong biểu đồ. Thường dùng trong Task 1 dạng stacked bar chart. Thường đi với: 'exceeding American sales percentages', 'compare sales percentages across regions'. Đồng nghĩa: sales proportions, revenue percentages, market share percentages.",
+        example: "The report shows the sales percentages of each product line.",
+        exampleTranslation:
+          "Báo cáo cho thấy tỉ lệ phần trăm bán hàng của từng dòng sản phẩm.",
+      },
+      {
+        id: 271,
+        word: "Sales figures",
+        pronunciation: "/seɪlz ˈfɪɡəz/",
+        meaning:
+          "Số liệu bán hàng, dữ liệu thống kê về doanh số bán ra trong một khoảng thời gian nhất định",
+        note: "Cụm danh từ dùng 'figures' (con số, số liệu) thay cho 'data' hay 'numbers' trong ngữ cảnh kinh doanh. Thường xuất hiện trong Task 1 khi mô tả xu hướng doanh số. Thường đi với: 'its sales figures then declined', 'report strong/weak sales figures'. Đồng nghĩa: sales data, revenue figures, sales numbers. Phân biệt: 'sales figures' (số liệu tổng quát) vs 'sales percentages' (tỷ lệ phần trăm cụ thể).",
+        example: "The sales figures for this quarter exceeded expectations.",
+        exampleTranslation: "Số liệu bán hàng của quý này đã vượt qua kỳ vọng.",
+      },
+      {
+        id: 272,
+        word: "Above-mentioned",
+        pronunciation: "/əˌbʌv ˈmenʃənd/",
+        meaning:
+          "Đã được nhắc đến ở trên, đề cập đến những thứ đã được nêu trước đó trong văn bản",
+        note: "Tính từ ghép dùng để tham chiếu lại thông tin đã đề cập trước đó, giúp tránh lặp từ và tạo sự mạch lạc trong bài. Thường đi với: 'the above-mentioned regions/factors/strategies'. Đồng nghĩa: the aforementioned, the previously mentioned, the said. Lưu ý: 'above-mentioned' thường viết có gạch nối khi dùng trước danh từ; có thể viết liền 'abovementioned' trong một số tài liệu.",
+        example:
+          "The above-mentioned strategies will be implemented next month.",
+        exampleTranslation:
+          "Các chiến lược đã được nhắc đến ở trên sẽ được thực hiện vào tháng tới.",
+      },
+      {
+        id: 273,
+        word: "The leading market",
+        pronunciation: "/ðə ˈliːdɪŋ ˈmɑːkɪt/",
+        meaning:
+          "Thị trường dẫn đầu, khu vực chiếm vị trí hàng đầu về doanh số hoặc tầm quan trọng",
+        note: "Cụm danh từ dùng 'leading' (dẫn đầu, hàng đầu) để mô tả vị trí ưu việt đã đạt được. Thường xuất hiện ở phần cuối đoạn thân bài khi tổng kết sự thay đổi vị thế của một khu vực. Thường đi với: 'making this region the leading market for the company', 'emerge as the leading market'. Đồng nghĩa: the top market, the dominant market, the primary market. Phân biệt: 'the largest market' (lớn nhất ngay từ đầu) vs 'the leading market' (dẫn đầu — có thể do vươn lên).",
+        example: "Our company dominates the leading market in the region.",
+        exampleTranslation:
+          "Công ty chúng tôi chiếm lĩnh thị trường dẫn đầu trong khu vực.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W10 - Task 2: Career Stability vs Flexibility (Sample 1 - Partly Agree)
+  // ==========================================
+  {
+    id: "wr_w10_task2_career_partly",
+    skill: "Writing",
+    volume: "9",
+    topic: "Work / Career / Professional Development",
+    part: "Task 2 - Career Stability vs Flexibility (Partly Agree)",
+    cards: [
+      {
+        id: 274,
+        word: "Adhering to",
+        pronunciation: "/ədˈhɪərɪŋ tuː/",
+        meaning:
+          "Tuân thủ, gắn bó với, kiên trì theo đuổi một kế hoạch, nguyên tắc hoặc con đường đã chọn",
+        note: "Cụm động từ dùng 'adhere to' (tuân theo, bám sát) thay cho 'follow' hay 'stick to', mang sắc thái trang trọng hơn. Thường xuất hiện trong phần giới thiệu đề bài về sự nghiệp lâu dài. Thường đi với: 'choosing a career path early and adhering to it', 'adhering to company guidelines'. Đồng nghĩa: sticking to, following, committing to, conforming to.",
+        example:
+          "Adhering to the company's guidelines is essential for maintaining a professional environment.",
+        exampleTranslation:
+          "Tuân thủ các nguyên tắc của công ty là cần thiết để duy trì một môi trường chuyên nghiệp.",
+      },
+      {
+        id: 275,
+        word: "Professional development",
+        pronunciation: "/prəˈfeʃənəl dɪˈveləpmənt/",
+        meaning:
+          "Phát triển chuyên môn, quá trình nâng cao kiến thức, kỹ năng và năng lực trong lĩnh vực nghề nghiệp",
+        note: "Cụm danh từ rất phổ biến trong bài viết về giáo dục, sự nghiệp và xã hội. Thường xuất hiện trong thesis statement khi nêu tầm quan trọng của sự phát triển nghề nghiệp. Thường đi với: 'both consistency and flexibility in professional development', 'invest in professional development'. Đồng nghĩa: career development, skill advancement, vocational training.",
+        example:
+          "Investing in professional development helps employees advance in their careers.",
+        exampleTranslation:
+          "Đầu tư vào phát triển chuyên môn giúp nhân viên tiến xa hơn trong sự nghiệp của họ.",
+      },
+      {
+        id: 276,
+        word: "A deep, nuanced understanding",
+        pronunciation: "/ə diːp ˈnjuːɑːnst ˌʌndəˈstændɪŋ/",
+        meaning:
+          "Sự hiểu biết sâu sắc và tinh tế, nhận thức không chỉ nằm ở bề mặt mà còn nhận ra những khác biệt và sắc thái phức tạp",
+        note: "Cụm danh từ kết hợp hai tính từ: 'deep' (sâu sắc, kỹ lưỡng) và 'nuanced' (có sắc thái, tinh tế — từ tiếng Pháp 'nuance'). Đây là cụm từ học thuật cao, thể hiện hiểu biết vượt tầm thông thường. Thường đi với: 'benefit from a deep, nuanced understanding of their field', 'develop a deep, nuanced understanding'. Đồng nghĩa: a thorough and sophisticated understanding, an in-depth and subtle grasp.",
+        example:
+          "Her deep, nuanced understanding of the subject impressed the entire panel.",
+        exampleTranslation:
+          "Sự hiểu biết sâu sắc và tinh tế về chủ đề đã làm ấn tượng với toàn bộ ban giám khảo.",
+      },
+      {
+        id: 277,
+        word: "Accumulation",
+        pronunciation: "/əˌkjuːmjəˈleɪʃən/",
+        meaning:
+          "Sự tích lũy, quá trình gom góp và tập hợp dần dần theo thời gian",
+        note: "Danh từ từ động từ 'accumulate' (tích lũy), thường đứng sau giới từ 'for the accumulation of'. Rất hữu ích khi lập luận về lợi ích của việc gắn bó lâu dài với một nghề. Thường đi với: 'the accumulation of specialized knowledge and skills', 'allow for the accumulation of experience'. Đồng nghĩa: build-up, amassing, gathering, stockpiling. Phân biệt: 'accumulation' (quá trình tích lũy) vs 'collection' (bộ sưu tập đã hoàn chỉnh).",
+        example:
+          "The accumulation of data over years has enabled groundbreaking research.",
+        exampleTranslation:
+          "Sự tích lũy dữ liệu qua nhiều năm đã tạo điều kiện cho các nghiên cứu đột phá.",
+      },
+      {
+        id: 278,
+        word: "Recognition",
+        pronunciation: "/ˌrekəɡˈnɪʃən/",
+        meaning:
+          "Sự công nhận, việc được thừa nhận và đánh giá cao về thành tích, năng lực hoặc đóng góp",
+        note: "Danh từ chỉ sự thừa nhận từ người khác hoặc xã hội. Trong ngữ cảnh sự nghiệp, 'recognition' là một trong những động lực và phần thưởng quan trọng. Thường đi với: 'significant achievements and recognition are more attainable', 'receive/gain recognition for'. Đồng nghĩa: acknowledgment, acclaim, appreciation, validation.",
+        example:
+          "His innovative work received wide recognition within the scientific community.",
+        exampleTranslation:
+          "Công việc sáng tạo của anh ấy đã nhận được sự công nhận rộng rãi trong cộng đồng khoa học.",
+      },
+      {
+        id: 279,
+        word: "Groundbreaking information",
+        pronunciation: "/ˈɡraʊndbreɪkɪŋ ˌɪnfəˈmeɪʃən/",
+        meaning:
+          "Thông tin đột phá, dữ liệu hoặc phát hiện mang tính cách mạng, chưa từng có trước đây",
+        note: "Cụm danh từ dùng 'groundbreaking' (mang tính đột phá, tiên phong — nghĩa gốc là 'phá đất khai hoang') để diễn tả tính đột phá của thông tin. Thường xuất hiện khi đưa ví dụ về thành tựu đạt được nhờ kiên trì lâu dài. Thường đi với: 'discover groundbreaking information', 'uncover groundbreaking findings'. Đồng nghĩa: pioneering discoveries, revolutionary findings, innovative insights.",
+        example:
+          "The research team uncovered groundbreaking information that could change the field forever.",
+        exampleTranslation:
+          "Nhóm nghiên cứu đã phát hiện ra thông tin đột phá có thể thay đổi lĩnh vực mãi mãi.",
+      },
+      {
+        id: 280,
+        word: "Individual growth trajectories",
+        pronunciation: "/ˌɪndɪˈvɪdʒuəl ɡrəʊθ trəˈdʒektəriz/",
+        meaning:
+          "Quỹ đạo phát triển cá nhân, lộ trình và hướng đi phát triển riêng biệt của từng người theo thời gian",
+        note: "Cụm danh từ học thuật cao dùng 'trajectories' (quỹ đạo — từ vật lý học, chỉ đường bay của vật thể) theo nghĩa bóng. Nhấn mạnh sự phát triển mỗi người đi theo một hướng độc đáo riêng. Thường đi với: 'the evolving nature of the global job market and individual growth trajectories'. Đồng nghĩa: personal development paths, individual career journeys, personal growth arcs.",
+        example:
+          "Each employee's individual growth trajectories were considered in the annual performance review.",
+        exampleTranslation:
+          "Quỹ đạo phát triển cá nhân của mỗi nhân viên đã được xem xét trong đánh giá hiệu suất hàng năm.",
+      },
+      {
+        id: 281,
+        word: "A fulfilling working life",
+        pronunciation: "/ə fʊlˈfɪlɪŋ ˈwɜːkɪŋ laɪf/",
+        meaning:
+          "Một cuộc sống làm việc thỏa mãn, sự nghiệp mang lại cảm giác có ý nghĩa, trọn vẹn và hài lòng",
+        note: "Cụm danh từ dùng 'fulfilling' (đem lại sự thỏa mãn, trọn vẹn) để mô tả chất lượng của cuộc sống nghề nghiệp. Là từ chủ chốt trong cả đề bài Task 2 này. Thường đi với: 'lead to a fulfilling working life', 'enjoy a fulfilling working life'. Đồng nghĩa: a satisfying career, a rewarding professional life, a meaningful work life.",
+        example:
+          "He looks back on a fulfilling working life, full of achievements and meaningful connections.",
+        exampleTranslation:
+          "Anh ấy nhìn lại một cuộc sống làm việc thỏa mãn, đầy ắp thành tựu và mối quan hệ có ý nghĩa.",
+      },
+      {
+        id: 282,
+        word: "The willingness to embrace change",
+        pronunciation: "/ðə ˈwɪlɪŋnəs tuː ɪmˈbreɪs tʃeɪndʒ/",
+        meaning:
+          "Sự sẵn lòng đón nhận sự thay đổi, thái độ cởi mở và chủ động chào đón những điều mới thay vì né tránh",
+        note: "Cụm danh từ dùng 'willingness' (sự sẵn lòng, tinh thần tự nguyện) kết hợp với 'embrace change' (đón nhận thay đổi — 'embrace' nghĩa gốc là ôm chặt). Thường xuất hiện khi lập luận về lợi ích của việc linh hoạt trong sự nghiệp. Thường đi với: 'the willingness to embrace change can lead to professional satisfaction', 'demonstrate the willingness to embrace change'. Đồng nghĩa: openness to change, receptiveness to new opportunities, adaptability.",
+        example:
+          "The company's success was largely due to its leaders' willingness to embrace change.",
+        exampleTranslation:
+          "Thành công của công ty chủ yếu đến từ sự sẵn lòng đón nhận sự thay đổi của các lãnh đạo.",
+      },
+      {
+        id: 283,
+        word: "Professional satisfaction and success",
+        pronunciation: "/prəˈfeʃənəl ˌsætɪsˈfækʃən ənd səkˈses/",
+        meaning:
+          "Sự hài lòng và thành công nghề nghiệp, cảm giác thỏa mãn kết hợp với những thành tựu đạt được trong sự nghiệp",
+        note: "Cụm danh từ kép kết hợp hai khía cạnh: 'satisfaction' (hài lòng — cảm giác chủ quan) và 'success' (thành công — kết quả khách quan). Cả hai cùng nhau tạo thành bức tranh toàn diện về sự nghiệp lý tưởng. Thường đi với: 'lead to professional satisfaction and success', 'achieve professional satisfaction and success'. Đồng nghĩa: career fulfillment and achievement, job satisfaction and accomplishment.",
+        example:
+          "Achieving professional satisfaction and success is her main career goal.",
+        exampleTranslation:
+          "Đạt được sự hài lòng và thành công nghề nghiệp là mục tiêu sự nghiệp chính của cô ấy.",
+      },
+      {
+        id: 284,
+        word: "Adaptability",
+        pronunciation: "/əˌdæptəˈbɪlɪti/",
+        meaning:
+          "Sự linh hoạt, khả năng thích nghi và điều chỉnh bản thân phù hợp với hoàn cảnh hoặc yêu cầu mới",
+        note: "Danh từ từ tính từ 'adaptable', chỉ năng lực quan trọng trong thị trường lao động hiện đại. Thường xuất hiện trong phần kết luận hoặc lập luận về lợi ích của việc thay đổi nghề. Thường đi với: 'see the merits of adaptability', 'demonstrate adaptability in the workplace'. Đồng nghĩa: flexibility, versatility, resilience. Phân biệt: 'adaptability' (khả năng thích nghi với hoàn cảnh mới) vs 'flexibility' (tính linh hoạt trong cách làm việc).",
+        example:
+          "Adaptability in the workplace is highly valued, especially in rapidly changing industries.",
+        exampleTranslation:
+          "Sự linh hoạt trong nơi làm việc được đánh giá cao, đặc biệt trong các ngành công nghiệp thay đổi nhanh chóng.",
+      },
+      {
+        id: 285,
+        word: "Steadfast commitment",
+        pronunciation: "/ˈstedfɑːst kəˈmɪtmənt/",
+        meaning:
+          "Sự cam kết kiên định, sự tận tâm và trung thành vững chắc không lay chuyển với một mục tiêu hoặc con đường",
+        note: "Cụm danh từ dùng 'steadfast' (kiên định, không dao động — từ cổ 'stead' + 'fast' = vị trí vững chắc) để nhấn mạnh sự bền bỉ. Mạnh hơn 'strong commitment'. Thường xuất hiện trong phần kết luận khi tóm tắt hai quan điểm. Thường đi với: 'both steadfast commitment to a chosen field and the flexibility to navigate', 'demonstrate steadfast commitment'. Đồng nghĩa: unwavering dedication, firm resolve, enduring loyalty.",
+        example:
+          "His steadfast commitment to improving community health standards has inspired many.",
+        exampleTranslation:
+          "Sự cam kết kiên định của anh ấy trong việc cải thiện các tiêu chuẩn sức khỏe cộng đồng đã truyền cảm hứng cho nhiều người.",
+      },
+    ],
+  },
+
+  // ==========================================
+  // W10 - Task 2: Career Stability vs Flexibility (Sample 2 - Totally Disagree)
+  // ==========================================
+  {
+    id: "wr_w10_task2_career_disagree",
+    skill: "Writing",
+    volume: "9",
+    topic: "Work / Career / Professional Development",
+    part: "Task 2 - Career Stability vs Flexibility (Totally Disagree)",
+    cards: [
+      {
+        id: 286,
+        word: "Frequently switch careers",
+        pronunciation: "/ˈfriːkwəntli swɪtʃ kəˈrɪəz/",
+        meaning:
+          "Thường xuyên chuyển đổi sự nghiệp, thói quen thay đổi lĩnh vực nghề nghiệp nhiều lần",
+        note: "Cụm động từ dùng 'switch' (chuyển đổi, đổi sang) mang tính ngẫu nhiên và đột ngột hơn 'change'. 'Frequently' nhấn mạnh tần suất lặp lại cao. Thường xuất hiện khi đề cập đến nhóm người đối lập với những người kiên định với một nghề. Thường đi với: 'those who frequently switch careers', 'benefits/drawbacks of frequently switching careers'. Đồng nghĩa: regularly change careers, repeatedly shift professions, often transition between jobs.",
+        example:
+          "Professionals who frequently switch careers may seek diverse experiences or fulfillment beyond a single field.",
+        exampleTranslation:
+          "Những người làm việc chuyên nghiệp thường xuyên chuyển đổi sự nghiệp có thể tìm kiếm những trải nghiệm đa dạng hoặc sự thỏa mãn ngoài một lĩnh vực cố định.",
+      },
+      {
+        id: 287,
+        word: "Varied professional experiences",
+        pronunciation: "/ˈveərid prəˈfeʃənəl ɪkˈspɪəriənsɪz/",
+        meaning:
+          "Trải nghiệm nghề nghiệp đa dạng, những kinh nghiệm làm việc phong phú từ nhiều lĩnh vực và môi trường khác nhau",
+        note: "Cụm danh từ dùng 'varied' (đa dạng, phong phú — dạng tính từ của động từ 'vary') thay cho 'different'. Nhấn mạnh sự phong phú và bổ sung lẫn nhau của các trải nghiệm. Thường đi với: 'the richness that come with varied professional experiences', 'gain varied professional experiences'. Đồng nghĩa: diverse work experiences, a range of professional backgrounds, multifaceted career experiences.",
+        example:
+          "Her resume showcases varied professional experiences, ranging from tech startups to nonprofit management.",
+        exampleTranslation:
+          "Bản lý lịch của cô ấy trưng bày những trải nghiệm nghề nghiệp đa dạng, từ các công ty khởi nghiệp công nghệ đến quản lý phi lợi nhuận.",
+      },
+      {
+        id: 288,
+        word: "Early career selection",
+        pronunciation: "/ˈɜːli kəˈrɪər sɪˈlekʃən/",
+        meaning:
+          "Việc chọn lựa sự nghiệp sớm, quyết định về con đường nghề nghiệp được đưa ra từ giai đoạn đầu cuộc đời",
+        note: "Cụm danh từ dùng 'selection' (sự lựa chọn, quyết định chọn lọc) thay cho 'choice', mang sắc thái học thuật hơn. Thường xuất hiện trong phần counterargument khi trình bày quan điểm đối lập. Thường đi với: 'early career selection and long-term commitment provide stability', 'make an early career selection'. Đồng nghĩa: early career choice, an initial career decision, early professional direction.",
+        example:
+          "Making an early career selection allows individuals to focus their education and skill development toward their chosen field.",
+        exampleTranslation:
+          "Việc chọn lựa sự nghiệp sớm giúp cá nhân tập trung giáo dục và phát triển kỹ năng cho lĩnh vực họ đã chọn.",
+      },
+      {
+        id: 289,
+        word: "Long-term commitment",
+        pronunciation: "/ˌlɒŋ tɜːm kəˈmɪtmənt/",
+        meaning:
+          "Sự cam kết lâu dài, sự tận tâm và kiên trì theo đuổi trong một khoảng thời gian dài",
+        note: "Cụm danh từ kết hợp tính từ ghép 'long-term' (dài hạn) với 'commitment' (cam kết, sự tận tâm). Thường xuất hiện trong phần counterargument khi liệt kê lợi ích của việc gắn bó lâu dài. Thường đi với: 'long-term commitment provides stability and deep expertise', 'demonstrate long-term commitment to a cause'. Đồng nghĩa: sustained dedication, enduring commitment, prolonged devotion.",
+        example:
+          "A long-term commitment to a career can lead to significant advancements and achievements in that field.",
+        exampleTranslation:
+          "Sự cam kết lâu dài với một sự nghiệp có thể dẫn đến những tiến bộ và thành tựu đáng kể trong lĩnh vực đó.",
+      },
+      {
+        id: 290,
+        word: "A clear professional identity",
+        pronunciation: "/ə klɪər prəˈfeʃənəl aɪˈdentɪti/",
+        meaning:
+          "Bản sắc nghề nghiệp rõ ràng, hình ảnh và vị thế nghề nghiệp cụ thể và dễ nhận biết của một người",
+        note: "Cụm danh từ kết hợp 'clear' (rõ ràng, dứt khoát) với 'professional identity' (bản sắc/danh tính nghề nghiệp). Là một trong những lợi ích được nêu trong counterargument. Thường đi với: 'provide a clear professional identity', 'develop/establish a clear professional identity'. Đồng nghĩa: a defined professional persona, a distinct career identity, a strong occupational self-concept.",
+        example:
+          "Developing a clear professional identity helps individuals stand out in their field and connect with like-minded professionals.",
+        exampleTranslation:
+          "Việc phát triển một bản sắc nghề nghiệp rõ ràng giúp cá nhân nổi bật trong lĩnh vực của họ và kết nối với những người chuyên nghiệp cùng chí hướng.",
+      },
+      {
+        id: 291,
+        word: "The dynamic nature of the modern workforce",
+        pronunciation: "/ðə daɪˈnæmɪk ˈneɪtʃər əv ðə ˈmɒdən ˈwɜːkfɔːs/",
+        meaning:
+          "Bản chất năng động của lực lượng lao động hiện đại, đặc tính liên tục thay đổi và phát triển của thị trường lao động ngày nay",
+        note: "Cụm danh từ học thuật dùng 'dynamic' (năng động, không ngừng thay đổi) và 'nature' (bản chất, đặc tính). Thường dùng trong phần refutation để chứng minh rằng thị trường lao động hiện đại đòi hỏi sự linh hoạt. Thường đi với: 'the dynamic nature of the modern workforce requires adaptability'. Đồng nghĩa: the ever-changing modern job market, the fluid nature of contemporary employment.",
+        example:
+          "The dynamic nature of the modern workforce requires professionals to continuously adapt and update their skills.",
+        exampleTranslation:
+          "Bản chất động của lực lượng lao động hiện đại đòi hỏi các chuyên gia phải liên tục thích nghi và cập nhật kỹ năng của mình.",
+      },
+      {
+        id: 292,
+        word: "A diverse skill set",
+        pronunciation: "/ə daɪˈvɜːs skɪl set/",
+        meaning:
+          "Bộ kỹ năng đa dạng, tập hợp các năng lực phong phú và đa dạng từ nhiều lĩnh vực khác nhau",
+        note: "Cụm danh từ dùng 'diverse' (đa dạng, phong phú) và 'skill set' (bộ kỹ năng). Thường xuất hiện khi lập luận về lợi ích của việc thay đổi nghề. Thường đi với: 'demands adaptability and a diverse skill set', 'possess/develop a diverse skill set'. Đồng nghĩa: a varied skill set, a broad range of skills, multifaceted competencies. Phân biệt: 'a diverse skill set' (nhiều kỹ năng khác nhau) vs 'specialized skills' (kỹ năng chuyên sâu một lĩnh vực).",
+        example:
+          "Possessing a diverse skill set makes an individual more versatile and valuable in the job market.",
+        exampleTranslation:
+          "Việc sở hữu một bộ kỹ năng đa dạng làm cho một cá nhân trở nên linh hoạt và có giá trị hơn trên thị trường việc làm.",
+      },
+      {
+        id: 293,
+        word: "Embracing varied job roles",
+        pronunciation: "/ɪmˈbreɪsɪŋ ˈveərid dʒɒb rəʊlz/",
+        meaning:
+          "Chấp nhận và đón nhận các vai trò công việc đa dạng, thái độ tích cực chủ động với nhiều loại vị trí và nhiệm vụ khác nhau",
+        note: "Cụm động từ dùng 'embracing' (đón nhận tích cực) thay cho 'accepting' hay 'taking on'. 'Embrace' mang hàm ý chủ động và nhiệt tình, không chỉ chấp nhận thụ động. Thường đi với: 'embracing varied job roles offers exposure to different industries'. Đồng nghĩa: taking on diverse roles, welcoming different positions, actively pursuing various job experiences.",
+        example:
+          "By embracing varied job roles, she gained a wide range of skills and insights across different industries.",
+        exampleTranslation:
+          "Bằng cách chấp nhận các vai trò công việc đa dạng, cô ấy đã đạt được nhiều kỹ năng và hiểu biết trong nhiều lĩnh vực khác nhau.",
+      },
+      {
+        id: 294,
+        word: "Versatile",
+        pronunciation: "/ˈvɜːsətaɪl/",
+        meaning:
+          "Linh hoạt, đa năng, có khả năng thích nghi và hoạt động hiệu quả trong nhiều tình huống hay lĩnh vực khác nhau",
+        note: "Tính từ chỉ khả năng thích ứng rộng rãi, thường đứng sau 'more' để so sánh. Thường xuất hiện khi mô tả lợi ích của người có nhiều kinh nghiệm đa dạng. Thường đi với: 'making individuals more versatile', 'a versatile professional/employee'. Đồng nghĩa: adaptable, flexible, multifaceted, multipurpose. Lưu ý phát âm: /ˈvɜːsətaɪl/ (Anh-Mỹ) hoặc /ˈvɜːsətɪl/ (Anh-Anh).",
+        example:
+          "His versatile skill set made him an invaluable asset to the company in various projects.",
+        exampleTranslation:
+          "Bộ kỹ năng linh hoạt của anh ấy làm cho anh trở thành tài sản vô giá cho công ty trong nhiều dự án khác nhau.",
+      },
+      {
+        id: 295,
+        word: "Resilient",
+        pronunciation: "/rɪˈzɪliənt/",
+        meaning:
+          "Kiên cường, có khả năng phục hồi nhanh chóng sau khó khăn, thất bại hoặc áp lực",
+        note: "Tính từ từ danh từ 'resilience', chỉ đặc tính 'bật lại' sau những trở ngại. Thường đi liền với 'versatile' và 'innovative' khi mô tả phẩm chất của người lao động đa dạng kinh nghiệm. Thường đi với: 'making individuals more resilient', 'a resilient professional/worker'. Đồng nghĩa: tough, adaptable, robust, able to bounce back. Phân biệt: 'resilient' (kiên cường, phục hồi sau thất bại) vs 'persistent' (kiên trì tiếp tục dù khó khăn).",
+        example:
+          "Her resilient nature helped her overcome professional setbacks and continue to advance her career.",
+        exampleTranslation:
+          "Bản tính kiên cường của cô ấy đã giúp cô vượt qua những thất bại trong sự nghiệp và tiếp tục tiến lên.",
+      },
+      {
+        id: 296,
+        word: "A profound understanding",
+        pronunciation: "/ə prəˈfaʊnd ˌʌndəˈstændɪŋ/",
+        meaning:
+          "Sự hiểu biết sâu sắc, nhận thức đạt đến mức độ thấu đáo và sâu xa vượt tầm bề mặt",
+        note: "Cụm danh từ dùng 'profound' (sâu sắc, thâm thúy — mạnh hơn 'deep') để diễn tả hiểu biết ở mức độ cao nhất. Thường xuất hiện khi mô tả kết quả của nhiều năm trải nghiệm đa dạng. Thường đi với: 'contribute to a profound understanding of one's strengths', 'develop a profound understanding of'. Đồng nghĩa: an in-depth understanding, a thorough grasp, a deep insight into.",
+        example:
+          "Years of research gave him a profound understanding of the subject, enabling groundbreaking discoveries.",
+        exampleTranslation:
+          "Nhiều năm nghiên cứu đã cho anh ấy sự hiểu biết sâu sắc về chủ đề, tạo ra những khám phá đột phá.",
+      },
+      {
+        id: 297,
+        word: "Flexibility",
+        pronunciation: "/ˌfleksɪˈbɪlɪti/",
+        meaning:
+          "Sự linh hoạt, khả năng dễ dàng thay đổi và thích nghi với các điều kiện hoặc yêu cầu mới",
+        note: "Danh từ từ tính từ 'flexible', chỉ một trong những giá trị cốt lõi trong thị trường lao động hiện đại. Thường xuất hiện trong phần kết luận khi tóm tắt lập luận ủng hộ việc thay đổi nghề. Thường đi với: 'the importance of flexibility', 'demonstrate flexibility'. Đồng nghĩa: adaptability, versatility, pliability. Phân biệt: 'flexibility' (linh hoạt về phương pháp và thích nghi) vs 'adaptability' (thích nghi với hoàn cảnh mới).",
+        example:
+          "The team's flexibility was key in successfully navigating the challenges of the rapidly changing market.",
+        exampleTranslation:
+          "Sự linh hoạt của đội nhóm là chìa khóa để vượt qua thành công những thách thức của thị trường thay đổi nhanh chóng.",
+      },
+      {
+        id: 298,
+        word: "The pursuit of diverse experiences",
+        pronunciation: "/ðə pəˈsjuːt əv daɪˈvɜːs ɪkˈspɪəriənsɪz/",
+        meaning:
+          "Việc theo đuổi các trải nghiệm đa dạng, hành trình chủ động tìm kiếm và tích lũy nhiều loại kinh nghiệm khác nhau",
+        note: "Cụm danh từ dùng 'the pursuit of' (việc theo đuổi — chủ động, có mục tiêu) kết hợp với 'diverse experiences' (trải nghiệm đa dạng). 'Pursuit' mang hàm ý nỗ lực có định hướng. Thường đi với: 'the pursuit of diverse experiences for personal and professional development'. Đồng nghĩa: the quest for varied experiences, seeking out a range of professional encounters, actively accumulating diverse career experiences.",
+        example:
+          "The pursuit of diverse experiences enriched her personal and professional life, giving her a unique perspective on problem-solving.",
+        exampleTranslation:
+          "Việc theo đuổi các trải nghiệm đa dạng đã làm phong phú cuộc sống cá nhân và nghề nghiệp của cô ấy, cho cô ấy một góc nhìn độc đáo về giải quyết vấn đề.",
       },
     ],
   },

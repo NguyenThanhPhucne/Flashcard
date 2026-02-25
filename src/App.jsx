@@ -7,6 +7,16 @@ import StudyView from "./components/StudyView";
 import SpeedQuizGame from "./components/SpeedQuizGame";
 import DecorativeBackground from "./components/DecorativeBackground";
 
+// Hàm shuffle array (Fisher-Yates algorithm)
+const shuffleArray = (array) => {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+};
+
 export default function App() {
   // Library state
   const [decks] = useState(flashcardDecks);
@@ -19,6 +29,9 @@ export default function App() {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
+
+  // Shuffled cards state
+  const [shuffledCards, setShuffledCards] = useState(null);
 
   // Generate heart positions once on mount - optimized count
   const floatingHearts = useMemo(() => {
@@ -40,7 +53,12 @@ export default function App() {
     }));
   }, []);
 
-  const activeDeck = decks.find((d) => d.id === activeDeckId);
+  const originalDeck = decks.find((d) => d.id === activeDeckId);
+  // Sử dụng shuffled cards nếu có, nếu không thì dùng cards gốc
+  const activeDeck =
+    originalDeck && shuffledCards
+      ? { ...originalDeck, cards: shuffledCards }
+      : originalDeck;
   const currentCard = activeDeck?.cards[currentIndex];
 
   // Navigation handlers
@@ -81,6 +99,12 @@ export default function App() {
   };
 
   const openDeck = (deckId, gameMode = false) => {
+    const deck = decks.find((d) => d.id === deckId);
+    if (deck) {
+      // Shuffle cards để tránh học thuộc
+      const shuffled = shuffleArray(deck.cards);
+      setShuffledCards(shuffled);
+    }
     setActiveDeckId(deckId);
     setIsGameMode(gameMode);
     setCurrentIndex(0);
@@ -92,6 +116,7 @@ export default function App() {
     setIsGameMode(false);
     setCurrentIndex(0);
     setIsFlipped(false);
+    setShuffledCards(null); // Reset shuffled cards khi đóng deck
   };
 
   // Keyboard navigation - chỉ hoạt động trong study mode
@@ -115,6 +140,7 @@ export default function App() {
     };
     window.addEventListener("keydown", handleEscape);
     return () => window.removeEventListener("keydown", handleEscape);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [activeDeck, selectedVolume]);
 
   // ==========================================

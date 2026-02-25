@@ -33,6 +33,75 @@ export default function SpeedQuizGame({
   const [showConfetti, setShowConfetti] = useState(false);
   const [particleTrigger, setParticleTrigger] = useState(0);
 
+  // 🎉 Hàm bắn pháo hoa chuyên nghiệp (Canvas Confetti - Dynamic Loading)
+  const triggerFireworks = (intensity = "normal") => {
+    // Tải thư viện canvas-confetti từ CDN nếu chưa có
+    if (!window.confetti) {
+      const script = document.createElement("script");
+      script.src =
+        "https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js";
+      script.onload = () => {
+        fireConfetti(intensity);
+      };
+      document.head.appendChild(script);
+    } else {
+      fireConfetti(intensity);
+    }
+  };
+
+  // Hàm thực thi pháo hoa với các cấp độ khác nhau
+  const fireConfetti = (intensity) => {
+    const confetti = window.confetti;
+    if (!confetti) return;
+
+    if (intensity === "mega") {
+      // Pháo hoa cực mạnh khi hoàn thành game
+      const duration = 3000;
+      const end = Date.now() + duration;
+
+      const colors = ["#FFD700", "#FF69B4", "#00CED1", "#FF6347", "#9370DB"];
+
+      (function frame() {
+        confetti({
+          particleCount: 4,
+          angle: 60,
+          spread: 55,
+          origin: { x: 0, y: 0.8 },
+          colors: colors,
+        });
+        confetti({
+          particleCount: 4,
+          angle: 120,
+          spread: 55,
+          origin: { x: 1, y: 0.8 },
+          colors: colors,
+        });
+
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      })();
+
+      // Bắn pháo hoa lớn từ giữa màn hình
+      setTimeout(() => {
+        confetti({
+          particleCount: 100,
+          spread: 160,
+          origin: { y: 0.6 },
+          colors: colors,
+        });
+      }, 200);
+    } else {
+      // Pháo hoa nhỏ khi trả lời đúng
+      confetti({
+        particleCount: 50,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ["#FFD700", "#FF69B4", "#00CED1"],
+      });
+    }
+  };
+
   // Generate quiz questions from deck
   useEffect(() => {
     if (!deck || !deck.cards) return;
@@ -80,6 +149,17 @@ export default function SpeedQuizGame({
     return () => clearInterval(timer);
   }, [currentQuestionIndex, gameOver, showFeedback, questions]);
 
+  // 🎉 Trigger pháo hoa mega khi hoàn thành game
+  useEffect(() => {
+    if (gameOver && correctAnswers > 0) {
+      // Delay một chút để UI render xong rồi mới bắn pháo hoa
+      const timer = setTimeout(() => {
+        triggerFireworks("mega");
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [gameOver, correctAnswers]);
+
   const handleTimeout = () => {
     // Time's up - count as wrong answer
     setIsCorrect(false);
@@ -100,6 +180,9 @@ export default function SpeedQuizGame({
     setShowFeedback(true);
 
     if (correct) {
+      // 🎉 Bắn pháo hoa nhỏ khi trả lời đúng
+      triggerFireworks("normal");
+
       const newCombo = combo + 1;
       setCombo(newCombo);
       setMaxCombo(Math.max(maxCombo, newCombo));
@@ -211,208 +294,305 @@ export default function SpeedQuizGame({
   const timeProgress = (timeLeft / 15) * 100;
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 relative">
+    <div className="w-full max-w-3xl mx-auto px-4 relative">
       {/* Confetti Effect */}
       <Confetti isActive={showConfetti} />
 
-      {/* Animated Background Orbs */}
+      {/* Animated Background Orbs - Enhanced */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
-          className={`absolute top-1/4 -left-20 w-72 h-72 rounded-full blur-3xl opacity-20 ${
-            isDarkMode ? "bg-blue-500" : "bg-blue-300"
+          className={`absolute top-1/4 -left-32 w-96 h-96 rounded-full blur-3xl opacity-15 ${
+            isDarkMode ? "bg-blue-400" : "bg-blue-200"
           } animate-float`}
-          style={{ animationDuration: "8s" }}
+          style={{ animationDuration: "12s" }}
         />
         <div
-          className={`absolute bottom-1/4 -right-20 w-96 h-96 rounded-full blur-3xl opacity-20 ${
-            isDarkMode ? "bg-purple-500" : "bg-purple-300"
+          className={`absolute bottom-1/4 -right-32 w-[500px] h-[500px] rounded-full blur-3xl opacity-12 ${
+            isDarkMode ? "bg-purple-400" : "bg-purple-200"
           } animate-float`}
-          style={{ animationDuration: "10s", animationDelay: "2s" }}
+          style={{ animationDuration: "15s", animationDelay: "3s" }}
+        />
+        <div
+          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full blur-3xl opacity-10 ${
+            isDarkMode ? "bg-pink-400" : "bg-pink-200"
+          } animate-float`}
+          style={{ animationDuration: "18s", animationDelay: "5s" }}
         />
       </div>
 
-      {/* Header */}
-      <div className="flex items-center justify-between mb-8 relative z-10">
+      {/* Header - Glassmorphism */}
+      <div className="flex items-center justify-between mb-4 relative z-10">
         <button
           onClick={onClose}
-          className={`p-3 rounded-xl backdrop-blur-md transition-all hover:scale-110 active:scale-95 ${
+          className={`group p-2.5 rounded-xl backdrop-blur-xl transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl ${
             isDarkMode
-              ? "bg-white/10 hover:bg-white/20 text-white border border-white/20"
-              : "bg-black/5 hover:bg-black/10 text-slate-700 border border-black/10"
+              ? "bg-white/5 hover:bg-white/10 text-white border border-white/10 hover:border-white/20"
+              : "bg-white/60 hover:bg-white/80 text-slate-700 border border-black/5 hover:border-black/10"
           }`}
         >
-          <ArrowLeft className="w-6 h-6" />
+          <ArrowLeft className="w-5 h-5 transition-transform group-hover:-translate-x-0.5" />
         </button>
 
         <ThemeToggle isDarkMode={isDarkMode} onToggle={onToggleTheme} />
       </div>
 
-      {/* Game Stats - Minecraft Blocky Style */}
-      <div className="grid grid-cols-4 gap-2 mb-6 relative z-10">
+      {/* Game Stats - Professional Glassmorphism */}
+      <div className="grid grid-cols-4 gap-2 mb-4 relative z-10">
         {/* Score Card */}
         <div
-          className={`minecraft-shadow-lg group p-2 transition-all duration-300 hover:translate-y-[-2px] cursor-pointer border-3 ${
+          className={`group p-2.5 rounded-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer shadow-md hover:shadow-lg border ${
             isDarkMode
-              ? "bg-gradient-to-br from-indigo-600 to-indigo-700 border-indigo-800"
-              : "bg-gradient-to-br from-indigo-400 to-indigo-500 border-indigo-600"
+              ? "bg-gradient-to-br from-blue-500/15 to-indigo-600/15 border-blue-400/25 hover:border-blue-400/40"
+              : "bg-gradient-to-br from-blue-200/30 to-indigo-300/30 border-blue-300/40 hover:border-blue-400/50"
           }`}
         >
           <div className="flex flex-col items-center">
-            <Trophy className="w-5 h-5 mb-0.5 text-amber-200 drop-shadow-lg group-hover:animate-tada" />
-            <p className="text-xl font-black mb-0 animate-countUp text-white">
+            <div
+              className={`p-1.5 rounded-lg mb-1 transition-all duration-300 group-hover:scale-110 ${
+                isDarkMode ? "bg-blue-400/15" : "bg-blue-200/30"
+              }`}
+            >
+              <Trophy className="w-5 h-5 text-blue-300 drop-shadow-sm group-hover:animate-tada" />
+            </div>
+            <p className={`text-xl font-black mb-0.5 animate-countUp ${
+              isDarkMode ? "text-slate-200" : "text-slate-700"
+            }`}>
               {score}
             </p>
-            <p className="text-[10px] font-bold text-white/90">Điểm</p>
+            <p
+              className={`text-[10px] font-semibold ${
+                isDarkMode ? "text-slate-300" : "text-slate-600"
+              }`}
+            >
+              Điểm
+            </p>
           </div>
         </div>
 
         {/* Combo Card */}
         <div
-          className={`minecraft-shadow-lg group p-2 transition-all duration-300 hover:translate-y-[-2px] cursor-pointer relative overflow-hidden border-3 ${
+          className={`group p-2.5 rounded-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer relative overflow-hidden shadow-md hover:shadow-lg border ${
             combo >= 3
               ? isDarkMode
-                ? "bg-gradient-to-br from-rose-600 to-rose-700 border-rose-800"
-                : "bg-gradient-to-br from-rose-400 to-rose-500 border-rose-600"
+                ? "bg-gradient-to-br from-amber-500/20 to-orange-600/20 border-amber-400/30 hover:border-amber-400/50"
+                : "bg-gradient-to-br from-amber-200/35 to-orange-300/35 border-amber-300/45 hover:border-amber-400/60"
               : isDarkMode
-                ? "bg-gradient-to-br from-slate-600 to-slate-700 border-slate-800"
-                : "bg-gradient-to-br from-slate-400 to-slate-500 border-slate-600"
+                ? "bg-gradient-to-br from-slate-600/20 to-slate-700/20 border-slate-500/30"
+                : "bg-gradient-to-br from-slate-300/30 to-slate-400/30 border-slate-400/40"
           }`}
         >
           <div className="flex flex-col items-center relative z-10">
-            <Flame
-              className={`w-5 h-5 mb-0.5 drop-shadow-lg transition-all ${
-                combo >= 3 ? "text-amber-200 animate-wiggle" : "text-slate-300"
+            <div
+              className={`p-1.5 rounded-lg mb-1 transition-all duration-300 ${
+                combo >= 3
+                  ? "bg-amber-400/20 group-hover:scale-110"
+                  : "bg-slate-400/10"
               }`}
-            />
+            >
+              <Flame
+                className={`w-5 h-5 drop-shadow-sm transition-all ${
+                  combo >= 3
+                    ? "text-amber-300 animate-wiggle"
+                    : "text-slate-400"
+                }`}
+              />
+            </div>
             <p
-              className={`text-xl font-black mb-0 ${
-                combo >= 3 ? "text-white" : "text-slate-300"
+              className={`text-xl font-black mb-0.5 ${
+                combo >= 3
+                  ? "text-amber-300"
+                  : isDarkMode
+                    ? "text-slate-300"
+                    : "text-slate-600"
               }`}
             >
               {combo}x
             </p>
-            <p className="text-[10px] font-bold text-white/90">Combo</p>
+            <p
+              className={`text-[10px] font-semibold ${
+                isDarkMode ? "text-slate-300" : "text-slate-600"
+              }`}
+            >
+              Combo
+            </p>
           </div>
           {combo >= 3 && (
-            <Sparkles className="absolute top-1 right-1 w-2.5 h-2.5 text-amber-200 animate-pulse" />
+            <Sparkles className="absolute top-1.5 right-1.5 w-3 h-3 text-amber-300 animate-pulse" />
           )}
         </div>
 
         {/* Timer Card with Circular Progress */}
         <div
-          className={`minecraft-shadow-lg group p-2 transition-all duration-300 hover:translate-y-[-2px] cursor-pointer border-3 ${
+          className={`group p-2.5 rounded-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer shadow-md hover:shadow-lg border ${
             timeLeft <= 5
               ? isDarkMode
-                ? "bg-gradient-to-br from-amber-600 to-amber-700 border-amber-800 animate-pulseScale"
-                : "bg-gradient-to-br from-amber-400 to-amber-500 border-amber-600 animate-pulseScale"
+                ? "bg-gradient-to-br from-rose-500/20 to-red-600/20 border-rose-400/30 hover:border-rose-400/50 animate-pulseScale"
+                : "bg-gradient-to-br from-rose-200/35 to-red-300/35 border-rose-300/45 hover:border-rose-400/60 animate-pulseScale"
               : isDarkMode
-                ? "bg-gradient-to-br from-emerald-600 to-emerald-700 border-emerald-800"
-                : "bg-gradient-to-br from-emerald-400 to-emerald-500 border-emerald-600"
+                ? "bg-gradient-to-br from-teal-500/15 to-cyan-600/15 border-teal-400/25 hover:border-teal-400/40"
+                : "bg-gradient-to-br from-teal-200/30 to-cyan-300/30 border-teal-300/40 hover:border-teal-400/50"
           }`}
         >
           <div className="flex flex-col items-center relative">
             {/* Circular Timer */}
-            <div className="relative w-10 h-10 mb-0.5">
+            <div className="relative w-12 h-12 mb-2">
               <svg className="w-full h-full -rotate-90">
                 <circle
-                  cx="20"
-                  cy="20"
-                  r="16"
+                  cx="24"
+                  cy="24"
+                  r="20"
                   stroke="currentColor"
                   strokeWidth="3"
                   fill="none"
-                  className="text-black/30"
+                  className={isDarkMode ? "text-white/10" : "text-black/10"}
                 />
                 <circle
-                  cx="20"
-                  cy="20"
-                  r="16"
+                  cx="24"
+                  cy="24"
+                  r="20"
                   stroke="currentColor"
                   strokeWidth="3"
                   fill="none"
-                  strokeDasharray={`${2 * Math.PI * 16}`}
-                  strokeDashoffset={`${2 * Math.PI * 16 * (1 - timeProgress / 100)}`}
+                  strokeDasharray={`${2 * Math.PI * 20}`}
+                  strokeDashoffset={`${2 * Math.PI * 20 * (1 - timeProgress / 100)}`}
                   className={`transition-all duration-1000 ${
-                    timeLeft <= 5 ? "text-amber-100" : "text-white"
+                    timeLeft <= 5 ? "text-rose-300" : "text-teal-300"
                   }`}
+                  style={{ filter: "drop-shadow(0 0 3px currentColor)" }}
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
                 <Clock
-                  className={`w-4 h-4 ${timeLeft <= 5 ? "text-amber-100" : "text-white"}`}
+                  className={`w-5 h-5 ${
+                    timeLeft <= 5 ? "text-rose-300" : "text-teal-300"
+                  }`}
                 />
               </div>
             </div>
-            <p className="text-xl font-black mb-0 text-white">{timeLeft}s</p>
-            <p className="text-[10px] font-bold text-white/90">Thời gian</p>
+            <p
+              className={`text-2xl font-black mb-1 ${
+                timeLeft <= 5
+                  ? "text-rose-300"
+                  : "text-teal-300"
+              }`}
+            >
+              {timeLeft}s
+            </p>
+            <p
+              className={`text-xs font-semibold ${
+                isDarkMode ? "text-slate-300" : "text-slate-600"
+              }`}
+            >
+              Thời gian
+            </p>
           </div>
         </div>
 
         {/* Progress Card */}
         <div
-          className={`minecraft-shadow-lg group p-2 transition-all duration-300 hover:translate-y-[-2px] cursor-pointer border-3 ${
+          className={`group p-2.5 rounded-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-0.5 cursor-pointer shadow-md hover:shadow-lg border ${
             isDarkMode
-              ? "bg-gradient-to-br from-violet-600 to-violet-700 border-violet-800"
-              : "bg-gradient-to-br from-violet-400 to-violet-500 border-violet-600"
+              ? "bg-gradient-to-br from-purple-500/15 to-violet-600/15 border-purple-400/25 hover:border-purple-400/40"
+              : "bg-gradient-to-br from-purple-200/30 to-violet-300/30 border-purple-300/40 hover:border-purple-400/50"
           }`}
         >
           <div className="flex flex-col items-center">
-            <Target className="w-5 h-5 mb-0.5 text-violet-100 drop-shadow-lg group-hover:animate-spin3d" />
-            <p className={`text-xl font-black mb-0 text-white`}>
+            <div
+              className={`p-1.5 rounded-lg mb-1 transition-all duration-300 group-hover:scale-110 group-hover:rotate-45 ${
+                isDarkMode ? "bg-purple-400/15" : "bg-purple-200/30"
+              }`}
+            >
+              <Target className="w-5 h-5 text-purple-300 drop-shadow-sm" />
+            </div>
+            <p className={`text-xl font-black mb-0.5 text-purple-300`}>
               {currentQuestionIndex + 1}/{questions.length}
             </p>
-            <p className="text-[10px] font-bold text-white/90">Câu hỏi</p>
+            <p
+              className={`text-[10px] font-semibold ${
+                isDarkMode ? "text-slate-300" : "text-slate-600"
+              }`}
+            >
+              Câu hỏi
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Animated Progress Bar - Minecraft Style */}
+      {/* Animated Progress Bar - Modern Glassmorphism */}
       <div
-        className={`h-3 mb-6 overflow-hidden relative border-3 minecraft-shadow ${
+        className={`h-3 mb-4 rounded-full overflow-hidden relative backdrop-blur-xl shadow-inner border ${
           isDarkMode
-            ? "bg-gray-800 border-gray-900"
-            : "bg-gray-200 border-gray-300"
+            ? "bg-white/5 border-white/10"
+            : "bg-black/5 border-black/10"
         }`}
       >
         <div
-          className={`h-full transition-all duration-500 relative minecraft-highlight ${
-            isDarkMode
-              ? "bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"
-              : "bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"
-          }`}
-          style={{ width: `${progress}%` }}
-        />
+          className="h-full transition-all duration-700 ease-out relative rounded-full"
+          style={{
+            width: `${progress}%`,
+            background: isDarkMode
+              ? "linear-gradient(90deg, #60a5fa 0%, #a78bfa 50%, #f9a8d4 100%)"
+              : "linear-gradient(90deg, #93c5fd 0%, #c4b5fd 50%, #fbcfe8 100%)",
+            boxShadow: isDarkMode
+              ? "0 0 15px rgba(167, 139, 250, 0.3)"
+              : "0 0 15px rgba(196, 181, 253, 0.3)",
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer" />
+        </div>
       </div>
 
-      {/* Question Card - Minecraft Blocky Style */}
-      <div className="relative mb-6">
+      {/* Question Card - Premium Glassmorphism */}
+      <div className="relative mb-4">
         <ParticleEffect
           trigger={particleTrigger}
           type={isCorrect ? "success" : "error"}
         />
 
         <div
-          className={`minecraft-shadow-lg p-6 transition-all duration-500 relative overflow-hidden border-4 ${
+          className={`backdrop-blur-2xl p-5 rounded-2xl transition-all duration-700 relative overflow-hidden shadow-xl border ${
             showFeedback && !isCorrect ? "animate-shake" : "animate-slideDown"
           } ${
             isDarkMode
-              ? "bg-slate-800 border-slate-900"
-              : "bg-white border-gray-200"
+              ? "bg-white/5 border-white/10"
+              : "bg-white/60 border-black/5"
           }`}
+          style={{
+            boxShadow: isDarkMode
+              ? "0 25px 50px -12px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.05)"
+              : "0 25px 50px -12px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(255, 255, 255, 0.8)",
+          }}
         >
-          {/* Decorative gradient top bar */}
-          <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500" />
+          {/* Decorative gradient top accent */}
+          <div
+            className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl"
+            style={{
+              background:
+                "linear-gradient(90deg, rgba(96, 165, 250, 0.3) 0%, rgba(167, 139, 250, 0.3) 50%, rgba(249, 168, 212, 0.3) 100%)",
+            }}
+          />
 
-          <div className="text-center mb-6">
-            <div className="flex items-center justify-center gap-2 mb-3">
-              <div className="minecraft-shadow p-2 bg-gradient-to-br from-yellow-400 to-orange-500 animate-popIn border-3 border-yellow-600">
-                <Zap className="w-6 h-6 text-white" />
+          <div className="text-center mb-5">
+            <div className="flex items-center justify-center gap-2.5 mb-3">
+              <div
+                className={`p-2.5 rounded-xl backdrop-blur-xl shadow-lg transition-all duration-500 animate-popIn border ${
+                  isDarkMode
+                    ? "bg-gradient-to-br from-indigo-500/20 to-purple-600/20 border-indigo-400/30"
+                    : "bg-gradient-to-br from-indigo-200/40 to-purple-300/40 border-indigo-300/45"
+                }`}
+              >
+                <Zap
+                  className="w-6 h-6 text-indigo-300"
+                  style={{
+                    filter: "drop-shadow(0 0 4px rgba(165, 180, 252, 0.4))",
+                  }}
+                />
               </div>
               <h2
-                className={`text-3xl font-black tracking-tight ${
+                className={`text-3xl md:text-4xl font-black tracking-tight ${
                   isDarkMode
-                    ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400"
-                    : "text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600"
+                    ? "text-slate-100"
+                    : "text-slate-800"
                 }`}
               >
                 {currentQuestion.word}
@@ -420,39 +600,46 @@ export default function SpeedQuizGame({
             </div>
             <p
               className={`text-base font-medium ${
-                isDarkMode ? "text-slate-400" : "text-gray-600"
+                isDarkMode ? "text-slate-400" : "text-slate-600"
               }`}
             >
               {currentQuestion.pronunciation}
             </p>
           </div>
 
-          {/* Answer Options - Minecraft Blocky Style */}
+          {/* Answer Options - Premium Modern Style */}
           <div className="grid grid-cols-1 gap-3 mb-4">
             {currentQuestion.options.map((option, index) => {
               const isSelected = selectedAnswer === option;
               const isCurrentCorrect = option === currentQuestion.correct;
 
               let buttonClass = "";
+              let iconBgClass = "";
 
               if (showFeedback) {
                 if (isCurrentCorrect) {
                   buttonClass = isDarkMode
-                    ? "minecraft-shadow-lg bg-emerald-600 text-white border-4 border-emerald-700"
-                    : "minecraft-shadow-lg bg-emerald-500 text-white border-4 border-emerald-600";
+                    ? "bg-gradient-to-r from-emerald-500/25 to-teal-500/25 text-white border-emerald-400/40 shadow-lg shadow-emerald-500/15"
+                    : "bg-gradient-to-r from-emerald-200/40 to-teal-300/40 text-slate-900 border-emerald-300/50 shadow-lg shadow-emerald-500/20";
+                  iconBgClass = isDarkMode
+                    ? "bg-emerald-400/25"
+                    : "bg-emerald-200/40";
                 } else if (isSelected && !isCorrect) {
                   buttonClass = isDarkMode
-                    ? "minecraft-shadow-lg bg-red-600 text-white border-4 border-red-700"
-                    : "minecraft-shadow-lg bg-red-500 text-white border-4 border-red-600";
+                    ? "bg-gradient-to-r from-rose-500/25 to-red-500/25 text-white border-rose-400/40 shadow-lg shadow-rose-500/15"
+                    : "bg-gradient-to-r from-rose-200/40 to-red-300/40 text-slate-900 border-rose-300/50 shadow-lg shadow-rose-500/20";
+                  iconBgClass = isDarkMode ? "bg-rose-400/25" : "bg-rose-200/40";
                 } else {
                   buttonClass = isDarkMode
-                    ? "minecraft-inset bg-gray-800 border-4 border-gray-900 opacity-40"
-                    : "minecraft-inset bg-gray-300 border-4 border-gray-400 opacity-40";
+                    ? "bg-white/5 border-white/10 opacity-50 text-slate-400"
+                    : "bg-black/5 border-black/10 opacity-50 text-slate-500";
+                  iconBgClass = isDarkMode ? "bg-white/5" : "bg-black/5";
                 }
               } else {
                 buttonClass = isDarkMode
-                  ? "minecraft-shadow bg-slate-700 border-4 border-slate-800 hover:bg-slate-600 hover:border-blue-500 hover:translate-y-[-2px]"
-                  : "minecraft-shadow bg-white border-4 border-gray-300 hover:bg-blue-50 hover:border-blue-400 hover:translate-y-[-2px]";
+                  ? "bg-white/5 border-white/10 hover:bg-white/10 hover:border-blue-300/30 hover:-translate-y-1 hover:shadow-lg text-white"
+                  : "bg-white/50 border-white/60 hover:bg-white/70 hover:border-blue-300/40 hover:-translate-y-1 hover:shadow-lg text-slate-900";
+                iconBgClass = isDarkMode ? "bg-white/10" : "bg-white/50";
               }
 
               return (
@@ -460,28 +647,34 @@ export default function SpeedQuizGame({
                   key={`${currentQuestion.id}-${index}`}
                   onClick={() => handleAnswer(option)}
                   disabled={showFeedback}
-                  className={`p-4 text-left font-bold text-base transition-all duration-200 relative group ${buttonClass}`}
+                  className={`group p-4 text-left font-semibold text-base transition-all duration-300 relative backdrop-blur-xl rounded-xl border shadow-md ${buttonClass}`}
                 >
                   <div className="flex items-center gap-3">
                     <span
-                      className={`w-8 h-8 flex items-center justify-center font-black text-base border-2 minecraft-shadow ${
-                        showFeedback && isCurrentCorrect
-                          ? "bg-white/30 border-white/50"
-                          : showFeedback && isSelected && !isCorrect
-                            ? "bg-white/30 border-white/50"
-                            : isDarkMode
-                              ? "bg-slate-600 border-slate-700"
-                              : "bg-gray-200 border-gray-300"
-                      }`}
+                      className={`w-9 h-9 flex items-center justify-center font-black text-sm rounded-lg transition-all duration-300 ${iconBgClass} ${
+                        showFeedback ? "" : "group-hover:scale-110"
+                      } ${isDarkMode ? "text-white" : "text-slate-900"}`}
+                      style={{
+                        boxShadow:
+                          showFeedback && isCurrentCorrect
+                            ? "0 0 15px rgba(52, 211, 153, 0.25)"
+                            : showFeedback && isSelected && !isCorrect
+                              ? "0 0 15px rgba(244, 63, 94, 0.25)"
+                              : "none",
+                      }}
                     >
                       {String.fromCharCode(65 + index)}
                     </span>
                     <span className="flex-1">{option}</span>
                     {showFeedback && isCurrentCorrect && (
-                      <span className="text-xl animate-popIn">✓</span>
+                      <span className="text-xl animate-popIn bg-emerald-300/20 rounded-full w-7 h-7 flex items-center justify-center text-emerald-300">
+                        ✓
+                      </span>
                     )}
                     {showFeedback && isSelected && !isCorrect && (
-                      <span className="text-xl animate-popIn">✗</span>
+                      <span className="text-xl animate-popIn bg-rose-300/20 rounded-full w-7 h-7 flex items-center justify-center text-rose-300">
+                        ✗
+                      </span>
                     )}
                   </div>
                 </button>
@@ -489,29 +682,67 @@ export default function SpeedQuizGame({
             })}
           </div>
 
-          {/* Feedback Message - Minecraft Style */}
+          {/* Feedback Message - Premium Style */}
           {showFeedback && (
             <div
-              className={`minecraft-shadow-lg p-4 text-center font-bold text-lg animate-popIn border-4 ${
+              className={`backdrop-blur-xl p-4 rounded-xl text-center font-bold text-base animate-popIn shadow-lg border ${
                 isCorrect
                   ? isDarkMode
-                    ? "bg-gradient-to-r from-emerald-600 to-teal-600 border-emerald-700 text-white"
-                    : "bg-gradient-to-r from-emerald-500 to-teal-500 border-emerald-600 text-white"
+                    ? "bg-gradient-to-r from-emerald-500/25 to-teal-500/25 border-emerald-400/35 text-white"
+                    : "bg-gradient-to-r from-emerald-200/40 to-teal-300/40 border-emerald-300/45 text-slate-900"
                   : isDarkMode
-                    ? "bg-gradient-to-r from-slate-600 to-slate-700 border-slate-800 text-white"
-                    : "bg-gradient-to-r from-slate-400 to-slate-500 border-slate-600 text-white"
+                    ? "bg-gradient-to-r from-slate-600/30 to-slate-700/30 border-slate-500/40 text-white"
+                    : "bg-gradient-to-r from-slate-400/40 to-slate-500/40 border-slate-500/50 text-slate-900"
               }`}
+              style={{
+                boxShadow: isCorrect
+                  ? "0 10px 25px -5px rgba(52, 211, 153, 0.2)"
+                  : "0 10px 20px -5px rgba(71, 85, 105, 0.15)",
+              }}
             >
               {isCorrect ? (
                 <div className="flex items-center justify-center gap-3">
-                  <div className="minecraft-shadow p-1.5 bg-white/20 border-2 border-white/30 animate-tada">
-                    <Trophy className="w-5 h-5 text-emerald-100" />
+                  <div
+                    className={`p-2 rounded-lg backdrop-blur-xl shadow-lg animate-tada border ${
+                      isDarkMode
+                        ? "bg-emerald-500/25 border-emerald-400/30"
+                        : "bg-emerald-200/40 border-emerald-300/40"
+                    }`}
+                  >
+                    <Trophy
+                      className="w-5 h-5 text-emerald-300"
+                      style={{
+                        filter: "drop-shadow(0 0 4px rgba(52, 211, 153, 0.4))",
+                      }}
+                    />
                   </div>
-                  <span className="text-emerald-50">Chính xác!</span>
+                  <span
+                    className={`text-lg ${
+                      isDarkMode ? "text-white" : "text-slate-900"
+                    }`}
+                  >
+                    Chính xác! 🎉
+                  </span>
                   {combo >= 3 && (
-                    <div className="flex items-center gap-1.5 ml-2 minecraft-shadow px-2.5 py-1 bg-rose-500/80 border-2 border-rose-600">
-                      <Flame className="w-4 h-4 text-amber-200 animate-wiggle" />
-                      <span className="text-white font-black text-sm">
+                    <div
+                      className={`flex items-center gap-1.5 ml-2 px-3 py-1.5 rounded-lg backdrop-blur-xl shadow-lg border ${
+                        isDarkMode
+                          ? "bg-amber-500/25 border-amber-400/35"
+                          : "bg-amber-200/40 border-amber-300/45"
+                      }`}
+                    >
+                      <Flame
+                        className="w-4 h-4 text-amber-300 animate-wiggle"
+                        style={{
+                          filter:
+                            "drop-shadow(0 0 4px rgba(251, 191, 36, 0.4))",
+                        }}
+                      />
+                      <span
+                        className={`font-black text-sm ${
+                          isDarkMode ? "text-white" : "text-slate-900"
+                        }`}
+                      >
                         {combo}x Combo
                       </span>
                     </div>
@@ -519,17 +750,47 @@ export default function SpeedQuizGame({
                 </div>
               ) : (
                 <div>
-                  <div className="flex items-center justify-center gap-3 mb-2.5">
-                    <div className="minecraft-shadow p-1.5 bg-white/10 border-2 border-white/20">
-                      <Target className="w-5 h-5 text-slate-200" />
+                  <div className="flex items-center justify-center gap-3 mb-3">
+                    <div
+                      className={`p-2 rounded-lg backdrop-blur-xl shadow-lg border ${
+                        isDarkMode
+                          ? "bg-white/10 border-white/20"
+                          : "bg-white/40 border-white/60"
+                      }`}
+                    >
+                      <Target
+                        className={`w-5 h-5 ${
+                          isDarkMode ? "text-slate-300" : "text-slate-600"
+                        }`}
+                      />
                     </div>
-                    <span className="text-slate-100">Chưa chính xác</span>
+                    <span
+                      className={`text-lg ${
+                        isDarkMode ? "text-slate-200" : "text-slate-700"
+                      }`}
+                    >
+                      Chưa chính xác
+                    </span>
                   </div>
-                  <div className="minecraft-shadow p-2.5 bg-black/20 border-2 border-white/10">
-                    <p className="text-sm font-semibold text-white/70 mb-1">
+                  <div
+                    className={`backdrop-blur-xl p-3 rounded-lg shadow-inner border ${
+                      isDarkMode
+                        ? "bg-black/20 border-white/10"
+                        : "bg-white/30 border-white/40"
+                    }`}
+                  >
+                    <p
+                      className={`text-xs font-semibold mb-1.5 ${
+                        isDarkMode ? "text-slate-400" : "text-slate-600"
+                      }`}
+                    >
                       Đáp án đúng:
                     </p>
-                    <p className="text-base font-black text-white">
+                    <p
+                      className={`text-base font-black ${
+                        isDarkMode ? "text-white" : "text-slate-900"
+                      }`}
+                    >
                       {currentQuestion.correct}
                     </p>
                   </div>
@@ -540,26 +801,60 @@ export default function SpeedQuizGame({
         </div>
       </div>
 
-      {/* Mega Combo Streak Indicator */}
+      {/* Mega Combo Streak Indicator - Premium Style */}
       {combo >= 5 && !showFeedback && (
-        <div className="text-center mb-6 animate-slideDown">
+        <div className="text-center mb-5 animate-slideDown">
           <div
-            className={`minecraft-shadow-lg inline-flex items-center gap-4 px-8 py-3.5 backdrop-blur-sm border-4 ${
+            className={`inline-flex items-center gap-3 px-6 py-3 backdrop-blur-2xl rounded-xl shadow-xl border ${
               isDarkMode
-                ? "bg-gradient-to-r from-rose-600/90 to-pink-600/90 border-rose-700"
-                : "bg-gradient-to-r from-rose-400/90 to-pink-400/90 border-rose-500"
+                ? "bg-gradient-to-r from-amber-500/25 to-orange-600/25 border-amber-400/35"
+                : "bg-gradient-to-r from-amber-200/40 to-orange-300/40 border-amber-300/45"
             }`}
+            style={{
+              boxShadow:
+                "0 15px 35px -8px rgba(251, 191, 36, 0.3), 0 0 0 1px rgba(251, 191, 36, 0.15)",
+            }}
           >
-            <div className="minecraft-shadow p-2 bg-white/20 border-2 border-white/30">
-              <Flame className="w-6 h-6 text-amber-200 animate-wiggle" />
+            <div
+              className={`p-2 rounded-lg backdrop-blur-xl shadow-lg border ${
+                isDarkMode
+                  ? "bg-amber-500/25 border-amber-400/30"
+                  : "bg-amber-200/40 border-amber-300/40"
+              }`}
+            >
+              <Flame
+                className="w-6 h-6 text-amber-300 animate-wiggle"
+                style={{
+                  filter: "drop-shadow(0 0 6px rgba(251, 191, 36, 0.5))",
+                }}
+              />
             </div>
-            <div className="flex flex-col">
-              <p className="text-xs font-bold text-white/80 uppercase tracking-wider">
-                Streak Bonus
+            <div className="flex flex-col items-start">
+              <p
+                className={`text-xs font-bold uppercase tracking-wider mb-1 ${
+                  isDarkMode ? "text-amber-200" : "text-amber-600"
+                }`}
+              >
+                🔥 Streak Bonus
               </p>
-              <p className="text-2xl font-black text-white">{combo}x Combo</p>
+              <p
+                className={`text-2xl font-black ${
+                  isDarkMode ? "text-white" : "text-slate-900"
+                }`}
+                style={{
+                  textShadow: isDarkMode
+                    ? "0 2px 10px rgba(251, 191, 36, 0.3)"
+                    : "none",
+                }}
+              >
+                {combo}x Combo!
+              </p>
             </div>
-            <Sparkles className="w-5 h-5 text-amber-200 animate-pulse" />
+            <Sparkles
+              className="w-5 h-5 text-amber-300 animate-pulse"
+              style={{ filter: "drop-shadow(0 0 4px rgba(251, 191, 36, 0.4))" }}
+            />
+            />
           </div>
         </div>
       )}

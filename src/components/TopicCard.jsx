@@ -65,33 +65,41 @@ export default function TopicCard({ deck, isDarkMode, onOpen }) {
           {deck.cards.length} từ vựng
         </div>
 
-        {/* Action Buttons */}
+        {/* Action Buttons - Professional Glassmorphism */}
         <div
-          className="flex gap-2 mt-1 -ml-3"
+          className="flex gap-2.5 mt-1 -ml-3"
           style={{ transform: "translateZ(10px)" }}
         >
           <button
             onClick={() => onOpen(deck.id, false)}
-            className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:scale-105 active:scale-95 ${
+            className={`group/btn flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold backdrop-blur-xl border transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 active:scale-95 shadow-md hover:shadow-lg ${
               isDarkMode
-                ? "bg-blue-600 hover:bg-blue-700 text-white"
-                : "bg-blue-500 hover:bg-blue-600 text-white"
+                ? "bg-gradient-to-br from-blue-500/20 to-indigo-600/20 border-blue-400/30 hover:border-blue-300/50 text-blue-200 hover:text-blue-100"
+                : "bg-gradient-to-br from-blue-200/40 to-indigo-300/40 border-blue-300/50 hover:border-blue-400/70 text-blue-700 hover:text-blue-800"
             }`}
           >
-            <BookOpen size={16} />
-            Học
+            <BookOpen
+              size={18}
+              className="transition-transform duration-300 group-hover/btn:scale-110"
+              strokeWidth={2.5}
+            />
+            <span>Học</span>
           </button>
 
           <button
             onClick={() => onOpen(deck.id, true)}
-            className={`flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg text-sm font-semibold transition-all duration-200 hover:scale-105 active:scale-95 ${
+            className={`group/btn flex-1 flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-sm font-bold backdrop-blur-xl border transition-all duration-300 hover:scale-105 hover:-translate-y-0.5 active:scale-95 shadow-md hover:shadow-lg ${
               isDarkMode
-                ? "bg-emerald-400 hover:bg-emerald-500 text-slate-900"
-                : "bg-emerald-300 hover:bg-emerald-400 text-slate-800"
+                ? "bg-gradient-to-br from-emerald-500/20 to-teal-600/20 border-emerald-400/30 hover:border-emerald-300/50 text-emerald-200 hover:text-emerald-100"
+                : "bg-gradient-to-br from-emerald-200/40 to-teal-300/40 border-emerald-300/50 hover:border-emerald-400/70 text-emerald-700 hover:text-emerald-800"
             }`}
           >
-            <Gamepad2 size={16} />
-            Chơi
+            <Gamepad2
+              size={18}
+              className="transition-transform duration-300 group-hover/btn:rotate-12 group-hover/btn:scale-110"
+              strokeWidth={2.5}
+            />
+            <span>Chơi</span>
           </button>
         </div>
       </div>
